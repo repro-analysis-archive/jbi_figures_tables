@@ -158,7 +158,48 @@
    "status": "not changed in v7 (Table S2 outside the task); full-precision source exists"
   }
  ],
- "s4_values": 720,
+ "v8_negative_zero_S2": [
+  {
+   "table": "S2",
+   "row": "E2_158 (REF)",
+   "field": "lo",
+   "value": -0.0004872832492350014,
+   "value_repr": "-0.0004872832492350014",
+   "source": "checks.json REF.E2_primary.ci_lo",
+   "equals_canonical_table3": true,
+   "display_3dp": "−0.000",
+   "decimals": 4,
+   "display": "−0.0005",
+   "same_as_table_S4_v2": "E2, REF, step 5, before removal [ci_lo] -> −0.0005"
+  },
+  {
+   "table": "S2",
+   "row": "E2_after_158 (REF)",
+   "field": "lo",
+   "value": -0.0003989757726410605,
+   "value_repr": "-0.0003989757726410605",
+   "source": "checks.json REF.E2_primary_after_removal.ci_lo",
+   "equals_canonical_table3": true,
+   "display_3dp": "−0.000",
+   "decimals": 4,
+   "display": "−0.0004",
+   "same_as_table_S4_v2": "E2, REF, step 5, after protocol removal [ci_lo] -> −0.0004"
+  },
+  {
+   "table": "S2",
+   "row": "X1_E2_after_158 (S)",
+   "field": "est",
+   "value": -0.00046687915783594214,
+   "value_repr": "-0.00046687915783594214",
+   "source": "x1_e3.json S.E2_primary_after_removal_X1.delta_auc",
+   "equals_canonical_table3": true,
+   "display_3dp": "−0.000",
+   "decimals": 4,
+   "display": "−0.0005",
+   "same_as_table_S4_v2": "E2, S, X1, after X1 removal [delta_auc] -> −0.0005"
+  }
+ ],
+ "s4_values": 1,
  "s1_values": 1200,
  "s2_values": 2880,
  "s3_values": 2880,

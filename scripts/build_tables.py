@@ -335,7 +335,7 @@ def table2():
 
 
 # ------------------------------------------------------------------------------------------------ Table 3
-def table3(num=3, stem="Table_3"):
+def table3(num=3, stem="Table_3", extra_notes=()):
     T = canonical("table3")["rows"]
     by = {r["key"]: r for r in T}
     keys = ["P", "S", "REF", "P-nat"]
@@ -442,6 +442,7 @@ def table3(num=3, stem="Table_3"):
         "{sup:i}Exploratory (plan registered on OSF, osf.io/5c627): the X1 eraser is fitted on training folds and "
         "evaluated on held-out folds of the same population; its linear E3-site value is a check of the procedure "
         "and does not gate any comparison. No verdict.",
+    ] + list(extra_notes) + [                # extra_notes: v8 rebuild (Table S2 v2); empty for every earlier table
         "Abbreviations: AUC, area under the receiver operating characteristic curve; MLP, two-layer perceptron "
         "probe; FM-P, FM-S, REF, primary, secondary and reference representations; nat, native acquisition.",
     ])

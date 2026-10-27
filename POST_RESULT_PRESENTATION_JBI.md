@@ -241,3 +241,24 @@ task v7, so it still shows −0.000 for these three values (now displayed with 4
 
 Not regenerated in v7: `supplementary/Supplementary_Material_v1.docx` and the auditor package still contain the v1
 Tables S3 and S4.
+
+## 11. v8 revision (2026-10-27; task `CC_TASK_JBI_tableS2_and_handoff_v8.md`, base commit `600988d`)
+
+Nothing else in the figure set is touched; Table S2 v1 and every other file are unchanged.
+
+| # | Change | Rule / reason | What is shown |
+|---|---|---|---|
+| 1 | Supplementary Table S2 v2 (`tables/Table_S2_v2.*`): the three cells shown as −0.000 (the same quantities as three cells of Table S4 v2) displayed as in Table S4 v2, with the Table S4 footnote wording | negative-zero consistency between S2 and S4 (task v8 §1); Table 2 rule of v4 | Exact values read from the package and checked equal to `canonical/table3.json` (Table S2's source) and to the Table S4 v2 records; recorded in `canonical_supplement/validation.json` → `v8_negative_zero_S2`: REF, E2 before removal, CI lower bound −0.0004872832492350014 (`checks.json` REF.E2_primary.ci_lo) → −0.0005; REF, E2 after protocol removal, CI lower bound −0.0003989757726410605 (`checks.json` REF.E2_primary_after_removal.ci_lo) → −0.0004; S, X1 E2 after X1 removal, ΔAUC −0.00046687915783594214 (`x1_e3.json` S.E2_primary_after_removal_X1.delta_auc) → −0.0005. Each display is identical in S2 v2 and S4 v2. Only these cells and one added footnote differ from Table S2 v1; page count unchanged (3) |
+| 2 | Footnote letter j in Table S2 v2 (Table S4 v2 uses a) | Table S2 already uses the letters a–i (a = the single-file set); the same footnote text under the next free letter avoids a clash of meanings | footnote j: "Shown with 4 decimals so that its sign is visible (3 decimals would display −0.000); all other values have 3 decimals." |
+| 3 | `CAPTIONS_supplement_v3.md` | the Table S2 entry points to `Table_S2_v2.docx` and names footnote j; the title and the version note name v3; nothing else changed | — |
+| 4 | Handoff package for the auditor's Word update (`HANDOFF_JBI_word_update_v2_<date-time>.zip`) | task v8 §2 | the manuscript v6 texts provided by the investigator (with SHA-256), GA v3, Tables S2–S4 v2, `CAPTIONS_supplement_v3.md`, `validation.json` and sections 10–11 of this record |
+
+After v8 no "−0.000" remains in the current Tables S1–S6 (`Table_S1_v1`, `Table_S2_v2`, `Table_S3_v2`, `Table_S4_v2`,
+`Table_S5_v1`, `Table_S6_v1`; `qa/tables_qa_supp_v2.json`). `build_tables.table3` gained an `extra_notes` argument; with its
+default it still reproduces Table_S2_v1 exactly (document XML and CSV, checked).
+
+Observed in the investigator's `JBI_Supplementary_Methods_draft_v4.md` (copied unchanged into the handoff): compared with
+draft v3 it changes the title (v3 → v4) and five lines with the label corrections (Table S4 → S1 twice; X / X-E3 / B /
+B-sens / Figures X, B → S3–S6 / S5, S6 three times); in three of these lines it also adds or replaces a parenthesis
+("; renumbered for submission"; "(and main Figure 6)" and "(and main Figure 2B, C)" in place of
+"(`SUPPLEMENT_20261020/`)"). No other line differs.

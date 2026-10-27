@@ -361,6 +361,25 @@ def main():
                                           status="not changed in v7 (Table S2 outside the task); full-precision source exists"))
     val["v7_negative_zero_S3_S4"] = nz
     val["v7_negative_zero_other_tables"] = other
+    # v8: Table S2 (= Table_S5_v2): the same three quantities as Table S4 v2, exact values from checks.json / x1_e3.json
+    s2map = [("REF", "E2_158", "lo", checks, "E2_primary", "ci_lo", "E2, REF, step 5, before removal"),
+             ("REF", "E2_after_158", "lo", checks, "E2_primary_after_removal", "ci_lo",
+              "E2, REF, step 5, after protocol removal"),
+             ("S", "X1_E2_after_158", "est", x1, "E2_primary_after_removal_X1", "delta_auc", "E2, S, X1, after X1 removal")]
+    t3k = {r["key"]: r for r in t3}
+    s2 = []
+    for key, col, fld, src, part, sfld, s4row in s2map:
+        x = src[key][part][sfld]
+        assert t3k[key][col][fld] == x, (key, col)                       # = canonical/table3.json (Table S2's source)
+        d, disp = sign_display(x)
+        s4 = [r for r in nz if r["table"] == "S4" and r["row"] == s4row and r["field"] == sfld]
+        assert len(s4) == 1 and s4[0]["value"] == x and s4[0]["display"] == disp, (s4row, s4)
+        s2.append(dict(table="S2", row=f"{col} ({key})", field=fld, value=x, value_repr=repr(x),
+                       source=f"{'checks.json' if src is checks else 'x1_e3.json'} {key}.{part}.{sfld}",
+                       equals_canonical_table3=True, display_3dp=f3(x), decimals=d, display=disp,
+                       same_as_table_S4_v2=f"{s4row} [{sfld}] -> {s4[0]['display']}"))
+    assert sorted((r["value"]) for r in s2) == sorted(r["value"] for r in other)
+    val["v8_negative_zero_S2"] = s2
     val.update(s4_values=len(s4), s1_values=len(s1), s2_values=len(s23), s3_values=len(s23), s5_values=len(s5), s6_values=len(s6),
                s1_round_to_zero_3dp=sum(r["D_disp"] in ("+0.000", MINUS + "0.000") for r in s1),
                s2_round_to_zero_1dp=sum(r["rel_bias_disp"] in ("+0.0", MINUS + "0.0") for r in s23),

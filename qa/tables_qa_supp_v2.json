@@ -1,4 +1,71 @@
 {
+ "Table_S2_v2": {
+  "pages": 3,
+  "rules_per_page": [
+   3,
+   2,
+   3
+  ],
+  "csv_changes": [
+   [
+    5,
+    4,
+    "0.024, not met (−0.000 to 0.049)",
+    "0.024, not met (−0.0005{sup:j} to 0.049)"
+   ],
+   [
+    6,
+    4,
+    "0.024, not met (−0.000 to 0.051)",
+    "0.024, not met (−0.0004{sup:j} to 0.051)"
+   ],
+   [
+    37,
+    3,
+    "−0.000, not met (−0.022 to 0.021)",
+    "−0.0005{sup:j}, not met (−0.022 to 0.021)"
+   ]
+  ],
+  "docx_changes": [
+   [
+    5,
+    4,
+    "0.024, not met\n(−0.000 to 0.049)",
+    "0.024, not met\n(−0.0005j to 0.049)"
+   ],
+   [
+    6,
+    4,
+    "0.024, not met\n(−0.000 to 0.051)",
+    "0.024, not met\n(−0.0004j to 0.051)"
+   ],
+   [
+    37,
+    3,
+    "−0.000, not met\n(−0.022 to 0.021)",
+    "−0.0005j, not met\n(−0.022 to 0.021)"
+   ]
+  ],
+  "footnotes_added": [
+   "jShown with 4 decimals so that its sign is visible (3 decimals would display −0.000); all other values have 3 decimals."
+  ],
+  "footnotes_removed": [],
+  "checks": {
+   "Normal style only": true,
+   "no shading": true,
+   "cell borders top/bottom only": true,
+   "bold only caption + header": true,
+   "Arial 11 pt": true,
+   "PDF fonts Arial embedded": true,
+   "no vertical rules": true,
+   "pages unchanged": true,
+   "CSV: only the recorded cells differ": true,
+   "docx tables: only the recorded cells differ": true,
+   "displays equal validation.json": true,
+   "no −0.000 left in a table cell": true,
+   "footnotes: one added, S4 one sentence replaced": true
+  }
+ },
  "Table_S3_v2": {
   "pages": 2,
   "rules_per_page": [
@@ -121,5 +188,31 @@
    "no −0.000 left in a table cell": true,
    "footnotes: one added, S4 one sentence replaced": true
   }
- }
+ },
+ "S2_v2_vs_S4_v2": {
+  "E2_158 (REF)": {
+   "S2": "−0.0005",
+   "S4": "−0.0005",
+   "identical": true
+  },
+  "E2_after_158 (REF)": {
+   "S2": "−0.0004",
+   "S4": "−0.0004",
+   "identical": true
+  },
+  "X1_E2_after_158 (S)": {
+   "S2": "−0.0005",
+   "S4": "−0.0005",
+   "identical": true
+  }
+ },
+ "negative_zero_left_in_current_S1_S6": {
+  "Table_S1_v1": [],
+  "Table_S2_v2": [],
+  "Table_S3_v2": [],
+  "Table_S4_v2": [],
+  "Table_S5_v1": [],
+  "Table_S6_v1": []
+ },
+ "table3_default_reproduces_Table_S2_v1": true
 }

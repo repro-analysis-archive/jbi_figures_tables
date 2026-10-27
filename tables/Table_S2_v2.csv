@@ -1,0 +1,39 @@
+Check,Set (cases),FM-P,FM-S,REF,FM-P-nat
+Step-5 checks (protocol §5),,,,,
+"E1: site BA, linear probe{sup:b}","278, all steps","0.960, pass (0.932 to 0.984)","0.768, pass (0.713 to 0.819)","0.868, pass (0.830 to 0.903)","0.993, pass (0.982 to 1.000)"
+"E1: site BA, linear probe{sup:b}","158, analysis region","0.914, pass (0.864 to 0.958)","0.821, pass (0.757 to 0.876)","0.837, pass (0.781 to 0.893)","0.966, pass (0.930 to 0.993)"
+"E1: site BA, linear probe{sup:b}","123, single-file{sup:a}","0.881, pass (0.806 to 0.949)","0.632, pass (0.547 to 0.722)","0.838, pass (0.755 to 0.911)","0.981, pass (0.942 to 1.000)"
+E2: ΔAUC before removal{sup:c},"158, analysis region","0.050, met (0.019 to 0.080)","0.002, not met (−0.017 to 0.024)","0.024, not met (−0.0005{sup:j} to 0.049)","0.044, not met (0.013 to 0.077)"
+E2: ΔAUC after protocol removal{sup:c},"158, analysis region","0.044, not met (0.012 to 0.074)","0.003, not met (−0.018 to 0.025)","0.024, not met (−0.0004{sup:j} to 0.051)",—
+E2: ΔAUC before removal{sup:c},"123, single-file{sup:a}","0.041, not met (0.011 to 0.071)","−0.004, not met (−0.022 to 0.017)","0.010, not met (−0.014 to 0.036)","0.041, not met (0.009 to 0.072)"
+E2: ΔAUC after protocol removal{sup:c},"123, single-file{sup:a}","0.025, not met (−0.005 to 0.056)","−0.005, not met (−0.022 to 0.014)","0.010, not met (−0.015 to 0.036)",—
+"E3-site: site BA after removal, linear probe","278, all steps",0.250 (0.250 to 0.250),0.250 (0.250 to 0.250),0.250 (0.250 to 0.250),—
+"E3-site: one-sided 95% upper bound, linear{sup:d}","278, all steps","0.250, pass","0.250, pass","0.250, pass",—
+"E3-site: site BA after removal, linear probe","158, analysis region",0.416 (0.352 to 0.481),0.393 (0.346 to 0.444),0.448 (0.387 to 0.518),—
+"E3-site: one-sided 95% upper bound, linear{sup:d}","158, analysis region","0.472, fail","0.435, fail","0.505, fail",—
+"E3-site: site BA after removal, linear probe","123, single-file{sup:a}",0.380 (0.315 to 0.451),0.323 (0.259 to 0.395),0.405 (0.329 to 0.488),—
+"E3-site: one-sided 95% upper bound, linear{sup:d}","123, single-file{sup:a}","0.441, fail","0.385, fail","0.473, fail",—
+"E3-site: site BA after removal, MLP probe","278, all steps",0.957 (0.927 to 0.982),0.495 (0.456 to 0.535),0.863 (0.818 to 0.904),—
+"E3-site: one-sided 95% upper bound, MLP{sup:d}","278, all steps","0.979, > 0.35","0.531, > 0.35","0.900, > 0.35",—
+"E3-site: site BA after removal, MLP probe","158, analysis region",0.702 (0.640 to 0.763),0.428 (0.368 to 0.489),0.620 (0.543 to 0.687),—
+"E3-site: one-sided 95% upper bound, MLP{sup:d}","158, analysis region","0.755, > 0.35","0.476, > 0.35","0.680, > 0.35",—
+"E3-site: site BA after removal, MLP probe","123, single-file{sup:a}",0.569 (0.510 to 0.631),0.446 (0.376 to 0.522),0.542 (0.458 to 0.628),—
+"E3-site: one-sided 95% upper bound, MLP{sup:d}","123, single-file{sup:a}","0.621, > 0.35","0.511, > 0.35","0.615, > 0.35",—
+E3-state: retained fraction of ΔAUC{sup:f},"158, analysis region","0.868, pass",not applicable{sup:e},not applicable{sup:e},—
+E3-state: retained fraction of ΔAUC{sup:f},"123, single-file{sup:a}",not applicable{sup:e},not applicable{sup:e},not applicable{sup:e},—
+Reported only (no criterion),,,,,
+"E1: site BA, MLP probe (before removal)","278, all steps",0.987 (0.970 to 1.000),0.846 (0.799 to 0.889),0.933 (0.901 to 0.961),0.978 (0.957 to 0.995)
+"E1: site BA, MLP probe (before removal)","158, analysis region",0.885 (0.829 to 0.936),0.853 (0.792 to 0.909),0.894 (0.847 to 0.938),0.959 (0.924 to 0.987)
+"E1: site BA, MLP probe (before removal)","123, single-file{sup:a}",0.877 (0.801 to 0.945),0.663 (0.594 to 0.735),0.817 (0.738 to 0.892),0.962 (0.904 to 1.000)
+"E2: ΔAUC, all steps","278, all steps",0.035 (0.018 to 0.050),0.006 (−0.002 to 0.016),0.010 (−0.001 to 0.022),0.034 (0.016 to 0.052)
+"E2: ΔAUC, normalized-time base{sup:g}","278, all steps",0.018 (0.010 to 0.027),0.004 (−0.001 to 0.009),0.006 (−0.001 to 0.013),0.018 (0.008 to 0.027)
+"E2: ΔAUC, normalized-time base{sup:g}","158, analysis region",0.058 (0.027 to 0.085),0.014 (−0.006 to 0.032),0.031 (0.007 to 0.055),0.050 (0.017 to 0.083)
+"E2: ΔAUC, normalized-time base{sup:g}","123, single-file{sup:a}",0.045 (0.011 to 0.080),0.006 (−0.018 to 0.030),0.023 (−0.007 to 0.051),0.044 (0.008 to 0.080)
+"E2: ΔAUC, base with past actions{sup:h}","158, analysis region",−0.081 (−0.146 to −0.016),−0.059 (−0.118 to −0.004),−0.048 (−0.108 to 0.013),−0.074 (−0.141 to −0.005)
+Exploratory X1 (outside the protocol; eraser refitted on the 158-case analysis region){sup:i},,,,,
+"X1 E3-site: site BA after removal, linear probe","158, analysis region",0.250 (0.250 to 0.250),0.250 (0.250 to 0.250),0.250 (0.250 to 0.250),—
+"X1 E3-site: one-sided 95% upper bound, linear","158, analysis region",0.250,0.250,0.250,—
+"X1 E3-site: site BA after removal, MLP probe","158, analysis region",0.577 (0.506 to 0.647),0.309 (0.255 to 0.366),0.458 (0.392 to 0.530),—
+"X1 E3-site: one-sided 95% upper bound, MLP","158, analysis region","0.637, > 0.35","0.357, > 0.35","0.517, > 0.35",—
+X1 E2: ΔAUC after X1 removal{sup:c},"158, analysis region","0.051, met (0.019 to 0.083)","−0.0005{sup:j}, not met (−0.022 to 0.021)","0.024, not met (−0.002 to 0.052)",—
+X1 E3-state: retained fraction of ΔAUC{sup:f},"158, analysis region","1.019, pass",not applicable{sup:e},not applicable{sup:e},—
