@@ -116,6 +116,28 @@ def source_map():
               "| Figure 6 | `figures_v4/Figure_6/Figure_6_v4.*` (byte copy of `Figure_5_v2`; TIF from its PDF) | `fig4_x_cells.json`, `x_cells_order_v3.json` | `x_comparisons_cells.csv` |",
               "| Tables 1, 2, S5; graphical abstract | `tables/Table_1_v2.*`, `tables/Table_2_v3.*`, `tables/Table_S5_v2.*`, `graphical_abstract/Graphical_abstract_v2.*` (unchanged) | as v4 revision | as v4 revision |",
               "", "Byte identity of the renumbered files with their sources: `qa/renumber_v5.json`.", ""]
+    if (ROOT / "canonical_supplement" / "SHA256SUMS.txt").exists():
+        ss = dict(reversed(x.split()) for x in (ROOT / "canonical_supplement/SHA256SUMS.txt").read_text().splitlines())
+        si = j("canonical_supplement/inputs_sha256.json")
+        L += ["## v6 supplement (2026-10-27): sources of the supplementary figures and tables", "",
+              "Written by `scripts/freeze_supplement.py` into `canonical_supplement/` (the main `canonical/` is read with "
+              "its hash guard for the cross-checks and not written).", "",
+              "| element | files | canonical file → field | package source → field |", "|---|---|---|---|",
+              "| Figure S1 | `figures_supp_v1/Figure_S1/Figure_S1_v1.pdf`, `pages/` | `s1_contrast_D.json` → D, D_disp (pair, cell) | `cell_metrics.csv` (set primary) → abs_bias, mean_truth; formula `contrast`; all D_j of `families.json` reproduced |",
+              "| Figures S2, S3 | `figures_supp_v1/Figure_S2/…`, `Figure_S3/…` | `s23_bias_coverage.json` → rel_bias_pct, rel_bias_disp; coverage, coverage_disp (arm, cell) | `cell_metrics.csv` (set primary) → rel_bias, coverage (= `report_cells.csv` within 1e-12) |",
+              "| Figure S4 | — | — | SOURCE MISSING (`mask_check.json` not in the package) |",
+              "| Figure S5 | `figures_supp_v1/Figure_S5/…` | `s5_x_cells.json` → delta, delta_lo, delta_hi, order (page, analysis, comparison, arm, group) | `x_comparisons_cells.csv` |",
+              "| Figure S6 | `figures_supp_v1/Figure_S6/Figure_S6_v1.*` | `s6_b.json` → ba, lo_2p5, hi_97p5, upper_one_sided_95 | `b_main.csv` (= main `fig3_ba.json` B rows) |",
+              "| Table S1 | `tables/Table_S1_v1.*` | `t_tableS4_mask_check.json` | `tableS4_mask_check.csv` |",
+              "| Table S2 | `tables/Table_S2_v1.*` | main `table3.json` (as Table_S5_v2) | `checks.json`, `x1_e3.json` |",
+              "| Table S3 | `tables/Table_S3_v1.*` | `t_tableX_group_summaries.json` | `tableX_group_summaries.csv` (= `x_comparisons_groups.csv`) |",
+              "| Table S4 | `tables/Table_S4_v1.*` | `t_tableX_E3.json` | `tableX_E3.csv` |",
+              "| Table S5 | `tables/Table_S5_v1.*` | `t_tableB_ba.json`, `t_tableB_judgements.json` | `tableB_ba.csv`, `tableB_judgements.csv` (= `b_judgements.csv`) |",
+              "| Table S6 | `tables/Table_S6_v1.*` | `t_tableB_sens.json` | `tableB_sens.csv` (= `b_sensitivity_summary.csv`) |", "",
+              "| canonical_supplement file | SHA-256 |", "|---|---|"] + \
+             [f"| `canonical_supplement/{k}` | `{v}` |" for k, v in sorted(ss.items())] + \
+             ["", "| package input | path | SHA-256 | recorded by the generating step |", "|---|---|---|---|"] + \
+             [f"| {k} | `{v['path']}` | `{v['sha256']}` | {v['recorded_by_generating_step']} |" for k, v in si.items()] + [""]
     (ROOT / "SOURCE_MAP.md").write_text("\n".join(L) + "\n")
 
 
@@ -165,6 +187,25 @@ def supplement_index():
           "main-text Figures 2–4 of the results report (role switch, K × P heatmaps, checks), the FM / REF pairs of the "
           "role-switch view at the slice, PCA / LEACE variance retained (results report §3), the slice group and the NV "
           "comparator of X (Supplementary Figure X / Table X)."]
+    if (ROOT / "figures_supp_v1").exists():
+        L += ["", "## v6: final supplementary numbering (house style; `CAPTIONS_supplement_v1.md`)", "",
+              "| item | content | file(s) | former name | SHA-256 (PDF / docx) |", "|---|---|---|---|---|"]
+        items = [("Figure S1", "All-cell heatmaps of D, one pair of pages per with/without-C pair (10 pages)", "figures_supp_v1/Figure_S1/Figure_S1_v1.pdf", "figS1"),
+                 ("Figure S2", "All-cell heatmaps of relative bias, one pair of pages per arm (24 pages)", "figures_supp_v1/Figure_S2/Figure_S2_v1.pdf", "figS2"),
+                 ("Figure S3", "All-cell heatmaps of 95% interval coverage, one pair of pages per arm (24 pages)", "figures_supp_v1/Figure_S3/Figure_S3_v1.pdf", "figS3"),
+                 ("Figure S4", "Mask check: per-centre radial profiles — NOT PRODUCED (SOURCE MISSING: mask_check.json)", None, "figS4"),
+                 ("Figure S5", "Exploratory X1/X2 per-cell Δ not in main Figure 6 (4 pages)", "figures_supp_v1/Figure_S5/Figure_S5_v1.pdf", "figX"),
+                 ("Figure S6", "Exploratory B balanced accuracy by evaluation set", "figures_supp_v1/Figure_S6/Figure_S6_v1.pdf", "figB"),
+                 ("Table S1", "Mask check values", "tables/Table_S1_v1.docx", "tableS4"),
+                 ("Table S2", "Representation diagnostics", "tables/Table_S2_v1.docx", "Table_S5_v2"),
+                 ("Table S3", "Exploratory X1/X2 group summaries", "tables/Table_S3_v1.docx", "tableX_group_summaries"),
+                 ("Table S4", "Exploratory X1 E3/E2 next to step 5", "tables/Table_S4_v1.docx", "tableX_E3"),
+                 ("Table S5", "Exploratory B balanced accuracy and judgements", "tables/Table_S5_v1.docx", "tableB_ba + tableB_judgements"),
+                 ("Table S6", "Exploratory B equal-size subsampling", "tables/Table_S6_v1.docx", "tableB_sens")]
+        for lab, what, f, old_ in items:
+            L.append(f"| {lab} | {what} | " + (f"`{f}`" if f else "—") + f" | {old_} | " + (f"`{sha(ROOT / f)}`" if f else "—") + " |")
+        L += ["", "The package items above keep their package labels; the main text refers to the v6 numbers "
+              "(\"Supplementary Table S5\" in the v3–v5 main records = Table S2)."]
     (ROOT / "SUPPLEMENT_INDEX.md").write_text("\n".join(L) + "\n")
 
 
@@ -513,12 +554,62 @@ def measurement_report_v4():
     (ROOT / "qa" / "MEASUREMENT_REPORT_v4.md").write_text("\n".join(L) + "\n")
 
 
+def measurement_report_supp():
+    m = j("qa/measure_supp_v6.json")
+    pv = j("qa/plotted_vs_canonical_supp_v6.json")
+    tq = j("qa/tables_qa_supp_v1.json")
+    cap = j("qa/captions_supp_v1.json")
+    blind = j("qa/blind_scan_supp_v6.json")
+    val = j("canonical_supplement/validation.json")
+    reb = (ROOT / "qa" / "REBUILD_TEST_supp_v6.md").read_text()
+    L = ["# Measurement report — supplement v6 (template §7; measured from the exported files)", "",
+         "| figure | pages | page size (mm) | text sizes (pt) | min (pt) | fonts | raster objects | overlaps / near | edge < 0.3 mm | TIF dpi | TIF = PDF page |",
+         "|---|---|---|---|---|---|---|---|---|---|---|"]
+    for k, v in m.items():
+        fonts = ", ".join(sorted({x.split()[0].split("+")[-1] for x in v["pdffonts"]}))
+        L.append(f"| {k} | {v['pages']} | {', '.join(f'{a} × {b}' for a, b in v['page_sizes_mm'])} | {v['text_sizes_pt']} | "
+                 f"{v['min_text_pt']} | {fonts} (emb=yes) | {v['raster_objects']} | {v['overlaps']} | {v['edge_issues']} | "
+                 f"{v['tif_dpi']} | {v['tif_identical_pages']}/{v['pages']} |")
+    L += ["", "Figure S4: not produced (SOURCE MISSING: `mask_check.json`). Heatmap pages (S1–S3): cell values 11 pt, ticks 12, "
+          "labels 13, titles 14 pt bold (template conflict recorded; the accepted 9-pt floor was not needed). S5, S6: 14 / 15 / "
+          "16 pt. The subscript A of φ_A touches its base glyph by design and is excluded from the overlap count.", "",
+          "## Plotted vs canonical (`qa/plotted_vs_canonical_supp_v6.json`)", ""]
+    for k, v in pv.items():
+        L.append(f"* {k}: {v['result']} — " + ", ".join(f"{kk} {vv if not isinstance(vv, list) else len(vv)}"
+                                                          for kk, vv in v.items() if kk != "result"))
+    cc = val["cross_checks"]
+    L += ["", "## Cross-checks against the main-figure values (`canonical_supplement/validation.json`)", "",
+          f"* anchors: " + "; ".join(f"{k} = {v!r}" for k, v in val["anchors"].items()),
+          f"* main Figure 4 (`w_history_D`) rows equal: {cc['w_history_D_rows_equal']}; slice (`fig2B_slice_D`): "
+          f"{cc['fig2B_slice_rows_equal']}; main Figure 5 (`fig5_bias_coverage`): {cc['fig5_bias_coverage_rows_equal']}; "
+          f"main Figure 2 (B, C) rows equal to S6: {cc['S6_equals_main_figure_2_BC_rows']}",
+          "* families reproduced from the S1 cells (mean = D̄ exactly): " + "; ".join(
+              f"{k} {v['cells']} cells, mean {v['mean_3dp']} = D̄ {v['D_bar_3dp']} (max |cell diff| {v['max_abs_diff_cells']})"
+              for k, v in cc["families_reproduced"].items()),
+          f"* report_cells.csv vs cell_metrics.csv: {cc['report_cells_agree_with_cell_metrics']}",
+          f"* cells rounding to ±0: D {val['s1_round_to_zero_3dp']}, relative bias {val['s2_round_to_zero_1dp']}", "",
+          "## Tables (`qa/tables_qa_supp_v1.json`)", "",
+          "| table | pages | rules per page | vertical rules | run sizes (pt) | paragraph styles | cells compared with the package CSV | checks |",
+          "|---|---|---|---|---|---|---|---|"]
+    for k, v in tq.items():
+        p, d = v["pdf"], v["docx"]
+        L.append(f"| {k} | {p['pages']} | {p['rules_per_page']} | {p['vertical_rules']} | {d['run_sizes_pt']} | "
+                 f"{d['paragraph_styles']} | {v['cells_compared'] if v['cells_compared'] is not None else 'XML/CSV = Table_S5_v2'} | "
+                 f"{'PASS' if all(v['checks'].values()) else 'FAIL'} ({len(v['checks'])}) |")
+    L += ["", f"## Captions (`qa/captions_supp_v1.json`): {cap['result']} — headings {cap['headings']}", "",
+          f"## Blind scan (`qa/blind_scan_supp_v6.json`): {len(blind)} files, hits "
+          f"{sum(any(v['hits'].values()) for v in blind.values())}", "",
+          "## Clean rebuild (`qa/REBUILD_TEST_supp_v6.md`)", "", "Result: " + ("PASS" if "Result: PASS" in reb else "FAIL"), ""]
+    (ROOT / "qa" / "MEASUREMENT_REPORT_supp_v1.md").write_text("\n".join(L) + "\n")
+
+
 # ------------------------------------------------------------------------------------------------ README.md
 def readme():
     files = subprocess.run(["git", "-C", str(ROOT), "ls-files"], capture_output=True, text=True).stdout.split("\n")
     files = [f for f in files if f and f != "README.md" and not f.startswith("templates/")]
     deliver = [f for f in files if f.startswith(("figures/Figure_", "figures_v2/Figure_", "figures_v3/Figure_",
-                                                 "figures_v4/Figure_", "graphical_abstract/G", "tables/Table_"))
+                                                 "figures_v4/Figure_", "figures_supp_v1/Figure_", "graphical_abstract/G",
+                                                 "tables/Table_"))
                and not f.endswith((".m", ".js"))]
     L = ["# JBI figures, tables and graphical abstract — SS-DS203 manuscript", "",
          "Built 2026-10-27 from the read-only package `" + str(PKG) + "` (manifest verified, 248 / 248). Task: "
@@ -568,6 +659,13 @@ def readme():
          "tables `Table_1_v2`, `Table_2_v3`, `Table_S5_v2`; graphical abstract `Graphical_abstract_v2`. Rebuild and checks: "
          "`scripts/rebuild_check_v5.sh <scratch_dir>`; report `qa/MEASUREMENT_REPORT_v4.md`; decisions "
          "`POST_RESULT_PRESENTATION_JBI.md` §8.", "",
+         "## v6 supplement (2026-10-27)", "",
+         "Task `CC_TASK_JBI_supplement_v6.md`. Supplementary Figures S1–S3, S5, S6 in `figures_supp_v1/` (multi-page "
+         "vector PDF; per-page .fig and TIF in `pages/`), Tables S1–S6 in `tables/Table_S*_v1.*`, captions "
+         "`CAPTIONS_supplement_v1.md`; values in `canonical_supplement/` (`scripts/freeze_supplement.py`). Not produced: "
+         "Figure S4 (SOURCE MISSING: `mask_check.json`) and `Supplementary_Material_v1.docx` (the Supplementary Methods "
+         "draft is not in the work folder). Rebuild and checks: `scripts/rebuild_check_supp_v6.sh <scratch_dir>`; report "
+         "`qa/MEASUREMENT_REPORT_supp_v1.md`; decisions `POST_RESULT_PRESENTATION_JBI.md` §9.", "",
          "## SHA-256 of the deliverables", "", "| file | bytes | SHA-256 |", "|---|---|---|"]
     for f in deliver:
         p = ROOT / f
@@ -578,7 +676,9 @@ def readme():
 def main():
     source_map()
     supplement_index()
-    if "--v4" in sys.argv[1:]:
+    if "--supp" in sys.argv[1:]:
+        measurement_report_supp()   # main-set reports are left as recorded
+    elif "--v4" in sys.argv[1:]:
         measurement_report_v4()     # earlier reports are left as recorded
     elif "--v3" in sys.argv[1:]:
         measurement_report_v3()     # the v1 and v2 reports are left as recorded

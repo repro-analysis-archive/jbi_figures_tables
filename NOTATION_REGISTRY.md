@@ -110,3 +110,25 @@ New result quantities (Figure 5; definitions from `ss_benchmark/grid.py` `cell_m
 
 Arm names in the Figure 5 key are those of the arms table above (U+2212 in −C). "P = 0" … "P = 30" are post-window
 steps P, not the representation key P (always written FM-P).
+
+## v6 (2026-10-27): supplementary numbering (final) and labels
+
+| Supplementary item | Former name | Labels in the figure / table |
+|---|---|---|
+| Figure S1 | figS1 | page titles "<pair> — φ_A = 0 (216 cells)" / "φ_A = 0.5 (24 cells)"; "W = 0/5/30"; "α = …", "γ = …"; "K (window steps)", "P (post-window steps)"; key "D (without C − with C)" |
+| Figure S2 | figS2 | page titles "<arm> — φ_A = …"; key "\|relative bias\| (%)" |
+| Figure S3 | figS3 | page titles "<arm> — φ_A = …"; key "coverage of the 95% interval" |
+| Figure S4 | figS4 | not produced (SOURCE MISSING) |
+| Figure S5 | figX | (A)–(F); "k = FM-P/FM-S/REF"; "Δ (X − step 6)"; blocks "P = 0/5/30", groups "P1b-FM", "P2-FM", "slice" |
+| Figure S6 | figB | (A) transport, (B) within-set refit; rows FM-P, FM-S, REF; sets S1–S3 |
+| Table S1 | tableS4 | ρ_c, r (× side) |
+| Table S2 | Table_S5_v2 (Supplementary Table S5 of v3–v5) | as before |
+| Table S3 | tableX_group_summaries | — |
+| Table S4 | tableX_E3 | — |
+| Table S5 | tableB_ba + tableB_judgements | — |
+| Table S6 | tableB_sens | — |
+
+"Supplementary Table S5" in the main-set records of v3–v5 means the current **Table S2**. The analysis-B evaluation
+sets keep the names "sets S1–S3"; the figure keys write "Evaluation set" and the captions "evaluation set S1" so that
+they are not read as Figures/Tables S1–S3. "slice" = the 12 main-text slice cells (W = 30, α = 0.5, γ = 1, φ_A = 0).
+φ_A is printed with a TeX subscript in the heatmap page titles (Arial).

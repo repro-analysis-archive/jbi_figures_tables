@@ -168,3 +168,40 @@ Conflicts (v5) and resolution:
 | Byte identity of the renumbered `.m` / `.js` with their sources vs template §4-0 (the `.m` regenerates the figure) | The copied scripts are byte-identical, so each re-creates its source-named outputs (e.g. `make_Figure_2_v4.m` writes `Figure_4_v3.*`); the renumbered files are produced by `scripts/renumber_v5.py` from the sources, whose scripts remain the rendering source of truth. Recorded in the script header and here |
 | Byte identity of the Figure 6 TIF with `Figure_5_v2.tif` vs "the poppler TIF is used for every TIF" | The poppler rule wins: `Figure_6_v4.tif` is rasterised from the byte-copied `Figure_6_v4.pdf` (ink identical to the PDF, `qa/tif_vs_pdf_Figure_6_v4.json`); its `.fig`, `.pdf` and `.m` are byte copies. `Figure_5_v2.tif` had no clipped marker (§7), so the change is the export route only |
 | Pre-result decision 1 names the figure "Figure 1"; it is now Figure 5 | Numbering follows citation order (task v5 §2); the content and slice are those of the decision |
+
+## 9. v6: supplementary figures and tables (2026-10-27; task `CC_TASK_JBI_supplement_v6.md`, base commit `ef32e5c`)
+
+Made after all results were known, by the same rules (v2 §0–§2, v3 §0; poppler TIF). The main v5 set is not touched.
+Outputs: `figures_supp_v1/Figure_S1..S6/` (S4 not produced), `tables/Table_S1_v1..S6_v1.*`, `CAPTIONS_supplement_v1.md`.
+Values: `canonical_supplement/` written by `scripts/freeze_supplement.py` (package inputs guarded by the manifest and,
+where recorded, by the generating step's hash; the main `canonical/` is read with its hash guard and not written).
+
+| Item | Status |
+|---|---|
+| Figure S1 (D, 5 pairs × 240 cells, 10 pages) | built; 1,200 values; each family's cells reproduce `families.json` D_j exactly and its mean equals D̄ (P1a 1.925, P1b-SITE 2.198, P1b-FM 0.594, P2-SITE 0.052, P2-FM 0.005, P2-ORACLE 0.042); the 72 cells of main Figure 4 and the 24 slice cells of `fig2B_slice_D` are identical |
+| Figures S2, S3 (12 arms × 240 cells, 24 pages each) | built; 2,880 values each; the 144 slice rows of main Figure 5 identical; `report_cells.csv` agrees with `cell_metrics.csv` within 8.2 × 10⁻¹³ relative (re-serialisation; display strings identical; coverage identical) — values from `cell_metrics.csv` |
+| Figure S4 | **SOURCE MISSING**: the per-centre radial profiles (`mask_check.json`, step-4 record `8d4c61a`, 4 × 180 points) are not in the package (only `tableS4_mask_check.csv` and the rendered `figS4_mask_profiles.pdf`); values are not read from a rendered PDF. Not produced; caption kept with the note |
+| Figure S5 (4 pages) | built; 756 values: the slice group of X1 k−C vs step-6 k−C, X1 k−C vs step-6 k and X2 k−C vs step-6 k−C (their other groups are in main Figure 6), and every group of X1 vs step-6 NV, X2 vs step-6 NV and X2 vs step-6 k; no cell of main Figure 6 repeated (asserted) |
+| Figure S6 | built; the 36 rows of `b_main.csv`, identical to main Figure 2 (B), (C) (asserted), arranged by evaluation set as the package figure |
+| Tables S1–S6 | built; S2 = Table_S5_v2 rebuilt with the number S2 (document XML identical apart from "Table S2."; CSV identical) |
+| `Supplementary_Material_v1.docx` | **not produced**: `JBI_Supplementary_Methods_draft_v2.md` is not in the work folder (nor in ~/Downloads); Figure S4 is also missing |
+
+Choices made after the results:
+
+| Choice | Reason |
+|---|---|
+| Heatmap pages (S1–S3): A4 portrait (595 × 842 pt), layout of the package figures (rows α × γ, columns W, panel rows K, panel columns P); the 24 φ_A = 0.5 cells on their own page in the W = 5 column with the same cell size | pre-result decision 2; same reading on every page |
+| Type scale on the heatmap pages: cell values 11 pt, tick labels 12, axis and row/column labels 13, page titles 14 pt bold (measured minimum 11 pt) | template §2-1 (14 / 15 / 16 pt) does not fit 216 values per A4 page; the task accepted a relative scale with a 9-pt floor, which was not needed. Recorded as a template conflict |
+| Shading by discrete classes on round boundaries (`figures/common/jbi_ramp_v6.m`): D diverging — white for |D| < 0.01, navy tints (to 60% navy) for D > 0 and gray tints (to #8A8A8A) for D < 0 at 0.01, 0.05, 0.1, 0.5, 1; relative bias sequential gray on |relative bias| at 5, 10, 25, 50, 100, 200%; coverage sequential gray, darker for lower coverage, at 0.90, 0.75, 0.50, 0.25 | classes are readable without a colour scale (steps in lightness, colour-blind safe; the sign of D and of relative bias is also in the cell text); boundaries are round numbers, not fitted to the data; the darkest shades keep #1A1A1A text at contrast ≥ 4.5; one scale for all pages of a figure. Every class is shown in each page's key (a full scale, not series entries) |
+| Cell text: D with 3 decimals and sign, relative bias in % with one decimal and sign, coverage with 2 decimals | task v6 §2; display strings frozen in `canonical_supplement` by Python. 12 D values and 4 relative-bias values round to ±0 (shown as +0.000 / −0.000 / ±0.0); coverage values are multiples of 0.005 and 2 decimals follow Python's formatting of the stored value (exact values in the CSV) |
+| Tables: committed rounding (3 decimals, true minus sign), including −0.000 where a negative value rounds to zero (Table S4: S X1 ΔAUC, REF ΔAUC lower bounds; noted in its footnote); Table S1 values verbatim (exact grid values, as the committed table) | task v6 §4 ("rounding 3 d.p. as the committed reports"; Table S2 a byte copy). The v4 rule for Table 2 (decimals needed to show the sign) is therefore not applied in the supplement — open for the investigator |
+| Table S5: the 36 judgement statements as a column, each statement verbatim at the later set of its pair (S2: S1→S2; S3: S2→S3 and S1→S3) | task v6 §4 ("as a column or footnote") |
+| Figure S5: page 1 a 3 × 3 grid (12 slice cells per panel); pages 2–4 one full-width panel per k (72 cells at 1.8 mm pitch) | the 72-cell groups would be 0.64 mm apart in a 3 × 3 grid; encoding, separators and cell order as main Figure 6 |
+| Figures S5, S6 at the template sizes (14 / 15 / 16 pt), 190 mm wide; S6 markers as main Figure 2 (v4 sizes) | task v6 §3 |
+| TIF: S1–S3 one 600-dpi TIF per page; S5 one 1,200-dpi TIF per page; S6 1,200 dpi; all rasterised from the vector PDF by poppler and identical to a fresh rendering of the same page | multi-page figures; 58 A4 pages at 1,200 dpi would be several GB; 600 dpi is the Word-paste resolution of the template |
+| The subscript A of φ_A in the heatmap page titles touches its base glyph; the text-overlap check excludes that pair only | TeX subscript by design |
+
+Cross-references in the main set that the new supplementary numbering changes (the main set is not edited in v6):
+"Supplementary Table S5" (Table 2 v3 footnote; `CAPTIONS_v4.md`, Figure 6) → **Table S2**; "Supplementary Figure X and
+Table X" (`CAPTIONS_v4.md`, Figure 6) → **Figure S5 and Table S3**; "Supplementary Figure S1" and "Supplementary Figures S2
+and S3" are unchanged.
