@@ -29,3 +29,11 @@ Contents: `git archive` of commit ce95897 (v4 outputs with the `_v3` suffix, the
 | `AUDIT_JBI_figures_tables_v5_20261027-1146.zip` (work folder and ~/Desktop/) | 25544288 | `ad9e7a16c2cc6d481ace110f9d645391c4de1d4271d22b514e70ae6d0bbb55c1` |
 
 Contents: `git archive` of commit f71cfb3 (v5 outputs `figures_v4/` and `CAPTIONS_v4.md`, the unchanged tables and graphical abstract, all earlier outputs, canonical data, scripts, records, QA), `GIT_LOG.txt`, `GIT_LOG_ONELINE.txt`, `AUDIT_README.txt`, `AUDIT_MANIFEST_SHA256.txt` (256 files, all verified OK after packing and again after unzipping the Desktop copy).
+
+## Supplement v6 bundle
+
+| file | bytes | SHA-256 |
+|---|---|---|
+| `AUDIT_JBI_supplement_v6_20261027-1419.zip` (work folder and ~/Desktop/) | 133485177 | `0b78293c9d09f22cb6194dacc7041362ea259845dbb28ced43d47dee965fc63c` |
+
+Contents: `git archive` of commit 49b7a0e (supplement outputs `figures_supp_v1/`, `tables/Table_S*_v1.*`, `CAPTIONS_supplement_v1.md`, `supplementary/Supplementary_Material_v1.docx`, `canonical_supplement/`, `inputs/`, the unchanged main set and earlier outputs, scripts, records, QA), `GIT_LOG.txt`, `GIT_LOG_ONELINE.txt`, `AUDIT_README.txt`, `AUDIT_MANIFEST_SHA256.txt` (468 files, all verified OK after packing and again after unzipping the Desktop copy).
