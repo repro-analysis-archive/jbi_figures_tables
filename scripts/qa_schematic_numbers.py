@@ -15,7 +15,7 @@ from pathlib import Path  # noqa: E402
 import pymupdf  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
-NUM = re.compile(r"(?<![A-Za-z])[−-]?\d[\d,]*(?:\.\d+)?")
+NUM = re.compile(r"(?<![A-Za-z\d])[−-]?(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?")   # thousands groups only (73,200)
 
 # structural labels (not data values): name -> source
 STRUCTURAL = {
@@ -46,8 +46,12 @@ def main():
         canon |= tokens_of(json.loads((ROOT / "canonical" / f"{n}.json").read_text()))
     report = {}
     ok = True
-    for name, pdf in (("Figure_1", "figures/Figure_1/Figure_1.pdf"),
-                      ("Graphical_abstract", "graphical_abstract/Graphical_abstract.pdf")):
+    v2 = "--v2" in sys.argv[1:]
+    targets = ((("Figure_1_v2", "figures_v2/Figure_1/Figure_1_v2.pdf"),
+                ("Graphical_abstract_v2", "graphical_abstract/Graphical_abstract_v2.pdf")) if v2 else
+               (("Figure_1", "figures/Figure_1/Figure_1.pdf"),
+                ("Graphical_abstract", "graphical_abstract/Graphical_abstract.pdf")))
+    for name, pdf in targets:
         text = pymupdf.open(ROOT / pdf)[0].get_text()
         found = [t.replace("−", "-") for t in NUM.findall(text)]
         rows = []
@@ -65,7 +69,7 @@ def main():
         print(f"{name}: {len(found)} numeric tokens, {len(rows)} distinct; canonical "
               f"{sum(r['source'] == 'canonical' for r in rows)}, structural "
               f"{sum(r['source'].startswith('structural') for r in rows)}, unmatched {un}")
-    (ROOT / "qa" / "schematic_numbers.json").write_text(json.dumps(report, indent=1, ensure_ascii=False) + "\n")
+    (ROOT / "qa" / ("schematic_numbers_v2.json" if v2 else "schematic_numbers.json")).write_text(json.dumps(report, indent=1, ensure_ascii=False) + "\n")
     sys.exit(0 if ok else 1)
 
 

@@ -1,0 +1,40 @@
+{
+  "Figure_2": {
+    "points": 11,
+    "mismatches": [],
+    "legend_entries": "Primary set (n = 158) | W = 0 set (n = 204) | W = 5 set (n = 201) | Single-file set (n = 123)",
+    "legend_handles_plotted": true,
+    "result": "PASS"
+  },
+  "Figure_3": {
+    "points": 72,
+    "mismatches": [],
+    "zero_lines": 6,
+    "legend_entries": "P = 0 | P = 5 | P = 30",
+    "legend_handles_plotted": true,
+    "result": "PASS"
+  },
+  "Figure_4": {
+    "points": 48,
+    "mismatches": [],
+    "key_glyphs": [
+      "key:chance (dotted line): PASS",
+      "key:boundary (dashed line): PASS",
+      "key:upper (horizontal tick): PASS",
+      "key:upper (horizontal tick): PASS",
+      "key:interval (vertical bar): PASS",
+      "key:interval (vertical bar): PASS",
+      "key:marker (marker): PASS",
+      "key:marker (marker): PASS"
+    ],
+    "key_covers_every_plotted_class": true,
+    "result": "PASS"
+  },
+  "Figure_5": {
+    "points": 540,
+    "mismatches": [],
+    "order": "P1b-FM by (P, K, alpha, gamma); P2-FM by cell index",
+    "legend": "none (single series type; defined in caption)",
+    "result": "PASS"
+  }
+}

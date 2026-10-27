@@ -67,3 +67,30 @@ arm (negative = smaller |bias|); verdicts as "consistent with the theory-motivat
 E3-site wording "no longer exceeds the prespecified linear site-encoding boundary"; X: "exploratory; no verdict; cannot
 restore P1b-FM/P2-FM; nonlinear site information remains after X1; X2 changes do not show that erasure caused a
 difference"; B: "locates where the judgement changes; does not identify why".
+
+## 6. v3 revision (2026-10-27; task `CC_TASK_JBI_figures_tables_v3.md`, base commit `ee3b19f`)
+
+Made after all results were known, by the same rules (no number changed, nothing selected, exploratory never in a
+confirmatory panel, interval definitions of §3, claim ceilings of §5). Old files are kept unchanged; revised files carry
+the suffix `_v2` (figures in `figures_v2/`). `SS_DS203_JBI_manuscript_plan_v3.md` is still absent from the work folder
+and from the Mac (searched again); the task text was followed.
+
+| # | Change | Reason / rule | What is shown (nothing hidden) |
+|---|---|---|---|
+| 1 | **New Figure 3: per-cell D against K by W (0, 5, 30), SITE vs NV and ORACLE vs ORACLE−C, α = 0.5, γ = 1, φ_A = 0, primary set (72 values; replaces v2 Figure 2B)** | At the pre-result slice (W = 30) the per-cell D is near zero, whereas at W = 0 it is large and positive; protocol §12.1 anticipated that pre-window history can break the direction, which is why P1b is defined on W = 0 cells (§12.2). The figure shows the W dimension only | Row (C) W = 30 is the unchanged pre-result slice; rows (A) and (B) add W only (α, γ fixed at the slice values); every K × P cell of each row is drawn; all other α and γ values remain in Supplementary Figure S1. Canonical `w_history_D.json` with the four task anchors (8.734, −0.044, 10.512, 0.071; exact values in `validation.json`); 14 of the 72 cells belong to a family and reproduce `families.json` D_j exactly. No interval (none exists for single cells) |
+| 2 | Template §2-1 sizes in every figure: tick 14, axis label 15, panel label 16 pt (schematic: body 14, headings 15, panel labels 16; graphical abstract ≥ 10 pt at 130 mm) | task v3 §3 priority 2 | All figures reached the sizes; content was reduced instead of the font (Figure 1) and layouts were re-stacked: Figure 2 facets stacked vertically; Figure 3 x tick labels only on the bottom row (same K axis); Figure 4 (A) with the key on the first row, (B) (C) on the second; Figure 5 row titles above the rows. Heights 148–232 mm at 190 mm width |
+| 3 | Figure 1: panel (D) removed (estimand, estimator, representations: Methods); (B) cut to the time structure and the causal diagram (the lines with the grid values, cell counts, replicate count and site-loading permutation were removed; they are in Methods); per-centre counts kept for the 278- and 158-case sets only (the others are in Table 1); workflow boxes shortened to three lines (dates and OSF identifiers kept; "73,200 units" and the step-6 start date dropped, the latter equals the step-5 record date) | reduce content rather than font size | Removed items are in Methods / Table 1 |
+| 4 | Figure 4 key built from the drawn objects: marker, vertical bar (two-sided 95% interval, own entry), short horizontal tick (one-sided upper bound), dashed and dotted lines; checked object by object (`verify_plotted_v2.m`) | legend ↔ plot (task v3 §3) | — |
+| 5 | Figure 5: P1b-FM cells re-ordered by (P, K, α, γ) so that the P = 5 and P = 30 blocks are contiguous and labelled; light separators between the K sub-blocks (K labels at 14 pt are wider than a 6-cell block, so the K order is stated in the caption); P2-FM in cell order with separators between W sub-blocks | readable cell order (task v3 §3); the order uses design factors only, not values | All 60 cells per panel, as before; canonical `x_cells_order_v3.json` |
+| 6 | Graphical abstract: two-row layout (confirmatory row; erasure and X1 row) plus one descriptive line; wording per task (evaluation; "no prior action history (W = 0)"; "slightly higher"; the W = 30 line verbatim) | ≥ 10 pt at 130 mm | Numbers: 2.198 and 0.052 (Table 2) only; "278-case" removed (not a Table 2 number) |
+| 7 | Table 1: arms block removed (Figure 1C); "Selection" column moved into a footnote; Table 2 compacted (column widths, shorter footnotes); both on one A4 landscape page at 11 pt with 15 mm top / bottom margins (left / right 25 mm) | one page at 11 pt (task v3 §3) | All rows and all footnote content kept; the margin is a typesetting choice of the table file only |
+| 8 | Table S5 = old Table 3 renamed (document XML identical apart from "Table S5."; CSV identical) | task v3 §1 | — |
+
+Conflicts (v3) and resolution:
+
+| Conflict | Resolution |
+|---|---|
+| Template §2-1 sizes (14 / 15 / 16 pt) vs a 190 mm width with many panels | Reduce content and re-stack layouts; no figure needed a smaller size; heights up to 232 mm (Figure 1) |
+| Marker targets (template §5-C, absolute mm) vs larger fonts | Markers kept at the template targets (filled 0.97–1.14 mm, open 1.18–1.32 mm); not enlarged to match the fonts |
+| Table template margins (≈ 2.5 cm, manuscript body) vs one page at 11 pt | 15 mm top / bottom margins in the two table files |
+| Figure 3 y label once per row at 15 pt (51.6 mm) | Panels 52.5 mm high so that the label fits each row |

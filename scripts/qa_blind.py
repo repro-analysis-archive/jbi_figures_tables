@@ -27,9 +27,16 @@ PAT = {"ai": re.compile(rb"claude|anthropic|openai|chatgpt|gpt-4|copilot", re.I)
        "user/path/affiliation": re.compile(rb"/Users/|nakanohisashi|nakano|nuhw|niigata", re.I)}
 
 
+FILES_V2 = [f"figures_v2/Figure_1/Figure_1_v2.{e}" for e in ("pdf", "pptx", "tif")] + \
+           [f"figures_v2/Figure_{n}/Figure_{n}_v2.{e}" for n in (2, 3, 4, 5) for e in ("pdf", "tif")] + \
+           [f"graphical_abstract/Graphical_abstract_v2.{e}" for e in ("pdf", "pptx", "tif")] + \
+           [f"tables/Table_{n}_v2.{e}" for n in ("1", "2", "S5") for e in ("docx", "csv")] + ["CAPTIONS_v2.md"]
+
+
 def main():
+    v2 = "--v2" in sys.argv[1:]
     out, ok = {}, True
-    for f in FILES:
+    for f in (FILES_V2 if v2 else FILES):
         p = ROOT / f
         blobs = [p.read_bytes()]
         meta = {}
@@ -48,7 +55,7 @@ def main():
         ok &= not any(hits.values()) and not meta.get("author") and not meta.get("dc:creator") and not meta.get("cp:lastModifiedBy")
         out[f] = dict(hits=hits, metadata=meta)
         print(f, hits, meta)
-    (ROOT / "qa" / "blind_scan.json").write_text(json.dumps(out, indent=1, ensure_ascii=False) + "\n")
+    (ROOT / "qa" / ("blind_scan_v2.json" if v2 else "blind_scan.json")).write_text(json.dumps(out, indent=1, ensure_ascii=False) + "\n")
     print("BLIND", "PASS" if ok else "FAIL")
     sys.exit(0 if ok else 1)
 

@@ -69,3 +69,19 @@ In MATLAB figures and Word tables, subscripts are real subscripts where used.
 | D̄ with a combining macron (Word/PDF risk) | "Mean D" in figures, tables and the graphical abstract; D̄_F named once in the Table 2 footnote |
 | ∈ is not in Arial | Figure 1 writes "K: 1, 2, 5, 15"; tables write "P = 5 or 30" (mechanical rewrite in `build_tables.py`) |
 | Z (theory-map factor) appears in the protocol arm text (Table 1C) | Defined in the Table 1 footnote |
+
+## v3 revision (2026-10-27): numbering and new labels
+
+| Item | v2 | v3 | Note |
+|---|---|---|---|
+| Study design | Figure 1 (A)–(E) | Figure 1 (A)–(D) | old (D) estimand / estimator text removed (Methods); old (E) workflow is now (D) |
+| Confirmatory families | Figure 2A | Figure 2 (A) P1, (B) P2 | facets now labelled as panels |
+| Prior action history | — (slice only, Figure 2B) | Figure 3 (A) W = 0, (B) W = 5, (C) W = 30 | same D orientation as v2 Figure 2B: "D (without C − with C)" |
+| Erasure evaluation | Figure 3 | Figure 4 | key: "Two-sided 95% interval" (vertical bar), "One-sided 95% upper bound" (short horizontal tick) |
+| Exploratory X1/X2 | Figure 4 | Figure 5 | block labels "P = 5", "P = 30" (post-window steps) under P1b-FM |
+| Representation diagnostics | Table 3 | Supplementary Table S5 | content unchanged |
+| Graphical abstract | "benchmark" | "evaluation" | task v3 §3 |
+
+No new symbol was introduced. "P = 5" / "P = 30" in Figure 5 are post-window steps P (registry above), not the
+representation key P (always written FM-P). Supplementary Table S5 continues the package's S1–S4 numbering; the
+analysis-B evaluation sets remain "sets S1–S3".

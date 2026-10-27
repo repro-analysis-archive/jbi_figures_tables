@@ -1,0 +1,218 @@
+{
+ "figures_v2/Figure_1/Figure_1_v2.pdf": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "title": "Figure 1",
+   "creator": "Impress",
+   "producer": "LibreOffice 26.2.2.2 (AARCH64)"
+  }
+ },
+ "figures_v2/Figure_1/Figure_1_v2.pptx": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "dc:creator": "",
+   "cp:lastModifiedBy": "",
+   "dc:title": "Figure 1"
+  }
+ },
+ "figures_v2/Figure_1/Figure_1_v2.tif": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {}
+ },
+ "figures_v2/Figure_2/Figure_2_v2.pdf": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "creator": "MATLAB, The MathWorks, Inc. Version 25.2.0.2998904 R2025b",
+   "producer": "Qt 5.15.16"
+  }
+ },
+ "figures_v2/Figure_2/Figure_2_v2.tif": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "270": "MATLAB Handle Graphics"
+  }
+ },
+ "figures_v2/Figure_3/Figure_3_v2.pdf": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "creator": "MATLAB, The MathWorks, Inc. Version 25.2.0.2998904 R2025b",
+   "producer": "Qt 5.15.16"
+  }
+ },
+ "figures_v2/Figure_3/Figure_3_v2.tif": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "270": "MATLAB Handle Graphics"
+  }
+ },
+ "figures_v2/Figure_4/Figure_4_v2.pdf": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "creator": "MATLAB, The MathWorks, Inc. Version 25.2.0.2998904 R2025b",
+   "producer": "Qt 5.15.16"
+  }
+ },
+ "figures_v2/Figure_4/Figure_4_v2.tif": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "270": "MATLAB Handle Graphics"
+  }
+ },
+ "figures_v2/Figure_5/Figure_5_v2.pdf": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "creator": "MATLAB, The MathWorks, Inc. Version 25.2.0.2998904 R2025b",
+   "producer": "Qt 5.15.16"
+  }
+ },
+ "figures_v2/Figure_5/Figure_5_v2.tif": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "270": "MATLAB Handle Graphics"
+  }
+ },
+ "graphical_abstract/Graphical_abstract_v2.pdf": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "title": "Graphical abstract",
+   "creator": "Impress",
+   "producer": "LibreOffice 26.2.2.2 (AARCH64)"
+  }
+ },
+ "graphical_abstract/Graphical_abstract_v2.pptx": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "dc:creator": "",
+   "cp:lastModifiedBy": "",
+   "dc:title": "Graphical abstract"
+  }
+ },
+ "graphical_abstract/Graphical_abstract_v2.tif": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {}
+ },
+ "tables/Table_1_v2.docx": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "dc:creator": "",
+   "cp:lastModifiedBy": "",
+   "dc:title": ""
+  }
+ },
+ "tables/Table_1_v2.csv": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {}
+ },
+ "tables/Table_2_v2.docx": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "dc:creator": "",
+   "cp:lastModifiedBy": "",
+   "dc:title": ""
+  }
+ },
+ "tables/Table_2_v2.csv": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {}
+ },
+ "tables/Table_S5_v2.docx": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "dc:creator": "",
+   "cp:lastModifiedBy": "",
+   "dc:title": ""
+  }
+ },
+ "tables/Table_S5_v2.csv": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {}
+ },
+ "CAPTIONS_v2.md": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {}
+ }
+}

@@ -50,16 +50,23 @@ def zip_member(p, name):
     return zipfile.ZipFile(p).read(name)
 
 
+STEMS_V1 = ("figures/Figure_1/Figure_1", "figures/Figure_2/Figure_2", "figures/Figure_3/Figure_3",
+            "figures/Figure_4/Figure_4", "graphical_abstract/Graphical_abstract", "tables/Table_1",
+            "tables/Table_2", "tables/Table_3")
+STEMS_V2 = ("figures_v2/Figure_1/Figure_1_v2", "figures_v2/Figure_2/Figure_2_v2", "figures_v2/Figure_3/Figure_3_v2",
+            "figures_v2/Figure_4/Figure_4_v2", "figures_v2/Figure_5/Figure_5_v2",
+            "graphical_abstract/Graphical_abstract_v2", "tables/Table_1_v2", "tables/Table_2_v2", "tables/Table_S5_v2")
+
+
 def main():
     before = Path(sys.argv[1])
+    v2 = "--v2" in sys.argv[2:]
     rows, ok = [], True
     for f in sorted((before / "canonical").iterdir()):
         same = sha(f) == sha(ROOT / "canonical" / f.name)
         rows.append((f"canonical/{f.name}", "bytes", "identical" if same else "DIFFERENT"))
         ok &= same
-    for stem in ("figures/Figure_1/Figure_1", "figures/Figure_2/Figure_2", "figures/Figure_3/Figure_3",
-                 "figures/Figure_4/Figure_4", "graphical_abstract/Graphical_abstract", "tables/Table_1",
-                 "tables/Table_2", "tables/Table_3"):
+    for stem in (STEMS_V2 if v2 else STEMS_V1):
         b, a = before / stem, ROOT / stem
         sb, nb = pdf_sig(f"{b}.pdf")
         sa, na = pdf_sig(f"{a}.pdf")
@@ -77,7 +84,7 @@ def main():
             same = zip_member(f"{b}.docx", "word/document.xml") == zip_member(f"{a}.docx", "word/document.xml")
             rows.append((f"{stem}.docx", "document XML", "identical" if same else "DIFFERENT"))
             ok &= same
-    L = ["# Clean rebuild test (template §4-0)", "",
+    L = ["# Clean rebuild test (template §4-0)" + (" — v3 revision outputs" if v2 else ""), "",
          "All generated outputs were moved out of the repository; canonical data were re-frozen from the package and "
          "every figure, the graphical abstract and the tables were rebuilt from their scripts (each MATLAB figure in "
          "its own `matlab -batch \"close all force; clear; run(...)\"` session; no existing `.fig` was opened). "
@@ -87,7 +94,7 @@ def main():
     L += ["", f"**Result: {'PASS' if ok else 'FAIL'}** ({sum(r[2] == 'identical' for r in rows)} / {len(rows)} identical). "
           "The `.fig` files are checked by `verify_plotted.m` on the rebuilt figures (qa/plotted_vs_canonical.json); "
           "PDF creation dates differ by construction and are not part of the comparison."]
-    (ROOT / "qa" / "REBUILD_TEST.md").write_text("\n".join(L) + "\n")
+    (ROOT / "qa" / ("REBUILD_TEST_v3.md" if v2 else "REBUILD_TEST.md")).write_text("\n".join(L) + "\n")
     print("\n".join(f"{r[2]:>10}  {r[0]}  ({r[1]})" for r in rows))
     print("REBUILD", "PASS" if ok else "FAIL")
     sys.exit(0 if ok else 1)
