@@ -10,6 +10,8 @@ The supplement outputs and `canonical_supplement/` were moved out of the reposit
 | `canonical_supplement/s1_contrast_D.json` | bytes | identical |
 | `canonical_supplement/s23_bias_coverage.csv` | bytes | identical |
 | `canonical_supplement/s23_bias_coverage.json` | bytes | identical |
+| `canonical_supplement/s4_mask_profiles.csv` | bytes | identical |
+| `canonical_supplement/s4_mask_profiles.json` | bytes | identical |
 | `canonical_supplement/s5_x_cells.csv` | bytes | identical |
 | `canonical_supplement/s5_x_cells.json` | bytes | identical |
 | `canonical_supplement/s6_b.csv` | bytes | identical |
@@ -88,6 +90,8 @@ The supplement outputs and `canonical_supplement/` were moved out of the reposit
 | `figures_supp_v1/Figure_S3/pages/Figure_S3_v1_p22.tif` | pixels 4959 x 7017 | identical |
 | `figures_supp_v1/Figure_S3/pages/Figure_S3_v1_p23.tif` | pixels 4959 x 7017 | identical |
 | `figures_supp_v1/Figure_S3/pages/Figure_S3_v1_p24.tif` | pixels 4959 x 7017 | identical |
+| `figures_supp_v1/Figure_S4/Figure_S4_v1.pdf` | text + vector paths (140 items) | identical |
+| `figures_supp_v1/Figure_S4/Figure_S4_v1.tif` | pixels 8967 x 7567 | identical |
 | `figures_supp_v1/Figure_S5/Figure_S5_v1.pdf` | text + vector paths (2649 items) | identical |
 | `figures_supp_v1/Figure_S5/pages/Figure_S5_v1_p01.tif` | pixels 8967 x 9167 | identical |
 | `figures_supp_v1/Figure_S5/pages/Figure_S5_v1_p02.tif` | pixels 8967 x 8700 | identical |
@@ -113,5 +117,8 @@ The supplement outputs and `canonical_supplement/` were moved out of the reposit
 | `tables/Table_S6_v1.docx` | document XML | identical |
 | `tables/Table_S6_v1.csv` | bytes | identical |
 | `tables/Table_S6_v1.pdf` | text + vector paths | identical |
+| `supplementary/Supplementary_Material_v1.docx` | document XML | identical |
+| `supplementary/Supplementary_Material_v1.docx` | embedded images (64) | identical |
+| `supplementary/Supplementary_Material_v1.pdf` | text + vector paths (LibreOffice rendering) | identical |
 
-**Result: PASS** (109 / 109 identical).
+**Result: PASS** (116 / 116 identical).

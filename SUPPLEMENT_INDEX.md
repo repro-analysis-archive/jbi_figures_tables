@@ -29,3 +29,23 @@ v3 revision: the slice-only role-switch view of v2 Figure 2B is superseded by ma
 v5 revision: the pre-result main-text Figure 1 (relative bias and coverage against K at the slice, `fig1_bias_coverage_vs_K.pdf`) is reinstated as main Figure 5 (house style, same content); Supplementary Figures S2 and S3 hold relative bias and coverage for every other cell. Main figures in the current numbering: 1 design, 2 erasure, 3 families, 4 prior action history, 5 bias / coverage, 6 exploratory X1/X2.
 
 Not reproduced in the JBI main text and therefore candidates for the supplement: the pre-result main-text Figures 2–4 of the results report (role switch, K × P heatmaps, checks), the FM / REF pairs of the role-switch view at the slice, PCA / LEACE variance retained (results report §3), the slice group and the NV comparator of X (Supplementary Figure X / Table X).
+
+## v6: final supplementary numbering (house style; `CAPTIONS_supplement_v1.md`)
+
+| item | content | file(s) | former name | SHA-256 (PDF / docx) |
+|---|---|---|---|---|
+| Figure S1 | All-cell heatmaps of D, one pair of pages per with/without-C pair (10 pages) | `figures_supp_v1/Figure_S1/Figure_S1_v1.pdf` | figS1 | `1bb45fa24a2982deb6616a3b421956e557b1f7487a7eeab97ccdfb08d410a37b` |
+| Figure S2 | All-cell heatmaps of relative bias, one pair of pages per arm (24 pages) | `figures_supp_v1/Figure_S2/Figure_S2_v1.pdf` | figS2 | `f9834b1241dce0be77ebedb91b5cbd00f638ade292ec2bf6b8cc30a9e7916cfd` |
+| Figure S3 | All-cell heatmaps of 95% interval coverage, one pair of pages per arm (24 pages) | `figures_supp_v1/Figure_S3/Figure_S3_v1.pdf` | figS3 | `a883b1a07da8d0f4d95a7ca449cef76740d762ac1e7357db852340be0ae27bb7` |
+| Figure S4 | Mask check: per-centre radial profiles | `figures_supp_v1/Figure_S4/Figure_S4_v1.pdf` | figS4 | `f452e619d472b280adb746adf9d3eedcf90e32cbf40fb34ccb77c18ef4fceef7` |
+| Figure S5 | Exploratory X1/X2 per-cell Δ not in main Figure 6 (4 pages) | `figures_supp_v1/Figure_S5/Figure_S5_v1.pdf` | figX | `fd820b0e6fabeae59f740cdb2bc3d8e7be541f93ba1e6bd8e08f72598c0ee86a` |
+| Figure S6 | Exploratory B balanced accuracy by evaluation set | `figures_supp_v1/Figure_S6/Figure_S6_v1.pdf` | figB | `dd8181fbebb7793fc6cec6ada3580313f2db077666b04fc6c3ec9bcedf7542b9` |
+| Table S1 | Mask check values | `tables/Table_S1_v1.docx` | tableS4 | `3deb13f5acd7bb57fa6c53df62fddbefe5d03e0791bd3abce755374da5c2f0b7` |
+| Table S2 | Representation diagnostics | `tables/Table_S2_v1.docx` | Table_S5_v2 | `1fa1041605b3cf06f4a1582d1f8e874a29a1183081325586ec42ecaa51584992` |
+| Table S3 | Exploratory X1/X2 group summaries | `tables/Table_S3_v1.docx` | tableX_group_summaries | `9ac8dbefc1b70577d180fdd3b967798d0b0742825853d2ce686af2af5784a7d6` |
+| Table S4 | Exploratory X1 E3/E2 next to step 5 | `tables/Table_S4_v1.docx` | tableX_E3 | `233c02e0d22569ddaed19fffd54f25a7e108ee15c20c21cd8f413e154f237d6d` |
+| Table S5 | Exploratory B balanced accuracy and judgements | `tables/Table_S5_v1.docx` | tableB_ba + tableB_judgements | `ba3723ea73ad5be9b7cb0c8350e6c80abb3fdc5d9563d822a0eb8d7400faa800` |
+| Table S6 | Exploratory B equal-size subsampling | `tables/Table_S6_v1.docx` | tableB_sens | `fc2a1493bfcfbd577ee6397a77e5fead443e623120d58296638d93009fc22e32` |
+| Document | Supplementary Material (Methods SM 1–7, Tables S1–S6, Figures S1–S6) | `supplementary/Supplementary_Material_v1.docx` | — | `6967ce1446c505aa7238ff3247b811100dd04cacd555ddc4a0470c788f65948d` |
+
+The package items above keep their package labels; the main text refers to the v6 numbers ("Supplementary Table S5" in the v3–v5 main records = Table S2).

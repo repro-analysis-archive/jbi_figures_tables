@@ -126,3 +126,70 @@ Same canonical sources as the v3 revision; the only canonical change is the reco
 
 Byte identity of the renumbered files with their sources: `qa/renumber_v5.json`.
 
+## v6 supplement (2026-10-27): sources of the supplementary figures and tables
+
+Written by `scripts/freeze_supplement.py` into `canonical_supplement/` (the main `canonical/` is read with its hash guard for the cross-checks and not written).
+
+| element | files | canonical file → field | package source → field |
+|---|---|---|---|
+| Figure S1 | `figures_supp_v1/Figure_S1/Figure_S1_v1.pdf`, `pages/` | `s1_contrast_D.json` → D, D_disp (pair, cell) | `cell_metrics.csv` (set primary) → abs_bias, mean_truth; formula `contrast`; all D_j of `families.json` reproduced |
+| Figures S2, S3 | `figures_supp_v1/Figure_S2/…`, `Figure_S3/…` | `s23_bias_coverage.json` → rel_bias_pct, rel_bias_disp; coverage, coverage_disp (arm, cell) | `cell_metrics.csv` (set primary) → rel_bias, coverage (= `report_cells.csv` within 1e-12) |
+| Figure S4 | `figures_supp_v1/Figure_S4/Figure_S4_v1.*` | `s4_mask_profiles.json` → rho, m (centre, point); visible_radius; r | `inputs/mask_check.json` (provided by the investigator; SHA-256 = SOURCES.md record of 8d4c61a) → profiles.<c>.rho, m; visible_radius; r; cross-checked with `tableS4_mask_check.csv` |
+| Supplementary Material | `supplementary/Supplementary_Material_v1.docx` | Tables S1–S6 docx, Figures S1–S6 images, `CAPTIONS_supplement_v1.md` | Methods: `inputs/JBI_Supplementary_Methods_draft_v2.md` (provided by the investigator) |
+| Figure S5 | `figures_supp_v1/Figure_S5/…` | `s5_x_cells.json` → delta, delta_lo, delta_hi, order (page, analysis, comparison, arm, group) | `x_comparisons_cells.csv` |
+| Figure S6 | `figures_supp_v1/Figure_S6/Figure_S6_v1.*` | `s6_b.json` → ba, lo_2p5, hi_97p5, upper_one_sided_95 | `b_main.csv` (= main `fig3_ba.json` B rows) |
+| Table S1 | `tables/Table_S1_v1.*` | `t_tableS4_mask_check.json` | `tableS4_mask_check.csv` |
+| Table S2 | `tables/Table_S2_v1.*` | main `table3.json` (as Table_S5_v2) | `checks.json`, `x1_e3.json` |
+| Table S3 | `tables/Table_S3_v1.*` | `t_tableX_group_summaries.json` | `tableX_group_summaries.csv` (= `x_comparisons_groups.csv`) |
+| Table S4 | `tables/Table_S4_v1.*` | `t_tableX_E3.json` | `tableX_E3.csv` |
+| Table S5 | `tables/Table_S5_v1.*` | `t_tableB_ba.json`, `t_tableB_judgements.json` | `tableB_ba.csv`, `tableB_judgements.csv` (= `b_judgements.csv`) |
+| Table S6 | `tables/Table_S6_v1.*` | `t_tableB_sens.json` | `tableB_sens.csv` (= `b_sensitivity_summary.csv`) |
+
+| canonical_supplement file | SHA-256 |
+|---|---|
+| `canonical_supplement/inputs_sha256.json` | `92a88e6b3f0a41631758f4e95f4678677c0ae766b7be19cad220bd3af1850c91` |
+| `canonical_supplement/s1_contrast_D.csv` | `2577d696f661a5b3f4914cbff54a9eca78c7eac4c432b657a477bd3aa3726e92` |
+| `canonical_supplement/s1_contrast_D.json` | `7d7aeca078be39247ec63e272a88a9b95e19f2cacb0ccaf46ae031b13363f3b1` |
+| `canonical_supplement/s23_bias_coverage.csv` | `84a0c69601f381c7e544062a46ddf291f3a84f6931a568dc38d89fae1b2fb816` |
+| `canonical_supplement/s23_bias_coverage.json` | `b12ac28c3a8084b687f8626172892572f5cc652a7eb9ff8ea80971a4b513929c` |
+| `canonical_supplement/s4_mask_profiles.csv` | `323122a9f7e18629224fb86760e4c571c7ee8df2981c219cf7de0f4783ec8508` |
+| `canonical_supplement/s4_mask_profiles.json` | `be9aac230d730535a350250f6d585e76f73572c3c60c545554742d9a31baa1bc` |
+| `canonical_supplement/s5_x_cells.csv` | `a3fe1a26f6f147719fcdf64e901b2782e62a7b2794b97e05830c46be6503e60a` |
+| `canonical_supplement/s5_x_cells.json` | `bb1ff05dde98c37ab09e878d74e0c007ac025303074cd6da7bd12920aaf272b1` |
+| `canonical_supplement/s6_b.csv` | `d89ccf6c7ecf1c415987cf14c0a80f24d5c76686d28e8c7fb91387de2e2566e2` |
+| `canonical_supplement/s6_b.json` | `922daefff84d1a4fa170ced0eb2f68a43c98d5566657fe996c5ba034e3823c05` |
+| `canonical_supplement/t_tableB_ba.csv` | `256297f0391c091e72b08dbccad98adb8e65c7b97a1edb3633ac356b893992bb` |
+| `canonical_supplement/t_tableB_ba.json` | `9e086051c2256b49177046ee507ea9c4d072aab864542660238c7701029442f3` |
+| `canonical_supplement/t_tableB_judgements.csv` | `8e4f9cbc1b333f3ab91c598b1f2dd0a42cc39cd5c3d5928790a187aeb0714f7c` |
+| `canonical_supplement/t_tableB_judgements.json` | `a37229b9038fe6cc8e61e97f8d4c6598dd874fa88a4f8ea0983028f2180238d3` |
+| `canonical_supplement/t_tableB_sens.csv` | `bf75f04a3dccec644e7170c7d5f273d72f7113cb309a65e0b55612797cd29301` |
+| `canonical_supplement/t_tableB_sens.json` | `0da11606aafe96ea9b47f42419fcf704a9947ff958e84a07ec8e2ef1b84d1acf` |
+| `canonical_supplement/t_tableS4_mask_check.csv` | `6912df3831bbf2c5033952040c76c0e23eafd085bcc9aafe80d510db4f957f14` |
+| `canonical_supplement/t_tableS4_mask_check.json` | `ebdae71dadb9cbcb9e2fd033d952f3d42b278a09b16137ce285073a2938dffef` |
+| `canonical_supplement/t_tableX_E3.csv` | `8c73f70ac232cb4cdb2b454b3f340b5557fc27ef4b3e6f523167e76f68c9f75b` |
+| `canonical_supplement/t_tableX_E3.json` | `374bf6c9c5bb24535c0251735b827f2482ee3e2c06a95c9fc1cb7ef87f1bac4f` |
+| `canonical_supplement/t_tableX_group_summaries.csv` | `1f388f66f5111d5d5478d767e77ad225df74b9aea88c21fc9c444079870b52dd` |
+| `canonical_supplement/t_tableX_group_summaries.json` | `b928f43d02aa4c70ee5d7d47703e4f2944749eb08e682dc0a253a5972c6e3fde` |
+| `canonical_supplement/validation.json` | `9cda9567fdecfd0475b5e267afee4d3d17120e456e7876b74bb082ef9134e3e6` |
+
+| package input | path | SHA-256 | recorded by the generating step |
+|---|---|---|---|
+| cell_metrics | `02_records/step7_record_2880d73/results/step7/cell_metrics.csv` | `588f991bd81a4f71a0b49e12d98521a4df11a286f49722757ba65b254efca0e8` | match |
+| families | `02_records/step7_record_2880d73/results/step7/families.json` | `06ab647e679df65f5b617bceae7e42fff92ef8236fe29d5420f4ffa5ac8f71d5` | match |
+| report_cells | `03_results/RESULTS_20261019/report_cells.csv` | `1fcdd42b57783424c28a986611b2f2df5abfb9a73a7f32a627a3d9b230a06f9c` | none recorded |
+| x_cells | `04_exploratory/X1_X2/results_X/x_comparisons_cells.csv` | `3e6adde59f73aa00fc1fae57aa0851a365479293c203987b24e2fc5361c54637` | match |
+| x_groups | `04_exploratory/X1_X2/results_X/x_comparisons_groups.csv` | `98da2fc2b19176aa0c49c39f5260ef120511748c496fa7a968a3609e38d21fa6` | match |
+| b_main | `04_exploratory/B/results_B/b_main.csv` | `0087268599b408e1f8988b52b4890c81c724815e9af27211949bdbe9dfa5ad81` | match |
+| b_judgements | `04_exploratory/B/results_B/b_judgements.csv` | `09f1c088df6e4eacb324916b1e08a9a8ac4a23303d4d668d35337781e0f8a5ad` | match |
+| b_sens | `04_exploratory/B/results_B/b_sensitivity_summary.csv` | `84b4cf4952669ff52981d4e99d94c7fbe67f9139d4d7e36e784298befbdb0148` | match |
+| tableS4_mask_check | `03_results/SUPPLEMENT_20261020/tableS4_mask_check.csv` | `8d6498c970c13f8f29e3f88cb44bd7674814213d139875996710236102056605` | none recorded |
+| tableX_group_summaries | `03_results/SUPPLEMENT_20261020/tableX_group_summaries.csv` | `98da2fc2b19176aa0c49c39f5260ef120511748c496fa7a968a3609e38d21fa6` | none recorded |
+| tableX_E3 | `03_results/SUPPLEMENT_20261020/tableX_E3.csv` | `5b58e7c1f30d7f911d7a63e4d741c5c4cfd9d74a488d0d223eebd8ce186f6746` | none recorded |
+| tableB_ba | `03_results/SUPPLEMENT_20261020/tableB_ba.csv` | `0087268599b408e1f8988b52b4890c81c724815e9af27211949bdbe9dfa5ad81` | none recorded |
+| tableB_judgements | `03_results/SUPPLEMENT_20261020/tableB_judgements.csv` | `09f1c088df6e4eacb324916b1e08a9a8ac4a23303d4d668d35337781e0f8a5ad` | none recorded |
+| tableB_sens | `03_results/SUPPLEMENT_20261020/tableB_sens.csv` | `84b4cf4952669ff52981d4e99d94c7fbe67f9139d4d7e36e784298befbdb0148` | none recorded |
+| supplement_captions | `03_results/SUPPLEMENT_20261020/CAPTIONS.md` | `953920d38d902509630adfba1e31789f1c9df79c3b47e444e1a0425c68b57b51` | none recorded |
+| supplement_sources | `03_results/SUPPLEMENT_20261020/SOURCES.md` | `834823569d6bfc7a178a21bb5e2c1481d2a810cd4db441449de0835be774aab5` | none recorded |
+| presentation_decisions | `03_results/PRESENTATION_DECISIONS.md` | `6b02e8b480a90f923ac4a60feae1e101fc12af281289867995e4bb2d3f2b6637` | none recorded |
+| mask_check | `inputs/mask_check.json` | `81c8eb46fa7abba4cb5024e073e30cc838c011d2d62488abbde72d73434d58d5` | match (SUPPLEMENT_20261020/SOURCES.md, 8d4c61a) |
+
