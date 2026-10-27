@@ -832,5 +832,18 @@
    "user/path/affiliation": 0
   },
   "metadata": {}
+ },
+ "supplementary/Supplementary_Material_v1.docx": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "dc:creator": "",
+   "cp:lastModifiedBy": "",
+   "dc:title": "Supplementary Material",
+   "declared_ai_use_statement_excluded": 1
+  }
  }
 }

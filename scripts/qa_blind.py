@@ -50,7 +50,7 @@ def files_supp():
         out += [str(f.relative_to(ROOT)) for f in sorted(d.rglob("*")) if f.suffix in (".pdf", ".tif") and
                 not f.name.startswith("._")]
     out += [f"tables/Table_S{n}_v1.{e}" for n in range(1, 7) for e in ("docx", "csv")]
-    return out + ["CAPTIONS_supplement_v1.md"]
+    return out + ["CAPTIONS_supplement_v1.md", "supplementary/Supplementary_Material_v1.docx"]
 
 
 def main():
@@ -81,6 +81,11 @@ def main():
                     raw[off:off + n] = bytes(n)
                 blobs = [bytes(raw)]
                 meta["scanned"] = "all bytes except pixel strips"
+        if supp and f.endswith("Supplementary_Material_v1.docx"):
+            # the investigator's AI-use declaration in SM 1 ("Review.") is content, not a tool trace: excluded, counted
+            decl = "independently evaluated with ChatGPT (OpenAI), as declared in the main text".encode()
+            meta["declared_ai_use_statement_excluded"] = sum(b.count(decl) for b in blobs)
+            blobs = [b.replace(decl, b"") for b in blobs]
         hits = {k: sum(len(r.findall(b)) for b in blobs) for k, r in PAT.items()}
         ok &= not any(hits.values()) and not meta.get("author") and not meta.get("dc:creator") and not meta.get("cp:lastModifiedBy")
         out[f] = dict(hits=hits, metadata=meta)

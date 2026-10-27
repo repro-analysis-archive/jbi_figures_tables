@@ -45,6 +45,16 @@ def main():
             cb.zip_member(ROOT / f"{stem}.docx", "word/document.xml"))
         add(f"{stem}.csv", "bytes", cb.sha(before / f"{stem}.csv") == cb.sha(ROOT / f"{stem}.csv"))
         add(f"{stem}.pdf", "text + vector paths", cb.pdf_sig(before / f"{stem}.pdf")[0] == cb.pdf_sig(ROOT / f"{stem}.pdf")[0])
+    d = "supplementary/Supplementary_Material_v1"
+    add(f"{d}.docx", "document XML", cb.zip_member(before / f"{d}.docx", "word/document.xml") ==
+        cb.zip_member(ROOT / f"{d}.docx", "word/document.xml"))
+    import zipfile
+    zb, za = zipfile.ZipFile(before / f"{d}.docx"), zipfile.ZipFile(ROOT / f"{d}.docx")
+    media = sorted(n for n in zb.namelist() if n.startswith("word/media/"))
+    add(f"{d}.docx", f"embedded images ({len(media)})", media == sorted(n for n in za.namelist() if n.startswith(
+        "word/media/")) and all(zb.read(n) == za.read(n) for n in media))
+    add(f"{d}.pdf", "text + vector paths (LibreOffice rendering)", cb.pdf_sig(before / f"{d}.pdf")[0] ==
+        cb.pdf_sig(ROOT / f"{d}.pdf")[0])
     L = ["# Clean rebuild test (template §4-0) — supplement v6", "",
          "The supplement outputs and `canonical_supplement/` were moved out of the repository; the canonical data were "
          "re-frozen from the package (`freeze_supplement.py`) and every supplementary figure was rebuilt from its `.m` in its "

@@ -125,7 +125,8 @@ def source_map():
               "| element | files | canonical file → field | package source → field |", "|---|---|---|---|",
               "| Figure S1 | `figures_supp_v1/Figure_S1/Figure_S1_v1.pdf`, `pages/` | `s1_contrast_D.json` → D, D_disp (pair, cell) | `cell_metrics.csv` (set primary) → abs_bias, mean_truth; formula `contrast`; all D_j of `families.json` reproduced |",
               "| Figures S2, S3 | `figures_supp_v1/Figure_S2/…`, `Figure_S3/…` | `s23_bias_coverage.json` → rel_bias_pct, rel_bias_disp; coverage, coverage_disp (arm, cell) | `cell_metrics.csv` (set primary) → rel_bias, coverage (= `report_cells.csv` within 1e-12) |",
-              "| Figure S4 | — | — | SOURCE MISSING (`mask_check.json` not in the package) |",
+              "| Figure S4 | `figures_supp_v1/Figure_S4/Figure_S4_v1.*` | `s4_mask_profiles.json` → rho, m (centre, point); visible_radius; r | `inputs/mask_check.json` (provided by the investigator; SHA-256 = SOURCES.md record of 8d4c61a) → profiles.<c>.rho, m; visible_radius; r; cross-checked with `tableS4_mask_check.csv` |",
+              "| Supplementary Material | `supplementary/Supplementary_Material_v1.docx` | Tables S1–S6 docx, Figures S1–S6 images, `CAPTIONS_supplement_v1.md` | Methods: `inputs/JBI_Supplementary_Methods_draft_v2.md` (provided by the investigator) |",
               "| Figure S5 | `figures_supp_v1/Figure_S5/…` | `s5_x_cells.json` → delta, delta_lo, delta_hi, order (page, analysis, comparison, arm, group) | `x_comparisons_cells.csv` |",
               "| Figure S6 | `figures_supp_v1/Figure_S6/Figure_S6_v1.*` | `s6_b.json` → ba, lo_2p5, hi_97p5, upper_one_sided_95 | `b_main.csv` (= main `fig3_ba.json` B rows) |",
               "| Table S1 | `tables/Table_S1_v1.*` | `t_tableS4_mask_check.json` | `tableS4_mask_check.csv` |",
@@ -193,7 +194,7 @@ def supplement_index():
         items = [("Figure S1", "All-cell heatmaps of D, one pair of pages per with/without-C pair (10 pages)", "figures_supp_v1/Figure_S1/Figure_S1_v1.pdf", "figS1"),
                  ("Figure S2", "All-cell heatmaps of relative bias, one pair of pages per arm (24 pages)", "figures_supp_v1/Figure_S2/Figure_S2_v1.pdf", "figS2"),
                  ("Figure S3", "All-cell heatmaps of 95% interval coverage, one pair of pages per arm (24 pages)", "figures_supp_v1/Figure_S3/Figure_S3_v1.pdf", "figS3"),
-                 ("Figure S4", "Mask check: per-centre radial profiles — NOT PRODUCED (SOURCE MISSING: mask_check.json)", None, "figS4"),
+                 ("Figure S4", "Mask check: per-centre radial profiles", "figures_supp_v1/Figure_S4/Figure_S4_v1.pdf", "figS4"),
                  ("Figure S5", "Exploratory X1/X2 per-cell Δ not in main Figure 6 (4 pages)", "figures_supp_v1/Figure_S5/Figure_S5_v1.pdf", "figX"),
                  ("Figure S6", "Exploratory B balanced accuracy by evaluation set", "figures_supp_v1/Figure_S6/Figure_S6_v1.pdf", "figB"),
                  ("Table S1", "Mask check values", "tables/Table_S1_v1.docx", "tableS4"),
@@ -201,7 +202,9 @@ def supplement_index():
                  ("Table S3", "Exploratory X1/X2 group summaries", "tables/Table_S3_v1.docx", "tableX_group_summaries"),
                  ("Table S4", "Exploratory X1 E3/E2 next to step 5", "tables/Table_S4_v1.docx", "tableX_E3"),
                  ("Table S5", "Exploratory B balanced accuracy and judgements", "tables/Table_S5_v1.docx", "tableB_ba + tableB_judgements"),
-                 ("Table S6", "Exploratory B equal-size subsampling", "tables/Table_S6_v1.docx", "tableB_sens")]
+                 ("Table S6", "Exploratory B equal-size subsampling", "tables/Table_S6_v1.docx", "tableB_sens"),
+                 ("Document", "Supplementary Material (Methods SM 1–7, Tables S1–S6, Figures S1–S6)",
+                  "supplementary/Supplementary_Material_v1.docx", "—")]
         for lab, what, f, old_ in items:
             L.append(f"| {lab} | {what} | " + (f"`{f}`" if f else "—") + f" | {old_} | " + (f"`{sha(ROOT / f)}`" if f else "—") + " |")
         L += ["", "The package items above keep their package labels; the main text refers to the v6 numbers "
@@ -559,6 +562,7 @@ def measurement_report_supp():
     pv = j("qa/plotted_vs_canonical_supp_v6.json")
     tq = j("qa/tables_qa_supp_v1.json")
     cap = j("qa/captions_supp_v1.json")
+    sd = j("qa/supplementary_docx_v1.json")
     blind = j("qa/blind_scan_supp_v6.json")
     val = j("canonical_supplement/validation.json")
     reb = (ROOT / "qa" / "REBUILD_TEST_supp_v6.md").read_text()
@@ -570,7 +574,7 @@ def measurement_report_supp():
         L.append(f"| {k} | {v['pages']} | {', '.join(f'{a} × {b}' for a, b in v['page_sizes_mm'])} | {v['text_sizes_pt']} | "
                  f"{v['min_text_pt']} | {fonts} (emb=yes) | {v['raster_objects']} | {v['overlaps']} | {v['edge_issues']} | "
                  f"{v['tif_dpi']} | {v['tif_identical_pages']}/{v['pages']} |")
-    L += ["", "Figure S4: not produced (SOURCE MISSING: `mask_check.json`). Heatmap pages (S1–S3): cell values 11 pt, ticks 12, "
+    L += ["", "Heatmap pages (S1–S3): cell values 11 pt, ticks 12, "
           "labels 13, titles 14 pt bold (template conflict recorded; the accepted 9-pt floor was not needed). S5, S6: 14 / 15 / "
           "16 pt. The subscript A of φ_A touches its base glyph by design and is excluded from the overlap count.", "",
           "## Plotted vs canonical (`qa/plotted_vs_canonical_supp_v6.json`)", ""]
@@ -587,7 +591,8 @@ def measurement_report_supp():
               f"{k} {v['cells']} cells, mean {v['mean_3dp']} = D̄ {v['D_bar_3dp']} (max |cell diff| {v['max_abs_diff_cells']})"
               for k, v in cc["families_reproduced"].items()),
           f"* report_cells.csv vs cell_metrics.csv: {cc['report_cells_agree_with_cell_metrics']}",
-          f"* cells rounding to ±0: D {val['s1_round_to_zero_3dp']}, relative bias {val['s2_round_to_zero_1dp']}", "",
+          f"* cells rounding to ±0: D {val['s1_round_to_zero_3dp']}, relative bias {val['s2_round_to_zero_1dp']}",
+          f"* Figure S4: {val['s4_values']} points; {val['figure_S4']}; {cc['S4_equals_tableS4_mask_check']} equal to the package table", "",
           "## Tables (`qa/tables_qa_supp_v1.json`)", "",
           "| table | pages | rules per page | vertical rules | run sizes (pt) | paragraph styles | cells compared with the package CSV | checks |",
           "|---|---|---|---|---|---|---|---|"]
@@ -597,6 +602,14 @@ def measurement_report_supp():
                  f"{d['paragraph_styles']} | {v['cells_compared'] if v['cells_compared'] is not None else 'XML/CSV = Table_S5_v2'} | "
                  f"{'PASS' if all(v['checks'].values()) else 'FAIL'} ({len(v['checks'])}) |")
     L += ["", f"## Captions (`qa/captions_supp_v1.json`): {cap['result']} — headings {cap['headings']}", "",
+          "## Supplementary Material document (`qa/supplementary_docx_v1.json`)", "",
+          f"* result {sd['result']}; LibreOffice PDF {sd['pdf']['pages']} pages, fonts {sd['pdf']['fonts']}, images "
+          f"{sd['pdf']['images']}; paragraph styles {sd['word']['paragraph_styles']}; automatic numbering "
+          f"{sd['word']['numbered_paragraphs']}; sections {sd['word']['sections']}",
+          f"* order: {' → '.join(sd['order'])}; every caption once: {sd['captions_once']}",
+          f"* images per figure {sd['images_per_figure']}; widths (mm) {sd['image_widths_mm']}",
+          f"* methods text equal to the converted draft: {sd['methods_text_equal']} ({sd['methods_chars']} characters); "
+          f"placeholders kept {sd['placeholders']}; characters missing in Arial left: {sd['arial_missing_chars_in_docx']}", "",
           f"## Blind scan (`qa/blind_scan_supp_v6.json`): {len(blind)} files, hits "
           f"{sum(any(v['hits'].values()) for v in blind.values())}", "",
           "## Clean rebuild (`qa/REBUILD_TEST_supp_v6.md`)", "", "Result: " + ("PASS" if "Result: PASS" in reb else "FAIL"), ""]
@@ -660,11 +673,12 @@ def readme():
          "`scripts/rebuild_check_v5.sh <scratch_dir>`; report `qa/MEASUREMENT_REPORT_v4.md`; decisions "
          "`POST_RESULT_PRESENTATION_JBI.md` §8.", "",
          "## v6 supplement (2026-10-27)", "",
-         "Task `CC_TASK_JBI_supplement_v6.md`. Supplementary Figures S1–S3, S5, S6 in `figures_supp_v1/` (multi-page "
+         "Task `CC_TASK_JBI_supplement_v6.md`. Supplementary Figures S1–S6 in `figures_supp_v1/` (multi-page "
          "vector PDF; per-page .fig and TIF in `pages/`), Tables S1–S6 in `tables/Table_S*_v1.*`, captions "
-         "`CAPTIONS_supplement_v1.md`; values in `canonical_supplement/` (`scripts/freeze_supplement.py`). Not produced: "
-         "Figure S4 (SOURCE MISSING: `mask_check.json`) and `Supplementary_Material_v1.docx` (the Supplementary Methods "
-         "draft is not in the work folder). Rebuild and checks: `scripts/rebuild_check_supp_v6.sh <scratch_dir>`; report "
+         "`CAPTIONS_supplement_v1.md`, the Word document `supplementary/Supplementary_Material_v1.docx`; values in "
+         "`canonical_supplement/` (`scripts/freeze_supplement.py`); investigator-provided inputs in `inputs/` "
+         "(`mask_check.json`, `JBI_Supplementary_Methods_draft_v2.md`). Rebuild and checks: "
+         "`scripts/rebuild_check_supp_v6.sh <scratch_dir>`; report "
          "`qa/MEASUREMENT_REPORT_supp_v1.md`; decisions `POST_RESULT_PRESENTATION_JBI.md` §9.", "",
          "## SHA-256 of the deliverables", "", "| file | bytes | SHA-256 |", "|---|---|---|"]
     for f in deliver:

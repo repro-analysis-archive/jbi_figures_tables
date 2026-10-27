@@ -118,7 +118,7 @@ steps P, not the representation key P (always written FM-P).
 | Figure S1 | figS1 | page titles "<pair> — φ_A = 0 (216 cells)" / "φ_A = 0.5 (24 cells)"; "W = 0/5/30"; "α = …", "γ = …"; "K (window steps)", "P (post-window steps)"; key "D (without C − with C)" |
 | Figure S2 | figS2 | page titles "<arm> — φ_A = …"; key "\|relative bias\| (%)" |
 | Figure S3 | figS3 | page titles "<arm> — φ_A = …"; key "coverage of the 95% interval" |
-| Figure S4 | figS4 | not produced (SOURCE MISSING) |
+| Figure S4 | figS4 | (A)–(D) "Centre 2" … "Centre 5"; "Mean gray level"; "Radius ρ (fraction of the square side)"; key "Radial profile m_c(ρ)", "Visible radius ρ_c", "Mask radius r = 0.45" |
 | Figure S5 | figX | (A)–(F); "k = FM-P/FM-S/REF"; "Δ (X − step 6)"; blocks "P = 0/5/30", groups "P1b-FM", "P2-FM", "slice" |
 | Figure S6 | figB | (A) transport, (B) within-set refit; rows FM-P, FM-S, REF; sets S1–S3 |
 | Table S1 | tableS4 | ρ_c, r (× side) |

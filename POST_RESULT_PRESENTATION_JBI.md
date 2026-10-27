@@ -180,11 +180,11 @@ where recorded, by the generating step's hash; the main `canonical/` is read wit
 |---|---|
 | Figure S1 (D, 5 pairs × 240 cells, 10 pages) | built; 1,200 values; each family's cells reproduce `families.json` D_j exactly and its mean equals D̄ (P1a 1.925, P1b-SITE 2.198, P1b-FM 0.594, P2-SITE 0.052, P2-FM 0.005, P2-ORACLE 0.042); the 72 cells of main Figure 4 and the 24 slice cells of `fig2B_slice_D` are identical |
 | Figures S2, S3 (12 arms × 240 cells, 24 pages each) | built; 2,880 values each; the 144 slice rows of main Figure 5 identical; `report_cells.csv` agrees with `cell_metrics.csv` within 8.2 × 10⁻¹³ relative (re-serialisation; display strings identical; coverage identical) — values from `cell_metrics.csv` |
-| Figure S4 | **SOURCE MISSING**: the per-centre radial profiles (`mask_check.json`, step-4 record `8d4c61a`, 4 × 180 points) are not in the package (only `tableS4_mask_check.csv` and the rendered `figS4_mask_profiles.pdf`); values are not read from a rendered PDF. Not produced; caption kept with the note |
+| Figure S4 | built after the investigator provided `mask_check.json` (2026-10-27; copied to `inputs/`; SHA-256 81c8eb46…58d5 = the blob hash recorded in the package `SUPPLEMENT_20261020/SOURCES.md` for the step-4 record `8d4c61a`); 720 points (4 centres × 180); n_frames, ρ_c, min ρ_c and r equal `tableS4_mask_check.csv`; for centres 3–5 ρ_c is the last profile point (asserted). Before the file was provided the figure was SOURCE MISSING (not in the package; values were not read from the rendered `figS4_mask_profiles.pdf`) |
 | Figure S5 (4 pages) | built; 756 values: the slice group of X1 k−C vs step-6 k−C, X1 k−C vs step-6 k and X2 k−C vs step-6 k−C (their other groups are in main Figure 6), and every group of X1 vs step-6 NV, X2 vs step-6 NV and X2 vs step-6 k; no cell of main Figure 6 repeated (asserted) |
 | Figure S6 | built; the 36 rows of `b_main.csv`, identical to main Figure 2 (B), (C) (asserted), arranged by evaluation set as the package figure |
 | Tables S1–S6 | built; S2 = Table_S5_v2 rebuilt with the number S2 (document XML identical apart from "Table S2."; CSV identical) |
-| `Supplementary_Material_v1.docx` | **not produced**: `JBI_Supplementary_Methods_draft_v2.md` is not in the work folder (nor in ~/Downloads); Figure S4 is also missing |
+| `Supplementary_Material_v1.docx` | built in `supplementary/` from the draft provided by the investigator (`inputs/JBI_Supplementary_Methods_draft_v2.md`, SHA-256 7d0e1f7b…1843), Tables S1–S6 and Figures S1–S6; 98 pages in the LibreOffice rendering; QA `qa/supplementary_docx_v1.json` |
 
 Choices made after the results:
 
@@ -200,6 +200,22 @@ Choices made after the results:
 | Figures S5, S6 at the template sizes (14 / 15 / 16 pt), 190 mm wide; S6 markers as main Figure 2 (v4 sizes) | task v6 §3 |
 | TIF: S1–S3 one 600-dpi TIF per page; S5 one 1,200-dpi TIF per page; S6 1,200 dpi; all rasterised from the vector PDF by poppler and identical to a fresh rendering of the same page | multi-page figures; 58 A4 pages at 1,200 dpi would be several GB; 600 dpi is the Word-paste resolution of the template |
 | The subscript A of φ_A in the heatmap page titles touches its base glyph; the text-overlap check excludes that pair only | TeX subscript by design |
+
+Figure S4 (house style instead of the package's orange): one panel per centre (A)–(D) with free vertical scales; navy
+profile line; ρ_c solid #4D4D4D; r = 0.45 dashed #4D4D4D; frame counts in Table S1, not in the figure; key from the drawn
+lines in two rows (the three labels do not fit one row at 14 pt). 189.79 × 160.16 mm.
+
+Supplementary Material document (`scripts/build_supplementary_material_v1.py`):
+
+| Choice | Reason |
+|---|---|
+| Order: Supplementary Methods (SM 1–7), Tables S1–S6, Figures S1–S6 | task v6 §5 |
+| Normal style only, bold headings of the same size, no Heading / list styles or automatic numbering; bullets as "•" (level 1), "–" (2), "·" (3) with hanging indents, numbered items as literal numbers; Arial 11 pt; prose line spacing 1.5; 2.5-cm margins; continuous page numbers | manuscript template Word rules (the draft's bullet lists may be kept, task v6 §5) |
+| Tables: the body of each `Table_Sn_v1.docx` copied element by element into its own section (source orientation and margins; single spacing of the table template) | captions and footnotes exactly as the table files |
+| Figure sections with 10-mm margins; Figures S4–S6 pasted at 100% (189.82 mm) as 600-dpi TIF rasterised from the vector PDF; each A4 page of Figures S1–S3 pasted at the page width (190 mm) from its 600-dpi page TIF, embedded as lossless PNG (pixels identical, asserted; 'L' for the gray S2/S3 pages); each figure's caption first | task v6 §5; PNG keeps the document at 22.8 MB instead of about 170 MB with TIF |
+| Draft conversion: the HTML comment (editorial note for the auditor) not rendered; " — draft v2" dropped from the title; Markdown markup rendered; "∈" → "in", ⌈x⌉ → ceil(x), ⌊x⌋ → floor(x), Unicode super/subscripts → Word super/subscript runs, x_y identifiers → base + subscript (code spans verbatim); five references renumbered to the v6 items ("Table S4" (mask check) → Table S1; "Tables X, X-E3, B, B-sens" → Tables S3–S6; "Figures X, B" → Figures S5, S6). Every other character verbatim; the [REF: …] (15) and [TO FILL] (1) placeholders are kept for the investigator | Arial has no ∈, ⌈⌉⌊⌋ or superscript minus (as main conflict #10); final numbering (task v6 §1). Checked: the docx methods text equals the draft after these rules (`qa/supplementary_docx_v1.json`) |
+| QA rendering: LibreOffice PDF export without image downsampling (`ReduceImageResolution` false) | the default export reduces images to 300 dpi |
+| Blinding scan of the document: the AI-use declaration of SM 1 ("… independently evaluated with ChatGPT (OpenAI), as declared in the main text") is excluded from the AI-trace count (its two matches); no other match | the declaration is required content (manuscript template, AI-use disclosure), not a tool trace; it should be checked against the journal's double-blind rules by the investigator |
 
 Cross-references in the main set that the new supplementary numbering changes (the main set is not edited in v6):
 "Supplementary Table S5" (Table 2 v3 footnote; `CAPTIONS_v4.md`, Figure 6) → **Table S2**; "Supplementary Figure X and
