@@ -1,0 +1,113 @@
+{
+ "pdf": {
+  "pages": 98,
+  "fonts": [
+   "Arial-BoldMT",
+   "Arial-ItalicMT",
+   "ArialMT"
+  ],
+  "images": 64,
+  "image_px": [
+   [
+    4484,
+    3784
+   ],
+   [
+    4484,
+    4350
+   ],
+   [
+    4484,
+    4584
+   ],
+   [
+    4484,
+    4867
+   ],
+   [
+    4959,
+    7017
+   ]
+  ]
+ },
+ "word": {
+  "paragraph_styles": [
+   "Normal"
+  ],
+  "numbered_paragraphs": 0,
+  "sections": 13,
+  "author": "",
+  "last_modified_by": ""
+ },
+ "order": [
+  "Supplementary Material",
+  "Supplementary Methods (SM 1–7)",
+  "SM 1",
+  "Provenance",
+  "SM 2",
+  "SM 3",
+  "SM 4",
+  "SM 5",
+  "SM 6",
+  "X1 / X2",
+  "B",
+  "SM 7",
+  "Table S1",
+  "Table S2",
+  "Table S3",
+  "Table S4",
+  "Table S5",
+  "Table S6",
+  "Figure S1",
+  "Figure S2",
+  "Figure S3",
+  "Figure S4",
+  "Figure S5",
+  "Figure S6"
+ ],
+ "order_ok": true,
+ "captions_once": true,
+ "images_per_figure": {
+  "Figure S1": 10,
+  "Figure S2": 24,
+  "Figure S3": 24,
+  "Figure S4": 1,
+  "Figure S5": 4,
+  "Figure S6": 1
+ },
+ "image_widths_mm": {
+  "Figure S1": [
+   190.0
+  ],
+  "Figure S2": [
+   190.0
+  ],
+  "Figure S3": [
+   190.0
+  ],
+  "Figure S4": [
+   189.82
+  ],
+  "Figure S5": [
+   189.82
+  ],
+  "Figure S6": [
+   189.82
+  ]
+ },
+ "images_ok": true,
+ "arial_missing_chars_in_docx": [],
+ "methods_text_equal": true,
+ "methods_chars": 31875,
+ "placeholders": {
+  "[REF:": [
+   15,
+   15
+  ],
+  "[TO FILL": [
+   1,
+   1
+  ]
+ },
+ "result": "PASS"
+}
