@@ -3,7 +3,7 @@
 | item | result |
 |---|---|
 | MATLAB | 25.2.0.2998904 (R2025b) (`/Applications/MATLAB_R2025b.app/bin/matlab`; not on PATH) |
-| Arial in MATLAB `listfonts` |  (1 = available; figure template §2-1 preflight) |
+| Arial in MATLAB `listfonts` | 1 (1 = available; figure template §2-1 preflight) |
 | Arial font files | /System/Library/Fonts/Supplemental/Arial.ttf, Arial Bold.ttf |
 | Python (project venv `.venv`, --copies, exFAT) | Python 3.12.8; packages in `requirements.lock.txt` |
 | Node | v25.4.0; pptxgenjs 4.0.1 in project `node_modules` (`package.json`, `package-lock.json`) |

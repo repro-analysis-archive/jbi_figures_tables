@@ -1,0 +1,30 @@
+{
+ "P1a": {
+  "D_bar": 1.9248570533834413,
+  "ci_lo": 1.909414443753579,
+  "ci_hi": 1.9341778289813913,
+  "n_cells": 66,
+  "reported": "SUPPORTED: consistent with the theory-motivated direction"
+ },
+ "P1b-SITE": {
+  "D_bar": 2.197616863578595,
+  "ci_lo": 2.1672177596777806,
+  "ci_hi": 2.2258719276527437,
+  "n_cells": 48,
+  "reported": "SUPPORTED: consistent with the theory-motivated direction"
+ },
+ "P2-SITE": {
+  "D_bar": 0.052105083645894015,
+  "ci_lo": 0.04765917337663384,
+  "ci_hi": 0.056192079000649306,
+  "n_cells": 18,
+  "reported": "SUPPORTED: consistent with the theory-motivated direction"
+ },
+ "P2-ORACLE": {
+  "D_bar": 0.04245186573827512,
+  "ci_lo": 0.03608302510943749,
+  "ci_hi": 0.04846380579409344,
+  "n_cells": 12,
+  "reported": "SUPPORTED: consistent with the theory-motivated direction"
+ }
+}

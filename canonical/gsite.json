@@ -1,0 +1,7 @@
+{
+ "primary": 0.0014115377562104118,
+ "W0": 0.0036614800524574927,
+ "W5": 0.004494828716282003,
+ "gate": "≤ 0.01",
+ "source": "gsite_record.json sets.<set>.eta2_S_window_start"
+}

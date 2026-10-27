@@ -1,0 +1,26 @@
+{
+ "anchors": {
+  "primary:P1b-SITE D_bar": {
+   "value": 2.197616863578595,
+   "status": "PASS"
+  },
+  "primary:P2-SITE D_bar": {
+   "value": 0.052105083645894015,
+   "status": "PASS"
+  },
+  "X1 FM-P-C vs step6 FM-P, P1b-FM, mean delta": {
+   "value": 0.5609627059097283,
+   "status": "PASS"
+  }
+ },
+ "families_D_cells_reproduced": 470,
+ "families_D_cells_max_abs_diff": 0.0,
+ "family_rows": 19,
+ "fig2A_points": 11,
+ "fig2B_rows": 24,
+ "fig3_rows": 48,
+ "fig4_rows": 540,
+ "x_group_means_reproduced": 18,
+ "c_b0_identity": "PASS (B S1 (a)(b) and S3 (b) equal step-5 E3_site_278 / E3_site_primary)",
+ "x1_step5_reference": "PASS (x1_e3.json step5_reference equals checks.json E3_site_primary)"
+}

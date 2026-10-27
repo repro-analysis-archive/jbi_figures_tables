@@ -1,0 +1,144 @@
+{
+ "sets": [
+  {
+   "set": "representation set (E1, E3-site, PCA / LEACE)",
+   "cases": 278,
+   "centres_2_3_4_5": "all 278 full-length cases of centres 2–5",
+   "definition": "279 counted cases minus one case (timestamp beyond video end); centre 1 excluded (mostly 5-min clips)",
+   "source": "protocol §2",
+   "design_cells": "",
+   "arms_run": "",
+   "arms": ""
+  },
+  {
+   "set": "primary causal set",
+   "cases": 158,
+   "centres_2_3_4_5": "28 / 34 / 44 / 52",
+   "definition": "s − 45 ≥ 0 and s + 60 ≤ n (n = ⌊duration / 5⌋); offsets O ∈ {−15…15} (seed 20261005)",
+   "source": "protocol §2, §7.2; dbd5984",
+   "design_cells": 240,
+   "arms_run": 12,
+   "arms": "FM-P FM-P−C FM-P-nat FM-S FM-S−C FULL NV ORACLE ORACLE−C REF REF−C SITE"
+  },
+  {
+   "set": "per-W set W = 0",
+   "cases": 204,
+   "centres_2_3_4_5": "37 / 40 / 57 / 70",
+   "definition": "primary offsets kept; 46 new offsets, same rule and seed",
+   "source": "protocol §10.3; adf9160",
+   "design_cells": 54,
+   "arms_run": 6,
+   "arms": "FM-P FM-P−C NV ORACLE ORACLE−C SITE"
+  },
+  {
+   "set": "per-W set W = 5",
+   "cases": 201,
+   "centres_2_3_4_5": "37 / 40 / 56 / 68",
+   "definition": "primary offsets kept; 43 new offsets",
+   "source": "protocol §10.3; adf9160",
+   "design_cells": 6,
+   "arms_run": 6,
+   "arms": "FM-P FM-P−C NV ORACLE ORACLE−C SITE"
+  },
+  {
+   "set": "single-file set",
+   "cases": 123,
+   "centres_2_3_4_5": "13 / 34 / 44 / 32",
+   "definition": "primary cases with one video file",
+   "source": "protocol §2; ss_window_offsets.csv (dbd5984)",
+   "design_cells": 66,
+   "arms_run": 4,
+   "arms": "FM-P FM-P−C NV SITE"
+  },
+  {
+   "set": "excluded from the primary set",
+   "cases": 120,
+   "centres_2_3_4_5": "21 / 7 / 27 / 65",
+   "definition": "mainly early switches (46 of 117 centre-5 cases show the appendix within 75 s)",
+   "source": "protocol §7.2",
+   "design_cells": "",
+   "arms_run": "",
+   "arms": ""
+  }
+ ],
+ "models": [
+  {
+   "arm": "FM-P (primary, standardized)",
+   "model": "SurgeNetCholec (CAFormer-S18), TimJaspersTue/SurgeNetModels @cc21f4a1, CHOLEC_checkpoint_epoch0050_teacher.pth",
+   "kind": "frame-level",
+   "input": "2-fps grid frames; crop, mask, 224², ImageNet normalisation",
+   "representation": "pooled normalised features, 512-d; mean of the step's 10 grid frames",
+   "reduction": "PCA 64 (+ LEACE for FM-P−C)",
+   "selection": "§4.1 rank 1 (after CODELOCK_CORRECTION_001)"
+  },
+  {
+   "arm": "FM-P-nat (native sensitivity)",
+   "model": "SurgeNetCholec (as above)",
+   "kind": "frame-level",
+   "input": "2-fps grid frames; resize only",
+   "representation": "as FM-P",
+   "reduction": "PCA 64 (no −C arm)",
+   "selection": "§3.2"
+  },
+  {
+   "arm": "FM-S (secondary)",
+   "model": "LeanVAE-4ch, Yumic/LeanVAE @4585e461, LeanVAE-dim4.ckpt",
+   "kind": "clip-level (L = 17 grid frames)",
+   "input": "2-fps grid frames; crop, mask, 256²",
+   "representation": "posterior mean 4 × 32 × 32 averaged over latent time, 4,096-d",
+   "reduction": "PCA 64 (+ LEACE for FM-S−C)",
+   "selection": "§4.1 secondary rank 1 (tie-break 2: GFLOPs)"
+  },
+  {
+   "arm": "REF (reference)",
+   "model": "nvidia/Cosmos-1.0-Tokenizer-CV8x8x8 @5110dbb3 (diffusers AutoencoderKLCosmos)",
+   "kind": "native clip (≤ 121 native frames per 5-s step)",
+   "input": "crop, mask, 320²",
+   "representation": "post_quant_conv(latent mode) averaged over latent time, 16 × 40 × 40 = 25,600",
+   "reduction": "PCA 64 via randomized SVD (+ LEACE for REF−C)",
+   "selection": "Decision 005 (not ranked)"
+  }
+ ],
+ "arms": [
+  {
+   "arm": "NV",
+   "adjustment_set": "H_t (no video)"
+  },
+  {
+   "arm": "SITE",
+   "adjustment_set": "H_t + C (explicit site; theory analogue of Z)"
+  },
+  {
+   "arm": "FM-P",
+   "adjustment_set": "H_t + R_t, primary model, standardized"
+  },
+  {
+   "arm": "FM-P−C",
+   "adjustment_set": "H_t + R_t^(−C), primary, standardized"
+  },
+  {
+   "arm": "FM-S, FM-S−C",
+   "adjustment_set": "as above, secondary model"
+  },
+  {
+   "arm": "REF, REF−C",
+   "adjustment_set": "as above, paper-linked Cosmos reference (§4.2)"
+  },
+  {
+   "arm": "FM-P-nat",
+   "adjustment_set": "H_t + R_t, primary, native (sensitivity)"
+  },
+  {
+   "arm": "ORACLE−C",
+   "adjustment_set": "H_t + S_t (exact state, no site)"
+  },
+  {
+   "arm": "ORACLE",
+   "adjustment_set": "H_t + S_t + C"
+  },
+  {
+   "arm": "FULL",
+   "adjustment_set": "H_t + S_t + C + U, the exchangeability oracle / implementation sanity reference (not called unbiased)"
+  }
+ ]
+}
