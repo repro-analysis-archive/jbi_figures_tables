@@ -1,0 +1,158 @@
+{
+ "Figure_1": {
+  "content": "Study design",
+  "source": "figures_v3/Figure_1/Figure_1_v3",
+  "files": [
+   {
+    "source": "figures_v3/Figure_1/Figure_1_v3.pdf",
+    "file": "figures_v4/Figure_1/Figure_1_v4.pdf",
+    "sha256": "7377206b9fa252f3e9a8e2f3741427bbce81c0c9608b08bb28ea6ae90f98c4d5",
+    "byte_identical": true
+   },
+   {
+    "source": "figures_v3/Figure_1/Figure_1_v3.pptx",
+    "file": "figures_v4/Figure_1/Figure_1_v4.pptx",
+    "sha256": "3701733f0531d637b30a3693049b1ea3e70ec007f323fe3defca8467dcc41870",
+    "byte_identical": true
+   },
+   {
+    "source": "figures_v3/Figure_1/Figure_1_v3.tif",
+    "file": "figures_v4/Figure_1/Figure_1_v4.tif",
+    "sha256": "1fb71a9efd950db437d6cdaae4fe78d852ef5a2e4ee42703bd7d87669843c2fd",
+    "byte_identical": true
+   },
+   {
+    "source": "figures_v3/Figure_1/make_Figure_1_v3.js",
+    "file": "figures_v4/Figure_1/make_Figure_1_v4.js",
+    "sha256": "9617d3300023b8333d894da6840479698de992e00fc4f1b20f642d6c3fb8e708",
+    "byte_identical": true
+   }
+  ]
+ },
+ "Figure_2": {
+  "content": "Erasure evaluation (A step-5 E3; B, C exploratory B)",
+  "source": "figures_v3/Figure_4/Figure_4_v3",
+  "files": [
+   {
+    "source": "figures_v3/Figure_4/Figure_4_v3.fig",
+    "file": "figures_v4/Figure_2/Figure_2_v4.fig",
+    "sha256": "1494000406aab9bb8a91dfd260c8218499410d9c26c28c38e3df5b8afc8ca3fe",
+    "byte_identical": true
+   },
+   {
+    "source": "figures_v3/Figure_4/Figure_4_v3.pdf",
+    "file": "figures_v4/Figure_2/Figure_2_v4.pdf",
+    "sha256": "23ff5d65bf6e2e7740a69267af32305ade10c6a3eeb9e181416351d5785d8229",
+    "byte_identical": true
+   },
+   {
+    "source": "figures_v3/Figure_4/Figure_4_v3.tif",
+    "file": "figures_v4/Figure_2/Figure_2_v4.tif",
+    "sha256": "4b117272047c30103d37ee66b18e3848d9315b7f196cd0d94ec5fd823931eb7b",
+    "byte_identical": true
+   },
+   {
+    "source": "figures_v3/Figure_4/make_Figure_4_v3.m",
+    "file": "figures_v4/Figure_2/make_Figure_2_v4.m",
+    "sha256": "e0e70b903989d8d0ec3f7c4ae15a1ce00c5e2f77ffac4859faf4a4f3e089d9f2",
+    "byte_identical": true
+   }
+  ]
+ },
+ "Figure_3": {
+  "content": "Confirmatory families (forest)",
+  "source": "figures_v3/Figure_2/Figure_2_v3",
+  "files": [
+   {
+    "source": "figures_v3/Figure_2/Figure_2_v3.fig",
+    "file": "figures_v4/Figure_3/Figure_3_v4.fig",
+    "sha256": "5f071c3281fc789478beb15639e8257bba2aabd5ca3e9733eef905a86ad12311",
+    "byte_identical": true
+   },
+   {
+    "source": "figures_v3/Figure_2/Figure_2_v3.pdf",
+    "file": "figures_v4/Figure_3/Figure_3_v4.pdf",
+    "sha256": "09d1b39b625f80e19c27d30fc8fc3f974c4033333a4831608d7c1bb7485f5060",
+    "byte_identical": true
+   },
+   {
+    "source": "figures_v3/Figure_2/Figure_2_v3.tif",
+    "file": "figures_v4/Figure_3/Figure_3_v4.tif",
+    "sha256": "1b836db4b9b042ac695c3b9dfec435a78d92ee1c6d3c5ad3c86252cc57d0a2be",
+    "byte_identical": true
+   },
+   {
+    "source": "figures_v3/Figure_2/make_Figure_2_v3.m",
+    "file": "figures_v4/Figure_3/make_Figure_3_v4.m",
+    "sha256": "f7d0fa52db7678ec708bdeabe32b996cbd80eccdf7f43e4606cda780a2422ab5",
+    "byte_identical": true
+   }
+  ]
+ },
+ "Figure_4": {
+  "content": "Dependence on prior action history",
+  "source": "figures_v3/Figure_3/Figure_3_v3",
+  "files": [
+   {
+    "source": "figures_v3/Figure_3/Figure_3_v3.fig",
+    "file": "figures_v4/Figure_4/Figure_4_v4.fig",
+    "sha256": "d8b6816afbb049e917cfe647627774a7fb0e78179042684a87773584610e208c",
+    "byte_identical": true
+   },
+   {
+    "source": "figures_v3/Figure_3/Figure_3_v3.pdf",
+    "file": "figures_v4/Figure_4/Figure_4_v4.pdf",
+    "sha256": "fc1047de6ad2bc142589f91787cc2a86f7e0e4c2b7b5c01dd3bb31f9df3881d6",
+    "byte_identical": true
+   },
+   {
+    "source": "figures_v3/Figure_3/Figure_3_v3.tif",
+    "file": "figures_v4/Figure_4/Figure_4_v4.tif",
+    "sha256": "f9a9ab8c084eccb1eead48b642635fbf4d994ee16165599a99ca905c4915d382",
+    "byte_identical": true
+   },
+   {
+    "source": "figures_v3/Figure_3/make_Figure_3_v3.m",
+    "file": "figures_v4/Figure_4/make_Figure_4_v4.m",
+    "sha256": "fe599378fc65940e778e7cdff2a26b103d2832e3b23d0aa5605a04d073954176",
+    "byte_identical": true
+   }
+  ]
+ },
+ "Figure_5": {
+  "content": "NEW: relative bias and coverage at the slice",
+  "source": "new (figures_v4/Figure_5/make_Figure_5_v4.m)",
+  "files": []
+ },
+ "Figure_6": {
+  "content": "Exploratory X1/X2",
+  "source": "figures_v2/Figure_5/Figure_5_v2",
+  "files": [
+   {
+    "source": "figures_v2/Figure_5/Figure_5_v2.fig",
+    "file": "figures_v4/Figure_6/Figure_6_v4.fig",
+    "sha256": "d5d033b33bd7660a05e977bfc629ae5c631adc356846f35f5c97c19cd885919f",
+    "byte_identical": true
+   },
+   {
+    "source": "figures_v2/Figure_5/Figure_5_v2.pdf",
+    "file": "figures_v4/Figure_6/Figure_6_v4.pdf",
+    "sha256": "5dcfdb99d10bed55ce97bffc8fa2977b2b269d144e70402e1e362315c1eecc1d",
+    "byte_identical": true
+   },
+   {
+    "source": "figures_v2/Figure_5/make_Figure_5_v2.m",
+    "file": "figures_v4/Figure_6/make_Figure_6_v4.m",
+    "sha256": "9c5e54c6f4b25365f1aaee26d1c26edd4a691da43a8d700aaee7ceaeb9b0df2a",
+    "byte_identical": true
+   },
+   {
+    "source": "figures_v2/Figure_5/Figure_5_v2.pdf (rasterised by poppler, 1,200 dpi)",
+    "file": "figures_v4/Figure_6/Figure_6_v4.tif",
+    "sha256": "66b9ac3950723bfe2d10a7b91bf32a37709122ab90e82b2f51a555aafeec6f34",
+    "byte_identical": null,
+    "note": "differs from figures_v2/Figure_5/Figure_5_v2.tif (MATLAB raster) by design"
+   }
+  ]
+ }
+}

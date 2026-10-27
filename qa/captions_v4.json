@@ -1,0 +1,159 @@
+{
+ "headings": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "figures": {
+  "Figure_1": {
+   "source": "CAPTIONS_v2 Figure 1",
+   "body_identical_to_source": true,
+   "panel_labels_in_pdf": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "panel_letters_used": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "missing": []
+  },
+  "Figure_2": {
+   "source": "CAPTIONS_v2 Figure 4",
+   "body_identical_to_source": true,
+   "panel_labels_in_pdf": [
+    "A",
+    "B",
+    "C"
+   ],
+   "panel_letters_used": [
+    "A",
+    "B",
+    "C"
+   ],
+   "missing": []
+  },
+  "Figure_3": {
+   "source": "CAPTIONS_v2 Figure 2",
+   "body_identical_to_source": true,
+   "panel_labels_in_pdf": [
+    "A",
+    "B"
+   ],
+   "panel_letters_used": [
+    "A",
+    "B"
+   ],
+   "missing": []
+  },
+  "Figure_4": {
+   "source": "CAPTIONS_v2 Figure 3",
+   "body_identical_to_source": true,
+   "panel_labels_in_pdf": [
+    "A",
+    "B",
+    "C"
+   ],
+   "panel_letters_used": [
+    "A",
+    "B",
+    "C"
+   ],
+   "missing": []
+  },
+  "Figure_5": {
+   "source": "new",
+   "body_identical_to_source": null,
+   "panel_labels_in_pdf": [
+    "A",
+    "B"
+   ],
+   "panel_letters_used": [
+    "A",
+    "B"
+   ],
+   "missing": []
+  },
+  "Figure_6": {
+   "source": "CAPTIONS_v2 Figure 5",
+   "body_identical_to_source": true,
+   "panel_labels_in_pdf": [
+    "A",
+    "B",
+    "C"
+   ],
+   "panel_letters_used": [
+    "A",
+    "B",
+    "C"
+   ],
+   "missing": []
+  }
+ },
+ "references": [
+  {
+   "ref": "Figure 1",
+   "ok": true
+  },
+  {
+   "ref": "Figure 2",
+   "ok": true
+  },
+  {
+   "ref": "Figure 3",
+   "ok": true
+  },
+  {
+   "ref": "Figure 4",
+   "ok": true
+  },
+  {
+   "ref": "Figure 5",
+   "ok": true
+  },
+  {
+   "ref": "Figure 6",
+   "ok": true
+  },
+  {
+   "ref": "Figure 1C",
+   "ok": true
+  },
+  {
+   "ref": "Supplementary S5",
+   "ok": true
+  },
+  {
+   "ref": "Supplementary S1",
+   "ok": true
+  },
+  {
+   "ref": "Supplementary S2",
+   "ok": true
+  },
+  {
+   "ref": "Supplementary S3",
+   "ok": true
+  },
+  {
+   "ref": "Supplementary S5",
+   "ok": true
+  },
+  {
+   "ref": "Supplementary X",
+   "ok": true
+  },
+  {
+   "ref": "Supplementary S5",
+   "ok": true
+  }
+ ],
+ "result": "PASS"
+}

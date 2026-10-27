@@ -1,0 +1,149 @@
+{
+ "figures_v4/Figure_1/Figure_1_v4.pdf": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "title": "Figure 1",
+   "creator": "Impress",
+   "producer": "LibreOffice 26.2.2.2 (AARCH64)"
+  }
+ },
+ "figures_v4/Figure_1/Figure_1_v4.pptx": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "dc:creator": "",
+   "cp:lastModifiedBy": "",
+   "dc:title": "Figure 1"
+  }
+ },
+ "figures_v4/Figure_1/Figure_1_v4.tif": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "scanned": "all bytes except pixel strips"
+  }
+ },
+ "figures_v4/Figure_2/Figure_2_v4.pdf": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "creator": "MATLAB, The MathWorks, Inc. Version 25.2.0.2998904 R2025b",
+   "producer": "Qt 5.15.16"
+  }
+ },
+ "figures_v4/Figure_2/Figure_2_v4.tif": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "scanned": "all bytes except pixel strips"
+  }
+ },
+ "figures_v4/Figure_3/Figure_3_v4.pdf": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "creator": "MATLAB, The MathWorks, Inc. Version 25.2.0.2998904 R2025b",
+   "producer": "Qt 5.15.16"
+  }
+ },
+ "figures_v4/Figure_3/Figure_3_v4.tif": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "scanned": "all bytes except pixel strips"
+  }
+ },
+ "figures_v4/Figure_4/Figure_4_v4.pdf": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "creator": "MATLAB, The MathWorks, Inc. Version 25.2.0.2998904 R2025b",
+   "producer": "Qt 5.15.16"
+  }
+ },
+ "figures_v4/Figure_4/Figure_4_v4.tif": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "scanned": "all bytes except pixel strips"
+  }
+ },
+ "figures_v4/Figure_5/Figure_5_v4.pdf": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "creator": "MATLAB, The MathWorks, Inc. Version 25.2.0.2998904 R2025b",
+   "producer": "Qt 5.15.16"
+  }
+ },
+ "figures_v4/Figure_5/Figure_5_v4.tif": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "scanned": "all bytes except pixel strips"
+  }
+ },
+ "figures_v4/Figure_6/Figure_6_v4.pdf": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "creator": "MATLAB, The MathWorks, Inc. Version 25.2.0.2998904 R2025b",
+   "producer": "Qt 5.15.16"
+  }
+ },
+ "figures_v4/Figure_6/Figure_6_v4.tif": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "scanned": "all bytes except pixel strips"
+  }
+ },
+ "CAPTIONS_v4.md": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {}
+ }
+}

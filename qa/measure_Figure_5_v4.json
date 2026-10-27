@@ -1,0 +1,954 @@
+{
+ "pdf": "figures_v4/Figure_5/Figure_5_v4.pdf",
+ "pages": 1,
+ "page_mm": [
+  189.79,
+  184.15
+ ],
+ "page_pt": [
+  538.0,
+  522.0
+ ],
+ "pdffonts": [
+  "name                                 type              encoding         emb sub uni object ID",
+  "------------------------------------ ----------------- ---------------- --- --- --- ---------",
+  "ArialMT                              CID TrueType      Identity-H       yes no  yes      7  0",
+  "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes      8  0"
+ ],
+ "pdfimages": [
+  "page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio",
+  "--------------------------------------------------------------------------------------------"
+ ],
+ "text_sizes_pt": [
+  14.0,
+  15.0,
+  16.0
+ ],
+ "min_text_pt": 14.0,
+ "text_colours": [
+  "#1A1A1A"
+ ],
+ "fonts": [
+  "Arial-BoldMT",
+  "ArialMT"
+ ],
+ "n_spans": 43,
+ "text_overlaps": [],
+ "edge_clearance_below_0p3mm": [],
+ "markers": [
+  {
+   "part": "edge",
+   "shape": "circle",
+   "colour": "#1A1A1A",
+   "edge_pt": 0.5,
+   "n": 25,
+   "outer_w_mm_median": 1.305,
+   "outer_h_mm_median": 1.305,
+   "outer_w_mm_min": 1.305,
+   "outer_h_mm_min": 1.305
+  },
+  {
+   "part": "edge",
+   "shape": "circle",
+   "colour": "#6B6B6B",
+   "edge_pt": 0.8,
+   "n": 25,
+   "outer_w_mm_median": 1.411,
+   "outer_h_mm_median": 1.411,
+   "outer_w_mm_min": 1.411,
+   "outer_h_mm_min": 1.411
+  },
+  {
+   "part": "edge",
+   "shape": "other",
+   "colour": "#1A1A1A",
+   "edge_pt": 0.5,
+   "n": 100,
+   "outer_w_mm_median": 1.521,
+   "outer_h_mm_median": 1.708,
+   "outer_w_mm_min": 1.305,
+   "outer_h_mm_min": 1.428
+  },
+  {
+   "part": "edge",
+   "shape": "other",
+   "colour": "#2B3D6B",
+   "edge_pt": 0.8,
+   "n": 25,
+   "outer_w_mm_median": 1.411,
+   "outer_h_mm_median": 1.784,
+   "outer_w_mm_min": 1.411,
+   "outer_h_mm_min": 1.784
+  },
+  {
+   "part": "edge",
+   "shape": "other",
+   "colour": "#6B6B6B",
+   "edge_pt": 0.8,
+   "n": 25,
+   "outer_w_mm_median": 1.534,
+   "outer_h_mm_median": 1.534,
+   "outer_w_mm_min": 1.534,
+   "outer_h_mm_min": 1.534
+  },
+  {
+   "part": "edge",
+   "shape": "triangle",
+   "colour": "#1A1A1A",
+   "edge_pt": 0.5,
+   "n": 50,
+   "outer_w_mm_median": 1.477,
+   "outer_h_mm_median": 1.302,
+   "outer_w_mm_min": 1.477,
+   "outer_h_mm_min": 1.302
+  },
+  {
+   "part": "edge",
+   "shape": "triangle",
+   "colour": "#6B6B6B",
+   "edge_pt": 0.8,
+   "n": 50,
+   "outer_w_mm_median": 1.582,
+   "outer_h_mm_median": 1.408,
+   "outer_w_mm_min": 1.582,
+   "outer_h_mm_min": 1.408
+  },
+  {
+   "part": "face",
+   "shape": "circle",
+   "colour": "#8A8A8A",
+   "edge_pt": 0.0,
+   "n": 25,
+   "outer_w_mm_median": 1.129,
+   "outer_h_mm_median": 1.129,
+   "outer_w_mm_min": 1.129,
+   "outer_h_mm_min": 1.129
+  },
+  {
+   "part": "face",
+   "shape": "circle",
+   "colour": "#FFFFFF",
+   "edge_pt": 0.0,
+   "n": 25,
+   "outer_w_mm_median": 1.129,
+   "outer_h_mm_median": 1.129,
+   "outer_w_mm_min": 1.129,
+   "outer_h_mm_min": 1.129
+  },
+  {
+   "part": "face",
+   "shape": "diamond",
+   "colour": "#2B3D6B",
+   "edge_pt": 0.0,
+   "n": 25,
+   "outer_w_mm_median": 1.129,
+   "outer_h_mm_median": 1.501,
+   "outer_w_mm_min": 1.129,
+   "outer_h_mm_min": 1.501
+  },
+  {
+   "part": "face",
+   "shape": "diamond",
+   "colour": "#FFFFFF",
+   "edge_pt": 0.0,
+   "n": 25,
+   "outer_w_mm_median": 1.129,
+   "outer_h_mm_median": 1.501,
+   "outer_w_mm_min": 1.129,
+   "outer_h_mm_min": 1.501
+  },
+  {
+   "part": "face",
+   "shape": "other",
+   "colour": "#4D4D4D",
+   "edge_pt": 0.0,
+   "n": 25,
+   "outer_w_mm_median": 1.344,
+   "outer_h_mm_median": 1.552,
+   "outer_w_mm_min": 1.344,
+   "outer_h_mm_min": 1.552
+  },
+  {
+   "part": "face",
+   "shape": "other",
+   "colour": "#8A8A8A",
+   "edge_pt": 0.0,
+   "n": 25,
+   "outer_w_mm_median": 1.61,
+   "outer_h_mm_median": 1.532,
+   "outer_w_mm_min": 1.61,
+   "outer_h_mm_min": 1.532
+  },
+  {
+   "part": "face",
+   "shape": "square",
+   "colour": "#8A8A8A",
+   "edge_pt": 0.0,
+   "n": 25,
+   "outer_w_mm_median": 1.252,
+   "outer_h_mm_median": 1.252,
+   "outer_w_mm_min": 1.252,
+   "outer_h_mm_min": 1.252
+  },
+  {
+   "part": "face",
+   "shape": "square",
+   "colour": "#FFFFFF",
+   "edge_pt": 0.0,
+   "n": 25,
+   "outer_w_mm_median": 1.252,
+   "outer_h_mm_median": 1.252,
+   "outer_w_mm_min": 1.252,
+   "outer_h_mm_min": 1.252
+  },
+  {
+   "part": "face",
+   "shape": "triangle",
+   "colour": "#6B6B6B",
+   "edge_pt": 0.0,
+   "n": 25,
+   "outer_w_mm_median": 1.3,
+   "outer_h_mm_median": 1.126,
+   "outer_w_mm_min": 1.3,
+   "outer_h_mm_min": 1.126
+  },
+  {
+   "part": "face",
+   "shape": "triangle",
+   "colour": "#8A8A8A",
+   "edge_pt": 0.0,
+   "n": 25,
+   "outer_w_mm_median": 1.3,
+   "outer_h_mm_median": 1.126,
+   "outer_w_mm_min": 1.3,
+   "outer_h_mm_min": 1.126
+  },
+  {
+   "part": "face",
+   "shape": "triangle",
+   "colour": "#FFFFFF",
+   "edge_pt": 0.0,
+   "n": 50,
+   "outer_w_mm_median": 1.3,
+   "outer_h_mm_median": 1.126,
+   "outer_w_mm_min": 1.3,
+   "outer_h_mm_min": 1.126
+  }
+ ],
+ "metadata": {
+  "format": "PDF 1.4",
+  "creator": "MATLAB, The MathWorks, Inc. Version 25.2.0.2998904 R2025b",
+  "producer": "Qt 5.15.16",
+  "creationDate": "D:20261027113215+09'00'"
+ },
+ "bytes": 44490,
+ "spans": [
+  {
+   "text": "P = 0",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    43.41,
+    2.39,
+    54.98,
+    6.0
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "P = 5",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    99.88,
+    2.4,
+    111.46,
+    6.0
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "P = 30",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    155.04,
+    2.39,
+    169.35,
+    6.0
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Intervention duration K (window steps)",
+   "font": "ArialMT",
+   "size": 15.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    60.73,
+    149.51,
+    150.67,
+    154.47
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "NV",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    15.69,
+    158.68,
+    22.55,
+    162.21
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "SITE",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    15.69,
+    164.82,
+    26.67,
+    168.48
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "FM-P",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    44.49,
+    158.68,
+    56.55,
+    162.21
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "FM-P−C",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    44.49,
+    164.82,
+    63.0,
+    168.48
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "FM-S",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    44.49,
+    171.02,
+    56.55,
+    174.67
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "FM-S−C",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    44.49,
+    177.21,
+    63.0,
+    180.87
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "REF",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    80.68,
+    158.68,
+    90.56,
+    162.21
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "REF−C",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    80.68,
+    164.82,
+    97.01,
+    168.48
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "FM-P-nat",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    80.68,
+    171.08,
+    101.25,
+    174.67
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "ORACLE−C",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    118.99,
+    158.62,
+    145.75,
+    162.28
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "ORACLE",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    118.99,
+    164.81,
+    139.3,
+    168.48
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "FULL",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    163.47,
+    158.68,
+    175.55,
+    162.28
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "0",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    17.7,
+    60.56,
+    20.44,
+    64.17
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "50",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    15.05,
+    47.8,
+    20.54,
+    51.41
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "100",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    12.23,
+    35.04,
+    20.46,
+    38.65
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "150",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    12.23,
+    22.28,
+    20.46,
+    25.89
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "200",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    12.23,
+    9.52,
+    20.46,
+    13.13
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Relative bias (%)",
+   "font": "ArialMT",
+   "size": 15.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    6.29,
+    20.09,
+    11.25,
+    60.06
+   ],
+   "dir": [
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "text": "1",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    25.22,
+    143.39,
+    27.97,
+    146.94
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "2",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    36.72,
+    143.39,
+    39.47,
+    146.94
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "5",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    51.93,
+    143.45,
+    54.68,
+    147.0
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "15",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    68.84,
+    143.39,
+    74.33,
+    147.0
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "0",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    17.69,
+    136.54,
+    20.44,
+    140.15
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "0.2",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    13.64,
+    125.19,
+    20.5,
+    128.8
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "0.4",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    13.64,
+    113.84,
+    20.5,
+    117.45
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "0.6",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    13.64,
+    102.49,
+    20.5,
+    106.1
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "0.8",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    13.64,
+    91.14,
+    20.5,
+    94.75
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "1",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    17.69,
+    79.79,
+    20.44,
+    83.34
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "95% interval coverage",
+   "font": "ArialMT",
+   "size": 15.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    7.69,
+    83.84,
+    12.66,
+    136.17
+   ],
+   "dir": [
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "text": "1",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    81.83,
+    143.39,
+    84.58,
+    146.94
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "2",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    93.29,
+    143.39,
+    96.04,
+    146.94
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "5",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    108.45,
+    143.45,
+    111.19,
+    147.0
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "15",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    125.3,
+    143.39,
+    130.79,
+    147.0
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "1",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    138.28,
+    143.39,
+    141.02,
+    146.94
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "2",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    149.74,
+    143.39,
+    152.48,
+    146.94
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "5",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    164.89,
+    143.45,
+    167.64,
+    147.0
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "15",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    181.74,
+    143.39,
+    187.23,
+    147.0
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "(A)",
+   "font": "Arial-BoldMT",
+   "size": 16.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    1.2,
+    1.09,
+    9.03,
+    6.39
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "(B)",
+   "font": "Arial-BoldMT",
+   "size": 16.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    1.2,
+    72.78,
+    9.03,
+    78.08
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "tif": {
+  "path": "figures_v4/Figure_5/Figure_5_v4.tif",
+  "px": [
+   8967,
+   8700
+  ],
+  "dpi": [
+   1200.0,
+   1200.0
+  ],
+  "mm": [
+   189.8,
+   184.15
+  ],
+  "mode": "RGB",
+  "compression": "tiff_lzw",
+  "tags": {},
+  "bytes": 4073764
+ }
+}

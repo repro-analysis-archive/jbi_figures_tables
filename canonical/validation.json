@@ -44,5 +44,14 @@
    "decimals": 4,
    "display": "−0.0003"
   }
- ]
+ ],
+ "v5_bias_coverage_rows": 144,
+ "v5_bias_coverage_values": 288,
+ "v5_bias_coverage_anchors_exact": {
+  "NV, K = 1, P = 0, rel_bias": 0.10283144587487024,
+  "NV, K = 1, P = 0, coverage": 0.85,
+  "FULL, K = 1, P = 30, rel_bias": 0.33023840439297236,
+  "ORACLE−C, K = 2, P = 0, coverage": 0.97
+ },
+ "v5_bias_coverage_anchor_status": "PASS (as rounded in task v5 §1)"
 }

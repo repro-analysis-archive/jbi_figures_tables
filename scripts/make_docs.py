@@ -104,6 +104,18 @@ def source_map():
                       f"v4_table2_sign_decimals; `{x['source']}`)" for x in sd) + " | heading, footnotes a and b, one bound |",
           "| Supplementary Table S5 | `tables/Table_S5_v2.*` (unchanged) | as v3 | not revised |",
           "| Graphical abstract | `graphical_abstract/Graphical_abstract_v2.*` (unchanged) | as v3 | not revised |", ""]
+    if "v5_bias_coverage_anchors_exact" in val:
+        an = "; ".join(f"{k} = {v!r}" for k, v in val["v5_bias_coverage_anchors_exact"].items())
+        L += ["## v5 revision (2026-10-27): current files in the order of first citation", "",
+              "| element | current file | canonical file → field | package source → field |", "|---|---|---|---|",
+              "| Figure 1 | `figures_v4/Figure_1/Figure_1_v4.*` (byte copy of `Figure_1_v3`) | `schematic_values.json`, `table1.json` | as v3 Figure 1 |",
+              "| Figure 2 | `figures_v4/Figure_2/Figure_2_v4.*` (byte copy of `Figure_4_v3`) | `fig3_ba.json` → ba, lo_2p5, hi_97p5, upper_one_sided_95 | `checks.json`, `b_main.csv` |",
+              "| Figure 3 | `figures_v4/Figure_3/Figure_3_v4.*` (byte copy of `Figure_2_v3`) | `fam_dbar.json` rows with in_fig2A → D_bar, ci_lo, ci_hi | `families.json` |",
+              "| Figure 4 | `figures_v4/Figure_4/Figure_4_v4.*` (byte copy of `Figure_3_v3`) | `w_history_D.json` → D_without_minus_with | `cell_metrics.csv`, `contrast` formula |",
+              "| Figure 5 (new) | `figures_v4/Figure_5/Figure_5_v4.*` | `fig5_bias_coverage.json` → rel_bias_pct (= 100 × rel_bias), coverage (arm, K, P); anchors in `validation.json` → v5_bias_coverage_anchors_exact (" + an + ") | `cell_metrics.csv` (set primary, W 30, alpha 0.5, gamma 1, phi 0; 12 arms) → rel_bias, coverage |",
+              "| Figure 6 | `figures_v4/Figure_6/Figure_6_v4.*` (byte copy of `Figure_5_v2`; TIF from its PDF) | `fig4_x_cells.json`, `x_cells_order_v3.json` | `x_comparisons_cells.csv` |",
+              "| Tables 1, 2, S5; graphical abstract | `tables/Table_1_v2.*`, `tables/Table_2_v3.*`, `tables/Table_S5_v2.*`, `graphical_abstract/Graphical_abstract_v2.*` (unchanged) | as v4 revision | as v4 revision |",
+              "", "Byte identity of the renumbered files with their sources: `qa/renumber_v5.json`.", ""]
     (ROOT / "SOURCE_MAP.md").write_text("\n".join(L) + "\n")
 
 
@@ -142,11 +154,17 @@ def supplement_index():
     L.append(f"| S5 (table) | Representation diagnostics (former main Table 3; v3 revision) | work folder "
              f"`tables/Table_S5_v2.docx` (+ .csv, .pdf) | `{sha(s5)}` | `build_tables.py` table3 via `build_tables_v2.py` "
              "(canonical `table3.json` ← checks.json, x1_e3.json) |")
-    L += ["", "v3 revision: the slice-only role-switch view of v2 Figure 2B is superseded by main Figure 3 (its W = 30 row); "
-          "Supplementary Figure S1 holds every other α, γ (and W, φ_A) cell of the contrast."]
+    L += ["", "v3 revision: the slice-only role-switch view of v2 Figure 2B is superseded by main Figure 3 (its W = 30 row; "
+          "main Figure 4 after the v5 renumbering); Supplementary Figure S1 holds every other α, γ (and W, φ_A) cell of "
+          "the contrast."]
+    L += ["", "v5 revision: the pre-result main-text Figure 1 (relative bias and coverage against K at the slice, "
+          "`fig1_bias_coverage_vs_K.pdf`) is reinstated as main Figure 5 (house style, same content); Supplementary "
+          "Figures S2 and S3 hold relative bias and coverage for every other cell. Main figures in the current numbering: "
+          "1 design, 2 erasure, 3 families, 4 prior action history, 5 bias / coverage, 6 exploratory X1/X2."]
     L += ["", "Not reproduced in the JBI main text and therefore candidates for the supplement: the pre-result "
-          "main-text figures (above), the FM / REF pairs of the role-switch view at the slice, PCA / LEACE variance "
-          "retained (results report §3), the slice group and the NV comparator of X (Supplementary Figure X / Table X)."]
+          "main-text Figures 2–4 of the results report (role switch, K × P heatmaps, checks), the FM / REF pairs of the "
+          "role-switch view at the slice, PCA / LEACE variance retained (results report §3), the slice group and the NV "
+          "comparator of X (Supplementary Figure X / Table X)."]
     (ROOT / "SUPPLEMENT_INDEX.md").write_text("\n".join(L) + "\n")
 
 
@@ -423,12 +441,85 @@ def measurement_report_v3():
     (ROOT / "qa" / "MEASUREMENT_REPORT_v3.md").write_text("\n".join(L) + "\n")
 
 
+def measurement_report_v4():
+    figs = [f"Figure_{n}_v4" for n in range(1, 7)]
+    pvc = j("qa/plotted_vs_canonical_v4.json")["Figure_5"]
+    mk = j("qa/markers_v5.json")["markers"]
+    rn = j("qa/renumber_v5.json")
+    cap = j("qa/captions_v4.json")
+    blind = j("qa/blind_scan_v4.json")
+    reb = (ROOT / "qa" / "REBUILD_TEST_v5.md").read_text()
+    L = ["# Measurement report — v5 revision (suffix `_v4`; template §7; measured from the exported files)", "",
+         "| figure | source | PDF page (mm) | TIF (px @ dpi = mm) | regular text (pt) | bold text (pt) | panel labels | min (pt) | fonts | raster objects | overlaps / near | edge < 0.3 mm | TIF ↔ PDF |",
+         "|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
+    for name in figs:
+        m = j(f"qa/measure_{name}.json")
+        t = m.get("tif", {})
+        reg = sorted({round(x["size"]) for x in m["spans"] if "Bold" not in x["font"]})
+        bold = sorted({round(x["size"]) for x in m["spans"] if "Bold" in x["font"]})
+        pan = sorted({x["text"].strip() for x in m["spans"] if "Bold" in x["font"] and re.fullmatch(r"\([A-F]\)", x["text"].strip())})
+        fonts = ", ".join(sorted({x.split()[0].split("+")[-1] for x in m["pdffonts"][2:]}))
+        src = rn[name[:-3]]["source"]
+        tvp = j(f"qa/tif_vs_pdf_{name}.json")["result"]
+        L.append(f"| {name} | `{src}` | {m['page_mm'][0]} × {m['page_mm'][1]} | {t.get('px')} @ {t.get('dpi', [None])[0]} = {t.get('mm')} | "
+                 f"{reg} | {bold} | {' '.join(pan)} | {m['min_text_pt']} | {fonts} (emb=yes) | {max(0, len(m['pdfimages']) - 2)} | "
+                 f"{len(m['text_overlaps'])} | {len(m['edge_clearance_below_0p3mm'])} | {tvp} |")
+    L += ["", "All heights ≤ 220 mm; widths as before (data figures 189.79 mm PDF, Figure 1 190.0 mm). Tick / category 14, "
+          "axis 15, panel labels 16 pt bold in every data figure; Figure 1 body 14, headings 15, panel labels 16 pt.", "",
+          "## New Figure 5: markers (outer incl. edge, from PDF paths; `qa/markers_v5.json`)", "",
+          "| shape | kind | edge colour | n (incl. key) | outer w × h (mm) |", "|---|---|---|---|---|"]
+    for m in mk:
+        L.append(f"| {m['shape']} | {m['kind']} | {m['edge_colour']} | {m['n']} | {m['outer_w_mm']} × {m['outer_h_mm']} |")
+    L += ["", "## New Figure 5: plotted vs canonical and key ↔ plot (`qa/plotted_vs_canonical_v4.json`)", "",
+          f"* {pvc['result']} — {pvc['points']} values (12 arms × 12 cells × 2 metrics) as line and marker objects; "
+          f"mismatches {len(pvc['mismatches'])}",
+          "* panels: " + "; ".join(pvc["panels"]),
+          f"* key: {pvc['key_entries_n']} entries, each copying the plotted line and marker of its arm in all six panels: "
+          + ", ".join(pvc["key_entries"]) + f"; 12 glyphs distinct: {pvc['key_glyphs_distinct']}", "",
+          "## Renumbered figures: byte identity with their sources (`qa/renumber_v5.json`)", "",
+          "| file | source | identical |", "|---|---|---|"]
+    for k, v in rn.items():
+        for r in v["files"]:
+            L.append(f"| `{r['file']}` | `{r['source']}` | {'yes' if r['byte_identical'] else ('poppler TIF of the PDF' if r['byte_identical'] is None else 'NO')} |")
+    L += ["", "## Captions cross-check (`qa/captions_v4.json`)", "",
+          f"* headings {cap['headings']}; result {cap['result']}"]
+    for k, v in cap["figures"].items():
+        L.append(f"* {k}: source {v['source']}; body identical to source: {v['body_identical_to_source']}; panel letters used "
+                 f"{v['panel_letters_used']} ⊆ labels in the PDF {v['panel_labels_in_pdf']}")
+    L.append("* references: " + ", ".join(sorted({r["ref"] for r in cap["references"]})) + " — all resolve")
+    L += ["", "## Clean rebuild (`qa/REBUILD_TEST_v5.md`)", "", "Result: " + ("PASS" if "Result: PASS" in reb else "FAIL"), "",
+          "## Template §12-3 return block (v5)", "", "```",
+          "[STYLE]        Arial; tick/axis/panel = 14/15/16 pt (Figure 1 body/heading/panel 14/15/16); grayscale+navy #2B3D6B; label-case=(A)",
+          "[METHOD]       Fig5: B (make_Figure_5_v4.m from canonical JSON); Fig1–4, 6: byte copies of their sources (renumber_v5.py)",
+          "[FILES]        per data figure .fig + .m + .pdf + .tif(1200, poppler from the PDF); Fig1 .js + .pptx + .pdf + .tif(1200)",
+          f"[DATA_CHECK]   Figure_5_v4:{pvc['result']} (288 values; hash guard y); renumbered: byte identity y",
+          "[★ PROVENANCE] manifest + recorded hashes + anchors (v2 3/3, v3 4/4, v5 4/4) = PASS",
+          "[★ CI]          Figure 5: Wald 95% interval from the influence function (sdr.py), coverage share (grid.py) confirmed in code; no interval drawn",
+          f"[★ LEGEND]      Figure 5 key 12 / 12 from plotted objects, 12 series per panel = {pvc['result']}",
+          "[★ N/A]         none (all 12 arms × 12 cells exist; M_finite 200 everywhere)",
+          "[CLASS]        Fig1–6: V",
+          "[VECTOR]       pdffonts Arial only, emb=yes y ; pdfimages empty y ; unexpected rasterization n",
+          "[★ SCIENCE]    n / reference (0, 0.95) / log K / unit (%) / direction / categories = PASS",
+          "[★ REBUILD]    clean session + canonical data + scripts = " + ("PASS" if "Result: PASS" in reb else "FAIL"),
+          "[★ SIZE]       " + "   ".join(f"{n}: {j(f'qa/measure_{n}.json')['page_mm'][0]} × {j(f'qa/measure_{n}.json')['page_mm'][1]} mm" for n in figs),
+          "[★ MARKER]     Fig5 filled circle 1.31 mm, open circle 1.41 mm, other shapes 1.30–1.79 mm (small, with edges); Fig1–4, 6 unchanged",
+          "[★ TEXT]       definitions in captions; in-figure category labels only",
+          "[★ BOX]        Fig2:off  Fig3:off  Fig4:off  Fig5:off  Fig6:off",
+          "[★ MULTIPANEL] Fig5 y shared within a row, y label once per row, x label once, equal widths y",
+          "[★ UNCHANGED]  content of Figures 1–4, 6 (byte copies), Tables 1, 2, S5, graphical abstract; all earlier files",
+          "[★ SCHEMATIC]  Figure 1 = Figure_1_v3 (numbers vs canonical y)",
+          f"[BLIND]        metadata clean y ; AI traces 0 {'y' if all(not any(v['hits'].values()) for v in blind.values()) else 'n'} ; email 0 y (TIF pixel strips excluded)",
+          "[MAP]          v3/v4 → v5 numbering in POST_RESULT §8, NOTATION_REGISTRY.md, SOURCE_MAP.md y", "```", ""]
+    (ROOT / "qa" / "MEASUREMENT_REPORT_v4.md").write_text("\n".join(L) + "\n")
+
+
 # ------------------------------------------------------------------------------------------------ README.md
 def readme():
     files = subprocess.run(["git", "-C", str(ROOT), "ls-files"], capture_output=True, text=True).stdout.split("\n")
     files = [f for f in files if f and f != "README.md" and not f.startswith("templates/")]
     deliver = [f for f in files if f.startswith(("figures/Figure_", "figures_v2/Figure_", "figures_v3/Figure_",
-                                                 "graphical_abstract/G", "tables/Table_")) and not f.endswith((".m", ".js"))]
+                                                 "figures_v4/Figure_", "graphical_abstract/G", "tables/Table_"))
+               and not f.endswith((".m", ".js"))]
     L = ["# JBI figures, tables and graphical abstract — SS-DS203 manuscript", "",
          "Built 2026-10-27 from the read-only package `" + str(PKG) + "` (manifest verified, 248 / 248). Task: "
          "`CC_TASK_JBI_figures_tables_v2.md`.", "",
@@ -468,6 +559,15 @@ def readme():
          "(`figures/common/jbi_export_v4.m`; MATLAB's raster export clips markers at its 4,000-px render tiles). "
          "Rebuild and checks: `scripts/rebuild_check_v4.sh <scratch_dir>`; report `qa/MEASUREMENT_REPORT_v3.md`; "
          "decisions `POST_RESULT_PRESENTATION_JBI.md` §7.", "",
+         "## v5 revision (2026-10-27) — current set", "",
+         "Task `CC_TASK_JBI_figures_tables_v5.md`. Complete figure set with the suffix `_v4` in `figures_v4/Figure_1..6/`, "
+         "numbered in the order of first citation in Results: 1 design (= `Figure_1_v3`), 2 erasure (= `Figure_4_v3`), "
+         "3 families (= `Figure_2_v3`), 4 prior action history (= `Figure_3_v3`), 5 relative bias and coverage at the "
+         "slice (new; `make_Figure_5_v4.m`, canonical `fig5_bias_coverage.json`), 6 exploratory X1/X2 (= `Figure_5_v2`; "
+         "TIF from its PDF). Renumbered files are byte copies made by `scripts/renumber_v5.py`. Captions `CAPTIONS_v4.md`; "
+         "tables `Table_1_v2`, `Table_2_v3`, `Table_S5_v2`; graphical abstract `Graphical_abstract_v2`. Rebuild and checks: "
+         "`scripts/rebuild_check_v5.sh <scratch_dir>`; report `qa/MEASUREMENT_REPORT_v4.md`; decisions "
+         "`POST_RESULT_PRESENTATION_JBI.md` §8.", "",
          "## SHA-256 of the deliverables", "", "| file | bytes | SHA-256 |", "|---|---|---|"]
     for f in deliver:
         p = ROOT / f
@@ -478,7 +578,9 @@ def readme():
 def main():
     source_map()
     supplement_index()
-    if "--v3" in sys.argv[1:]:
+    if "--v4" in sys.argv[1:]:
+        measurement_report_v4()     # earlier reports are left as recorded
+    elif "--v3" in sys.argv[1:]:
         measurement_report_v3()     # the v1 and v2 reports are left as recorded
     elif "--v2" in sys.argv[1:]:
         measurement_report_v2()     # the v1 report (qa/MEASUREMENT_REPORT.md) is left as recorded

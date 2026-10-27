@@ -62,16 +62,20 @@ STEMS_V3 = ("figures_v3/Figure_1/Figure_1_v3", "figures_v3/Figure_2/Figure_2_v3"
             "figures_v3/Figure_4/Figure_4_v3", "tables/Table_2_v3")
 
 
+STEMS_V4 = tuple(f"figures_v4/Figure_{n}/Figure_{n}_v4" for n in range(1, 7))
+
+
 def main():
     before = Path(sys.argv[1])
     v2 = "--v2" in sys.argv[2:]
     v3 = "--v3" in sys.argv[2:]
+    v4 = "--v4" in sys.argv[2:]
     rows, ok = [], True
     for f in sorted((before / "canonical").iterdir()):
         same = sha(f) == sha(ROOT / "canonical" / f.name)
         rows.append((f"canonical/{f.name}", "bytes", "identical" if same else "DIFFERENT"))
         ok &= same
-    for stem in (STEMS_V3 if v3 else STEMS_V2 if v2 else STEMS_V1):
+    for stem in (STEMS_V4 if v4 else STEMS_V3 if v3 else STEMS_V2 if v2 else STEMS_V1):
         b, a = before / stem, ROOT / stem
         sb, nb = pdf_sig(f"{b}.pdf")
         sa, na = pdf_sig(f"{a}.pdf")
@@ -89,7 +93,7 @@ def main():
             same = zip_member(f"{b}.docx", "word/document.xml") == zip_member(f"{a}.docx", "word/document.xml")
             rows.append((f"{stem}.docx", "document XML", "identical" if same else "DIFFERENT"))
             ok &= same
-    L = ["# Clean rebuild test (template §4-0)" + (" — v4 revision outputs" if v3 else " — v3 revision outputs" if v2 else ""), "",
+    L = ["# Clean rebuild test (template §4-0)" + (" — v5 revision outputs" if v4 else " — v4 revision outputs" if v3 else " — v3 revision outputs" if v2 else ""), "",
          "All generated outputs were moved out of the repository; canonical data were re-frozen from the package and "
          "every figure, the graphical abstract and the tables were rebuilt from their scripts (each MATLAB figure in "
          "its own `matlab -batch \"close all force; clear; run(...)\"` session; no existing `.fig` was opened). "
@@ -99,7 +103,7 @@ def main():
     L += ["", f"**Result: {'PASS' if ok else 'FAIL'}** ({sum(r[2] == 'identical' for r in rows)} / {len(rows)} identical). "
           "The `.fig` files are checked by `verify_plotted.m` on the rebuilt figures (qa/plotted_vs_canonical.json); "
           "PDF creation dates differ by construction and are not part of the comparison."]
-    (ROOT / "qa" / ("REBUILD_TEST_v4.md" if v3 else "REBUILD_TEST_v3.md" if v2 else "REBUILD_TEST.md")).write_text("\n".join(L) + "\n")
+    (ROOT / "qa" / ("REBUILD_TEST_v5.md" if v4 else "REBUILD_TEST_v4.md" if v3 else "REBUILD_TEST_v3.md" if v2 else "REBUILD_TEST.md")).write_text("\n".join(L) + "\n")
     print("\n".join(f"{r[2]:>10}  {r[0]}  ({r[1]})" for r in rows))
     print("REBUILD", "PASS" if ok else "FAIL")
     sys.exit(0 if ok else 1)

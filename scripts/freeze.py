@@ -304,6 +304,38 @@ def x_order_v3(xr):
     return out
 
 
+# ------------------------------------------------------------------ v5 Figure 5: relative bias and coverage at the slice
+BC_ARMS = ["NV", "SITE", "FM-P", "FM-P-C", "FM-S", "FM-S-C", "REF", "REF-C", "FM-P-nat", "ORACLE-C", "ORACLE", "FULL"]
+BC_ANCHORS = {   # task v5 §1 (rounded as given); exact values are recorded in validation.json
+    ("NV", 1, 0, "rel_bias"): "0.103", ("NV", 1, 0, "coverage"): "0.85",
+    ("FULL", 1, 30, "rel_bias"): "0.330", ("ORACLE-C", 2, 0, "coverage"): "0.97"}
+
+
+def bias_coverage_rows(cm_all):
+    """Pre-result main-text Figure 1 of PRESENTATION_DECISIONS.md (decision 1): rel_bias and coverage of every arm in
+    the 12 cells (K x P) of the slice (primary set, W = 30, alpha = 0.5, gamma = 1, phi_A = 0), copied from
+    cell_metrics.csv (rel_bias = mean(est - truth) / mean truth; coverage = share of the 200 replicates whose Wald 95%
+    interval contains the truth; grid.py cell_metrics, sdr.py). rel_bias_pct = 100 * rel_bias is the display unit."""
+    cm = cm_all[(cm_all.set == "primary") & (cm_all.W == SLICE["W"]) & (cm_all.alpha == SLICE["alpha"]) &
+                (cm_all.gamma == SLICE["gamma"]) & (cm_all.phi == SLICE["phi"])]
+    assert sorted(cm.arm.unique()) == sorted(BC_ARMS) and len(cm) == 144, (len(cm), sorted(cm.arm.unique()))
+    assert (cm.M == 200).all() and (cm.M_finite == 200).all() and not cm.small_truth_flag.any()
+    rows, exact = [], {}
+    for a in BC_ARMS:
+        for r in cm[cm.arm == a].sort_values(["P", "K"]).itertuples(index=False):
+            rows.append(dict(arm=lab(a), arm_record=a, cell=int(r.cell), K=int(r.K), P=int(r.P), W=int(r.W),
+                             alpha=float(r.alpha), gamma=float(r.gamma), phi=float(r.phi), M=int(r.M),
+                             M_finite=int(r.M_finite), mean_truth=float(r.mean_truth), rel_bias=float(r.rel_bias),
+                             rel_bias_pct=100.0 * float(r.rel_bias), coverage=float(r.coverage),
+                             source="cell_metrics.csv (set primary; slice; arm) -> rel_bias, coverage"))
+    assert len(rows) == 144
+    for (a, k, p, m), want in BC_ANCHORS.items():
+        r = next(x for x in rows if x["arm_record"] == a and x["K"] == k and x["P"] == p)
+        assert f"{r[m]:.{len(want.split('.')[1])}f}" == want, (a, k, p, m, r[m], want)
+        exact[f"{lab(a)}, K = {k}, P = {p}, {m}"] = r[m]
+    return rows, exact
+
+
 # ------------------------------------------------------------------------------- v4 Table 2: displaying a sign
 def sign_decimals(fam, fams):
     """Table 2 values (D̄ and bounds of the non-exploratory rows) whose 3-decimal string is −0.000, a rounding that
@@ -568,6 +600,12 @@ def main():
     write("w_history_D", dict(description="Per-cell D = (|bias| without C − |bias| with C) / mean truth, primary set, "
                                           "alpha = 0.5, gamma = 1, phi_A = 0, W = 0, 5, 30; point values (no "
                                           "per-cell interval exists in the records)", rows=hist), hist)
+    bc, bc_exact = bias_coverage_rows(cm_all)
+    write("fig5_bias_coverage", dict(description="Relative bias (rel_bias; rel_bias_pct = 100 x rel_bias) and coverage "
+                                                 "of the Wald 95% interval of every arm in the 12 K x P cells of the slice "
+                                                 "(primary set, W = 30, alpha = 0.5, gamma = 1, phi_A = 0); copied from "
+                                                 "cell_metrics.csv; 200 replicates per cell; no interval for these metrics",
+                                     slice=SLICE, arms=[lab(a) for a in BC_ARMS], rows=bc), bc)
     xo = x_order_v3(xr)
     write("x_cells_order_v3", dict(description="Figure 5 (v3) display order of the 60 X cells; P1b-FM by (P, K, alpha, "
                                                "gamma), P2-FM by cell index", rows=xo), xo)
@@ -596,7 +634,9 @@ def main():
         x1_step5_reference="PASS (x1_e3.json step5_reference equals checks.json E3_site_primary)",
         v3_history_rows=len(hist), v3_history_anchors_exact=hist_exact, v3_history_anchor_status="PASS (3 d.p.)",
         v3_history_family_cells_checked=hist_fam,
-        v4_table2_sign_decimals=sign_decimals(fam, fams)))
+        v4_table2_sign_decimals=sign_decimals(fam, fams),
+        v5_bias_coverage_rows=len(bc), v5_bias_coverage_values=2 * len(bc),
+        v5_bias_coverage_anchors_exact=bc_exact, v5_bias_coverage_anchor_status="PASS (as rounded in task v5 §1)"))
 
     files = sorted(p for p in OUT.iterdir() if p.suffix in (".json", ".csv"))
     (OUT / "SHA256SUMS.txt").write_text("".join(f"{sha256(p)}  {p.name}\n" for p in files))

@@ -122,3 +122,49 @@ Conflicts (v4) and resolution:
 | Blinding scan (byte regex) vs LZW pixel data | The regex matched two random byte strings inside the compressed pixel strips of `Figure_3_v3.tif` ("a@l.EP", "a@l.Aqjb"); for the v3 outputs the scan reads every byte of a TIF except its pixel strips (header, IFDs, tag values) |
 | CAPTIONS update only if a caption must mention the extra decimals | No caption needs it (footnote b carries it), so no `CAPTIONS_v3.md`; the caption texts of `CAPTIONS_v2.md` apply to the `_v3` files unchanged; its Table 2 entry points to the footnotes, which are now in `tables/Table_2_v3.docx` (footnotes a and b added) |
 | v3 measurement report grouped the Figure 2 diamond with the squares ("other", median 1.283 mm) | Per-shape sizes measured again for the before values (`qa_markers_v4.py`: diamond 1.182 × 1.484 mm); the v3 report is left as recorded |
+
+## 8. v5 revision (2026-10-27; task `CC_TASK_JBI_figures_tables_v5.md`, base commit `355334e`)
+
+Made after all results were known, by the same rules (v2 §0–§2, v3 §0) and with the poppler TIF of §7 for every TIF.
+Two changes: (1) the bias / coverage figure is reinstated in the main text; (2) the figures are renumbered to the order
+of first citation in Results (the Results text cites the erasure figure first, step-5 E3 in Section 4.1). A complete
+set with the suffix `_v4` is in `figures_v4/Figure_1..6/`; every earlier file is unchanged. Tables 1 (v2), 2 (v3), S5
+(v2) and the graphical abstract (v2) are unchanged and not renamed. Captions: `CAPTIONS_v4.md`.
+
+| New number (files `Figure_N_v4.*`) | Content | Source file | How |
+|---|---|---|---|
+| Figure 1 | Study design | `figures_v3/Figure_1/Figure_1_v3.*` | byte copy (.pdf, .pptx, .tif, .js) |
+| Figure 2 | Erasure evaluation (A step-5 E3; B, C exploratory B) | `figures_v3/Figure_4/Figure_4_v3.*` | byte copy (.fig, .pdf, .tif, .m) |
+| Figure 3 | Confirmatory families (forest) | `figures_v3/Figure_2/Figure_2_v3.*` | byte copy |
+| Figure 4 | Dependence on prior action history | `figures_v3/Figure_3/Figure_3_v3.*` | byte copy |
+| Figure 5 | NEW: relative bias and coverage at the slice | `figures_v4/Figure_5/make_Figure_5_v4.m` | built from `canonical/fig5_bias_coverage.json` |
+| Figure 6 | Exploratory X1/X2 | `figures_v2/Figure_5/Figure_5_v2.*` | byte copy (.fig, .pdf, .m); TIF from its PDF by poppler |
+
+Figure 5 (task v5 §1). Reason: it is the pre-result main-text Figure 1 of `PRESENTATION_DECISIONS.md` (2026-10-09,
+decision 1: relative bias and 95% interval coverage against K, by arm, one column per P, at the slice), which the JBI
+main text had not shown since v2 (§4); reinstating it restores a decision fixed before any result existed. Content =
+the package rendering `fig1_bias_coverage_vs_K.pdf` (definition unchanged: all 12 arms, the 12 K × P cells of the slice,
+`rel_bias` and `coverage` of `cell_metrics.csv`; 288 values; anchors NV K = 1, P = 0 rel_bias 0.10283144587487024 and
+coverage 0.85, FULL K = 1, P = 30 rel_bias 0.33023840439297236, ORACLE−C K = 2, P = 0 coverage 0.97, in
+`validation.json`). Definitions confirmed in the code: rel_bias = mean(estimate − truth) / mean truth and coverage =
+share of replicates with ci_lo ≤ truth ≤ ci_hi (`grid.py` `cell_metrics`); ci = estimate ± z_0.975 · SE with SE =
+sd(IF)/√n of the contrast influence function (`sdr.py`). No interval is drawn for these metrics (none exists). Choices
+made after the results:
+
+| Choice | Reason |
+|---|---|
+| Rows (A) relative bias in %, (B) coverage; columns P = 0, 5, 30; x = K on a log axis (0.8–19); y shared within a row (bias −30 to 205 %, coverage −0.03 to 1.03); reference lines 0 and 0.95 (`#8A8A8A` dotted) | task v5 §1; template §5-B (equal widths) |
+| Four groups by line style and shade — NV / SITE dashed `#6B6B6B`; the seven representation arms solid `#8A8A8A`; ORACLE−C / ORACLE dash-dot navy; FULL dotted `#4D4D4D` — and arms within a group by marker (NV / SITE ▽; FM-P ○, FM-S □, REF △, FM-P-nat pentagram; ORACLE pair ◇; FULL hexagram); filled marker = the arm has site information (C or a site-retaining representation), open = it has none (NV, the −C arms, ORACLE−C) | task v5 §1; the fill rule makes every with/without-C pair of the protocol (SITE/NV, FM-P/FM-P−C, FM-S/FM-S−C, REF/REF−C, ORACLE/ORACLE−C) a filled/open pair of one shape |
+| Navy for ORACLE−C / ORACLE | template §2-3 (prominence = inferential role): the exact-state arms are the comparison that isolates the role of C when the state is known (P1a, P2-ORACLE); not chosen for their values. The representation arms get the lightest data shade because seven near-identical lines in a darker shade would hide the other groups; their markers keep dark edges so that each stays visible |
+| Markers small with edges, no jitter: filled circle 1.31 mm outside (edge 0.5 pt `#1A1A1A`), open circle 1.41 mm (edge 0.8 pt in the group colour); other shapes 1.30–1.79 mm (`qa/markers_v5.json`); line and marker drawn as separate objects so that the marker edge (0.5 pt) can be thinner than the line | task v5 §1 ("the near-overlap of arms within a group is itself information"); with a 0.8-pt black edge the 1.2-mm markers looked black and hid the group shade (first render) |
+| Draw order: representation arms, NV / SITE, FULL, ORACLE pair (navy on top) | the smallest groups stay visible where groups cross |
+| Key of 12 entries in five columns under the panels (one column per group; the seven representation arms in two), built from the plotted line and marker objects | legend ↔ plot (template §5-C); MATLAB's legend cannot fill uneven columns without dummy entries |
+| 189.79 × 184.15 mm | ≤ 220 mm at 14 / 15 / 16 pt (task v5 §1) |
+
+Conflicts (v5) and resolution:
+
+| Conflict | Resolution |
+|---|---|
+| Byte identity of the renumbered `.m` / `.js` with their sources vs template §4-0 (the `.m` regenerates the figure) | The copied scripts are byte-identical, so each re-creates its source-named outputs (e.g. `make_Figure_2_v4.m` writes `Figure_4_v3.*`); the renumbered files are produced by `scripts/renumber_v5.py` from the sources, whose scripts remain the rendering source of truth. Recorded in the script header and here |
+| Byte identity of the Figure 6 TIF with `Figure_5_v2.tif` vs "the poppler TIF is used for every TIF" | The poppler rule wins: `Figure_6_v4.tif` is rasterised from the byte-copied `Figure_6_v4.pdf` (ink identical to the PDF, `qa/tif_vs_pdf_Figure_6_v4.json`); its `.fig`, `.pdf` and `.m` are byte copies. `Figure_5_v2.tif` had no clipped marker (§7), so the change is the export route only |
+| Pre-result decision 1 names the figure "Figure 1"; it is now Figure 5 | Numbering follows citation order (task v5 §2); the content and slice are those of the decision |

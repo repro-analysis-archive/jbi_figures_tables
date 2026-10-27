@@ -1,0 +1,95 @@
+{
+ "pdf": "figures_v4/Figure_5/Figure_5_v4.pdf",
+ "markers": [
+  {
+   "shape": "circle",
+   "edge_colour": "#1A1A1A",
+   "edge_pt": 0.5,
+   "n": 25,
+   "outer_w_mm": 1.305,
+   "outer_h_mm": 1.305,
+   "kind": "filled (edge 0.5 pt #1A1A1A)"
+  },
+  {
+   "shape": "diamond",
+   "edge_colour": "#1A1A1A",
+   "edge_pt": 0.5,
+   "n": 25,
+   "outer_w_mm": 1.305,
+   "outer_h_mm": 1.678,
+   "kind": "filled (edge 0.5 pt #1A1A1A)"
+  },
+  {
+   "shape": "hexagram",
+   "edge_colour": "#1A1A1A",
+   "edge_pt": 0.5,
+   "n": 25,
+   "outer_w_mm": 1.521,
+   "outer_h_mm": 1.729,
+   "kind": "filled (edge 0.5 pt #1A1A1A)"
+  },
+  {
+   "shape": "pentagram",
+   "edge_colour": "#1A1A1A",
+   "edge_pt": 0.5,
+   "n": 25,
+   "outer_w_mm": 1.787,
+   "outer_h_mm": 1.708,
+   "kind": "filled (edge 0.5 pt #1A1A1A)"
+  },
+  {
+   "shape": "square",
+   "edge_colour": "#1A1A1A",
+   "edge_pt": 0.5,
+   "n": 25,
+   "outer_w_mm": 1.428,
+   "outer_h_mm": 1.428,
+   "kind": "filled (edge 0.5 pt #1A1A1A)"
+  },
+  {
+   "shape": "triangle",
+   "edge_colour": "#1A1A1A",
+   "edge_pt": 0.5,
+   "n": 50,
+   "outer_w_mm": 1.477,
+   "outer_h_mm": 1.302,
+   "kind": "filled (edge 0.5 pt #1A1A1A)"
+  },
+  {
+   "shape": "circle",
+   "edge_colour": "#6B6B6B",
+   "edge_pt": 0.8,
+   "n": 25,
+   "outer_w_mm": 1.411,
+   "outer_h_mm": 1.411,
+   "kind": "open (edge 0.8 pt, group colour)"
+  },
+  {
+   "shape": "diamond",
+   "edge_colour": "#2B3D6B",
+   "edge_pt": 0.8,
+   "n": 25,
+   "outer_w_mm": 1.411,
+   "outer_h_mm": 1.784,
+   "kind": "open (edge 0.8 pt, group colour)"
+  },
+  {
+   "shape": "square",
+   "edge_colour": "#6B6B6B",
+   "edge_pt": 0.8,
+   "n": 25,
+   "outer_w_mm": 1.534,
+   "outer_h_mm": 1.534,
+   "kind": "open (edge 0.8 pt, group colour)"
+  },
+  {
+   "shape": "triangle",
+   "edge_colour": "#6B6B6B",
+   "edge_pt": 0.8,
+   "n": 50,
+   "outer_w_mm": 1.582,
+   "outer_h_mm": 1.408,
+   "kind": "open (edge 0.8 pt, group colour)"
+  }
+ ]
+}

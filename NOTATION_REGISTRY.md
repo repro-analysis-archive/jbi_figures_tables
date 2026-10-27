@@ -85,3 +85,28 @@ In MATLAB figures and Word tables, subscripts are real subscripts where used.
 No new symbol was introduced. "P = 5" / "P = 30" in Figure 5 are post-window steps P (registry above), not the
 representation key P (always written FM-P). Supplementary Table S5 continues the package's S1–S4 numbering; the
 analysis-B evaluation sets remain "sets S1–S3".
+
+## v5 revision (2026-10-27): numbering in the order of first citation, and the bias / coverage figure
+
+Figure numbers elsewhere in this registry are those of the revision in which the row was written; the current numbers
+are below (files `figures_v4/Figure_N/Figure_N_v4.*`). Tables, Supplementary Table S5 and the graphical abstract keep
+their numbers. Table 2 v3 heading "Locked rule outcome" (v4 revision) is a column name, not a symbol.
+
+| Content | v3 / v4 number | v5 number | Labels in the figure |
+|---|---|---|---|
+| Study design | Figure 1 | Figure 1 | (A)–(D) unchanged |
+| Erasure evaluation | Figure 4 | Figure 2 | (A) step-5 E3-site; (B), (C) exploratory analysis B |
+| Confirmatory families | Figure 2 | Figure 3 | (A) P1, (B) P2 |
+| Prior action history | Figure 3 | Figure 4 | (A) W = 0, (B) W = 5, (C) W = 30 |
+| Relative bias and coverage at the slice | — (package results-report Figure 1, pre-result decision 1) | Figure 5 (new) | (A) relative bias, (B) coverage; columns "P = 0", "P = 5", "P = 30" |
+| Exploratory X1/X2 | Figure 5 | Figure 6 | (A)–(C); "k" = representation index (k = FM-P, FM-S, REF), "k−C" its site-removed arm |
+
+New result quantities (Figure 5; definitions from `ss_benchmark/grid.py` `cell_metrics` and `sdr.py`):
+
+| Symbol | Meaning | Definition | Printed as |
+|---|---|---|---|
+| relative bias | per arm and cell | mean over the 200 replicates of (estimate − truth) / mean truth (`rel_bias`); shown × 100 | "Relative bias (%)" |
+| coverage | per arm and cell | share of the 200 replicates whose Wald 95% interval (estimate ± z_0.975 · SE, SE from the influence function) contains the truth | "95% interval coverage" |
+
+Arm names in the Figure 5 key are those of the arms table above (U+2212 in −C). "P = 0" … "P = 30" are post-window
+steps P, not the representation key P (always written FM-P).
