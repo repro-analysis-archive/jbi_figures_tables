@@ -1,0 +1,7 @@
+._*
+.DS_Store
+.venv/
+node_modules/
+__pycache__/
+*.asv
+qa/render/
