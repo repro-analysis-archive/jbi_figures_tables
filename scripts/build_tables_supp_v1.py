@@ -76,7 +76,8 @@ def table_s1():
 
 
 # ------------------------------------------------------------------------------------------------ S3
-def table_s3():
+def table_s3(stem="Table_S3_v1", extra_notes=()):
+    """stem / extra_notes: for the v7 rebuild (build_tables_supp_v2.py); the defaults give the v1 table."""
     T = supp("t_tableX_group_summaries")
     doc = bt.new_document(landscape=True)
     bt.caption(doc, "S3", "Exploratory X1/X2: group summaries of the per-cell Δ for every analysis, arm, comparator and "
@@ -104,12 +105,16 @@ def table_s3():
         "site-removed; NV, no video.",
         "Ceiling (fact base §8): exploratory; no verdict; cannot restore P1b-FM/P2-FM; nonlinear site information remains "
         "after X1; X2 changes do not show that erasure caused a difference.",
-    ])
-    return save(doc, "Table_S3_v1", hdr, rows, spans)
+    ] + list(extra_notes))
+    return save(doc, stem, hdr, rows, spans)
 
 
 # ------------------------------------------------------------------------------------------------ S4
-def table_s4():
+S4_NEGZERO = (" A value shown as −0.000 is negative and rounds to zero at 3 decimals (committed rounding).")
+
+
+def table_s4(stem="Table_S4_v1", negzero_sentence=S4_NEGZERO, extra_notes=()):
+    """stem / negzero_sentence / extra_notes: for the v7 rebuild; the defaults give the v1 table."""
     T = supp("t_tableX_E3")
     v = {}
     for r in T:
@@ -157,14 +162,13 @@ def table_s4():
         "analysis region (training folds) and evaluates on held-out folds of the same population; step-5 values are the "
         "protocol LEACE fitted on the 278-case set. The linear E3-site value of X1 is a check of the procedure and does "
         "not gate X1. E3-site boundary 0.35 (one-sided upper bound); E2 criterion ΔAUC ≥ 0.05 and CI excluding 0. "
-        "Intervals: case-level (cluster) bootstrap stratified by site (2,000 resamples). A value shown as −0.000 is "
-        "negative and rounds to zero at 3 decimals (committed rounding).",
+        "Intervals: case-level (cluster) bootstrap stratified by site (2,000 resamples)." + negzero_sentence,
         "Ceiling (fact base §8): exploratory; no verdict; cannot restore P1b-FM/P2-FM; nonlinear site information remains "
         "after X1; X2 changes do not show that erasure caused a difference. BA, balanced accuracy; MLP, two-layer "
         "multilayer perceptron probe.",
-    ])
-    doc.save(OUT / "Table_S4_v1.docx")
-    with open(OUT / "Table_S4_v1.csv", "w", newline="") as f:
+    ] + list(extra_notes))
+    doc.save(OUT / f"{stem}.docx")
+    with open(OUT / f"{stem}.csv", "w", newline="") as f:
         w = csv.writer(f)
         for title, h, rs in (("(A)", hdrA, rowsA), ("(B)", hdrB, rowsB), ("(C)", hdrC, rowsC)):
             w.writerow([title]); w.writerow(h)

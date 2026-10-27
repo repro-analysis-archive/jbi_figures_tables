@@ -1,0 +1,125 @@
+{
+ "Table_S3_v2": {
+  "pages": 2,
+  "rules_per_page": [
+   3,
+   3
+  ],
+  "csv_changes": [
+   [
+    40,
+    4,
+    "−0.000 (−0.006 to 0.005)",
+    "−0.0005{sup:a} (−0.006 to 0.005)"
+   ],
+   [
+    48,
+    4,
+    "−0.000 (−0.009 to 0.008)",
+    "−0.0003{sup:a} (−0.009 to 0.008)"
+   ]
+  ],
+  "docx_changes": [
+   [
+    40,
+    4,
+    "−0.000 (−0.006 to 0.005)",
+    "−0.0005a (−0.006 to 0.005)"
+   ],
+   [
+    48,
+    4,
+    "−0.000 (−0.009 to 0.008)",
+    "−0.0003a (−0.009 to 0.008)"
+   ]
+  ],
+  "footnotes_added": [
+   "aMean Δ shown with 4 decimals so that its sign is visible (3 decimals would display −0.000); all other values have 3 decimals."
+  ],
+  "footnotes_removed": [],
+  "checks": {
+   "Normal style only": true,
+   "no shading": true,
+   "cell borders top/bottom only": true,
+   "bold only caption + header": true,
+   "Arial 11 pt": true,
+   "PDF fonts Arial embedded": true,
+   "no vertical rules": true,
+   "pages unchanged": true,
+   "CSV: only the recorded cells differ": true,
+   "docx tables: only the recorded cells differ": true,
+   "displays equal validation.json": true,
+   "no −0.000 left in a table cell": true,
+   "footnotes: one added, S4 one sentence replaced": true
+  }
+ },
+ "Table_S4_v2": {
+  "pages": 2,
+  "rules_per_page": [
+   9,
+   0
+  ],
+  "csv_changes": [
+   [
+    15,
+    2,
+    "−0.000 (−0.022 to 0.021)",
+    "−0.0005{sup:a} (−0.022 to 0.021)"
+   ],
+   [
+    16,
+    2,
+    "0.024 (−0.000 to 0.049)",
+    "0.024 (−0.0005{sup:a} to 0.049)"
+   ],
+   [
+    17,
+    2,
+    "0.024 (−0.000 to 0.051)",
+    "0.024 (−0.0004{sup:a} to 0.051)"
+   ]
+  ],
+  "docx_changes": [
+   [
+    13,
+    2,
+    "−0.000 (−0.022 to 0.021)",
+    "−0.0005a (−0.022 to 0.021)"
+   ],
+   [
+    14,
+    2,
+    "0.024 (−0.000 to 0.049)",
+    "0.024 (−0.0005a to 0.049)"
+   ],
+   [
+    15,
+    2,
+    "0.024 (−0.000 to 0.051)",
+    "0.024 (−0.0004a to 0.051)"
+   ]
+  ],
+  "footnotes_added": [
+   "Exploratory (X1; plan registered on OSF, osf.io/5c627); no verdict. X1 refits the LEACE eraser on the 158-case analysis region (training folds) and evaluates on held-out folds of the same population; step-5 values are the protocol LEACE fitted on the 278-case set. The linear E3-site value of X1 is a check of the procedure and does not gate X1. E3-site boundary 0.35 (one-sided upper bound); E2 criterion ΔAUC ≥ 0.05 and CI excluding 0. Intervals: case-level (cluster) bootstrap stratified by site (2,000 resamples).",
+   "aShown with 4 decimals so that its sign is visible (3 decimals would display −0.000); all other values have 3 decimals."
+  ],
+  "footnotes_removed": [
+   "Exploratory (X1; plan registered on OSF, osf.io/5c627); no verdict. X1 refits the LEACE eraser on the 158-case analysis region (training folds) and evaluates on held-out folds of the same population; step-5 values are the protocol LEACE fitted on the 278-case set. The linear E3-site value of X1 is a check of the procedure and does not gate X1. E3-site boundary 0.35 (one-sided upper bound); E2 criterion ΔAUC ≥ 0.05 and CI excluding 0. Intervals: case-level (cluster) bootstrap stratified by site (2,000 resamples). A value shown as −0.000 is negative and rounds to zero at 3 decimals (committed rounding)."
+  ],
+  "checks": {
+   "Normal style only": true,
+   "no shading": true,
+   "cell borders top/bottom only": true,
+   "bold only caption + header": true,
+   "Arial 11 pt": true,
+   "PDF fonts Arial embedded": true,
+   "no vertical rules": true,
+   "pages unchanged": true,
+   "CSV: only the recorded cells differ": true,
+   "docx tables: only the recorded cells differ": true,
+   "displays equal validation.json": true,
+   "no −0.000 left in a table cell": true,
+   "footnotes: one added, S4 one sentence replaced": true
+  }
+ }
+}

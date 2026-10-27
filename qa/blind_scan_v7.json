@@ -1,0 +1,98 @@
+{
+ "graphical_abstract/Graphical_abstract_v3.pdf": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "title": "Graphical abstract",
+   "creator": "Impress",
+   "producer": "LibreOffice 26.2.2.2 (AARCH64)"
+  }
+ },
+ "graphical_abstract/Graphical_abstract_v3.pptx": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "dc:creator": "",
+   "cp:lastModifiedBy": "",
+   "dc:title": "Graphical abstract"
+  }
+ },
+ "graphical_abstract/Graphical_abstract_v3.tif": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "scanned": "all bytes except pixel strips"
+  }
+ },
+ "tables/Table_S3_v2.docx": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "dc:creator": "",
+   "cp:lastModifiedBy": "",
+   "dc:title": ""
+  }
+ },
+ "tables/Table_S3_v2.csv": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {}
+ },
+ "tables/Table_S3_v2.pdf": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "creator": "Writer",
+   "producer": "LibreOffice 26.2.2.2 (AARCH64)"
+  }
+ },
+ "tables/Table_S4_v2.docx": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "dc:creator": "",
+   "cp:lastModifiedBy": "",
+   "dc:title": ""
+  }
+ },
+ "tables/Table_S4_v2.csv": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {}
+ },
+ "tables/Table_S4_v2.pdf": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "creator": "Writer",
+   "producer": "LibreOffice 26.2.2.2 (AARCH64)"
+  }
+ }
+}

@@ -101,6 +101,18 @@
   "manifest": "match",
   "recorded_by_generating_step": "none recorded"
  },
+ "checks5": {
+  "path": "02_records/step5_record_0ebf2cf/checks.json",
+  "sha256": "ea4cfebf673cd94ef2904a0a5b5fe99b44619985ce5f022af38eac010a26b6e4",
+  "manifest": "match",
+  "recorded_by_generating_step": "match"
+ },
+ "x1_e3": {
+  "path": "04_exploratory/X1_X2/results_X/x1_e3.json",
+  "sha256": "d95fe9752eb43ec0ef808d5e4c8d0ea48ab6f3e17a986575b817bfcdb92287bb",
+  "manifest": "match",
+  "recorded_by_generating_step": "match"
+ },
  "mask_check": {
   "path": "inputs/mask_check.json",
   "sha256": "81c8eb46fa7abba4cb5024e073e30cc838c011d2d62488abbde72d73434d58d5",

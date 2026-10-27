@@ -52,6 +52,8 @@ INPUTS = {   # name: (package path, SHA-256 recorded by the generating step or N
     "supplement_captions": (SUP + "CAPTIONS.md", None),
     "supplement_sources": (SUP + "SOURCES.md", None),
     "presentation_decisions": fz.INPUTS["presentation_decisions"],
+    "checks5": fz.INPUTS["checks5"],
+    "x1_e3": fz.INPUTS["x1_e3"],
 }
 # provided by the investigator (not in the package): the step-4 record's mask_check.json, placed in inputs/; guarded by
 # the blob SHA-256 recorded in the package SUPPLEMENT_20261020/SOURCES.md (repository medical_video_causal_gate, 8d4c61a)
@@ -169,6 +171,48 @@ def s5_rows(xc):
                                          delta=float(r.delta), delta_lo=float(r.delta_lo), delta_hi=float(r.delta_hi),
                                          source=f"x_comparisons_cells.csv[{r.seed_name}]"))
     return rows
+
+
+# ---------------------------------------------------------------------------------------------- v7: negative zero
+def sign_display(x):
+    """Smallest number of decimals (from 4) at which x rounds to a non-zero value (Table 2 rule, v4)."""
+    d = 4
+    while float(f"{x:.{d}f}") == 0.0:
+        d += 1
+    return d, f"{x:.{d}f}".replace("-", MINUS)
+
+
+def negative_zero(tabs, checks, x1):
+    """Cells of Tables S3 and S4 whose committed 3-decimal display is −0.000, with their exact values from the package
+    CSVs (full precision) and, for S4, checked against checks.json / x1_e3.json; plus every other −0.000 of the
+    supplementary tables (Table S2 = main table3.json), listed with its source (not changed in v7)."""
+    rec = []
+    for r in tabs["tableX_group_summaries"]:
+        for fld in ("mean_delta", "mean_delta_lo", "mean_delta_hi"):
+            x = float(r[fld])
+            if f3(x) == MINUS + "0.000":
+                d, disp = sign_display(x)
+                rec.append(dict(table="S3", row=",".join(r[k] for k in ("analysis", "arm", "comparator", "comparison",
+                                                                        "group")), field=fld, value=x,
+                                value_repr=r[fld], source="03_results/SUPPLEMENT_20261020/tableX_group_summaries.csv",
+                                display_3dp=f3(x), decimals=d, display=disp))
+    keymap = {"E2 primary (158-case analysis region)": "E2", "E3-site (158-case analysis region)": "E3-site"}
+    for r in tabs["tableX_E3"]:
+        if r["field"] not in ("ba", "lo_2p5", "hi_97p5", "upper_one_sided_95", "delta_auc", "ci_lo", "ci_hi",
+                              "retained_fraction"):
+            continue
+        x = float(r["value"])
+        if f3(x) != MINUS + "0.000":
+            continue
+        obj, part = r["source"].split(" ", 1)
+        exact = (checks if obj == "checks.json" else x1)[r["key"]][part][r["field"]]
+        assert exact == x, (r, exact)
+        d, disp = sign_display(x)
+        rec.append(dict(table="S4", row=f"{keymap.get(r['block'], r['block'])}, {r['key']}, {r['condition']}",
+                        field=r["field"], value=x, value_repr=r["value"],
+                        source=f"03_results/SUPPLEMENT_20261020/tableX_E3.csv (= {r['source']})",
+                        equals_package_json=True, display_3dp=f3(x), decimals=d, display=disp))
+    return rec
 
 
 # ---------------------------------------------------------------------------------------------- tables
@@ -301,6 +345,22 @@ def main():
     for name, rows in tabs.items():
         write("t_" + name, dict(source=INPUTS[name][0], rows=rows), rows)
     write("inputs_sha256", rec)
+    checks = json.loads((PKG / INPUTS["checks5"][0]).read_text())
+    x1 = json.loads((PKG / INPUTS["x1_e3"][0]).read_text())
+    nz = negative_zero(tabs, checks, x1)
+    assert [(r["table"], r["field"]) for r in nz].count(("S3", "mean_delta")) == 2 and len(nz) == 5, nz
+    t3 = main_canonical("table3")["rows"]
+    other = []
+    for r in t3:
+        for k, v in r.items():
+            if isinstance(v, dict):
+                for fld, x in v.items():
+                    if isinstance(x, float) and f3(x) == MINUS + "0.000":
+                        other.append(dict(table="S2 (= Table_S5_v2)", row=f"{r['key']}: {k}", field=fld, value=x,
+                                          source="canonical/table3.json <- checks.json / x1_e3.json (full precision)",
+                                          status="not changed in v7 (Table S2 outside the task); full-precision source exists"))
+    val["v7_negative_zero_S3_S4"] = nz
+    val["v7_negative_zero_other_tables"] = other
     val.update(s4_values=len(s4), s1_values=len(s1), s2_values=len(s23), s3_values=len(s23), s5_values=len(s5), s6_values=len(s6),
                s1_round_to_zero_3dp=sum(r["D_disp"] in ("+0.000", MINUS + "0.000") for r in s1),
                s2_round_to_zero_1dp=sum(r["rel_bias_disp"] in ("+0.0", MINUS + "0.0") for r in s23),

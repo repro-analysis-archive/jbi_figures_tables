@@ -53,13 +53,18 @@ def files_supp():
     return out + ["CAPTIONS_supplement_v1.md", "supplementary/Supplementary_Material_v1.docx"]
 
 
+FILES_V7 = [f"graphical_abstract/Graphical_abstract_v3.{e}" for e in ("pdf", "pptx", "tif")] + \
+           [f"tables/Table_S{n}_v2.{e}" for n in (3, 4) for e in ("docx", "csv", "pdf")]
+
+
 def main():
     v2 = "--v2" in sys.argv[1:]
-    supp = "--supp" in sys.argv[1:]
+    v7 = "--v7" in sys.argv[1:]
+    supp = "--supp" in sys.argv[1:] or v7
     v4 = "--v4" in sys.argv[1:] or supp
     v3 = "--v3" in sys.argv[1:] or v4          # v4 uses the v3 TIF scan (pixel strips excluded)
     out, ok = {}, True
-    for f in (files_supp() if supp else FILES_V4 if v4 else FILES_V3 if v3 else FILES_V2 if v2 else FILES):
+    for f in (FILES_V7 if v7 else files_supp() if supp else FILES_V4 if v4 else FILES_V3 if v3 else FILES_V2 if v2 else FILES):
         p = ROOT / f
         blobs = [p.read_bytes()]
         meta = {}
@@ -90,7 +95,7 @@ def main():
         ok &= not any(hits.values()) and not meta.get("author") and not meta.get("dc:creator") and not meta.get("cp:lastModifiedBy")
         out[f] = dict(hits=hits, metadata=meta)
         print(f, hits, meta)
-    (ROOT / "qa" / ("blind_scan_supp_v6.json" if supp else "blind_scan_v4.json" if v4 else "blind_scan_v3.json" if v3 else "blind_scan_v2.json" if v2 else
+    (ROOT / "qa" / ("blind_scan_v7.json" if v7 else "blind_scan_supp_v6.json" if supp else "blind_scan_v4.json" if v4 else "blind_scan_v3.json" if v3 else "blind_scan_v2.json" if v2 else
                     "blind_scan.json")).write_text(json.dumps(out, indent=1, ensure_ascii=False) + "\n")
     print("BLIND", "PASS" if ok else "FAIL")
     sys.exit(0 if ok else 1)

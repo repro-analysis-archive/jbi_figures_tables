@@ -221,3 +221,23 @@ Cross-references in the main set that the new supplementary numbering changes (t
 "Supplementary Table S5" (Table 2 v3 footnote; `CAPTIONS_v4.md`, Figure 6) → **Table S2**; "Supplementary Figure X and
 Table X" (`CAPTIONS_v4.md`, Figure 6) → **Figure S5 and Table S3**; "Supplementary Figure S1" and "Supplementary Figures S2
 and S3" are unchanged.
+
+## 10. v7 revision (2026-10-27; task `CC_TASK_JBI_GA_and_tables_v7.md`, base commit `8e5e882`)
+
+Mandatory revisions from the content audit; nothing else in the figure set is touched (the v6 supplement files, the
+main v5 set and every earlier file are unchanged).
+
+| # | Change | Rule / reason | What is shown |
+|---|---|---|---|
+| 1 | Graphical abstract v3 (`graphical_abstract/Graphical_abstract_v3.*`, from `make_Graphical_abstract_v3.js` = the v2 script with exactly two text changes): the erasure box now reads "Linear site erasure / (prespecified linear-probe criterion) / Fitting set (278): met / Analysis windows (158): not met / Representation families not tested"; the bottom line reads "At the prespecified α = 0.5, γ = 1 slice, 30 prior action steps largely attenuated the site difference (descriptive)" | content audit (task v7 §1) | Title, confirmatory boxes ("No prior action history (W = 0)", "slightly higher"), exploratory box and numbers unchanged; numbers in the GA all canonical (0, 1, 30, 0.5, 158, 278, 0.052, 2.198). Layout only as needed at the same sizes: the erasure box 1.5 mm wider (its line "(prespecified linear-probe criterion)" is 54.7 mm at 10 pt), the exploratory box 1.5 mm narrower (longest line 61.2 mm), the bottom line on two lines, canvas 130 × 56 mm (v2: 52 mm; limit 60) |
+| 2 | Supplementary Tables S3 and S4 v2: the five cells shown as −0.000 now show the decimals needed for their sign (Table 2 rule of v4) with footnote a; S4's v1 sentence about −0.000 removed | task v7 §2 | Exact values read from the package CSVs (S4 also equal to `checks.json` / `x1_e3.json`), recorded in `canonical_supplement/validation.json` → `v7_negative_zero_S3_S4`: S3 X2 FM-S−C vs step-6 FM-S−C, P2-FM, mean Δ −0.0004556214274979232 → −0.0005; S3 X2 REF−C vs step-6 REF−C, P1b-FM, mean Δ −0.00026330432994649554 → −0.0003; S4 E2, S, X1 after X1 removal, ΔAUC −0.00046687915783594214 → −0.0005; S4 E2, REF, step 5 before removal, CI lower bound −0.0004872832492350014 → −0.0005; S4 E2, REF, step 5 after protocol removal, CI lower bound −0.0003989757726410605 → −0.0004. Only these cells and the footnotes differ from v1 (`qa/tables_qa_supp_v2.json`); page counts unchanged (2 / 2) |
+| 3 | `CAPTIONS_supplement_v2.md` | the Table S3 / S4 entries point to the v2 files and name footnote a (the S4 entry listed "−0.000") | caption texts otherwise unchanged |
+
+Other "−0.000" strings in Tables S1–S6 (listed, not changed in v7): Table S2 (= Table_S5_v2) shows the same three S4
+quantities — S X1 E2 ΔAUC after X1 removal (−0.00046687915783594214), REF E2 lower bounds before and after protocol
+removal (−0.0004872832492350014, −0.0003989757726410605); full-precision sources exist (`canonical/table3.json` ←
+`checks.json`, `x1_e3.json`), recorded in `validation.json` → `v7_negative_zero_other_tables`. Table S2 is outside
+task v7, so it still shows −0.000 for these three values (now displayed with 4 decimals in Table S4).
+
+Not regenerated in v7: `supplementary/Supplementary_Material_v1.docx` and the auditor package still contain the v1
+Tables S3 and S4.

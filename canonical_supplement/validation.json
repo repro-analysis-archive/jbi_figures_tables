@@ -72,6 +72,92 @@
   "S6_equals_main_figure_2_BC_rows": 36,
   "S4_equals_tableS4_mask_check": "n_frames, rho_c (4 centres), min rho_c, r"
  },
+ "v7_negative_zero_S3_S4": [
+  {
+   "table": "S3",
+   "row": "X2,FM-S-C,step6 FM-S-C,minusC,P2-FM",
+   "field": "mean_delta",
+   "value": -0.0004556214274979232,
+   "value_repr": "-0.0004556214274979232",
+   "source": "03_results/SUPPLEMENT_20261020/tableX_group_summaries.csv",
+   "display_3dp": "−0.000",
+   "decimals": 4,
+   "display": "−0.0005"
+  },
+  {
+   "table": "S3",
+   "row": "X2,REF-C,step6 REF-C,minusC,P1b-FM",
+   "field": "mean_delta",
+   "value": -0.00026330432994649554,
+   "value_repr": "-0.00026330432994649554",
+   "source": "03_results/SUPPLEMENT_20261020/tableX_group_summaries.csv",
+   "display_3dp": "−0.000",
+   "decimals": 4,
+   "display": "−0.0003"
+  },
+  {
+   "table": "S4",
+   "row": "E2, S, X1, after X1 removal",
+   "field": "delta_auc",
+   "value": -0.00046687915783594214,
+   "value_repr": "-0.00046687915783594214",
+   "source": "03_results/SUPPLEMENT_20261020/tableX_E3.csv (= x1_e3.json E2_primary_after_removal_X1)",
+   "equals_package_json": true,
+   "display_3dp": "−0.000",
+   "decimals": 4,
+   "display": "−0.0005"
+  },
+  {
+   "table": "S4",
+   "row": "E2, REF, step 5, before removal",
+   "field": "ci_lo",
+   "value": -0.0004872832492350014,
+   "value_repr": "-0.0004872832492350014",
+   "source": "03_results/SUPPLEMENT_20261020/tableX_E3.csv (= checks.json E2_primary)",
+   "equals_package_json": true,
+   "display_3dp": "−0.000",
+   "decimals": 4,
+   "display": "−0.0005"
+  },
+  {
+   "table": "S4",
+   "row": "E2, REF, step 5, after protocol removal",
+   "field": "ci_lo",
+   "value": -0.0003989757726410605,
+   "value_repr": "-0.0003989757726410605",
+   "source": "03_results/SUPPLEMENT_20261020/tableX_E3.csv (= checks.json E2_primary_after_removal)",
+   "equals_package_json": true,
+   "display_3dp": "−0.000",
+   "decimals": 4,
+   "display": "−0.0004"
+  }
+ ],
+ "v7_negative_zero_other_tables": [
+  {
+   "table": "S2 (= Table_S5_v2)",
+   "row": "S: X1_E2_after_158",
+   "field": "est",
+   "value": -0.00046687915783594214,
+   "source": "canonical/table3.json <- checks.json / x1_e3.json (full precision)",
+   "status": "not changed in v7 (Table S2 outside the task); full-precision source exists"
+  },
+  {
+   "table": "S2 (= Table_S5_v2)",
+   "row": "REF: E2_158",
+   "field": "lo",
+   "value": -0.0004872832492350014,
+   "source": "canonical/table3.json <- checks.json / x1_e3.json (full precision)",
+   "status": "not changed in v7 (Table S2 outside the task); full-precision source exists"
+  },
+  {
+   "table": "S2 (= Table_S5_v2)",
+   "row": "REF: E2_after_158",
+   "field": "lo",
+   "value": -0.0003989757726410605,
+   "source": "canonical/table3.json <- checks.json / x1_e3.json (full precision)",
+   "status": "not changed in v7 (Table S2 outside the task); full-precision source exists"
+  }
+ ],
  "s4_values": 720,
  "s1_values": 1200,
  "s2_values": 2880,
