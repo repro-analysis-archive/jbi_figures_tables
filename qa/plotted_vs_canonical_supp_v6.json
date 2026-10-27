@@ -1,0 +1,39 @@
+{
+  "Figure_S1": {
+    "pages": 10,
+    "values": 1200,
+    "mismatches": [],
+    "key_classes": 11,
+    "key_complete": true,
+    "result": "PASS"
+  },
+  "Figure_S2": {
+    "pages": 24,
+    "values": 2880,
+    "mismatches": [],
+    "key_classes": 7,
+    "key_complete": true,
+    "result": "PASS"
+  },
+  "Figure_S3": {
+    "pages": 24,
+    "values": 2880,
+    "mismatches": [],
+    "key_classes": 5,
+    "key_complete": true,
+    "result": "PASS"
+  },
+  "Figure_S5": {
+    "pages": 4,
+    "values": 756,
+    "mismatches": [],
+    "result": "PASS"
+  },
+  "Figure_S6": {
+    "points": 36,
+    "mismatches": [],
+    "key_glyphs": 8,
+    "key_ok": true,
+    "result": "PASS"
+  }
+}

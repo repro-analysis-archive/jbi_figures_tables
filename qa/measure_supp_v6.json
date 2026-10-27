@@ -1,0 +1,2475 @@
+{
+ "Figure_S1": {
+  "pdf": "figures_supp_v1/Figure_S1/Figure_S1_v1.pdf",
+  "pages": 10,
+  "pdffonts": [
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes      7  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes      8  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes     31  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes     32  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes     56  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes     57  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes     80  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes     81  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    104  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    105  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    128  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    129  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    152  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    153  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    176  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    177  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    200  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    201  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    224  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    225  0"
+  ],
+  "raster_objects": 0,
+  "page_sizes_mm": [
+   [
+    209.9,
+    297.04
+   ]
+  ],
+  "min_text_pt": 11.0,
+  "text_sizes_pt": [
+   11.0,
+   12.0,
+   13.0,
+   14.0
+  ],
+  "overlaps": 0,
+  "subscript_pairs_phi_A": 10,
+  "edge_issues": 0,
+  "tif_dpi": [
+   600.0
+  ],
+  "tif_identical_pages": 10,
+  "per_page": [
+   {
+    "page": 1,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 280,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S1/pages/Figure_S1_v1_p01.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 2,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 67,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S1/pages/Figure_S1_v1_p02.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 3,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 280,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S1/pages/Figure_S1_v1_p03.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 4,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 67,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S1/pages/Figure_S1_v1_p04.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 5,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 280,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S1/pages/Figure_S1_v1_p05.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 6,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 67,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S1/pages/Figure_S1_v1_p06.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 7,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 280,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S1/pages/Figure_S1_v1_p07.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 8,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 67,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S1/pages/Figure_S1_v1_p08.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 9,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 280,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S1/pages/Figure_S1_v1_p09.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 10,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 67,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S1/pages/Figure_S1_v1_p10.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   }
+  ]
+ },
+ "Figure_S2": {
+  "pdf": "figures_supp_v1/Figure_S2/Figure_S2_v1.pdf",
+  "pages": 24,
+  "pdffonts": [
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes      7  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes      8  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes     31  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes     32  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes     56  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes     57  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes     80  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes     81  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    104  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    105  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    128  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    129  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    152  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    153  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    176  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    177  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    200  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    201  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    224  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    225  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    248  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    249  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    272  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    273  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    296  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    297  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    320  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    321  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    344  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    345  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    368  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    369  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    392  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    393  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    416  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    417  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    440  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    441  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    464  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    465  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    488  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    489  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    512  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    513  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    536  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    537  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    560  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    561  0"
+  ],
+  "raster_objects": 0,
+  "page_sizes_mm": [
+   [
+    209.9,
+    297.04
+   ]
+  ],
+  "min_text_pt": 11.0,
+  "text_sizes_pt": [
+   11.0,
+   12.0,
+   13.0,
+   14.0
+  ],
+  "overlaps": 0,
+  "subscript_pairs_phi_A": 24,
+  "edge_issues": 0,
+  "tif_dpi": [
+   600.0
+  ],
+  "tif_identical_pages": 24,
+  "per_page": [
+   {
+    "page": 1,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 276,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S2/pages/Figure_S2_v1_p01.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 2,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 63,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S2/pages/Figure_S2_v1_p02.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 3,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 276,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S2/pages/Figure_S2_v1_p03.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 4,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 63,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S2/pages/Figure_S2_v1_p04.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 5,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 276,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S2/pages/Figure_S2_v1_p05.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 6,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 63,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S2/pages/Figure_S2_v1_p06.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 7,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 276,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S2/pages/Figure_S2_v1_p07.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 8,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 63,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S2/pages/Figure_S2_v1_p08.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 9,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 276,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S2/pages/Figure_S2_v1_p09.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 10,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 63,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S2/pages/Figure_S2_v1_p10.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 11,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 276,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S2/pages/Figure_S2_v1_p11.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 12,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 63,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S2/pages/Figure_S2_v1_p12.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 13,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 276,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S2/pages/Figure_S2_v1_p13.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 14,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 63,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S2/pages/Figure_S2_v1_p14.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 15,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 276,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S2/pages/Figure_S2_v1_p15.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 16,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 63,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S2/pages/Figure_S2_v1_p16.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 17,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 276,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S2/pages/Figure_S2_v1_p17.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 18,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 63,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S2/pages/Figure_S2_v1_p18.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 19,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 276,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S2/pages/Figure_S2_v1_p19.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 20,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 63,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S2/pages/Figure_S2_v1_p20.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 21,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 276,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S2/pages/Figure_S2_v1_p21.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 22,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 63,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S2/pages/Figure_S2_v1_p22.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 23,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 276,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S2/pages/Figure_S2_v1_p23.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 24,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 63,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S2/pages/Figure_S2_v1_p24.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   }
+  ]
+ },
+ "Figure_S3": {
+  "pdf": "figures_supp_v1/Figure_S3/Figure_S3_v1.pdf",
+  "pages": 24,
+  "pdffonts": [
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes      7  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes      8  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes     31  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes     32  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes     56  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes     57  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes     80  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes     81  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    104  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    105  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    128  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    129  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    152  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    153  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    176  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    177  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    200  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    201  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    224  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    225  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    248  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    249  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    272  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    273  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    296  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    297  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    320  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    321  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    344  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    345  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    368  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    369  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    392  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    393  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    416  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    417  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    440  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    441  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    464  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    465  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    488  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    489  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    512  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    513  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    536  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    537  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes    560  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes    561  0"
+  ],
+  "raster_objects": 0,
+  "page_sizes_mm": [
+   [
+    209.9,
+    297.04
+   ]
+  ],
+  "min_text_pt": 11.0,
+  "text_sizes_pt": [
+   11.0,
+   12.0,
+   13.0,
+   14.0
+  ],
+  "overlaps": 0,
+  "subscript_pairs_phi_A": 24,
+  "edge_issues": 0,
+  "tif_dpi": [
+   600.0
+  ],
+  "tif_identical_pages": 24,
+  "per_page": [
+   {
+    "page": 1,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 274,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S3/pages/Figure_S3_v1_p01.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 2,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 61,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S3/pages/Figure_S3_v1_p02.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 3,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 274,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S3/pages/Figure_S3_v1_p03.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 4,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 61,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S3/pages/Figure_S3_v1_p04.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 5,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 274,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S3/pages/Figure_S3_v1_p05.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 6,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 61,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S3/pages/Figure_S3_v1_p06.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 7,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 274,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S3/pages/Figure_S3_v1_p07.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 8,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 61,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S3/pages/Figure_S3_v1_p08.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 9,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 274,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S3/pages/Figure_S3_v1_p09.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 10,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 61,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S3/pages/Figure_S3_v1_p10.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 11,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 274,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S3/pages/Figure_S3_v1_p11.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 12,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 61,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S3/pages/Figure_S3_v1_p12.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 13,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 274,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S3/pages/Figure_S3_v1_p13.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 14,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 61,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S3/pages/Figure_S3_v1_p14.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 15,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 274,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S3/pages/Figure_S3_v1_p15.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 16,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 61,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S3/pages/Figure_S3_v1_p16.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 17,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 274,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S3/pages/Figure_S3_v1_p17.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 18,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 61,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S3/pages/Figure_S3_v1_p18.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 19,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 274,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S3/pages/Figure_S3_v1_p19.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 20,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 61,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S3/pages/Figure_S3_v1_p20.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 21,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 274,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S3/pages/Figure_S3_v1_p21.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 22,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 61,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S3/pages/Figure_S3_v1_p22.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 23,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 274,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S3/pages/Figure_S3_v1_p23.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 24,
+    "page_mm": [
+     209.9,
+     297.04
+    ],
+    "text_sizes_pt": [
+     11.0,
+     12.0,
+     13.0,
+     14.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 61,
+    "overlaps": [],
+    "subscript_pairs": 1,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S3/pages/Figure_S3_v1_p24.tif",
+     "px": [
+      4959,
+      7017
+     ],
+     "dpi": 600.0,
+     "mm": [
+      209.93,
+      297.05
+     ],
+     "identical_to_pdf_page": true
+    }
+   }
+  ]
+ },
+ "Figure_S5": {
+  "pdf": "figures_supp_v1/Figure_S5/Figure_S5_v1.pdf",
+  "pages": 4,
+  "pdffonts": [
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes      7  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes      8  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes     31  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes     32  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes     56  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes     57  0",
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes     80  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes     81  0"
+  ],
+  "raster_objects": 0,
+  "page_sizes_mm": [
+   [
+    189.79,
+    184.15
+   ],
+   [
+    189.79,
+    194.03
+   ]
+  ],
+  "min_text_pt": 14.0,
+  "text_sizes_pt": [
+   14.0,
+   15.0,
+   16.0
+  ],
+  "overlaps": 0,
+  "subscript_pairs_phi_A": 0,
+  "edge_issues": 0,
+  "tif_dpi": [
+   1200.0
+  ],
+  "tif_identical_pages": 4,
+  "per_page": [
+   {
+    "page": 1,
+    "page_mm": [
+     189.79,
+     194.03
+    ],
+    "text_sizes_pt": [
+     14.0,
+     15.0,
+     16.0
+    ],
+    "min_text_pt": 14.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 52,
+    "overlaps": [],
+    "subscript_pairs": 0,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S5/pages/Figure_S5_v1_p01.tif",
+     "px": [
+      8967,
+      9167
+     ],
+     "dpi": 1200.0,
+     "mm": [
+      189.8,
+      194.03
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 2,
+    "page_mm": [
+     189.79,
+     184.15
+    ],
+    "text_sizes_pt": [
+     14.0,
+     15.0,
+     16.0
+    ],
+    "min_text_pt": 14.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 22,
+    "overlaps": [],
+    "subscript_pairs": 0,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S5/pages/Figure_S5_v1_p02.tif",
+     "px": [
+      8967,
+      8700
+     ],
+     "dpi": 1200.0,
+     "mm": [
+      189.8,
+      184.15
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 3,
+    "page_mm": [
+     189.79,
+     184.15
+    ],
+    "text_sizes_pt": [
+     14.0,
+     15.0,
+     16.0
+    ],
+    "min_text_pt": 14.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 22,
+    "overlaps": [],
+    "subscript_pairs": 0,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S5/pages/Figure_S5_v1_p03.tif",
+     "px": [
+      8967,
+      8700
+     ],
+     "dpi": 1200.0,
+     "mm": [
+      189.8,
+      184.15
+     ],
+     "identical_to_pdf_page": true
+    }
+   },
+   {
+    "page": 4,
+    "page_mm": [
+     189.79,
+     184.15
+    ],
+    "text_sizes_pt": [
+     14.0,
+     15.0,
+     16.0
+    ],
+    "min_text_pt": 14.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 22,
+    "overlaps": [],
+    "subscript_pairs": 0,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S5/pages/Figure_S5_v1_p04.tif",
+     "px": [
+      8967,
+      8700
+     ],
+     "dpi": 1200.0,
+     "mm": [
+      189.8,
+      184.15
+     ],
+     "identical_to_pdf_page": true
+    }
+   }
+  ]
+ },
+ "Figure_S6": {
+  "pdf": "figures_supp_v1/Figure_S6/Figure_S6_v1.pdf",
+  "pages": 1,
+  "pdffonts": [
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes      7  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes      8  0"
+  ],
+  "raster_objects": 0,
+  "page_sizes_mm": [
+   [
+    189.79,
+    206.02
+   ]
+  ],
+  "min_text_pt": 14.0,
+  "text_sizes_pt": [
+   14.0,
+   15.0,
+   16.0
+  ],
+  "overlaps": 0,
+  "subscript_pairs_phi_A": 0,
+  "edge_issues": 0,
+  "tif_dpi": [
+   1200.0
+  ],
+  "tif_identical_pages": 1,
+  "per_page": [
+   {
+    "page": 1,
+    "page_mm": [
+     189.79,
+     206.02
+    ],
+    "text_sizes_pt": [
+     14.0,
+     15.0,
+     16.0
+    ],
+    "min_text_pt": 14.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 38,
+    "overlaps": [],
+    "subscript_pairs": 0,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S6/Figure_S6_v1.tif",
+     "px": [
+      8967,
+      9734
+     ],
+     "dpi": 1200.0,
+     "mm": [
+      189.8,
+      206.04
+     ],
+     "identical_to_pdf_page": true
+    }
+   }
+  ]
+ }
+}

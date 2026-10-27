@@ -1,0 +1,411 @@
+{
+ "Table_S1_v1": {
+  "docx": {
+   "paragraph_styles": {
+    "Normal": 18
+   },
+   "numbered_paragraphs": 0,
+   "shading_elements": 0,
+   "cell_borders": {
+    "top": 3,
+    "bottom": 6
+   },
+   "table_level_borders": {
+    "top=nil": 1,
+    "left=nil": 1,
+    "bottom=nil": 1,
+    "right=nil": 1,
+    "insideH=nil": 1,
+    "insideV=nil": 1
+   },
+   "tables": 1,
+   "header_row_repeat": 1,
+   "run_fonts": {
+    "Arial": 19
+   },
+   "run_sizes_pt": {
+    "11.0": 19
+   },
+   "stray_bold": []
+  },
+  "pdf": {
+   "pages": 1,
+   "page_mm": [
+    210.0,
+    297.0
+   ],
+   "pdffonts": [
+    "BAAAAA+Arial-BoldMT TrueType emb=yes",
+    "CAAAAA+ArialMT TrueType emb=yes"
+   ],
+   "horizontal_rules": 3,
+   "rules_per_page": [
+    3
+   ],
+   "vertical_rules": 0,
+   "filled_rects": 0,
+   "text_sizes_pt": {
+    "11.0": 24
+   }
+  },
+  "checks": {
+   "Normal style only": true,
+   "no numbering": true,
+   "no shading": true,
+   "cell borders top/bottom only": true,
+   "table-level borders nil": true,
+   "bold only caption + header": true,
+   "Arial runs": true,
+   "11 pt runs": true,
+   "PDF fonts Arial embedded": true,
+   "no vertical rules": true,
+   "rules: 2 per header + 1 per table": true,
+   "caption 'Table S1.' once": true,
+   "pages <= 1": true,
+   "values match the package CSV": true
+  },
+  "cells_compared": 12
+ },
+ "Table_S2_v1": {
+  "docx": {
+   "paragraph_styles": {
+    "Normal": 231
+   },
+   "numbered_paragraphs": 0,
+   "shading_elements": 0,
+   "cell_borders": {
+    "top": 6,
+    "bottom": 12
+   },
+   "table_level_borders": {
+    "top=nil": 1,
+    "left=nil": 1,
+    "bottom=nil": 1,
+    "right=nil": 1,
+    "insideH=nil": 1,
+    "insideV=nil": 1
+   },
+   "tables": 1,
+   "header_row_repeat": 1,
+   "run_fonts": {
+    "Arial": 371
+   },
+   "run_sizes_pt": {
+    "11.0": 371
+   },
+   "stray_bold": []
+  },
+  "pdf": {
+   "pages": 3,
+   "page_mm": [
+    297.0,
+    210.0
+   ],
+   "pdffonts": [
+    "BAAAAA+Arial-BoldMT TrueType emb=yes",
+    "CAAAAA+ArialMT TrueType emb=yes"
+   ],
+   "horizontal_rules": 8,
+   "rules_per_page": [
+    3,
+    2,
+    3
+   ],
+   "vertical_rules": 0,
+   "filled_rects": 0,
+   "text_sizes_pt": {
+    "6.4": 51,
+    "11.0": 376
+   }
+  },
+  "checks": {
+   "Normal style only": true,
+   "no numbering": true,
+   "no shading": true,
+   "cell borders top/bottom only": true,
+   "table-level borders nil": true,
+   "bold only caption + header": true,
+   "Arial runs": true,
+   "11 pt runs": true,
+   "PDF fonts Arial embedded": true,
+   "no vertical rules": true,
+   "rules: 2 per header + 1 per table": true,
+   "caption 'Table S2.' once": true,
+   "document XML = Table_S5_v2 apart from the caption number": true,
+   "CSV = Table_S5_v2.csv": true
+  },
+  "cells_compared": null
+ },
+ "Table_S3_v1": {
+  "docx": {
+   "paragraph_styles": {
+    "Normal": 336
+   },
+   "numbered_paragraphs": 0,
+   "shading_elements": 0,
+   "cell_borders": {
+    "top": 6,
+    "bottom": 12
+   },
+   "table_level_borders": {
+    "top=nil": 1,
+    "left=nil": 1,
+    "bottom=nil": 1,
+    "right=nil": 1,
+    "insideH=nil": 1,
+    "insideV=nil": 1
+   },
+   "tables": 1,
+   "header_row_repeat": 1,
+   "run_fonts": {
+    "Arial": 339
+   },
+   "run_sizes_pt": {
+    "11.0": 339
+   },
+   "stray_bold": []
+  },
+  "pdf": {
+   "pages": 2,
+   "page_mm": [
+    297.0,
+    210.0
+   ],
+   "pdffonts": [
+    "BAAAAA+Arial-BoldMT TrueType emb=yes",
+    "CAAAAA+ArialMT TrueType emb=yes"
+   ],
+   "horizontal_rules": 6,
+   "rules_per_page": [
+    3,
+    3
+   ],
+   "vertical_rules": 0,
+   "filled_rects": 0,
+   "text_sizes_pt": {
+    "6.4": 1,
+    "11.0": 349
+   }
+  },
+  "checks": {
+   "Normal style only": true,
+   "no numbering": true,
+   "no shading": true,
+   "cell borders top/bottom only": true,
+   "table-level borders nil": true,
+   "bold only caption + header": true,
+   "Arial runs": true,
+   "11 pt runs": true,
+   "PDF fonts Arial embedded": true,
+   "no vertical rules": true,
+   "rules: 2 per header + 1 per table": true,
+   "caption 'Table S3.' once": true,
+   "values match the package CSV": true
+  },
+  "cells_compared": 324
+ },
+ "Table_S4_v1": {
+  "docx": {
+   "paragraph_styles": {
+    "Normal": 100
+   },
+   "numbered_paragraphs": 0,
+   "shading_elements": 0,
+   "cell_borders": {
+    "top": 13,
+    "bottom": 26
+   },
+   "table_level_borders": {
+    "top=nil": 3,
+    "left=nil": 3,
+    "bottom=nil": 3,
+    "right=nil": 3,
+    "insideH=nil": 3,
+    "insideV=nil": 3
+   },
+   "tables": 3,
+   "header_row_repeat": 3,
+   "run_fonts": {
+    "Arial": 105
+   },
+   "run_sizes_pt": {
+    "11.0": 105
+   },
+   "stray_bold": []
+  },
+  "pdf": {
+   "pages": 2,
+   "page_mm": [
+    297.0,
+    210.0
+   ],
+   "pdffonts": [
+    "BAAAAA+Arial-BoldMT TrueType emb=yes",
+    "CAAAAA+ArialMT TrueType emb=yes"
+   ],
+   "horizontal_rules": 9,
+   "rules_per_page": [
+    9,
+    0
+   ],
+   "vertical_rules": 0,
+   "filled_rects": 0,
+   "text_sizes_pt": {
+    "6.4": 2,
+    "11.0": 110
+   }
+  },
+  "checks": {
+   "Normal style only": true,
+   "no numbering": true,
+   "no shading": true,
+   "cell borders top/bottom only": true,
+   "table-level borders nil": true,
+   "bold only caption + header": true,
+   "Arial runs": true,
+   "11 pt runs": true,
+   "PDF fonts Arial embedded": true,
+   "no vertical rules": true,
+   "rules: 2 per header + 1 per table": true,
+   "caption 'Table S4.' once": true,
+   "values match the package CSV": true
+  },
+  "cells_compared": 81
+ },
+ "Table_S5_v1": {
+  "docx": {
+   "paragraph_styles": {
+    "Normal": 306
+   },
+   "numbered_paragraphs": 0,
+   "shading_elements": 0,
+   "cell_borders": {
+    "top": 8,
+    "bottom": 16
+   },
+   "table_level_borders": {
+    "top=nil": 1,
+    "left=nil": 1,
+    "bottom=nil": 1,
+    "right=nil": 1,
+    "insideH=nil": 1,
+    "insideV=nil": 1
+   },
+   "tables": 1,
+   "header_row_repeat": 1,
+   "run_fonts": {
+    "Arial": 319
+   },
+   "run_sizes_pt": {
+    "11.0": 319
+   },
+   "stray_bold": []
+  },
+  "pdf": {
+   "pages": 4,
+   "page_mm": [
+    297.0,
+    210.0
+   ],
+   "pdffonts": [
+    "BAAAAA+Arial-BoldMT TrueType emb=yes",
+    "CAAAAA+ArialMT TrueType emb=yes"
+   ],
+   "horizontal_rules": 8,
+   "rules_per_page": [
+    3,
+    2,
+    3,
+    0
+   ],
+   "vertical_rules": 0,
+   "filled_rects": 0,
+   "text_sizes_pt": {
+    "11.0": 384
+   }
+  },
+  "checks": {
+   "Normal style only": true,
+   "no numbering": true,
+   "no shading": true,
+   "cell borders top/bottom only": true,
+   "table-level borders nil": true,
+   "bold only caption + header": true,
+   "Arial runs": true,
+   "11 pt runs": true,
+   "PDF fonts Arial embedded": true,
+   "no vertical rules": true,
+   "rules: 2 per header + 1 per table": true,
+   "caption 'Table S5.' once": true,
+   "values match the package CSV": true
+  },
+  "cells_compared": 288
+ },
+ "Table_S6_v1": {
+  "docx": {
+   "paragraph_styles": {
+    "Normal": 231
+   },
+   "numbered_paragraphs": 0,
+   "shading_elements": 0,
+   "cell_borders": {
+    "top": 6,
+    "bottom": 12
+   },
+   "table_level_borders": {
+    "top=nil": 1,
+    "left=nil": 1,
+    "bottom=nil": 1,
+    "right=nil": 1,
+    "insideH=nil": 1,
+    "insideV=nil": 1
+   },
+   "tables": 1,
+   "header_row_repeat": 1,
+   "run_fonts": {
+    "Arial": 232
+   },
+   "run_sizes_pt": {
+    "11.0": 232
+   },
+   "stray_bold": []
+  },
+  "pdf": {
+   "pages": 2,
+   "page_mm": [
+    297.0,
+    210.0
+   ],
+   "pdffonts": [
+    "BAAAAA+Arial-BoldMT TrueType emb=yes",
+    "CAAAAA+ArialMT TrueType emb=yes"
+   ],
+   "horizontal_rules": 6,
+   "rules_per_page": [
+    3,
+    3
+   ],
+   "vertical_rules": 0,
+   "filled_rects": 0,
+   "text_sizes_pt": {
+    "11.0": 242
+   }
+  },
+  "checks": {
+   "Normal style only": true,
+   "no numbering": true,
+   "no shading": true,
+   "cell borders top/bottom only": true,
+   "table-level borders nil": true,
+   "bold only caption + header": true,
+   "Arial runs": true,
+   "11 pt runs": true,
+   "PDF fonts Arial embedded": true,
+   "no vertical rules": true,
+   "rules: 2 per header + 1 per table": true,
+   "caption 'Table S6.' once": true,
+   "values match the package CSV": true
+  },
+  "cells_compared": 216
+ }
+}

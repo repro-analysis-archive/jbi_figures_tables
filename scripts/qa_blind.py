@@ -43,12 +43,23 @@ FILES_V4 = [f"figures_v4/Figure_1/Figure_1_v4.{e}" for e in ("pdf", "pptx", "tif
            ["CAPTIONS_v4.md"]
 
 
+def files_supp():
+    """Supplement v6 outputs: every figure PDF and TIF (per page), the .docx / .csv tables and the captions."""
+    out = []
+    for d in sorted((ROOT / "figures_supp_v1").glob("Figure_S*")):
+        out += [str(f.relative_to(ROOT)) for f in sorted(d.rglob("*")) if f.suffix in (".pdf", ".tif") and
+                not f.name.startswith("._")]
+    out += [f"tables/Table_S{n}_v1.{e}" for n in range(1, 7) for e in ("docx", "csv")]
+    return out + ["CAPTIONS_supplement_v1.md"]
+
+
 def main():
     v2 = "--v2" in sys.argv[1:]
-    v4 = "--v4" in sys.argv[1:]
+    supp = "--supp" in sys.argv[1:]
+    v4 = "--v4" in sys.argv[1:] or supp
     v3 = "--v3" in sys.argv[1:] or v4          # v4 uses the v3 TIF scan (pixel strips excluded)
     out, ok = {}, True
-    for f in (FILES_V4 if v4 else FILES_V3 if v3 else FILES_V2 if v2 else FILES):
+    for f in (files_supp() if supp else FILES_V4 if v4 else FILES_V3 if v3 else FILES_V2 if v2 else FILES):
         p = ROOT / f
         blobs = [p.read_bytes()]
         meta = {}
@@ -74,7 +85,7 @@ def main():
         ok &= not any(hits.values()) and not meta.get("author") and not meta.get("dc:creator") and not meta.get("cp:lastModifiedBy")
         out[f] = dict(hits=hits, metadata=meta)
         print(f, hits, meta)
-    (ROOT / "qa" / ("blind_scan_v4.json" if v4 else "blind_scan_v3.json" if v3 else "blind_scan_v2.json" if v2 else
+    (ROOT / "qa" / ("blind_scan_supp_v6.json" if supp else "blind_scan_v4.json" if v4 else "blind_scan_v3.json" if v3 else "blind_scan_v2.json" if v2 else
                     "blind_scan.json")).write_text(json.dumps(out, indent=1, ensure_ascii=False) + "\n")
     print("BLIND", "PASS" if ok else "FAIL")
     sys.exit(0 if ok else 1)

@@ -1,0 +1,106 @@
+{
+ "headings": [
+  "Figure S1",
+  "Figure S2",
+  "Figure S3",
+  "Figure S4",
+  "Figure S5",
+  "Figure S6",
+  "Table S1",
+  "Table S2",
+  "Table S3",
+  "Table S4",
+  "Table S5",
+  "Table S6"
+ ],
+ "exploratory_first_word": {
+  "Figure S5": true,
+  "Figure S6": true,
+  "Table S3": true,
+  "Table S4": true,
+  "Table S5": true,
+  "Table S6": true
+ },
+ "panels": {
+  "Figure S1": {
+   "used": [],
+   "labels_in_pdf": [],
+   "missing": []
+  },
+  "Figure S2": {
+   "used": [],
+   "labels_in_pdf": [],
+   "missing": []
+  },
+  "Figure S3": {
+   "used": [],
+   "labels_in_pdf": [],
+   "missing": []
+  },
+  "Figure S5": {
+   "used": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "labels_in_pdf": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "missing": []
+  },
+  "Figure S6": {
+   "used": [
+    "A",
+    "B"
+   ],
+   "labels_in_pdf": [
+    "A",
+    "B"
+   ],
+   "missing": []
+  }
+ },
+ "main_figure_refs": [
+  {
+   "ref": "main Figure 4",
+   "ok": true
+  },
+  {
+   "ref": "main Figure 5",
+   "ok": true
+  },
+  {
+   "ref": "main Figure 5",
+   "ok": true
+  },
+  {
+   "ref": "main Figure 6",
+   "ok": true
+  },
+  {
+   "ref": "main Figure 6",
+   "ok": true
+  },
+  {
+   "ref": "main Figure 2 (B) and (C)",
+   "ok": true
+  }
+ ],
+ "table_titles": {
+  "Table S1": true,
+  "Table S2": true,
+  "Table S3": true,
+  "Table S4": true,
+  "Table S5": true,
+  "Table S6": true
+ },
+ "result": "PASS"
+}
