@@ -1,0 +1,531 @@
+{
+ "pdf": "graphical_abstract/Graphical_abstract.pdf",
+ "pages": 1,
+ "page_mm": [
+  130.0,
+  52.0
+ ],
+ "page_pt": [
+  368.5039367675781,
+  147.40158081054688
+ ],
+ "pdffonts": [
+  "name                                 type              encoding         emb sub uni object ID",
+  "------------------------------------ ----------------- ---------------- --- --- --- ---------",
+  "BAAAAA+Arial-BoldMT                  TrueType          WinAnsi          yes yes yes     66  0",
+  "CAAAAA+ArialMT                       TrueType          WinAnsi          yes yes yes     61  0"
+ ],
+ "pdfimages": [
+  "page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio",
+  "--------------------------------------------------------------------------------------------"
+ ],
+ "text_sizes_pt": [
+  7.0,
+  7.99,
+  9.01
+ ],
+ "min_text_pt": 7.0,
+ "text_colours": [
+  "#1A1A1A",
+  "#2B3D6B",
+  "#4D4D4D"
+ ],
+ "fonts": [
+  "Arial-BoldMT",
+  "ArialMT"
+ ],
+ "n_spans": 28,
+ "text_overlaps": [],
+ "edge_clearance_below_0p3mm": [],
+ "markers": [
+  {
+   "part": "face",
+   "shape": "triangle",
+   "colour": "#6B6B6B",
+   "edge_pt": 0.0,
+   "n": 2,
+   "outer_w_mm_median": 2.1,
+   "outer_h_mm_median": 2.1,
+   "outer_w_mm_min": 2.1,
+   "outer_h_mm_min": 2.1
+  }
+ ],
+ "metadata": {
+  "format": "PDF 1.7",
+  "title": "Graphical abstract",
+  "subject": "PptxGenJS Presentation",
+  "creator": "Impress",
+  "producer": "LibreOffice 26.2.2.2 (AARCH64)",
+  "creationDate": "D:20261027093030+09'00'"
+ },
+ "bytes": 54044,
+ "spans": [
+  {
+   "text": "Site adjustment in a semi-synthetic sequential causal benchmark",
+   "font": "Arial-BoldMT",
+   "size": 9.01,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    1.19,
+    1.56,
+    99.47,
+    4.55
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Real clinical video; synthetic actions, outcomes and truth",
+   "font": "ArialMT",
+   "size": 7.0,
+   "color": "#4D4D4D",
+   "bbox_mm": [
+    1.19,
+    6.56,
+    62.75,
+    8.85
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Confirmatory",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#2B3D6B",
+   "bbox_mm": [
+    2.79,
+    12.51,
+    20.54,
+    15.15
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "K",
+   "font": "Arial-BoldMT",
+   "size": 7.0,
+   "color": "#2B3D6B",
+   "bbox_mm": [
+    5.41,
+    17.55,
+    7.19,
+    19.32
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "P > 0",
+   "font": "ArialMT",
+   "size": 7.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    11.41,
+    17.54,
+    17.17,
+    19.35
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Actions after the window",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    2.79,
+    21.31,
+    33.44,
+    23.39
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "With site: |bias| lower",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    2.79,
+    24.84,
+    31.69,
+    27.48
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "P1b-SITE mean D 2.198",
+   "font": "ArialMT",
+   "size": 7.0,
+   "color": "#4D4D4D",
+   "bbox_mm": [
+    2.79,
+    28.69,
+    29.55,
+    30.52
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "K",
+   "font": "Arial-BoldMT",
+   "size": 7.0,
+   "color": "#2B3D6B",
+   "bbox_mm": [
+    5.41,
+    34.55,
+    7.19,
+    36.32
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "One step, no later actions",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    2.79,
+    38.31,
+    35.02,
+    40.92
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "With site: |bias| higher",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    2.79,
+    41.84,
+    32.95,
+    44.48
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "P2-SITE mean D 0.052",
+   "font": "ArialMT",
+   "size": 7.0,
+   "color": "#4D4D4D",
+   "bbox_mm": [
+    2.79,
+    45.69,
+    28.17,
+    47.52
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Linear site erasure",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    46.09,
+    12.54,
+    71.24,
+    14.59
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Full 278-case set",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    54.49,
+    18.33,
+    76.02,
+    20.39
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "passes",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    60.48,
+    22.39,
+    70.07,
+    24.45
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Analysis windows",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    54.18,
+    30.34,
+    76.33,
+    32.95
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "fails",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    62.45,
+    33.84,
+    68.1,
+    35.92
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Representation families",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    50.47,
+    42.31,
+    80.02,
+    44.92
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "not tested",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    58.52,
+    45.87,
+    72.03,
+    47.92
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "EXPLORATORY: X1",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#4D4D4D",
+   "bbox_mm": [
+    89.39,
+    12.51,
+    115.55,
+    14.59
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "OSF-registered; no verdict",
+   "font": "ArialMT",
+   "size": 7.0,
+   "color": "#4D4D4D",
+   "bbox_mm": [
+    89.39,
+    17.03,
+    118.19,
+    19.35
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Eraser refitted on the",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    89.39,
+    20.91,
+    115.8,
+    22.99
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "analysis windows",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    89.39,
+    24.47,
+    111.24,
+    27.08
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "MLP probe still decodes site",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    89.39,
+    28.0,
+    127.54,
+    30.58
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "vs protocol eraser:",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    89.39,
+    35.06,
+    112.66,
+    37.64
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "small Δ in |bias|",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    89.39,
+    38.56,
+    108.94,
+    41.2
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "vs site retained:",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    89.39,
+    42.12,
+    109.19,
+    44.17
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "larger |bias| (P1b-FM cells)",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    89.39,
+    45.62,
+    123.24,
+    48.26
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "tif": {
+  "path": "graphical_abstract/Graphical_abstract.tif",
+  "px": [
+   6142,
+   2457
+  ],
+  "dpi": [
+   1200.0,
+   1200.0
+  ],
+  "mm": [
+   130.01,
+   52.01
+  ],
+  "mode": "RGB",
+  "compression": "tiff_lzw",
+  "tags": {},
+  "bytes": 1239924
+ }
+}

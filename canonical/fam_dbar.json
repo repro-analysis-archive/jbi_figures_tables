@@ -26,6 +26,9 @@
    "cells_definition": "α = 0, all cells except K = 1, P = 0 (66 cells)",
    "prediction": "ORACLE |bias| < ORACLE−C",
    "in_fig2A": true,
+   "D_bar_3dp": "1.925",
+   "ci_3dp": "1.909 to 1.934",
+   "share_2dp": "0.98",
    "source": "families.json['primary:P1a']"
   },
   {
@@ -53,6 +56,9 @@
    "cells_definition": "W = 0, P ∈ {5, 30}, all K, α, γ (48 cells)",
    "prediction": "SITE < NV",
    "in_fig2A": true,
+   "D_bar_3dp": "2.198",
+   "ci_3dp": "2.167 to 2.226",
+   "share_2dp": "1.00",
    "source": "families.json['primary:P1b-SITE']"
   },
   {
@@ -80,6 +86,9 @@
    "cells_definition": "the same 48 cells",
    "prediction": "FM-P < FM-P−C",
    "in_fig2A": false,
+   "D_bar_3dp": "0.594",
+   "ci_3dp": "0.582 to 0.606",
+   "share_2dp": "1.00",
    "source": "families.json['primary:P1b-FM']"
   },
   {
@@ -107,6 +116,9 @@
    "cells_definition": "K = 1, P = 0, all W, α, γ (18 cells)",
    "prediction": "SITE ≥ NV",
    "in_fig2A": true,
+   "D_bar_3dp": "0.052",
+   "ci_3dp": "0.048 to 0.056",
+   "share_2dp": "1.00",
    "source": "families.json['primary:P2-SITE']"
   },
   {
@@ -134,6 +146,9 @@
    "cells_definition": "K = 1, P = 0, α > 0 (12 cells)",
    "prediction": "FM-P ≥ FM-P−C",
    "in_fig2A": false,
+   "D_bar_3dp": "0.005",
+   "ci_3dp": "−0.000 to 0.012",
+   "share_2dp": "0.50",
    "source": "families.json['primary:P2-FM']"
   },
   {
@@ -161,6 +176,9 @@
    "cells_definition": "K = 1, P = 0, α > 0 (12 cells)",
    "prediction": "ORACLE ≥ ORACLE−C",
    "in_fig2A": true,
+   "D_bar_3dp": "0.042",
+   "ci_3dp": "0.036 to 0.048",
+   "share_2dp": "0.92",
    "source": "families.json['primary:P2-ORACLE']"
   },
   {
@@ -188,6 +206,9 @@
    "cells_definition": "α = 0, all cells except K = 1, P = 0 (66 cells)",
    "prediction": "ORACLE |bias| < ORACLE−C",
    "in_fig2A": false,
+   "D_bar_3dp": "4.833",
+   "ci_3dp": "4.803 to 4.849",
+   "share_2dp": "1.00",
    "source": "families.json['W0:P1a']"
   },
   {
@@ -215,6 +236,9 @@
    "cells_definition": "W = 0, P ∈ {5, 30}, all K, α, γ (48 cells)",
    "prediction": "SITE < NV",
    "in_fig2A": true,
+   "D_bar_3dp": "2.181",
+   "ci_3dp": "2.169 to 2.193",
+   "share_2dp": "1.00",
    "source": "families.json['W0:P1b-SITE']"
   },
   {
@@ -242,6 +266,9 @@
    "cells_definition": "the same 48 cells",
    "prediction": "FM-P < FM-P−C",
    "in_fig2A": false,
+   "D_bar_3dp": "0.671",
+   "ci_3dp": "0.661 to 0.680",
+   "share_2dp": "1.00",
    "source": "families.json['W0:P1b-FM']"
   },
   {
@@ -269,6 +296,9 @@
    "cells_definition": "K = 1, P = 0, all W, α, γ (18 cells)",
    "prediction": "SITE ≥ NV",
    "in_fig2A": true,
+   "D_bar_3dp": "0.086",
+   "ci_3dp": "0.083 to 0.090",
+   "share_2dp": "1.00",
    "source": "families.json['W0:P2-SITE']"
   },
   {
@@ -296,6 +326,9 @@
    "cells_definition": "K = 1, P = 0, α > 0 (12 cells)",
    "prediction": "FM-P ≥ FM-P−C",
    "in_fig2A": false,
+   "D_bar_3dp": "0.018",
+   "ci_3dp": "0.014 to 0.022",
+   "share_2dp": "0.75",
    "source": "families.json['W0:P2-FM']"
   },
   {
@@ -323,6 +356,9 @@
    "cells_definition": "K = 1, P = 0, α > 0 (12 cells)",
    "prediction": "ORACLE ≥ ORACLE−C",
    "in_fig2A": true,
+   "D_bar_3dp": "0.084",
+   "ci_3dp": "0.081 to 0.087",
+   "share_2dp": "1.00",
    "source": "families.json['W0:P2-ORACLE']"
   },
   {
@@ -350,6 +386,9 @@
    "cells_definition": "K = 1, P = 0, all W, α, γ (18 cells)",
    "prediction": "SITE ≥ NV",
    "in_fig2A": true,
+   "D_bar_3dp": "0.046",
+   "ci_3dp": "0.043 to 0.048",
+   "share_2dp": "1.00",
    "source": "families.json['W5:P2-SITE']"
   },
   {
@@ -377,6 +416,9 @@
    "cells_definition": "K = 1, P = 0, α > 0 (12 cells)",
    "prediction": "FM-P ≥ FM-P−C",
    "in_fig2A": false,
+   "D_bar_3dp": "0.006",
+   "ci_3dp": "−0.003 to 0.014",
+   "share_2dp": "0.50",
    "source": "families.json['W5:P2-FM']"
   },
   {
@@ -404,6 +446,9 @@
    "cells_definition": "K = 1, P = 0, α > 0 (12 cells)",
    "prediction": "ORACLE ≥ ORACLE−C",
    "in_fig2A": true,
+   "D_bar_3dp": "0.052",
+   "ci_3dp": "0.048 to 0.056",
+   "share_2dp": "1.00",
    "source": "families.json['W5:P2-ORACLE']"
   },
   {
@@ -431,6 +476,9 @@
    "cells_definition": "W = 0, P ∈ {5, 30}, all K, α, γ (48 cells)",
    "prediction": "SITE < NV",
    "in_fig2A": true,
+   "D_bar_3dp": "2.066",
+   "ci_3dp": "2.038 to 2.097",
+   "share_2dp": "0.96",
    "source": "families.json['single_file:P1b-SITE']"
   },
   {
@@ -458,6 +506,9 @@
    "cells_definition": "the same 48 cells",
    "prediction": "FM-P < FM-P−C",
    "in_fig2A": false,
+   "D_bar_3dp": "0.379",
+   "ci_3dp": "0.363 to 0.395",
+   "share_2dp": "1.00",
    "source": "families.json['single_file:P1b-FM']"
   },
   {
@@ -485,6 +536,9 @@
    "cells_definition": "K = 1, P = 0, all W, α, γ (18 cells)",
    "prediction": "SITE ≥ NV",
    "in_fig2A": true,
+   "D_bar_3dp": "0.053",
+   "ci_3dp": "0.049 to 0.056",
+   "share_2dp": "1.00",
    "source": "families.json['single_file:P2-SITE']"
   },
   {
@@ -512,6 +566,9 @@
    "cells_definition": "K = 1, P = 0, α > 0 (12 cells)",
    "prediction": "FM-P ≥ FM-P−C",
    "in_fig2A": false,
+   "D_bar_3dp": "0.016",
+   "ci_3dp": "0.009 to 0.023",
+   "share_2dp": "0.75",
    "source": "families.json['single_file:P2-FM']"
   }
  ]

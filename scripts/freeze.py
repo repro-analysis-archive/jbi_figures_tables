@@ -74,6 +74,13 @@ SET_LABEL = {"primary": "Primary (n = 158)", "W0": "W = 0 set (n = 204)", "W5": 
              "single_file": "Single-file set (n = 123)"}
 
 
+def f3(x):
+    """Display string with 3 decimals and a true minus sign (U+2212); the single formatting rule for Table 2,
+    Table 3 and the graphical abstract (3 decimals = the rounding of the committed reports)."""
+    t = f"{x:.3f}"
+    return t.replace("-", "−")
+
+
 def lab(arm):
     return ARM_LABEL.get(arm, arm)
 
@@ -211,6 +218,8 @@ def family_rows(fams, gsite, sec13, pf):
             gsite_eta2_set=gs if gs is not None else "",
             cells_definition=pf[f]["cells_definition"], prediction=pf[f]["prediction"],
             in_fig2A=bool(f in ("P1a", "P1b-SITE", "P2-SITE", "P2-ORACLE") and not role.startswith("exploratory")),
+            D_bar_3dp=f3(v["D_bar"]), ci_3dp=f"{f3(v['ci_lo'])} to {f3(v['ci_hi'])}",
+            share_2dp=f"{v['share_positive']:.2f}",
             source=f"families.json['{key}']"))
     rows.sort(key=lambda r: (order_s.index(r["set"]), order_f.index(r["family"])))
     assert set(sec13["families_tested"]) == set(order_f)
@@ -481,7 +490,8 @@ def main():
     ga = {f: next(r for r in fam if r["set"] == "primary" and r["family"] == f)
           for f in ("P1a", "P1b-SITE", "P2-SITE", "P2-ORACLE")}
     write("ga_values", {f: dict(D_bar=r["D_bar"], ci_lo=r["ci_lo"], ci_hi=r["ci_hi"], n_cells=r["n_cells"],
-                                reported=r["reported"]) for f, r in ga.items()})
+                                D_bar_3dp=r["D_bar_3dp"], ci_3dp=r["ci_3dp"], reported=r["reported"])
+                        for f, r in ga.items()})
     write("gsite", dict(primary=gsite["sets"]["primary"]["eta2_S_window_start"],
                         W0=gsite["sets"]["W0"]["eta2_S_window_start"],
                         W5=gsite["sets"]["W5"]["eta2_S_window_start"], gate="≤ 0.01",
