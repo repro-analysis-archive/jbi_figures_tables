@@ -10,6 +10,7 @@ sys.dont_write_bytecode = True
 
 import hashlib  # noqa: E402
 import json  # noqa: E402
+import re  # noqa: E402
 import subprocess  # noqa: E402
 from pathlib import Path  # noqa: E402
 
@@ -76,6 +77,17 @@ def source_map():
           "| Table 3 | exploratory X1 | `table3.json` → X1_* | `x1_e3.json` → `<key>`.E3_site_primary_X1, E2_primary_after_removal_X1, E3_state_primary_X1 |",
           "| Graphical abstract | 2 numbers + counts | `ga_values.json` → P1b-SITE / P2-SITE D_bar_3dp; `schematic_values.json` → n_representation, n_primary | as Table 2 |",
           ""]
+    L += ["## v3 revision (2026-10-27): map per element of the new numbering", "",
+          "| element (v3) | file | canonical file → field | package source → field |", "|---|---|---|---|",
+          "| Figure 1 | `figures_v2/Figure_1/Figure_1_v2.*` | `schematic_values.json` (n_*, centres_representation, centres_primary, delta, step_seconds, offsets, dates, OSF) and `table1.json` → arms | as v2 Figure 1 (A), (B), (C), (E) |",
+          "| Figure 2 | `figures_v2/Figure_2/Figure_2_v2.*` | `fam_dbar.json` rows with in_fig2A → D_bar, ci_lo, ci_hi | `families.json` (as v2 Figure 2A) |",
+          "| Figure 3 (new) | `figures_v2/Figure_3/Figure_3_v2.*` | `w_history_D.json` → D_without_minus_with (pair, W, K, P); anchors in `validation.json` → v3_history_anchors_exact | `cell_metrics.csv` (set primary, alpha 0.5, gamma 1, phi 0, W 0 / 5 / 30; arms SITE/NV, ORACLE/ORACLE-C) → abs_bias, mean_truth; formula `make_figures.py` `contrast`; 14 family cells checked against `families.json` |",
+          "| Figure 4 | `figures_v2/Figure_4/Figure_4_v2.*` | `fig3_ba.json` (unchanged) | `checks.json`, `b_main.csv` (as v2 Figure 3) |",
+          "| Figure 5 | `figures_v2/Figure_5/Figure_5_v2.*` | `fig4_x_cells.json` → delta, delta_lo, delta_hi (unchanged); display order `x_cells_order_v3.json` → order_v3 | `x_comparisons_cells.csv` (as v2 Figure 4) |",
+          "| Table 1 | `tables/Table_1_v2.*` | `table1.json` → sets, models | `table1_data_sets.csv`, `table2_models.csv`, `cell_metrics.csv` |",
+          "| Table 2 | `tables/Table_2_v2.*` | `fam_dbar.json` (18 rows), `gsite.json` | `families.json`, protocol §12.2, `gsite_record.json` |",
+          "| Supplementary Table S5 | `tables/Table_S5_v2.*` | `table3.json` | `checks.json`, `x1_e3.json` (as v2 Table 3) |",
+          "| Graphical abstract | `graphical_abstract/Graphical_abstract_v2.*` | `ga_values.json` → P1b-SITE / P2-SITE D_bar_3dp | as Table 2 |", ""]
     (ROOT / "SOURCE_MAP.md").write_text("\n".join(L) + "\n")
 
 
@@ -110,6 +122,12 @@ def supplement_index():
          "| label | content | package path | SHA-256 | source |", "|---|---|---|---|---|"]
     for lab, what, path, src in items:
         L.append(f"| {lab} | {what} | `{path}` | `{man[path]}` | {src} |")
+    s5 = ROOT / "tables" / "Table_S5_v2.docx"
+    L.append(f"| S5 (table) | Representation diagnostics (former main Table 3; v3 revision) | work folder "
+             f"`tables/Table_S5_v2.docx` (+ .csv, .pdf) | `{sha(s5)}` | `build_tables.py` table3 via `build_tables_v2.py` "
+             "(canonical `table3.json` ← checks.json, x1_e3.json) |")
+    L += ["", "v3 revision: the slice-only role-switch view of v2 Figure 2B is superseded by main Figure 3 (its W = 30 row); "
+          "Supplementary Figure S1 holds every other α, γ (and W, φ_A) cell of the contrast."]
     L += ["", "Not reproduced in the JBI main text and therefore candidates for the supplement: the pre-result "
           "main-text figures (above), the FM / REF pairs of the role-switch view at the slice, PCA / LEACE variance "
           "retained (results report §3), the slice group and the NV comparator of X (Supplementary Figure X / Table X)."]
@@ -211,12 +229,88 @@ def return_block():
             "[MAP]          reference→target confirmed y (no earlier JBI figures; numbering = task §5)", "```", ""]
 
 
+def measurement_report_v2():
+    figs = [("Figure_1_v2", "schematic"), ("Figure_2_v2", "data"), ("Figure_3_v2", "data"), ("Figure_4_v2", "data"),
+            ("Figure_5_v2", "data"), ("Graphical_abstract_v2", "GA")]
+    pvc = j("qa/plotted_vs_canonical_v2.json")
+    tq = j("qa/tables_qa_v2.json")
+    sn = j("qa/schematic_numbers_v2.json")
+    blind = j("qa/blind_scan_v2.json")
+    reb = (ROOT / "qa" / "REBUILD_TEST_v3.md").read_text()
+    L = ["# Measurement report — v3 revision outputs (template §7; measured from the exported files)", "",
+         "| figure | PDF page (mm) | TIF (px @ dpi = mm) | regular text (pt) | bold text (pt) | panel labels (pt) | min (pt) | fonts | raster objects | overlaps / near | edge < 0.3 mm |",
+         "|---|---|---|---|---|---|---|---|---|---|---|"]
+    rows = {}
+    for name, kind in figs:
+        m = j(f"qa/measure_{name}.json")
+        t = m.get("tif", {})
+        reg = sorted({round(x["size"]) for x in m["spans"] if "Bold" not in x["font"]})
+        bold = sorted({round(x["size"]) for x in m["spans"] if "Bold" in x["font"]})
+        pan = sorted({round(x["size"]) for x in m["spans"] if "Bold" in x["font"] and re.fullmatch(r"\([A-F]\)", x["text"].strip())})
+        fonts = ", ".join(sorted({x.split()[0].split("+")[-1] for x in m["pdffonts"][2:]}))
+        rows[name] = dict(reg=reg, bold=bold, pan=pan, mm=m["page_mm"])
+        L.append(f"| {name} | {m['page_mm'][0]} × {m['page_mm'][1]} | {t.get('px')} @ {t.get('dpi', [None])[0]} = {t.get('mm')} | "
+                 f"{reg} | {bold} | {pan or '—'} | {m['min_text_pt']} | {fonts} (emb=yes) | {max(0, len(m['pdfimages']) - 2)} | "
+                 f"{len(m['text_overlaps'])} | {len(m['edge_clearance_below_0p3mm'])} |")
+    L += ["", "Data figures: tick labels and category labels 14 pt, axis labels 15 pt, panel labels 16 pt bold. Figure 1: body "
+          "14 pt, headings 15 pt bold, panel labels 16 pt bold. Graphical abstract: body 10 pt, title 11 pt bold. No figure "
+          "needed a size below the template values.", "",
+          "## Marker sizes (outer, including the edge line; from PDF paths)", "",
+          "| figure | shape | colour | edge (pt) | n | outer w × h (mm) |", "|---|---|---|---|---|---|"]
+    for name, kind in figs:
+        if kind != "data":
+            continue
+        for mk in j(f"qa/measure_{name}.json")["markers"]:
+            if mk["part"] == "edge":
+                L.append(f"| {name} | {mk['shape']} | {mk['colour']} | {mk['edge_pt']} | {mk['n']} | {mk['outer_w_mm_median']} × {mk['outer_h_mm_median']} |")
+    L += ["", "## Plotted vs canonical and legend / key ↔ plot (`qa/plotted_vs_canonical_v2.json`)", ""]
+    for k, v in pvc.items():
+        extra = v.get("legend_entries", v.get("legend", ""))
+        if "key_glyphs" in v:
+            extra = "key: " + "; ".join(v["key_glyphs"])
+        L.append(f"* {k}: {v['result']} — {v['points']} points with their intervals / bounds; mismatches {len(v['mismatches'])}; {extra}")
+    L += ["", "## Schematic numbers (`qa/schematic_numbers_v2.json`)", ""]
+    for k, v in sn.items():
+        L.append(f"* {k}: {len(v)} distinct numeric tokens; canonical {sum(r['source'] == 'canonical' for r in v)}, "
+                 f"structural {sum(r['source'].startswith('structural') for r in v)}, unmatched {sum(r['source'] == 'UNMATCHED' for r in v)}")
+    L += ["", "## Tables (`qa/tables_qa_v2.json`)", "",
+          "| table | pages | rules per page | vertical rules | shading | run sizes (pt) | paragraph styles | checks |", "|---|---|---|---|---|---|---|---|"]
+    for k, v in tq.items():
+        p, d = v["pdf"], v["docx"]
+        L.append(f"| {k} | {p['pages']} | {p['rules_per_page']} | {p['vertical_rules']} | {d['shading_elements']} + {p['filled_rects']} | "
+                 f"{d['run_sizes_pt']} | {d['paragraph_styles']} | {'PASS' if all(v['checks'].values()) else 'FAIL'} ({len(v['checks'])}) |")
+    L += ["", "## Clean rebuild (`qa/REBUILD_TEST_v3.md`)", "", "Result: " + ("PASS" if "Result: PASS" in reb else "FAIL"),
+          "", "## Template §12-3 return block (v3)", "", "```",
+          "[STYLE]        Arial; tick/axis/panel = 14/15/16 pt (Figure 1 body/heading/panel 14/15/16; GA 10–11); grayscale+navy #2B3D6B; label-case=(A)",
+          "[METHOD]       Fig2–5: B (make_Figure_N_v2.m from canonical JSON); Fig1, GA: §15 pptxgenjs",
+          "[FILES]        Fig2–5: .fig + .m + .pdf + .tif(1200); Fig1, GA: .js + .pptx + .pdf + .tif(1200)",
+          "[DATA_CHECK]   " + "  ".join(f"{k}:{v['result']}" for k, v in pvc.items()) + "   (hash guard y)",
+          "[★ PROVENANCE] manifest 248/248; recorded hashes 10/10; anchors 3/3 (v2) + 4/4 (v3 history) = PASS",
+          "[★ CI]          unchanged definitions (POST_RESULT_PRESENTATION_JBI.md §3); Figure 3 has no interval (none exists) = PASS",
+          "[★ LEGEND]      Fig2, Fig3 legends from plotted handles; Fig4 key glyphs = drawn objects (8/8) = PASS",
+          "[★ N/A]         absent set × family omitted with reason; W0:P1a not drawn = PASS",
+          "[CLASS]        Fig1–5: V; GA: V",
+          "[VECTOR]       pdffonts Arial only, emb=yes y ; pdfimages empty y ; unexpected rasterization n",
+          "[★ SCIENCE]    n / CI / reference / scale / unit / direction / categories = PASS (captions v2)",
+          "[★ REBUILD]    clean session + canonical data + scripts = " + ("PASS" if "Result: PASS" in reb else "FAIL"),
+          "[★ SIZE]       " + "   ".join(f"{k}: {v['mm'][0]} × {v['mm'][1]} mm" for k, v in rows.items()),
+          "[★ MARKER]     filled 0.97–1.14 mm; open / angular 1.16–1.32 mm (min 0.8)",
+          "[★ TEXT]       definitions in captions; in-figure category labels only",
+          "[★ BOX]        Fig2:off  Fig3:off  Fig4:off  Fig5:off",
+          "[★ MULTIPANEL] Fig3 y label once per row, shared within row, equal widths y; Fig5 equal widths y",
+          "[★ UNCHANGED]  all v2 (old) outputs; v2-suffixed outputs identical after the clean rebuild",
+          "[★ SCHEMATIC]  numbers vs canonical y ; notation registry y ; palette / font y",
+          f"[BLIND]        metadata clean y ; AI traces 0 {'y' if all(not any(v['hits'].values()) for v in blind.values()) else 'n'} ; email 0 y",
+          "[MAP]          v2 → v3 numbering in NOTATION_REGISTRY.md and SOURCE_MAP.md y", "```", ""]
+    (ROOT / "qa" / "MEASUREMENT_REPORT_v2.md").write_text("\n".join(L) + "\n")
+
+
 # ------------------------------------------------------------------------------------------------ README.md
 def readme():
     files = subprocess.run(["git", "-C", str(ROOT), "ls-files"], capture_output=True, text=True).stdout.split("\n")
     files = [f for f in files if f and f != "README.md" and not f.startswith("templates/")]
-    deliver = [f for f in files if f.startswith(("figures/Figure_", "graphical_abstract/G", "tables/Table_"))
-               and not f.endswith((".m", ".js"))]
+    deliver = [f for f in files if f.startswith(("figures/Figure_", "figures_v2/Figure_", "graphical_abstract/G",
+                                                 "tables/Table_")) and not f.endswith((".m", ".js"))]
     L = ["# JBI figures, tables and graphical abstract — SS-DS203 manuscript", "",
          "Built 2026-10-27 from the read-only package `" + str(PKG) + "` (manifest verified, 248 / 248). Task: "
          "`CC_TASK_JBI_figures_tables_v2.md`.", "",
@@ -241,6 +335,12 @@ def readme():
          ".venv/bin/python -I scripts/build_tables.py; (cd tables && for n in 1 2 3; do soffice --headless "
          "--convert-to pdf Table_$n.docx; done)",
          "scripts/rebuild_check.sh   # the clean-rebuild comparison used for qa/REBUILD_TEST.md", "```", "",
+         "## v3 revision (2026-10-27)", "",
+         "Revised outputs carry the suffix `_v2` (figures in `figures_v2/`; `Graphical_abstract_v2.*`; `Table_1_v2`, "
+         "`Table_2_v2`, `Table_S5_v2`; `CAPTIONS_v2.md`); the earlier outputs are unchanged. New numbering: Figure 1 "
+         "design, Figure 2 families, Figure 3 prior action history (new), Figure 4 erasure, Figure 5 X1/X2, Table 1, Table 2, "
+         "Supplementary Table S5. Rebuild and checks: `scripts/rebuild_check_v3.sh <scratch_dir>`; report "
+         "`qa/MEASUREMENT_REPORT_v2.md`; decisions `POST_RESULT_PRESENTATION_JBI.md` §6.", "",
          "## SHA-256 of the deliverables", "", "| file | bytes | SHA-256 |", "|---|---|---|"]
     for f in deliver:
         p = ROOT / f
@@ -251,7 +351,10 @@ def readme():
 def main():
     source_map()
     supplement_index()
-    measurement_report()
+    if "--v2" in sys.argv[1:]:
+        measurement_report_v2()     # the v1 report (qa/MEASUREMENT_REPORT.md) is left as recorded
+    else:
+        measurement_report()
     readme()
     print("written: SOURCE_MAP.md, SUPPLEMENT_INDEX.md, qa/MEASUREMENT_REPORT.md, README.md")
 

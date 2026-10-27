@@ -22,5 +22,8 @@ Existing supplementary items in the read-only package (`/Volumes/ADDATA/医療�
 | Per-cell metrics | All metrics per set, cell and arm (3,504 rows) | `03_results/RESULTS_20261019/report_cells.csv` | `1fcdd42b57783424c28a986611b2f2df5abfb9a73a7f32a627a3d9b230a06f9c` | cell_metrics.csv (2880d73) + family labels |
 | Pre-result main figures | Results-report Figures 1–4 drawn under the pre-result presentation decisions (bias / coverage vs K; role switch, five pairs; K × P heatmaps; checks) | `03_results/RESULTS_20261019/figures/fig1_bias_coverage_vs_K.pdf` | `bba0dc6fb897c79dba8ab91abad7b253dd451ca2dad97664f20a7bc8e3555ece` | fig2_role_switch.pdf, fig3_contrast_KP.pdf, fig4_checks.pdf alongside |
 | X heatmaps | Exploratory X heatmaps | `04_exploratory/X1_X2/results_X/X_heatmaps.pdf` | `0dab320eda3407998481598be4036e460187d3bf9da8bd635faffada5b080faf` | 1c8e628 |
+| S5 (table) | Representation diagnostics (former main Table 3; v3 revision) | work folder `tables/Table_S5_v2.docx` (+ .csv, .pdf) | `6ae658ca5fef32401c84ec89b87937530ebc94c98bfa1ef2bdae27d61bf1a9a1` | `build_tables.py` table3 via `build_tables_v2.py` (canonical `table3.json` ← checks.json, x1_e3.json) |
+
+v3 revision: the slice-only role-switch view of v2 Figure 2B is superseded by main Figure 3 (its W = 30 row); Supplementary Figure S1 holds every other α, γ (and W, φ_A) cell of the contrast.
 
 Not reproduced in the JBI main text and therefore candidates for the supplement: the pre-result main-text figures (above), the FM / REF pairs of the role-switch view at the slice, PCA / LEACE variance retained (results report §3), the slice group and the NV comparator of X (Supplementary Figure X / Table X).

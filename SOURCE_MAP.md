@@ -42,7 +42,11 @@ Every plotted or tabulated value comes from a canonical file in `canonical/`, wr
 | `canonical/schematic_values.json` | `f78b6f65669603a33e8cbba2d1f5b6741c09a63bd32247cc1cbeb08c3ea65049` |
 | `canonical/table1.json` | `639eebe004e56d28c9a6cf9fe1d990e55d2d0259c048c70a63dcf79576ac8421` |
 | `canonical/table3.json` | `ac5c372d7acb54441055fbcf0d46ebfeeefa6691cb5a2c79fc72f8f03c7d2399` |
-| `canonical/validation.json` | `740631ca481fd3e8c8d6a25c66f57067d2154b5a4f00e14a748c1b72aa779889` |
+| `canonical/validation.json` | `e173a8f6a1bf63588a81a3d1aa6b962bb6d804a6b03d82362ffad90654e7484a` |
+| `canonical/w_history_D.csv` | `3e1ff505fdddd66ae1b000d0c607ca2fdd1a71a97a7efb213bf4897961c887b5` |
+| `canonical/w_history_D.json` | `9e2c53ae1d6b486befd390ccffc31fd3ef7434a116d4203f63eb35d15ad8bec2` |
+| `canonical/x_cells_order_v3.csv` | `d2db88517cc09e3eb57d32368bd9d36b885ed9ad0ffb19b11adb233849208c16` |
+| `canonical/x_cells_order_v3.json` | `80d5fdb3d5e075b98dc23e8ba64a83d0275e79dfe69cd11b82a0ef4d2b2579ab` |
 
 ## Anchors and validations (`canonical/validation.json`)
 
@@ -75,4 +79,18 @@ Every plotted or tabulated value comes from a canonical file in `canonical/`, wr
 | Table 3 | step-5 checks | `table3.json` → E1_*, E2_*, E3site_*, E3state_* per key | `checks.json` → `<key>`.<check> (ba / delta_auc, lo_2p5 / ci_lo, hi_97p5 / ci_hi, upper_one_sided_95, pass, retained_fraction) |
 | Table 3 | exploratory X1 | `table3.json` → X1_* | `x1_e3.json` → `<key>`.E3_site_primary_X1, E2_primary_after_removal_X1, E3_state_primary_X1 |
 | Graphical abstract | 2 numbers + counts | `ga_values.json` → P1b-SITE / P2-SITE D_bar_3dp; `schematic_values.json` → n_representation, n_primary | as Table 2 |
+
+## v3 revision (2026-10-27): map per element of the new numbering
+
+| element (v3) | file | canonical file → field | package source → field |
+|---|---|---|---|
+| Figure 1 | `figures_v2/Figure_1/Figure_1_v2.*` | `schematic_values.json` (n_*, centres_representation, centres_primary, delta, step_seconds, offsets, dates, OSF) and `table1.json` → arms | as v2 Figure 1 (A), (B), (C), (E) |
+| Figure 2 | `figures_v2/Figure_2/Figure_2_v2.*` | `fam_dbar.json` rows with in_fig2A → D_bar, ci_lo, ci_hi | `families.json` (as v2 Figure 2A) |
+| Figure 3 (new) | `figures_v2/Figure_3/Figure_3_v2.*` | `w_history_D.json` → D_without_minus_with (pair, W, K, P); anchors in `validation.json` → v3_history_anchors_exact | `cell_metrics.csv` (set primary, alpha 0.5, gamma 1, phi 0, W 0 / 5 / 30; arms SITE/NV, ORACLE/ORACLE-C) → abs_bias, mean_truth; formula `make_figures.py` `contrast`; 14 family cells checked against `families.json` |
+| Figure 4 | `figures_v2/Figure_4/Figure_4_v2.*` | `fig3_ba.json` (unchanged) | `checks.json`, `b_main.csv` (as v2 Figure 3) |
+| Figure 5 | `figures_v2/Figure_5/Figure_5_v2.*` | `fig4_x_cells.json` → delta, delta_lo, delta_hi (unchanged); display order `x_cells_order_v3.json` → order_v3 | `x_comparisons_cells.csv` (as v2 Figure 4) |
+| Table 1 | `tables/Table_1_v2.*` | `table1.json` → sets, models | `table1_data_sets.csv`, `table2_models.csv`, `cell_metrics.csv` |
+| Table 2 | `tables/Table_2_v2.*` | `fam_dbar.json` (18 rows), `gsite.json` | `families.json`, protocol §12.2, `gsite_record.json` |
+| Supplementary Table S5 | `tables/Table_S5_v2.*` | `table3.json` | `checks.json`, `x1_e3.json` (as v2 Table 3) |
+| Graphical abstract | `graphical_abstract/Graphical_abstract_v2.*` | `ga_values.json` → P1b-SITE / P2-SITE D_bar_3dp | as Table 2 |
 
