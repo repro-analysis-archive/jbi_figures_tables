@@ -1,0 +1,40 @@
+{
+ "stem": "figures_v2/Figure_2/Figure_2_v2",
+ "dpi": 1200.0,
+ "shift_px": [
+  0,
+  0
+ ],
+ "markers": 15,
+ "flagged": [
+  {
+   "centre_mm": [
+    64.56,
+    14.19
+   ],
+   "size_mm": [
+    1.018,
+    1.018
+   ],
+   "ink_pdf": 2364,
+   "ink_tif": 1728,
+   "uncovered": 264,
+   "uncovered_frac": 0.112
+  },
+  {
+   "centre_mm": [
+    169.63,
+    98.04
+   ],
+   "size_mm": [
+    1.018,
+    1.018
+   ],
+   "ink_pdf": 2592,
+   "ink_tif": 1691,
+   "uncovered": 337,
+   "uncovered_frac": 0.13
+  }
+ ],
+ "uncovered_frac_max": 0.13
+}

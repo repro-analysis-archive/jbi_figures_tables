@@ -1,0 +1,159 @@
+{
+ "Figure_1_v3": [
+  {
+   "token": "0",
+   "count": 2,
+   "source": "canonical"
+  },
+  {
+   "token": "1",
+   "count": 2,
+   "source": "canonical"
+  },
+  {
+   "token": "2",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "4",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "5",
+   "count": 5,
+   "source": "canonical"
+  },
+  {
+   "token": "6",
+   "count": 2,
+   "source": "canonical"
+  },
+  {
+   "token": "7",
+   "count": 2,
+   "source": "canonical"
+  },
+  {
+   "token": "05",
+   "count": 2,
+   "source": "canonical"
+  },
+  {
+   "token": "10",
+   "count": 7,
+   "source": "canonical"
+  },
+  {
+   "token": "12",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "13",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "15",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "18",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "19",
+   "count": 2,
+   "source": "canonical"
+  },
+  {
+   "token": "28",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "30",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "34",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "41",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "44",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "49",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "52",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "71",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "-15",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "117",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "123",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "158",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "201",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "204",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "278",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "1.05",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "2026",
+   "count": 7,
+   "source": "canonical"
+  }
+ ]
+}

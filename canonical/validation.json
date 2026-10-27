@@ -31,5 +31,18 @@
   "ORACLE vs ORACLE−C, W = 30, K = 15, P = 30": 0.07100706670947592
  },
  "v3_history_anchor_status": "PASS (3 d.p.)",
- "v3_history_family_cells_checked": 14
+ "v3_history_family_cells_checked": 14,
+ "v4_table2_sign_decimals": [
+  {
+   "row": "primary:P2-FM",
+   "field": "ci_lo",
+   "value": -0.00028834867676637266,
+   "value_repr": "-0.00028834867676637266",
+   "source": "families.json['primary:P2-FM']['ci_lo']",
+   "equals_families_json": true,
+   "display_3dp": "−0.000",
+   "decimals": 4,
+   "display": "−0.0003"
+  }
+ ]
 }

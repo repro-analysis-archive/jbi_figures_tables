@@ -1,0 +1,23 @@
+{
+ "stem": "figures_v3/Figure_1/Figure_1_v3",
+ "tif": "/Volumes/ADDATA/\u533b\u7642\u52d5\u753b/JBI_figures_tables/figures_v3/Figure_1/Figure_1_v3.tif",
+ "dpi": 1200.0,
+ "tif_px": [
+  8977,
+  10347
+ ],
+ "pdf_raster_px": [
+  8977,
+  10347
+ ],
+ "shift_px": [
+  0,
+  0
+ ],
+ "block_px": 64,
+ "min_px": 120,
+ "dilation_px": 6,
+ "pdf_ink_missing_in_tif": [],
+ "tif_ink_missing_in_pdf": [],
+ "result": "PASS"
+}

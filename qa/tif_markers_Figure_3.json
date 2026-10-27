@@ -1,0 +1,26 @@
+{
+ "stem": "figures/Figure_3/Figure_3",
+ "dpi": 1200.0,
+ "shift_px": [
+  0,
+  0
+ ],
+ "markers": 50,
+ "flagged": [
+  {
+   "centre_mm": [
+    84.86,
+    21.64
+   ],
+   "size_mm": [
+    1.018,
+    1.018
+   ],
+   "ink_pdf": 2640,
+   "ink_tif": 1315,
+   "uncovered": 810,
+   "uncovered_frac": 0.307
+  }
+ ],
+ "uncovered_frac_max": 0.307
+}

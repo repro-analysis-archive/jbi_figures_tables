@@ -33,10 +33,16 @@ FILES_V2 = [f"figures_v2/Figure_1/Figure_1_v2.{e}" for e in ("pdf", "pptx", "tif
            [f"tables/Table_{n}_v2.{e}" for n in ("1", "2", "S5") for e in ("docx", "csv")] + ["CAPTIONS_v2.md"]
 
 
+FILES_V3 = [f"figures_v3/Figure_1/Figure_1_v3.{e}" for e in ("pdf", "pptx", "tif")] + \
+           [f"figures_v3/Figure_{n}/Figure_{n}_v3.{e}" for n in (2, 3, 4) for e in ("pdf", "tif")] + \
+           [f"tables/Table_2_v3.{e}" for e in ("docx", "csv")]
+
+
 def main():
     v2 = "--v2" in sys.argv[1:]
+    v3 = "--v3" in sys.argv[1:]
     out, ok = {}, True
-    for f in (FILES_V2 if v2 else FILES):
+    for f in (FILES_V3 if v3 else FILES_V2 if v2 else FILES):
         p = ROOT / f
         blobs = [p.read_bytes()]
         meta = {}
@@ -50,12 +56,19 @@ def main():
         elif p.suffix == ".pdf":
             meta = {k: v for k, v in pymupdf.open(p).metadata.items() if v and k in ("author", "creator", "producer", "title")}
         elif p.suffix == ".tif":
-            meta = {str(k): str(v)[:40] for k, v in Image.open(p).tag_v2.items() if k in (270, 305, 315, 33432)}
+            im = Image.open(p)
+            meta = {str(k): str(v)[:40] for k, v in im.tag_v2.items() if k in (270, 305, 315, 33432)}
+            if v3:   # scan every byte except the compressed pixel strips (random LZW bytes matched the e-mail pattern)
+                raw = bytearray(blobs[0])
+                for off, n in zip(im.tag_v2[273], im.tag_v2[279]):
+                    raw[off:off + n] = bytes(n)
+                blobs = [bytes(raw)]
+                meta["scanned"] = "all bytes except pixel strips"
         hits = {k: sum(len(r.findall(b)) for b in blobs) for k, r in PAT.items()}
         ok &= not any(hits.values()) and not meta.get("author") and not meta.get("dc:creator") and not meta.get("cp:lastModifiedBy")
         out[f] = dict(hits=hits, metadata=meta)
         print(f, hits, meta)
-    (ROOT / "qa" / ("blind_scan_v2.json" if v2 else "blind_scan.json")).write_text(json.dumps(out, indent=1, ensure_ascii=False) + "\n")
+    (ROOT / "qa" / ("blind_scan_v3.json" if v3 else "blind_scan_v2.json" if v2 else "blind_scan.json")).write_text(json.dumps(out, indent=1, ensure_ascii=False) + "\n")
     print("BLIND", "PASS" if ok else "FAIL")
     sys.exit(0 if ok else 1)
 

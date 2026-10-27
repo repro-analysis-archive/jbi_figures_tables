@@ -1,0 +1,23 @@
+Family,Comparison (with vs without C),Cells,Mean D (95% CI),Share D_j > 0,Locked rule outcome{sup:a},Failed (§13),Status
+"Primary set, 158 cases (enters family verdicts)",,,,,,,
+P1a,ORACLE vs ORACLE−C,66,1.925 (1.909 to 1.934),0.98,Supported,None,Verdict: supported
+P1b-SITE,SITE vs NV,48,2.198 (2.167 to 2.226),1.00,Supported,None,Verdict: supported
+P1b-FM,FM-P vs FM-P−C,48,0.594 (0.582 to 0.606),1.00,Supported,E3-site,Not tested (§13)
+P2-SITE,SITE vs NV,18,0.052 (0.048 to 0.056),1.00,Supported,None,Verdict: supported
+P2-FM,FM-P vs FM-P−C,12,0.005 (−0.0003{sup:b} to 0.012),0.50,Inconclusive,E3-site,Not tested (§13)
+P2-ORACLE,ORACLE vs ORACLE−C,12,0.042 (0.036 to 0.048),0.92,Supported,None,Verdict: supported
+"W = 0 set, 204 cases (sensitivity; reported separately)",,,,,,,
+P1b-SITE,SITE vs NV,48,2.181 (2.169 to 2.193),1.00,Supported,None,Reported separately
+P1b-FM,FM-P vs FM-P−C,48,0.671 (0.661 to 0.680),1.00,Supported,E3-site,Not tested (§13)
+P2-SITE,SITE vs NV,6,0.086 (0.083 to 0.090),1.00,Supported,None,Reported separately
+P2-FM,FM-P vs FM-P−C,4,0.018 (0.014 to 0.022),0.75,Supported,E3-site,Not tested (§13)
+P2-ORACLE,ORACLE vs ORACLE−C,4,0.084 (0.081 to 0.087),1.00,Supported,None,Reported separately
+"W = 5 set, 201 cases (sensitivity; reported separately)",,,,,,,
+P2-SITE,SITE vs NV,6,0.046 (0.043 to 0.048),1.00,Supported,None,Reported separately
+P2-FM,FM-P vs FM-P−C,4,0.006 (−0.003 to 0.014),0.50,Inconclusive,E3-site,Not tested (§13)
+P2-ORACLE,ORACLE vs ORACLE−C,4,0.052 (0.048 to 0.056),1.00,Supported,None,Reported separately
+"Single-file set, 123 cases (sensitivity; reported separately)",,,,,,,
+P1b-SITE,SITE vs NV,48,2.066 (2.038 to 2.097),0.96,Supported,None,Reported separately
+P1b-FM,FM-P vs FM-P−C,48,0.379 (0.363 to 0.395),1.00,Supported,E3-site,Not tested (§13)
+P2-SITE,SITE vs NV,18,0.053 (0.049 to 0.056),1.00,Supported,None,Reported separately
+P2-FM,FM-P vs FM-P−C,12,0.016 (0.009 to 0.023),0.75,Supported,E3-site,Not tested (§13)

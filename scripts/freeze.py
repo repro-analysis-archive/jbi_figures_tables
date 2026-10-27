@@ -304,6 +304,30 @@ def x_order_v3(xr):
     return out
 
 
+# ------------------------------------------------------------------------------- v4 Table 2: displaying a sign
+def sign_decimals(fam, fams):
+    """Table 2 values (D̄ and bounds of the non-exploratory rows) whose 3-decimal string is −0.000, a rounding that
+    hides the sign. For each: the exact value, checked equal to families.json, and the smallest number of decimals at
+    which its rounded value is non-zero (task v4 §1.3). No other rounding changes."""
+    out = []
+    for r in fam:
+        if r["role"].startswith("exploratory"):
+            continue
+        key = r["source"].split("'")[1]
+        for field in ("D_bar", "ci_lo", "ci_hi"):
+            x = r[field]
+            if f3(x) != "−0.000":
+                continue
+            assert x == fams[key][field], (key, field)
+            d = 4
+            while float(f"{x:.{d}f}") == 0.0:
+                d += 1
+            out.append(dict(row=key, field=field, value=x, value_repr=repr(x),
+                            source=f"families.json['{key}']['{field}']", equals_families_json=True,
+                            display_3dp=f3(x), decimals=d, display=f"{x:.{d}f}".replace("-", "−")))
+    return out
+
+
 # ------------------------------------------------------------------------------------------------------ Figure 3
 def ba_rows(checks, bm):
     rows = []
@@ -571,7 +595,8 @@ def main():
         c_b0_identity="PASS (B S1 (a)(b) and S3 (b) equal step-5 E3_site_278 / E3_site_primary)",
         x1_step5_reference="PASS (x1_e3.json step5_reference equals checks.json E3_site_primary)",
         v3_history_rows=len(hist), v3_history_anchors_exact=hist_exact, v3_history_anchor_status="PASS (3 d.p.)",
-        v3_history_family_cells_checked=hist_fam))
+        v3_history_family_cells_checked=hist_fam,
+        v4_table2_sign_decimals=sign_decimals(fam, fams)))
 
     files = sorted(p for p in OUT.iterdir() if p.suffix in (".json", ".csv"))
     (OUT / "SHA256SUMS.txt").write_text("".join(f"{sha256(p)}  {p.name}\n" for p in files))

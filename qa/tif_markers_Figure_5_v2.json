@@ -1,0 +1,11 @@
+{
+ "stem": "figures_v2/Figure_5/Figure_5_v2",
+ "dpi": 1200.0,
+ "shift_px": [
+  0,
+  3
+ ],
+ "markers": 540,
+ "flagged": [],
+ "uncovered_frac_max": 0.015
+}

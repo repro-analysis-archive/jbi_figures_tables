@@ -1,0 +1,96 @@
+{
+ "Table_2_v3": {
+  "docx": {
+   "paragraph_styles": {
+    "Normal": 162
+   },
+   "numbered_paragraphs": 0,
+   "shading_elements": 0,
+   "cell_borders": {
+    "top": 8,
+    "bottom": 16
+   },
+   "table_level_borders": {
+    "top=nil": 1,
+    "left=nil": 1,
+    "bottom=nil": 1,
+    "right=nil": 1,
+    "insideH=nil": 1,
+    "insideV=nil": 1
+   },
+   "tables": 1,
+   "header_row_repeat": 1,
+   "run_fonts": {
+    "Arial": 178
+   },
+   "run_sizes_pt": {
+    "11.0": 178
+   },
+   "stray_bold": []
+  },
+  "pdf": {
+   "pages": 1,
+   "page_mm": [
+    297.0,
+    210.0
+   ],
+   "pdffonts": [
+    "BAAAAA+Arial-BoldMT TrueType emb=yes",
+    "CAAAAA+ArialMT TrueType emb=yes"
+   ],
+   "horizontal_rules": 3,
+   "rules_per_page": [
+    3
+   ],
+   "vertical_rules": 0,
+   "filled_rects": 0,
+   "text_sizes_pt": {
+    "6.4": 9,
+    "11.0": 180
+   }
+  },
+  "checks": {
+   "Normal style only": true,
+   "no numbering": true,
+   "no shading": true,
+   "cell borders top/bottom only": true,
+   "table-level borders nil": true,
+   "header repeat": true,
+   "bold only caption + header": true,
+   "Arial runs": true,
+   "11 pt runs": true,
+   "PDF fonts Arial embedded": true,
+   "no vertical rules": true,
+   "rules: 2 per header + 1 per table": true,
+   "pages <= 1": true,
+   "heading 'Locked rule outcome' (no 'Direction rule' heading)": true,
+   "footnote a: mechanical outcome of §12.3, qualified by Status": true,
+   "footnote b: additional decimals": true,
+   "bound displayed once, equal to validation.json": true,
+   "no −0.000 left in a table cell": true,
+   "CSV: only the heading and the bound changed vs Table_2_v2": true
+  },
+  "csv_changes_vs_v2": [
+   [
+    0,
+    5,
+    "Direction rule",
+    "Locked rule outcome{sup:a}"
+   ],
+   [
+    6,
+    3,
+    "0.005 (−0.000 to 0.012)",
+    "0.005 (−0.0003{sup:b} to 0.012)"
+   ]
+  ],
+  "bound": {
+   "row": "primary:P2-FM",
+   "field": "ci_lo",
+   "exact": "-0.00028834867676637266",
+   "display": "−0.0003",
+   "decimals": 4,
+   "display_3dp": "−0.000"
+  }
+ }
+}

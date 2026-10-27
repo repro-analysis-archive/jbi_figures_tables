@@ -1,0 +1,242 @@
+{
+ "Figure_2": {
+  "before": "figures_v2/Figure_2/Figure_2_v2.pdf",
+  "after": "figures_v3/Figure_2/Figure_2_v3.pdf",
+  "markers_before": [
+   {
+    "shape": "circle",
+    "face": "navy filled",
+    "edge_colour": "#1A1A1A",
+    "edge_pt": 0.6,
+    "n": 5,
+    "outer_w_mm": 1.129,
+    "outer_h_mm": 1.129,
+    "spread_w_mm": 0.0,
+    "spread_h_mm": 0.0
+   },
+   {
+    "shape": "diamond",
+    "face": "white (hollow)",
+    "edge_colour": "#4D4D4D",
+    "edge_pt": 0.75,
+    "n": 3,
+    "outer_w_mm": 1.182,
+    "outer_h_mm": 1.484,
+    "spread_w_mm": 0.0,
+    "spread_h_mm": 0.0
+   },
+   {
+    "shape": "square",
+    "face": "white (hollow)",
+    "edge_colour": "#4D4D4D",
+    "edge_pt": 0.75,
+    "n": 4,
+    "outer_w_mm": 1.283,
+    "outer_h_mm": 1.283,
+    "spread_w_mm": 0.0,
+    "spread_h_mm": 0.0
+   },
+   {
+    "shape": "triangle",
+    "face": "white (hollow)",
+    "edge_colour": "#4D4D4D",
+    "edge_pt": 0.75,
+    "n": 3,
+    "outer_w_mm": 1.321,
+    "outer_h_mm": 1.18,
+    "spread_w_mm": 0.0,
+    "spread_h_mm": 0.0
+   }
+  ],
+  "markers_after": [
+   {
+    "shape": "circle",
+    "face": "navy filled",
+    "edge_colour": "#1A1A1A",
+    "edge_pt": 0.6,
+    "n": 5,
+    "outer_w_mm": 1.499,
+    "outer_h_mm": 1.499,
+    "spread_w_mm": 0.0,
+    "spread_h_mm": 0.0
+   },
+   {
+    "shape": "diamond",
+    "face": "white (hollow)",
+    "edge_colour": "#4D4D4D",
+    "edge_pt": 0.75,
+    "n": 3,
+    "outer_w_mm": 1.552,
+    "outer_h_mm": 1.977,
+    "spread_w_mm": 0.0,
+    "spread_h_mm": 0.0
+   },
+   {
+    "shape": "square",
+    "face": "white (hollow)",
+    "edge_colour": "#4D4D4D",
+    "edge_pt": 0.75,
+    "n": 4,
+    "outer_w_mm": 1.695,
+    "outer_h_mm": 1.695,
+    "spread_w_mm": 0.0,
+    "spread_h_mm": 0.0
+   },
+   {
+    "shape": "triangle",
+    "face": "white (hollow)",
+    "edge_colour": "#4D4D4D",
+    "edge_pt": 0.75,
+    "n": 3,
+    "outer_w_mm": 1.748,
+    "outer_h_mm": 1.549,
+    "spread_w_mm": 0.0,
+    "spread_h_mm": 0.0
+   }
+  ]
+ },
+ "Figure_3": {
+  "before": "figures_v2/Figure_3/Figure_3_v2.pdf",
+  "after": "figures_v3/Figure_3/Figure_3_v3.pdf",
+  "markers_before": [
+   {
+    "shape": "circle",
+    "face": "navy filled",
+    "edge_colour": "#1A1A1A",
+    "edge_pt": 0.9,
+    "n": 25,
+    "outer_w_mm": 1.094,
+    "outer_h_mm": 1.094,
+    "spread_w_mm": 0.0,
+    "spread_h_mm": 0.0
+   },
+   {
+    "shape": "square",
+    "face": "navy filled",
+    "edge_colour": "#1A1A1A",
+    "edge_pt": 0.9,
+    "n": 25,
+    "outer_w_mm": 1.143,
+    "outer_h_mm": 1.143,
+    "spread_w_mm": 0.0,
+    "spread_h_mm": 0.0
+   },
+   {
+    "shape": "triangle",
+    "face": "navy filled",
+    "edge_colour": "#1A1A1A",
+    "edge_pt": 0.9,
+    "n": 25,
+    "outer_w_mm": 1.293,
+    "outer_h_mm": 1.162,
+    "spread_w_mm": 0.0,
+    "spread_h_mm": 0.0
+   }
+  ],
+  "markers_after": [
+   {
+    "shape": "circle",
+    "face": "navy filled",
+    "edge_colour": "#1A1A1A",
+    "edge_pt": 0.9,
+    "n": 25,
+    "outer_w_mm": 1.499,
+    "outer_h_mm": 1.499,
+    "spread_w_mm": 0.0,
+    "spread_h_mm": 0.0
+   },
+   {
+    "shape": "square",
+    "face": "navy filled",
+    "edge_colour": "#1A1A1A",
+    "edge_pt": 0.9,
+    "n": 25,
+    "outer_w_mm": 1.575,
+    "outer_h_mm": 1.575,
+    "spread_w_mm": 0.0,
+    "spread_h_mm": 0.0
+   },
+   {
+    "shape": "triangle",
+    "face": "navy filled",
+    "edge_colour": "#1A1A1A",
+    "edge_pt": 0.9,
+    "n": 25,
+    "outer_w_mm": 1.805,
+    "outer_h_mm": 1.605,
+    "spread_w_mm": 0.0,
+    "spread_h_mm": 0.0
+   }
+  ]
+ },
+ "Figure_4": {
+  "before": "figures_v2/Figure_4/Figure_4_v2.pdf",
+  "after": "figures_v3/Figure_4/Figure_4_v3.pdf",
+  "markers_before": [
+   {
+    "shape": "circle",
+    "face": "navy filled",
+    "edge_colour": "#1A1A1A",
+    "edge_pt": 0.6,
+    "n": 25,
+    "outer_w_mm": 1.129,
+    "outer_h_mm": 1.129,
+    "spread_w_mm": 0.0,
+    "spread_h_mm": 0.0
+   },
+   {
+    "shape": "square",
+    "face": "white (hollow)",
+    "edge_colour": "#4D4D4D",
+    "edge_pt": 0.75,
+    "n": 25,
+    "outer_w_mm": 1.283,
+    "outer_h_mm": 1.283,
+    "spread_w_mm": 0.0,
+    "spread_h_mm": 0.0
+   }
+  ],
+  "markers_after": [
+   {
+    "shape": "circle",
+    "face": "navy filled",
+    "edge_colour": "#1A1A1A",
+    "edge_pt": 0.6,
+    "n": 25,
+    "outer_w_mm": 1.499,
+    "outer_h_mm": 1.499,
+    "spread_w_mm": 0.0,
+    "spread_h_mm": 0.0
+   },
+   {
+    "shape": "square",
+    "face": "white (hollow)",
+    "edge_colour": "#4D4D4D",
+    "edge_pt": 0.75,
+    "n": 25,
+    "outer_w_mm": 1.695,
+    "outer_h_mm": 1.695,
+    "spread_w_mm": 0.0,
+    "spread_h_mm": 0.0
+   }
+  ]
+ },
+ "Figure_5": {
+  "before": "figures_v2/Figure_5/Figure_5_v2.pdf",
+  "after": null,
+  "markers_before": [
+   {
+    "shape": "circle",
+    "face": "navy filled",
+    "edge_colour": "#1A1A1A",
+    "edge_pt": 0.45,
+    "n": 540,
+    "outer_w_mm": 0.97,
+    "outer_h_mm": 0.97,
+    "spread_w_mm": 0.0,
+    "spread_h_mm": 0.0
+   }
+  ],
+  "markers_after": null
+ }
+}
