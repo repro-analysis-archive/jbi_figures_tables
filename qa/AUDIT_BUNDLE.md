@@ -37,3 +37,14 @@ Contents: `git archive` of commit f71cfb3 (v5 outputs `figures_v4/` and `CAPTION
 | `AUDIT_JBI_supplement_v6_20261027-1419.zip` (work folder and ~/Desktop/) | 133485177 | `0b78293c9d09f22cb6194dacc7041362ea259845dbb28ced43d47dee965fc63c` |
 
 Contents: `git archive` of commit 49b7a0e (supplement outputs `figures_supp_v1/`, `tables/Table_S*_v1.*`, `CAPTIONS_supplement_v1.md`, `supplementary/Supplementary_Material_v1.docx`, `canonical_supplement/`, `inputs/`, the unchanged main set and earlier outputs, scripts, records, QA), `GIT_LOG.txt`, `GIT_LOG_ONELINE.txt`, `AUDIT_README.txt`, `AUDIT_MANIFEST_SHA256.txt` (468 files, all verified OK after packing and again after unzipping the Desktop copy).
+
+## v7 bundle (graphical abstract v3, Supplementary Tables S3/S4 v2)
+
+| file | bytes | SHA-256 |
+|---|---|---|
+| `AUDIT_JBI_GA_tables_v7_20261027-1635.zip` (work folder, `ZIP_ARCHIVE/current/`, ~/Desktop/) | 1256024 | `ad4406a639c83d5f8e851730bf008e19e6e5a80a031dd28190681b9bb6f94971` |
+
+Contents: the v7 files of commit 1443c31 (GA v3 .pdf / .pptx / .tif / .js; Tables S3 and S4 v2 .docx / .pdf / .csv;
+`canonical_supplement/validation.json`, `SHA256SUMS.txt`, `inputs_sha256.json`; POST_RESULT, CAPTIONS_supplement_v2,
+QA JSON; scripts), `GIT_LOG.txt`, `GIT_LOG_ONELINE.txt`, `AUDIT_README.txt` (with the GA text extracted from the PDF),
+`AUDIT_MANIFEST_SHA256.txt` (28 files, verified after packing and after unzipping the Desktop copy).
