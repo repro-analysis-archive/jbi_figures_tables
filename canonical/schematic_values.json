@@ -33,5 +33,10 @@
  "step6_completed": "2026-10-18",
  "x_records_date": "2026-10-19",
  "b_records_date": "2026-10-20",
- "slice": "W = 30, α = 0.5, γ = 1, φ_A = 0"
+ "slice": "W = 30, α = 0.5, γ = 1, φ_A = 0",
+ "code_lock_date": "2026-10-05",
+ "step4_record_date": "2026-10-12",
+ "step5_record_date": "2026-10-12",
+ "step6_launch_date": "2026-10-12",
+ "step7_record_date": "2026-10-19"
 }

@@ -57,6 +57,7 @@ INPUTS = {
     "fact_base": ("02_records/SS_DS203_PROJECT_RECORD_for_evaluator_20261020_v5.md",
                   "c1d8d651535136907b461e2666b4671d4fc58c736a78e6bb61fbcac54dc27684"),  # POST_RESULT_PRESENTATION.md
     "presentation_decisions": ("03_results/PRESENTATION_DECISIONS.md", None),
+    "key_commits": ("07_provenance/main_repository_key_commits.md", None),
 }
 
 # Task §2.1 anchors (exact values)
@@ -103,7 +104,7 @@ def guard_inputs():
 
 
 def write(name, obj, rows=None):
-    """canonical/<name>.json (full precision) and, for row data, canonical/<name>.csv (comma-free text)."""
+    """canonical/<name>.json (full precision; MATLAB reads only these) and, for row data, a CSV mirror (RFC 4180)."""
     (OUT / f"{name}.json").write_text(json.dumps(obj, indent=1, ensure_ascii=False) + "\n")
     if rows is not None:
         cols = list(rows[0].keys())
@@ -111,7 +112,6 @@ def write(name, obj, rows=None):
             w = csv.DictWriter(f, fieldnames=cols)
             w.writeheader()
             for r in rows:
-                assert all("," not in str(v) for v in r.values()), f"comma in CSV text field: {name}"
                 w.writerow(r)
 
 
@@ -158,7 +158,19 @@ def validate_families(fams, cm_all):
     return n, worst
 
 
-def family_rows(fams, gsite, sec13):
+def protocol_families(proto):
+    """Protocol §12.2 family table: cells (definition) and prediction, markdown stripped."""
+    sec = proto.split("### 12.2 Families", 1)[1].split("### 12.3", 1)[0]
+    out = {}
+    for line in sec.splitlines():
+        c = [x.strip().replace("\x00", "|") for x in line.replace("\\|", "\x00").strip().strip("|").split("|")]
+        if len(c) == 5 and c[0] not in ("family", "---") and not c[0].startswith("-"):
+            clean = [re.sub(r"\*\*\[v0\.4-final2?\]\*\* ?|\*\*|\\", "", x).strip() for x in c]
+            out[clean[0]] = dict(cells_definition=clean[2], prediction=clean[3], conditions_protocol=clean[4])
+    return out
+
+
+def family_rows(fams, gsite, sec13, pf):
     """All families of families.json with their role; W0:P1a (outside the §10.3 scope) is role 'exploratory'."""
     scope_103 = {"W0": {"P1b-SITE", "P1b-FM", "P2-SITE", "P2-FM", "P2-ORACLE"},
                  "W5": {"P1b-SITE", "P1b-FM", "P2-SITE", "P2-FM", "P2-ORACLE"},
@@ -197,6 +209,7 @@ def family_rows(fams, gsite, sec13):
             conditions_failed=" + ".join(v["conditions_failed"]) or "none", tested=tested,
             enters_verdicts=v["enters_verdicts"], role=role, reported=reported,
             gsite_eta2_set=gs if gs is not None else "",
+            cells_definition=pf[f]["cells_definition"], prediction=pf[f]["prediction"],
             in_fig2A=bool(f in ("P1a", "P1b-SITE", "P2-SITE", "P2-ORACLE") and not role.startswith("exploratory")),
             source=f"families.json['{key}']"))
     rows.sort(key=lambda r: (order_s.index(r["set"]), order_f.index(r["family"])))
@@ -356,7 +369,7 @@ def table3(checks, x1):
 
 
 # ---------------------------------------------------------------------------------------- schematic numbers
-def schematic_values(t1, proto, run6, fact, decisions):
+def schematic_values(t1, proto, run6, fact, decisions, keyc):
     def find(pat, text, cast=str):
         m = re.search(pat, text)
         assert m, pat
@@ -392,6 +405,11 @@ def schematic_values(t1, proto, run6, fact, decisions):
         x_records_date=find(r"records 1c8e628 \(([0-9-]+) ", fact),
         b_records_date=find(r"records 458341f \(([0-9-]+) ", fact),
         slice=find(r"slice (W = 30, α = 0\.5, γ = 1, φ_A = 0), primary set", decisions),
+        code_lock_date=find(r"\| final code lock \(§14 step 2\) \| `98cba1e[0-9a-f]*` \| ([0-9-]+) ", keyc),
+        step4_record_date=find(r"\| step-4 record \| `8d4c61a[0-9a-f]*` \| ([0-9-]+) ", keyc),
+        step5_record_date=find(r"\| step-5 record \(chain\) \| `0ebf2cf[0-9a-f]*` \| ([0-9-]+) ", keyc),
+        step6_launch_date=find(r"\| step-6 runner \(chain; step-6 launch\) \| `7adaf13[0-9a-f]*` \| ([0-9-]+) ", keyc),
+        step7_record_date=find(r"\| step-7 record \| `2880d73[0-9a-f]*` \| ([0-9-]+) ", keyc),
     )
     assert v["delta"] == "1.05" and v["step_seconds"] == "5" and v["M"] == "200" and v["n_cells_main"] == "216"
     assert v["n_representation"] == 278 and v["n_primary"] == 158
@@ -416,6 +434,9 @@ def main():
     fact = (PKG / INPUTS["fact_base"][0]).read_text()
     decisions = (PKG / INPUTS["presentation_decisions"][0]).read_text()
     run6 = json.loads((PKG / INPUTS["step6_run_record"][0]).read_text())
+    keyc = (PKG / INPUTS["key_commits"][0]).read_text()
+    pf = protocol_families(proto)
+    assert set(pf) == {"P1a", "P1b-SITE", "P1b-FM", "P2-SITE", "P2-FM", "P2-ORACLE", "P3"}, sorted(pf)
 
     # anchors (task §2.1)
     assert fams["primary:P1b-SITE"]["D_bar"] == ANCHORS["primary:P1b-SITE D_bar"]
@@ -425,7 +446,7 @@ def main():
 
     n_checked, worst = validate_families(fams, cm_all)
 
-    fam = family_rows(fams, gsite, sec13)
+    fam = family_rows(fams, gsite, sec13, pf)
     write("fam_dbar", dict(description="Family D̄ with 95 % percentile bootstrap interval (2,000 resamples of the "
                                        "200 replicates within each cell, same indices for both arms and the truth; "
                                        "cells fixed; seed 20261008), all sets of families.json",
@@ -454,7 +475,7 @@ def main():
 
     write("table1", table1(t1, t2, proto, cm_all))
     write("table3", dict(rows=table3(checks, x1)))
-    sv = schematic_values(t1, proto, run6, fact, decisions)
+    sv = schematic_values(t1, proto, run6, fact, decisions, keyc)
     write("schematic_values", sv)
 
     ga = {f: next(r for r in fam if r["set"] == "primary" and r["family"] == f)

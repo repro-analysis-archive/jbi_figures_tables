@@ -94,5 +94,11 @@
   "sha256": "6b02e8b480a90f923ac4a60feae1e101fc12af281289867995e4bb2d3f2b6637",
   "manifest": "match",
   "recorded_by_generating_step": "none recorded"
+ },
+ "key_commits": {
+  "path": "07_provenance/main_repository_key_commits.md",
+  "sha256": "89340aa24f04cf3ea00ba0e6a7ffb3816fe61f5088a60098fbb6d765a7a3af63",
+  "manifest": "match",
+  "recorded_by_generating_step": "none recorded"
  }
 }
