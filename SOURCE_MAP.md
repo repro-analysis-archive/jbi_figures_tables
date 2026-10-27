@@ -42,7 +42,7 @@ Every plotted or tabulated value comes from a canonical file in `canonical/`, wr
 | `canonical/schematic_values.json` | `f78b6f65669603a33e8cbba2d1f5b6741c09a63bd32247cc1cbeb08c3ea65049` |
 | `canonical/table1.json` | `639eebe004e56d28c9a6cf9fe1d990e55d2d0259c048c70a63dcf79576ac8421` |
 | `canonical/table3.json` | `ac5c372d7acb54441055fbcf0d46ebfeeefa6691cb5a2c79fc72f8f03c7d2399` |
-| `canonical/validation.json` | `e173a8f6a1bf63588a81a3d1aa6b962bb6d804a6b03d82362ffad90654e7484a` |
+| `canonical/validation.json` | `30af8eb9d5fbb601c4dcc808a85d9fc2e357f332dade3a8c7db82411d258c075` |
 | `canonical/w_history_D.csv` | `3e1ff505fdddd66ae1b000d0c607ca2fdd1a71a97a7efb213bf4897961c887b5` |
 | `canonical/w_history_D.json` | `9e2c53ae1d6b486befd390ccffc31fd3ef7434a116d4203f63eb35d15ad8bec2` |
 | `canonical/x_cells_order_v3.csv` | `d2db88517cc09e3eb57d32368bd9d36b885ed9ad0ffb19b11adb233849208c16` |
@@ -93,4 +93,20 @@ Every plotted or tabulated value comes from a canonical file in `canonical/`, wr
 | Table 2 | `tables/Table_2_v2.*` | `fam_dbar.json` (18 rows), `gsite.json` | `families.json`, protocol §12.2, `gsite_record.json` |
 | Supplementary Table S5 | `tables/Table_S5_v2.*` | `table3.json` | `checks.json`, `x1_e3.json` (as v2 Table 3) |
 | Graphical abstract | `graphical_abstract/Graphical_abstract_v2.*` | `ga_values.json` → P1b-SITE / P2-SITE D_bar_3dp | as Table 2 |
+
+## v4 revision (2026-10-27): files of the current version
+
+Same canonical sources as the v3 revision; the only canonical change is the record `validation.json` → `v4_table2_sign_decimals` (no plotted or tabulated value changed).
+
+| element | current file | canonical file → field | note |
+|---|---|---|---|
+| Figure 1 | `figures_v3/Figure_1/Figure_1_v3.*` | as v3 (`schematic_values.json`, `table1.json`) | vertical spacing only |
+| Figure 2 | `figures_v3/Figure_2/Figure_2_v3.*` | as v3 (`fam_dbar.json` rows with in_fig2A) | markers only |
+| Figure 3 | `figures_v3/Figure_3/Figure_3_v3.*` | as v3 (`w_history_D.json`) | markers and row height only |
+| Figure 4 | `figures_v3/Figure_4/Figure_4_v3.*` | as v3 (`fig3_ba.json`) | markers only |
+| Figure 5 | `figures_v2/Figure_5/Figure_5_v2.*` (unchanged) | as v3 | not revised |
+| Table 1 | `tables/Table_1_v2.*` (unchanged) | as v3 | not revised |
+| Table 2 | `tables/Table_2_v3.*` | `fam_dbar.json` (18 rows), `gsite.json`; displayed bound primary:P2-FM ci_lo = -0.00028834867676637266 → −0.0003 (`validation.json` → v4_table2_sign_decimals; `families.json['primary:P2-FM']['ci_lo']`) | heading, footnotes a and b, one bound |
+| Supplementary Table S5 | `tables/Table_S5_v2.*` (unchanged) | as v3 | not revised |
+| Graphical abstract | `graphical_abstract/Graphical_abstract_v2.*` (unchanged) | as v3 | not revised |
 

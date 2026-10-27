@@ -88,6 +88,22 @@ def source_map():
           "| Table 2 | `tables/Table_2_v2.*` | `fam_dbar.json` (18 rows), `gsite.json` | `families.json`, protocol §12.2, `gsite_record.json` |",
           "| Supplementary Table S5 | `tables/Table_S5_v2.*` | `table3.json` | `checks.json`, `x1_e3.json` (as v2 Table 3) |",
           "| Graphical abstract | `graphical_abstract/Graphical_abstract_v2.*` | `ga_values.json` → P1b-SITE / P2-SITE D_bar_3dp | as Table 2 |", ""]
+    sd = val.get("v4_table2_sign_decimals", [])
+    L += ["## v4 revision (2026-10-27): files of the current version", "",
+          "Same canonical sources as the v3 revision; the only canonical change is the record "
+          "`validation.json` → `v4_table2_sign_decimals` (no plotted or tabulated value changed).", "",
+          "| element | current file | canonical file → field | note |", "|---|---|---|---|",
+          "| Figure 1 | `figures_v3/Figure_1/Figure_1_v3.*` | as v3 (`schematic_values.json`, `table1.json`) | vertical spacing only |",
+          "| Figure 2 | `figures_v3/Figure_2/Figure_2_v3.*` | as v3 (`fam_dbar.json` rows with in_fig2A) | markers only |",
+          "| Figure 3 | `figures_v3/Figure_3/Figure_3_v3.*` | as v3 (`w_history_D.json`) | markers and row height only |",
+          "| Figure 4 | `figures_v3/Figure_4/Figure_4_v3.*` | as v3 (`fig3_ba.json`) | markers only |",
+          "| Figure 5 | `figures_v2/Figure_5/Figure_5_v2.*` (unchanged) | as v3 | not revised |",
+          "| Table 1 | `tables/Table_1_v2.*` (unchanged) | as v3 | not revised |",
+          "| Table 2 | `tables/Table_2_v3.*` | `fam_dbar.json` (18 rows), `gsite.json`; displayed bound "
+          + "; ".join(f"{x['row']} {x['field']} = {x['value_repr']} → {x['display']} (`validation.json` → "
+                      f"v4_table2_sign_decimals; `{x['source']}`)" for x in sd) + " | heading, footnotes a and b, one bound |",
+          "| Supplementary Table S5 | `tables/Table_S5_v2.*` (unchanged) | as v3 | not revised |",
+          "| Graphical abstract | `graphical_abstract/Graphical_abstract_v2.*` (unchanged) | as v3 | not revised |", ""]
     (ROOT / "SOURCE_MAP.md").write_text("\n".join(L) + "\n")
 
 
@@ -305,12 +321,114 @@ def measurement_report_v2():
     (ROOT / "qa" / "MEASUREMENT_REPORT_v2.md").write_text("\n".join(L) + "\n")
 
 
+def measurement_report_v3():
+    figs = ["Figure_1_v3", "Figure_2_v3", "Figure_3_v3", "Figure_4_v3"]
+    pvc = j("qa/plotted_vs_canonical_v3.json")
+    tq = j("qa/tables_qa_v3.json")["Table_2_v3"]
+    sn = j("qa/schematic_numbers_v3.json")
+    blind = j("qa/blind_scan_v3.json")
+    mk = j("qa/markers_v4.json")
+    un = j("qa/v4_unchanged.json")
+    reb = (ROOT / "qa" / "REBUILD_TEST_v4.md").read_text()
+    L = ["# Measurement report — v4 revision outputs (suffix `_v3`; template §7; measured from the exported files)", "",
+         "| figure | PDF page (mm) | TIF (px @ dpi = mm) | regular text (pt) | bold text (pt) | panel labels (pt) | min (pt) | fonts | raster objects | overlaps / near | edge < 0.3 mm |",
+         "|---|---|---|---|---|---|---|---|---|---|---|"]
+    rows = {}
+    for name in figs:
+        m = j(f"qa/measure_{name}.json")
+        t = m.get("tif", {})
+        reg = sorted({round(x["size"]) for x in m["spans"] if "Bold" not in x["font"]})
+        bold = sorted({round(x["size"]) for x in m["spans"] if "Bold" in x["font"]})
+        pan = sorted({round(x["size"]) for x in m["spans"] if "Bold" in x["font"] and re.fullmatch(r"\([A-F]\)", x["text"].strip())})
+        fonts = ", ".join(sorted({x.split()[0].split("+")[-1] for x in m["pdffonts"][2:]}))
+        rows[name] = dict(mm=m["page_mm"], tif=t.get("mm"))
+        L.append(f"| {name} | {m['page_mm'][0]} × {m['page_mm'][1]} | {t.get('px')} @ {t.get('dpi', [None])[0]} = {t.get('mm')} | "
+                 f"{reg} | {bold} | {pan or '—'} | {m['min_text_pt']} | {fonts} (emb=yes) | {max(0, len(m['pdfimages']) - 2)} | "
+                 f"{len(m['text_overlaps'])} | {len(m['edge_clearance_below_0p3mm'])} |")
+    L += ["", "Font sizes unchanged from v3: data figures tick / category 14, axis 15, panel 16 pt bold; Figure 1 body 14, "
+          "headings 15, panel labels 16 pt bold. Widths unchanged (data figures 189.79 mm PDF; Figure 1 190.0 mm). "
+          "Heights: Figure 1 232.0 → 219.0 mm; Figure 3 228.25 → 219.07 mm (both ≤ 220 mm); Figures 2 and 4 unchanged. "
+          "Not revised and not re-measured: Figure 5 (`Figure_5_v2`), graphical abstract (`Graphical_abstract_v2`).", "",
+          "## Marker sizes before (v2) → after (v3), outer incl. edge, from PDF paths (`qa/markers_v4.json`)", "",
+          "| figure | shape | face | edge (pt) | n | before w × h (mm) | after w × h (mm) |", "|---|---|---|---|---|---|---|"]
+    for f, v in mk.items():
+        for i, b in enumerate(v["markers_before"]):
+            a = v["markers_after"][i] if v["markers_after"] else None
+            L.append(f"| {f} | {b['shape']} | {b['face']} | {b['edge_pt']} | {b['n']} | {b['outer_w_mm']} × {b['outer_h_mm']} | "
+                     + (f"{a['outer_w_mm']} × {a['outer_h_mm']} |" if a else "unchanged (not revised) |"))
+    L += ["", "Ticks, axes and panels: unchanged (`qa/v4_unchanged.json`: Figures 2 and 4 — every text span and every "
+          "non-marker path identical to v2; Figure 3 — texts, fonts, sizes and path kinds identical, axes 52.5 → 49.5 mm high; "
+          "Figure 1 — shapes, texts, sizes, colours, x positions, widths and heights identical, y positions and four vertical "
+          "connector lengths changed).", "",
+          "| check | Figure_1 | Figure_2 | Figure_3 | Figure_4 |", "|---|---|---|---|---|",
+          "| v4 unchanged-check | " + " | ".join(un[k]["result"] for k in ("Figure_1", "Figure_2", "Figure_3", "Figure_4")) + " |",
+          "| TIF ↔ PDF whole image (`qa/tif_vs_pdf_*`) | " + " | ".join(j(f"qa/tif_vs_pdf_Figure_{n}_v3.json")["result"] for n in (1, 2, 3, 4)) + " |",
+          "| TIF markers complete (`qa/tif_markers_*`) | — | " + " | ".join(
+              "PASS" if not j(f"qa/tif_markers_Figure_{n}_v3.json")["flagged"] else "FAIL" for n in (2, 3, 4)) + " |", "",
+          "## Finding: MATLAB raster export clips markers at its 4,000-px render tiles", "",
+          "| earlier TIF (unchanged) | markers | flagged (PDF ink not covered by the TIF > 10 %) and visual verdict |",
+          "|---|---|---|"]
+    clipped = {("Figure_3", (84.86, 21.64)), ("Figure_2_v2", (169.63, 98.04)), ("Figure_4_v2", (84.45, 26.01))}
+    for stem in ("Figure_2", "Figure_3", "Figure_4", "Figure_2_v2", "Figure_3_v2", "Figure_4_v2", "Figure_5_v2"):
+        r = j(f"qa/tif_markers_{stem}.json")
+        fl = "; ".join(f"({x['centre_mm'][0]}, {x['centre_mm'][1]}) mm, {round(100 * x['uncovered_frac'])} % uncovered: "
+                       + ("**clipped** (one side missing)" if (stem, tuple(x["centre_mm"])) in clipped else
+                          "intact (thinner MATLAB stroke)") for x in r["flagged"]) or "none"
+        L.append(f"| {stem} | {r['markers']} | {fl} |")
+    L += ["", "Visual verdicts from PDF | TIF crops at 1,200 dpi: `qa/tif_tile_clipping_evidence.png`. Each clipped marker "
+          "straddles a 4,000-px tile boundary of MATLAB's raster export (x = 4,000 or 8,000 px, or 4,000 px from the "
+          "bottom). The v3 TIFs are the MATLAB vector PDFs rasterised by poppler (`jbi_export_v4.m`): no flagged marker.", "",
+          "## Plotted vs canonical and legend / key ↔ plot (`qa/plotted_vs_canonical_v3.json`)", ""]
+    for k, v in pvc.items():
+        extra = v.get("legend_entries", "")
+        if "key_glyphs" in v:
+            extra = "key: " + "; ".join(v["key_glyphs"])
+        L.append(f"* {k}_v3: {v['result']} — {v['points']} points with their intervals / bounds; mismatches {len(v['mismatches'])}; {extra}")
+    L += ["", "## Schematic numbers (`qa/schematic_numbers_v3.json`)", ""]
+    for k, v in sn.items():
+        L.append(f"* {k}: {len(v)} distinct numeric tokens; canonical {sum(r['source'] == 'canonical' for r in v)}, "
+                 f"unmatched {sum(r['source'] == 'UNMATCHED' for r in v)}")
+    p, d, b = tq["pdf"], tq["docx"], tq["bound"]
+    L += ["", "## Table 2 v3 (`qa/tables_qa_v3.json`)", "",
+          f"* pages {p['pages']} (A4 landscape {p['page_mm'][0]} × {p['page_mm'][1]} mm); rules per page {p['rules_per_page']}; "
+          f"vertical rules {p['vertical_rules']}; shading {d['shading_elements']} + {p['filled_rects']}; run sizes {d['run_sizes_pt']}; "
+          f"paragraph styles {d['paragraph_styles']}; fonts {', '.join(p['pdffonts'])}",
+          f"* bound {b['row']} {b['field']}: exact {b['exact']} (families.json) → displayed {b['display']} "
+          f"({b['decimals']} decimals; 3 decimals would give {b['display_3dp']})",
+          "* CSV cells changed vs Table_2_v2: " + "; ".join(f"row {i} col {c}: '{x}' → '{y}'" for i, c, x, y in tq["csv_changes_vs_v2"]),
+          f"* checks: {'PASS' if all(tq['checks'].values()) else 'FAIL'} ({len(tq['checks'])})", "",
+          "## Clean rebuild (`qa/REBUILD_TEST_v4.md`)", "", "Result: " + ("PASS" if "Result: PASS" in reb else "FAIL"), "",
+          "## Template §12-3 return block (v4)", "", "```",
+          "[STYLE]        Arial; tick/axis/panel = 14/15/16 pt (Figure 1 body/heading/panel 14/15/16); grayscale+navy #2B3D6B; label-case=(A)",
+          "[METHOD]       Fig2–4: B (make_Figure_N_v3.m from canonical JSON); Fig1: §15 pptxgenjs",
+          "[FILES]        Fig2–4: .fig + .m + .pdf + .tif(1200; from the vector PDF); Fig1: .js + .pptx + .pdf + .tif(1200)",
+          "[DATA_CHECK]   " + "  ".join(f"{k}_v3:{v['result']}" for k, v in pvc.items()) + "   (hash guard y)",
+          "[★ PROVENANCE] manifest + recorded hashes + anchors as v3 = PASS; validation.json + v4_table2_sign_decimals (bound equals families.json)",
+          "[★ CI]          unchanged definitions (§3); Figure 3 has no interval (none exists) = PASS",
+          "[★ LEGEND]      Fig2, Fig3 legends from plotted handles; Fig4 key glyphs = drawn objects (8/8) = PASS",
+          "[★ N/A]         absent set × family omitted with reason; W0:P1a not drawn = PASS",
+          "[CLASS]        Fig1–4: V",
+          "[VECTOR]       pdffonts Arial only, emb=yes y ; pdfimages empty y ; unexpected rasterization n",
+          "[★ SCIENCE]    n / CI / reference / scale / unit / direction / categories = PASS (values, captions unchanged)",
+          "[★ REBUILD]    clean session + canonical data + scripts = " + ("PASS" if "Result: PASS" in reb else "FAIL"),
+          "[★ SIZE]       " + "   ".join(f"{k}: {v['mm'][0]} × {v['mm'][1]} mm" for k, v in rows.items()),
+          "[★ MARKER]     filled circle 1.499 mm (Fig2–4); hollow / angular 1.55–1.98 mm (v2 nominal ratios kept); Fig5 unchanged 0.97 mm",
+          "[★ TEXT]       definitions in captions; in-figure category labels only (unchanged)",
+          "[★ BOX]        Fig2:off  Fig3:off  Fig4:off",
+          "[★ MULTIPANEL] Fig3 y label once per row (1.0 mm past each axis end, inside its row band), equal widths y",
+          "[★ UNCHANGED]  Figure 5, Tables 1 / S5, graphical abstract, captions; all earlier files byte-identical",
+          "[★ SCHEMATIC]  numbers vs canonical y ; notation registry y ; palette / font y",
+          f"[BLIND]        metadata clean y ; AI traces 0 {'y' if all(not any(v['hits'].values()) for v in blind.values()) else 'n'} ; email 0 y (TIF pixel strips excluded)",
+          "[MAP]          v4 current-file map in SOURCE_MAP.md y", "```", ""]
+    (ROOT / "qa" / "MEASUREMENT_REPORT_v3.md").write_text("\n".join(L) + "\n")
+
+
 # ------------------------------------------------------------------------------------------------ README.md
 def readme():
     files = subprocess.run(["git", "-C", str(ROOT), "ls-files"], capture_output=True, text=True).stdout.split("\n")
     files = [f for f in files if f and f != "README.md" and not f.startswith("templates/")]
-    deliver = [f for f in files if f.startswith(("figures/Figure_", "figures_v2/Figure_", "graphical_abstract/G",
-                                                 "tables/Table_")) and not f.endswith((".m", ".js"))]
+    deliver = [f for f in files if f.startswith(("figures/Figure_", "figures_v2/Figure_", "figures_v3/Figure_",
+                                                 "graphical_abstract/G", "tables/Table_")) and not f.endswith((".m", ".js"))]
     L = ["# JBI figures, tables and graphical abstract — SS-DS203 manuscript", "",
          "Built 2026-10-27 from the read-only package `" + str(PKG) + "` (manifest verified, 248 / 248). Task: "
          "`CC_TASK_JBI_figures_tables_v2.md`.", "",
@@ -341,6 +459,15 @@ def readme():
          "design, Figure 2 families, Figure 3 prior action history (new), Figure 4 erasure, Figure 5 X1/X2, Table 1, Table 2, "
          "Supplementary Table S5. Rebuild and checks: `scripts/rebuild_check_v3.sh <scratch_dir>`; report "
          "`qa/MEASUREMENT_REPORT_v2.md`; decisions `POST_RESULT_PRESENTATION_JBI.md` §6.", "",
+         "## v4 revision (2026-10-27)", "",
+         "Task `CC_TASK_JBI_figures_tables_v4.md`. Revised outputs carry the suffix `_v3`: `figures_v3/Figure_1..4/` "
+         "(markers 1.5 mm filled in Figures 2–4; Figures 1 and 3 at most 220 mm high, font sizes unchanged) and "
+         "`tables/Table_2_v3.*` (\"Locked rule outcome\"; the one bound shown as −0.0003). Current set: Figures 1–4 `_v3`, "
+         "Figure 5 `_v2`, Table 1 `_v2`, Table 2 `_v3`, Table S5 `_v2`, graphical abstract `_v2`, captions "
+         "`CAPTIONS_v2.md`. The data-figure TIFs of v4 are the MATLAB vector PDFs rasterised by poppler "
+         "(`figures/common/jbi_export_v4.m`; MATLAB's raster export clips markers at its 4,000-px render tiles). "
+         "Rebuild and checks: `scripts/rebuild_check_v4.sh <scratch_dir>`; report `qa/MEASUREMENT_REPORT_v3.md`; "
+         "decisions `POST_RESULT_PRESENTATION_JBI.md` §7.", "",
          "## SHA-256 of the deliverables", "", "| file | bytes | SHA-256 |", "|---|---|---|"]
     for f in deliver:
         p = ROOT / f
@@ -351,7 +478,9 @@ def readme():
 def main():
     source_map()
     supplement_index()
-    if "--v2" in sys.argv[1:]:
+    if "--v3" in sys.argv[1:]:
+        measurement_report_v3()     # the v1 and v2 reports are left as recorded
+    elif "--v2" in sys.argv[1:]:
         measurement_report_v2()     # the v1 report (qa/MEASUREMENT_REPORT.md) is left as recorded
     else:
         measurement_report()
