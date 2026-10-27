@@ -149,7 +149,7 @@ def cant_split(row):
     c = OxmlElement("w:cantSplit"); c.set(qn("w:val"), "true"); trPr.append(c)
 
 
-def add_table(doc, header, rows, widths_mm, align=None, spans=()):
+def add_table(doc, header, rows, widths_mm, align=None, spans=(), span_space_pt=4):
     """rows: list of lists of str (\\n = line break inside a cell); spans: row indices rendered as one merged cell."""
     t = doc.add_table(rows=1 + len(rows), cols=len(header))
     t.alignment = WD_TABLE_ALIGNMENT.LEFT
@@ -170,7 +170,7 @@ def add_table(doc, header, rows, widths_mm, align=None, spans=()):
             m.width = Mm(sum(widths_mm))
             p = m.paragraphs[0]
             rich(p, vals[0])
-            p.paragraph_format.space_before = Pt(4)
+            p.paragraph_format.space_before = Pt(span_space_pt)
             continue
         for j, v in enumerate(vals):
             c = cells[j]
@@ -335,13 +335,13 @@ def table2():
 
 
 # ------------------------------------------------------------------------------------------------ Table 3
-def table3():
+def table3(num=3, stem="Table_3"):
     T = canonical("table3")["rows"]
     by = {r["key"]: r for r in T}
     keys = ["P", "S", "REF", "P-nat"]
     doc = new_document(landscape=True)
-    caption(doc, 3, "Representation diagnostics: step-5 checks (protocol §5) and, separately, the exploratory X1 eraser "
-                    "on the 158-case analysis region.")
+    caption(doc, num, "Representation diagnostics: step-5 checks (protocol §5) and, separately, the exploratory X1 "
+                      "eraser on the 158-case analysis region.")
     hdr = ["Check", "Set (cases)", "FM-P", "FM-S", "REF", "FM-P-nat"]
     rows, spans = [], []
 
@@ -445,8 +445,8 @@ def table3():
         "Abbreviations: AUC, area under the receiver operating characteristic curve; MLP, two-layer perceptron "
         "probe; FM-P, FM-S, REF, primary, secondary and reference representations; nat, native acquisition.",
     ])
-    doc.save(OUT / "Table_3.docx")
-    write_csv(OUT / "Table_3.csv", hdr, rows, spans)
+    doc.save(OUT / f"{stem}.docx")
+    write_csv(OUT / f"{stem}.csv", hdr, rows, spans)
     return rows
 
 
