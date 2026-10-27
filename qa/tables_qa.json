@@ -1,0 +1,201 @@
+{
+ "Table_1": {
+  "docx": {
+   "paragraph_styles": {
+    "Normal": 108
+   },
+   "numbered_paragraphs": 0,
+   "shading_elements": 0,
+   "cell_borders": {
+    "top": 15,
+    "bottom": 30
+   },
+   "table_level_borders": {
+    "top=nil": 3,
+    "left=nil": 3,
+    "bottom=nil": 3,
+    "right=nil": 3,
+    "insideH=nil": 3,
+    "insideV=nil": 3
+   },
+   "tables": 3,
+   "header_row_repeat": 3,
+   "run_fonts": {
+    "Arial": 158
+   },
+   "run_sizes_pt": {
+    "11.0": 158
+   },
+   "stray_bold": []
+  },
+  "pdf": {
+   "pages": 2,
+   "page_mm": [
+    297.0,
+    210.0
+   ],
+   "pdffonts": [
+    "BAAAAA+Arial-BoldMT TrueType emb=yes",
+    "CAAAAA+ArialMT TrueType emb=yes"
+   ],
+   "horizontal_rules": 9,
+   "rules_per_page": [
+    6,
+    3
+   ],
+   "vertical_rules": 0,
+   "filled_rects": 0,
+   "text_sizes_pt": {
+    "6.4": 25,
+    "11.0": 194
+   }
+  },
+  "checks": {
+   "Normal style only": true,
+   "no numbering": true,
+   "no shading": true,
+   "cell borders top/bottom only": true,
+   "table-level borders nil": true,
+   "header repeat": true,
+   "bold only caption + header": true,
+   "Arial runs": true,
+   "11 pt runs": true,
+   "PDF fonts Arial embedded": true,
+   "no vertical rules": true,
+   "rules: 2 per header + 1 per table": true
+  }
+ },
+ "Table_2": {
+  "docx": {
+   "paragraph_styles": {
+    "Normal": 164
+   },
+   "numbered_paragraphs": 0,
+   "shading_elements": 0,
+   "cell_borders": {
+    "top": 8,
+    "bottom": 16
+   },
+   "table_level_borders": {
+    "top=nil": 1,
+    "left=nil": 1,
+    "bottom=nil": 1,
+    "right=nil": 1,
+    "insideH=nil": 1,
+    "insideV=nil": 1
+   },
+   "tables": 1,
+   "header_row_repeat": 1,
+   "run_fonts": {
+    "Arial": 179
+   },
+   "run_sizes_pt": {
+    "11.0": 179
+   },
+   "stray_bold": []
+  },
+  "pdf": {
+   "pages": 2,
+   "page_mm": [
+    297.0,
+    210.0
+   ],
+   "pdffonts": [
+    "BAAAAA+Arial-BoldMT TrueType emb=yes",
+    "CAAAAA+ArialMT TrueType emb=yes"
+   ],
+   "horizontal_rules": 3,
+   "rules_per_page": [
+    3,
+    0
+   ],
+   "vertical_rules": 0,
+   "filled_rects": 0,
+   "text_sizes_pt": {
+    "6.4": 6,
+    "11.0": 196
+   }
+  },
+  "checks": {
+   "Normal style only": true,
+   "no numbering": true,
+   "no shading": true,
+   "cell borders top/bottom only": true,
+   "table-level borders nil": true,
+   "header repeat": true,
+   "bold only caption + header": true,
+   "Arial runs": true,
+   "11 pt runs": true,
+   "PDF fonts Arial embedded": true,
+   "no vertical rules": true,
+   "rules: 2 per header + 1 per table": true
+  }
+ },
+ "Table_3": {
+  "docx": {
+   "paragraph_styles": {
+    "Normal": 231
+   },
+   "numbered_paragraphs": 0,
+   "shading_elements": 0,
+   "cell_borders": {
+    "top": 6,
+    "bottom": 12
+   },
+   "table_level_borders": {
+    "top=nil": 1,
+    "left=nil": 1,
+    "bottom=nil": 1,
+    "right=nil": 1,
+    "insideH=nil": 1,
+    "insideV=nil": 1
+   },
+   "tables": 1,
+   "header_row_repeat": 1,
+   "run_fonts": {
+    "Arial": 371
+   },
+   "run_sizes_pt": {
+    "11.0": 371
+   },
+   "stray_bold": []
+  },
+  "pdf": {
+   "pages": 3,
+   "page_mm": [
+    297.0,
+    210.0
+   ],
+   "pdffonts": [
+    "BAAAAA+Arial-BoldMT TrueType emb=yes",
+    "CAAAAA+ArialMT TrueType emb=yes"
+   ],
+   "horizontal_rules": 8,
+   "rules_per_page": [
+    3,
+    2,
+    3
+   ],
+   "vertical_rules": 0,
+   "filled_rects": 0,
+   "text_sizes_pt": {
+    "6.4": 51,
+    "11.0": 376
+   }
+  },
+  "checks": {
+   "Normal style only": true,
+   "no numbering": true,
+   "no shading": true,
+   "cell borders top/bottom only": true,
+   "table-level borders nil": true,
+   "header repeat": true,
+   "bold only caption + header": true,
+   "Arial runs": true,
+   "11 pt runs": true,
+   "PDF fonts Arial embedded": true,
+   "no vertical rules": true,
+   "rules: 2 per header + 1 per table": true
+  }
+ }
+}

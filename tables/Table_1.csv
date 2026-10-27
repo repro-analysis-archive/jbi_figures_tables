@@ -1,0 +1,26 @@
+(A)
+Set,Cases,Cases per centre (2 / 3 / 4 / 5),Definition,Design cells,Arms run
+Representation set{sup:a},278,49 / 41 / 71 / 117,279 counted cases minus one case (timestamp beyond video end); centre 1 excluded (mostly 5-min clips),—,—
+Primary causal set,158,28 / 34 / 44 / 52,s − 45 ≥ 0 and s + 60 ≤ n (n = floor(duration / 5)); offsets O = −15…15 (seed 20261005),240,12
+Per-W set W = 0,204,37 / 40 / 57 / 70,"primary offsets kept; 46 new offsets, same rule and seed",54,6
+Per-W set W = 5,201,37 / 40 / 56 / 68,primary offsets kept; 43 new offsets,6,6
+Single-file set,123,13 / 34 / 44 / 32,primary cases with one video file,66,4
+Excluded from the primary set,120,21 / 7 / 27 / 65,mainly early switches (46 of 117 centre-5 cases show the appendix within 75 s),—,—
+(B)
+Arm,Model and checkpoint,Kind,Input,Representation,Reduction,Selection{sup:b}
+"FM-P (primary, standardized)",SurgeNetCholec (CAFormer-S18) TimJaspersTue/​SurgeNetModels @cc21f4a1 CHOLEC_​checkpoint_​epoch0050_​teacher.pth,frame-level,"2-fps grid frames; crop, mask, 224², ImageNet normalisation","pooled normalised features, 512-d; mean of the step's 10 grid frames",PCA 64 (+ LEACE for FM-P−C),§4.1 rank 1 (after CODELOCK_CORRECTION_001)
+FM-P-nat (native sensitivity),SurgeNetCholec (as above),frame-level,2-fps grid frames; resize only,as FM-P,PCA 64 (no −C arm),§3.2
+FM-S (secondary),LeanVAE-4ch Yumic/​LeanVAE @4585e461 LeanVAE-dim4.ckpt,clip-level (L = 17 grid frames),"2-fps grid frames; crop, mask, 256²","posterior mean 4 × 32 × 32 averaged over latent time, 4,096-d",PCA 64 (+ LEACE for FM-S−C),§4.1 secondary rank 1 (tie-break 2: GFLOPs)
+REF (reference),nvidia/​Cosmos-1.0-Tokenizer-CV8x8x8 @5110dbb3 (diffusers AutoencoderKLCosmos),native clip (≤ 121 native frames per 5-s step),"crop, mask, 320²","post_quant_conv(latent mode) averaged over latent time, 16 × 40 × 40 = 25,600",PCA 64 via randomized SVD (+ LEACE for REF−C),Decision 005 (not ranked)
+(C)
+Arm,Adjustment set at window step t
+NV,H_t (no video)
+SITE,H_t + C (explicit site; theory analogue of Z)
+FM-P,"H_t + R_t, primary model, standardized"
+FM-P−C,"H_t + R_t^(−C), primary, standardized"
+"FM-S, FM-S−C","as above, secondary model"
+"REF, REF−C","as above, paper-linked Cosmos reference (§4.2)"
+FM-P-nat,"H_t + R_t, primary, native (sensitivity)"
+ORACLE−C,"H_t + S_t (exact state, no site)"
+ORACLE,H_t + S_t + C
+FULL,"H_t + S_t + C + U, the exchangeability oracle / implementation sanity reference (not called unbiased)"
