@@ -1,0 +1,30 @@
+{
+  "Figure_2": {
+    "panelA_points": 11,
+    "panelB_points": 24,
+    "mismatches": [],
+    "legend_entries": [
+      "P = 0 | P = 5 | P = 30",
+      "Primary set (n = 158) | W = 0 set (n = 204) | W = 5 set (n = 201) | Single-file set (n = 123)"
+    ],
+    "legend_handles_plotted": true,
+    "result": "PASS"
+  },
+  "Figure_3": {
+    "points": 48,
+    "mismatches": [],
+    "legend_entries": "Linear probe | MLP probe | One-sided 95% upper bound | Boundary 0.35 | Chance 0.25",
+    "legend_handles_plotted": true,
+    "reference_lines": [
+      0.35,
+      0.25
+    ],
+    "result": "PASS"
+  },
+  "Figure_4": {
+    "points": 540,
+    "mismatches": [],
+    "legend": "none (single series type; defined in caption)",
+    "result": "PASS"
+  }
+}

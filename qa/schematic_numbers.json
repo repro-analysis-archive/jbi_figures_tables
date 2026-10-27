@@ -1,0 +1,286 @@
+{
+ "Figure_1": [
+  {
+   "token": "0",
+   "count": 2,
+   "source": "canonical"
+  },
+  {
+   "token": "1",
+   "count": 5,
+   "source": "canonical"
+  },
+  {
+   "token": "2",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "4",
+   "count": 2,
+   "source": "canonical"
+  },
+  {
+   "token": "5",
+   "count": 6,
+   "source": "canonical"
+  },
+  {
+   "token": "6",
+   "count": 3,
+   "source": "canonical"
+  },
+  {
+   "token": "7",
+   "count": 2,
+   "source": "canonical"
+  },
+  {
+   "token": "0,",
+   "count": 3,
+   "source": "canonical"
+  },
+  {
+   "token": "1,",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "13",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "15",
+   "count": 2,
+   "source": "canonical"
+  },
+  {
+   "token": "2,",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "24",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "27",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "28",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "30",
+   "count": 3,
+   "source": "canonical"
+  },
+  {
+   "token": "32",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "34",
+   "count": 2,
+   "source": "canonical"
+  },
+  {
+   "token": "37",
+   "count": 2,
+   "source": "canonical"
+  },
+  {
+   "token": "40",
+   "count": 2,
+   "source": "canonical"
+  },
+  {
+   "token": "41",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "44",
+   "count": 2,
+   "source": "canonical"
+  },
+  {
+   "token": "49",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "5,",
+   "count": 3,
+   "source": "canonical"
+  },
+  {
+   "token": "52",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "56",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "57",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "64",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "68",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "70",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "71",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "95",
+   "count": 1,
+   "source": "structural: 95% Wald intervals (protocol §9)"
+  },
+  {
+   "token": "-05",
+   "count": 2,
+   "source": "canonical"
+  },
+  {
+   "token": "-10",
+   "count": 7,
+   "source": "canonical"
+  },
+  {
+   "token": "-12",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "-13",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "-18",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "-19",
+   "count": 2,
+   "source": "canonical"
+  },
+  {
+   "token": "0.5",
+   "count": 2,
+   "source": "canonical"
+  },
+  {
+   "token": "1.0",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "117",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "123",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "158",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "200",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "201",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "204",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "216",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "278",
+   "count": 2,
+   "source": "canonical"
+  },
+  {
+   "token": "-15,",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "1.05",
+   "count": 2,
+   "source": "canonical"
+  },
+  {
+   "token": "2026",
+   "count": 7,
+   "source": "canonical"
+  },
+  {
+   "token": "73,200",
+   "count": 1,
+   "source": "canonical"
+  }
+ ],
+ "Graphical_abstract": [
+  {
+   "token": "0",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "278",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "0.052",
+   "count": 1,
+   "source": "canonical"
+  },
+  {
+   "token": "2.198",
+   "count": 1,
+   "source": "canonical"
+  }
+ ]
+}
