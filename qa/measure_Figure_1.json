@@ -1,0 +1,1769 @@
+{
+ "pdf": "figures/Figure_1/Figure_1.pdf",
+ "pages": 1,
+ "page_mm": [
+  190.0,
+  162.0
+ ],
+ "page_pt": [
+  538.5827026367188,
+  459.21258544921875
+ ],
+ "pdffonts": [
+  "name                                 type              encoding         emb sub uni object ID",
+  "------------------------------------ ----------------- ---------------- --- --- --- ---------",
+  "BAAAAA+Arial-BoldMT                  TrueType          WinAnsi          yes yes yes    221  0",
+  "CAAAAA+ArialMT                       TrueType          WinAnsi          yes yes yes    216  0"
+ ],
+ "pdfimages": [
+  "page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio",
+  "--------------------------------------------------------------------------------------------"
+ ],
+ "text_sizes_pt": [
+  7.99,
+  9.01,
+  11.0
+ ],
+ "min_text_pt": 7.99,
+ "text_colours": [
+  "#1A1A1A",
+  "#2B3D6B",
+  "#4D4D4D"
+ ],
+ "fonts": [
+  "Arial-BoldMT",
+  "ArialMT"
+ ],
+ "n_spans": 104,
+ "text_overlaps": [],
+ "edge_clearance_below_0p3mm": [],
+ "markers": [
+  {
+   "part": "face",
+   "shape": "triangle",
+   "colour": "#1A1A1A",
+   "edge_pt": 0.0,
+   "n": 5,
+   "outer_w_mm_median": 2.1,
+   "outer_h_mm_median": 2.15,
+   "outer_w_mm_min": 1.98,
+   "outer_h_mm_min": 2.1
+  },
+  {
+   "part": "face",
+   "shape": "triangle",
+   "colour": "#2B3D6B",
+   "edge_pt": 0.0,
+   "n": 1,
+   "outer_w_mm_median": 2.1,
+   "outer_h_mm_median": 2.1,
+   "outer_w_mm_min": 2.1,
+   "outer_h_mm_min": 2.1
+  },
+  {
+   "part": "face",
+   "shape": "triangle",
+   "colour": "#6B6B6B",
+   "edge_pt": 0.0,
+   "n": 7,
+   "outer_w_mm_median": 2.1,
+   "outer_h_mm_median": 2.1,
+   "outer_w_mm_min": 2.1,
+   "outer_h_mm_min": 2.1
+  }
+ ],
+ "metadata": {
+  "format": "PDF 1.7",
+  "title": "Figure 1",
+  "subject": "PptxGenJS Presentation",
+  "creator": "Impress",
+  "producer": "LibreOffice 26.2.2.2 (AARCH64)",
+  "creationDate": "D:20261027092754+09'00'"
+ },
+ "bytes": 88831,
+ "spans": [
+  {
+   "text": "(A)",
+   "font": "Arial-BoldMT",
+   "size": 11.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    0.79,
+    0.72,
+    6.18,
+    4.36
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Data and analysis sets",
+   "font": "Arial-BoldMT",
+   "size": 9.01,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    8.59,
+    1.95,
+    42.65,
+    4.9
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Representation set: 278 cases",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    3.99,
+    9.93,
+    44.56,
+    12.52
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Centres 2–5: 49 / 41 / 71 / 117",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    3.99,
+    13.44,
+    41.99,
+    15.52
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "E1, E3-site, PCA and LEACE fitting",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    3.99,
+    16.97,
+    48.18,
+    19.61
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Primary causal set (W = 30): 158 cases",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    11.99,
+    25.16,
+    63.81,
+    27.8
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "28 / 34 / 44 / 52",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    11.99,
+    28.69,
+    31.64,
+    30.78
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "W = 5 set: 201 cases",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    11.99,
+    47.68,
+    39.43,
+    49.74
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "37 / 40 / 56 / 68 · sensitivity",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    11.99,
+    51.19,
+    46.41,
+    53.83
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "W = 0 set: 204 cases",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    11.99,
+    58.18,
+    39.43,
+    60.24
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "37 / 40 / 57 / 70 · sensitivity",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    11.99,
+    61.69,
+    46.41,
+    64.33
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Single-file subset: 123 cases",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    19.99,
+    36.66,
+    58.52,
+    39.3
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "13 / 34 / 44 / 32 · sensitivity",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    19.99,
+    40.19,
+    54.41,
+    42.83
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "(B)",
+   "font": "Arial-BoldMT",
+   "size": 11.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    72.79,
+    0.72,
+    78.18,
+    4.36
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Semi-synthetic design (one case, one replicate)",
+   "font": "Arial-BoldMT",
+   "size": 9.01,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    80.59,
+    1.92,
+    152.22,
+    4.9
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "W pre-window",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    81.01,
+    15.21,
+    98.92,
+    17.79
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "steps",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    86.6,
+    18.79,
+    93.36,
+    21.32
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "K window steps",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#2B3D6B",
+   "bbox_mm": [
+    108.28,
+    15.21,
+    129.65,
+    17.79
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "policy applied",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    110.4,
+    18.74,
+    127.52,
+    21.35
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "P post-window",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    137.8,
+    15.21,
+    156.14,
+    17.79
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "steps",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    143.6,
+    18.79,
+    150.36,
+    21.32
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Y",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    168.05,
+    16.98,
+    169.93,
+    19.0
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "d(a) = δ·a, δ = 1.05, at every window step",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#2B3D6B",
+   "bbox_mm": [
+    103.99,
+    9.51,
+    156.2,
+    12.15
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "1 step = 5 s of video; W and P steps follow their natural course",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#4D4D4D",
+   "bbox_mm": [
+    75.99,
+    23.91,
+    154.32,
+    26.52
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "State S switches 0 → 1 at step s; window start",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    75.99,
+    29.28,
+    134.0,
+    31.89
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "w = s + O, site-stratified offset O: −15, …, 15",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    75.99,
+    32.98,
+    131.83,
+    35.43
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Grid: K: 1, 2, 5, 15 · P: 0, 5, 30 · W: 0, 5, 30",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    75.99,
+    36.68,
+    130.49,
+    39.13
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "α (unmeasured confounding): 0, 0.5, 1",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    75.99,
+    40.38,
+    124.02,
+    43.02
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "γ (site loading): 0.5, 1",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    75.99,
+    44.08,
+    103.02,
+    46.72
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "216 cells (+ 24 with autoregressive actions)",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    75.99,
+    47.78,
+    130.31,
+    50.42
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "200 synthetic replicates per cell; site",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    75.99,
+    51.5,
+    121.42,
+    54.12
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "loading c(C) permuted per replicate",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    75.99,
+    55.18,
+    120.33,
+    57.82
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "C",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    153.97,
+    43.15,
+    156.01,
+    45.23
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "A",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    168.97,
+    43.18,
+    171.01,
+    45.2
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Y",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    184.05,
+    43.18,
+    185.93,
+    45.2
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "S",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    169.05,
+    30.65,
+    170.93,
+    32.74
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "U",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    176.47,
+    55.68,
+    178.51,
+    57.73
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "solid = data; dashed = synthetic",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#4D4D4D",
+   "bbox_mm": [
+    149.1,
+    62.14,
+    188.88,
+    64.75
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "(C)",
+   "font": "Arial-BoldMT",
+   "size": 11.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    0.79,
+    68.42,
+    6.18,
+    72.06
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Adjustment arms",
+   "font": "Arial-BoldMT",
+   "size": 9.01,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    8.59,
+    69.65,
+    34.53,
+    72.6
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "C",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    40.97,
+    76.61,
+    43.01,
+    78.69
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "S",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    50.05,
+    76.61,
+    51.93,
+    78.7
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "U",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    58.97,
+    76.64,
+    61.01,
+    78.69
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "R",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    67.97,
+    76.64,
+    70.01,
+    78.66
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "R, site",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    75.24,
+    76.64,
+    83.72,
+    79.11
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "removed",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    73.58,
+    79.94,
+    85.37,
+    81.99
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Arm",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    1.99,
+    76.64,
+    7.64,
+    78.66
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "NV",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    1.99,
+    84.71,
+    5.9,
+    86.73
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "SITE",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    1.99,
+    88.13,
+    8.27,
+    90.21
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "●",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    41.14,
+    88.78,
+    42.84,
+    89.99
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "ORACLE−C",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    1.99,
+    91.58,
+    17.32,
+    93.66
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "●",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    50.14,
+    92.23,
+    51.84,
+    93.44
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "ORACLE",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    1.99,
+    95.03,
+    13.62,
+    97.11
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "●",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    41.14,
+    95.68,
+    42.84,
+    96.89
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "●",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    50.14,
+    95.68,
+    51.84,
+    96.89
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "FULL",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    1.99,
+    98.51,
+    8.9,
+    100.56
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "●",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    41.14,
+    99.13,
+    42.84,
+    100.34
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "●",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    50.14,
+    99.13,
+    51.84,
+    100.34
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "●",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    59.14,
+    99.13,
+    60.84,
+    100.34
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "FM-P · FM-S · REF",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    1.99,
+    101.93,
+    26.45,
+    104.01
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "●",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    68.14,
+    102.58,
+    69.84,
+    103.79
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "FM-P−C · FM-S−C · REF−C",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    1.99,
+    105.38,
+    37.59,
+    107.46
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "●",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    78.64,
+    106.03,
+    80.34,
+    107.24
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "FM-P-nat",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    1.99,
+    108.86,
+    13.78,
+    110.91
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "●",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    68.14,
+    109.48,
+    69.84,
+    110.69
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "All arms also adjust for past synthetic actions H.",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#4D4D4D",
+   "bbox_mm": [
+    1.99,
+    113.61,
+    62.04,
+    116.25
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "(D)",
+   "font": "Arial-BoldMT",
+   "size": 11.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    90.79,
+    68.42,
+    96.18,
+    72.06
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Estimand, estimator and representations",
+   "font": "Arial-BoldMT",
+   "size": 9.01,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    98.59,
+    69.65,
+    160.17,
+    72.56
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Estimand. ",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    91.99,
+    77.01,
+    105.5,
+    79.06
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Ψ(δ) − Ψ(1) for the multiplicative modified treatment policy d(a) = ",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    106.33,
+    76.98,
+    187.45,
+    79.62
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "δ·a (δ = 1.05) at each of the K window steps; true value exact for each ",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    91.99,
+    80.68,
+    179.98,
+    83.32
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "replicate.",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    91.99,
+    84.41,
+    103.46,
+    86.99
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Estimator. ",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    91.99,
+    91.81,
+    105.67,
+    93.86
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Sequentially doubly robust; nuisances cross-fitted over 5 case-",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    106.49,
+    91.78,
+    184.96,
+    94.42
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "level folds; 95% Wald intervals from the influence function.",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    91.99,
+    95.48,
+    164.99,
+    97.93
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Representations. ",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    91.99,
+    102.91,
+    114.94,
+    105.49
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "R = 64 principal components per step from ",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    115.79,
+    102.88,
+    169.17,
+    105.49
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "SurgeNetCholec (FM-P), LeanVAE-4ch (FM-S) or Cosmos-1.0-Tokenizer-",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    91.99,
+    106.58,
+    184.09,
+    109.22
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "CV8x8x8 (REF); site removed by linear LEACE fitted on the 278-case ",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    91.99,
+    110.28,
+    179.1,
+    112.92
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "training folds; FM-P-nat uses native frames.",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    91.99,
+    113.98,
+    146.7,
+    116.62
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "(E)",
+   "font": "Arial-BoldMT",
+   "size": 11.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    0.79,
+    118.42,
+    5.97,
+    122.06
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Workflow and registrations",
+   "font": "Arial-BoldMT",
+   "size": 9.01,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    8.59,
+    119.62,
+    49.46,
+    122.6
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Protocol frozen",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    1.59,
+    131.41,
+    22.33,
+    133.49
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "2026-10-05",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#4D4D4D",
+   "bbox_mm": [
+    1.59,
+    134.96,
+    16.06,
+    137.02
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Code lock",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    40.19,
+    131.41,
+    53.7,
+    133.49
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "2026-10-05",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#4D4D4D",
+   "bbox_mm": [
+    40.19,
+    134.96,
+    54.66,
+    137.02
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Steps 4–5",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    78.79,
+    131.41,
+    91.99,
+    134.02
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "extraction; E1–E3",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#4D4D4D",
+   "bbox_mm": [
+    78.79,
+    134.96,
+    101.12,
+    137.39
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "records 2026-10-12",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#4D4D4D",
+   "bbox_mm": [
+    78.79,
+    138.49,
+    103.48,
+    140.55
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Step 6: causal grid",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    117.39,
+    131.41,
+    142.54,
+    134.05
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "73,200 units",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#4D4D4D",
+   "bbox_mm": [
+    117.39,
+    134.96,
+    132.8,
+    137.39
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "completed 2026-10-18",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#4D4D4D",
+   "bbox_mm": [
+    117.39,
+    138.49,
+    145.7,
+    141.08
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Step 7: family verdicts",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    155.99,
+    131.41,
+    186.02,
+    134.05
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "records 2026-10-19",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#4D4D4D",
+   "bbox_mm": [
+    155.99,
+    134.96,
+    180.68,
+    137.02
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "records committed automatically",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#4D4D4D",
+   "bbox_mm": [
+    113.16,
+    124.34,
+    153.72,
+    126.95
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Exploratory analyses outside the protocol (dashed boxes);",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#4D4D4D",
+   "bbox_mm": [
+    0.99,
+    147.21,
+    73.81,
+    149.85
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "plans registered on OSF: X1/X2 while step 6 was running,",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#4D4D4D",
+   "bbox_mm": [
+    0.99,
+    150.74,
+    73.48,
+    153.38
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "before step-6 results were accessed; B after the step-7 verdicts",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#4D4D4D",
+   "bbox_mm": [
+    0.99,
+    154.27,
+    80.25,
+    156.88
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "X1/X2",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    117.39,
+    147.21,
+    125.09,
+    149.29
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "plan 2026-10-13",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#4D4D4D",
+   "bbox_mm": [
+    117.39,
+    150.76,
+    138.0,
+    153.35
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "osf.io/5c627",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#4D4D4D",
+   "bbox_mm": [
+    117.39,
+    154.27,
+    132.63,
+    156.35
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "B",
+   "font": "Arial-BoldMT",
+   "size": 7.99,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    155.99,
+    147.24,
+    158.03,
+    149.26
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "plan 2026-10-19",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#4D4D4D",
+   "bbox_mm": [
+    155.99,
+    150.76,
+    176.6,
+    153.35
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "osf.io/g9ymw",
+   "font": "ArialMT",
+   "size": 7.99,
+   "color": "#4D4D4D",
+   "bbox_mm": [
+    155.99,
+    154.27,
+    172.49,
+    156.91
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "tif": {
+  "path": "figures/Figure_1/Figure_1.tif",
+  "px": [
+   8977,
+   7654
+  ],
+  "dpi": [
+   1200.0,
+   1200.0
+  ],
+  "mm": [
+   190.01,
+   162.01
+  ],
+  "mode": "RGB",
+  "compression": "tiff_lzw",
+  "tags": {},
+  "bytes": 4600844
+ }
+}
