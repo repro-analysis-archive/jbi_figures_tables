@@ -48,3 +48,23 @@ Contents: the v7 files of commit 1443c31 (GA v3 .pdf / .pptx / .tif / .js; Table
 `canonical_supplement/validation.json`, `SHA256SUMS.txt`, `inputs_sha256.json`; POST_RESULT, CAPTIONS_supplement_v2,
 QA JSON; scripts), `GIT_LOG.txt`, `GIT_LOG_ONELINE.txt`, `AUDIT_README.txt` (with the GA text extracted from the PDF),
 `AUDIT_MANIFEST_SHA256.txt` (28 files, verified after packing and after unzipping the Desktop copy).
+
+## v8 bundle and handoff (Supplementary Table S2 v2; auditor's Word update v2)
+
+| file | bytes | SHA-256 |
+|---|---|---|
+| `AUDIT_JBI_tableS2_v8_20261027-1704.zip` (work folder, `ZIP_ARCHIVE/current/`, ~/Desktop/) | 162393 | `86c965130318f1941bc9584bf3042fefaa67d0ac1025c57c30392f1c54439950` |
+| `HANDOFF_JBI_word_update_v2_20261027-1700.zip` (work folder, `ZIP_ARCHIVE/current/`, ~/Desktop/) | 1336235 | `06eef46acd743f416abc68e5c19b17af37b580715788cd71b246333f50328086` |
+
+Audit bundle contents: the v8 files of commit 8b12f70 (Table S2 v2 .docx / .pdf / .csv; `canonical_supplement/validation.json`,
+`SHA256SUMS.txt`, `inputs_sha256.json`; POST_RESULT, CAPTIONS_supplement_v3, `qa/tables_qa_supp_v2.json`; scripts
+build_table_S2_v2.py, build_tables.py, freeze_supplement.py, qa_tables_supp_v2.py), `GIT_LOG.txt`, `GIT_LOG_ONELINE.txt`,
+`AUDIT_README.txt` (the three exact values and displays, the S2 v2 / S4 v2 cross-check, QA results, the handoff zip's
+SHA-256, file SHA-256), `AUDIT_MANIFEST_SHA256.txt` (16 files, verified after packing and after unzipping the Desktop copy).
+
+Handoff contents (18 files in `HANDOFF_JBI_word_update_v2_20261027-1700/`): `README.md` (changes since the auditor's
+deliverables of 2026-10-27, the four asks verbatim, file SHA-256); `01_text/` the investigator's manuscript v6, the
+v5 → v6 change list (25 rows) and Supplementary Methods draft v4 (copied unchanged from ~/Downloads, SHA-256 equal);
+`02_figures_tables/` GA v3 .pdf / .tif, Tables S2–S4 v2 .docx / .pdf / .csv, `CAPTIONS_supplement_v3.md`;
+`03_validation/` `validation.json` and POST_RESULT sections 10–11 verbatim. Every file verified against the README
+after unzipping the Desktop copy (17 / 17). `HANDOFF_*.zip` added to `.gitignore` (the work-folder copy is not tracked).
