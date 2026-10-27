@@ -1,0 +1,1193 @@
+{
+ "source": "03_results/SUPPLEMENT_20261020/tableX_E3.csv",
+ "rows": [
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "P",
+   "probe": "linear",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "n_cases",
+   "value": "158"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "P",
+   "probe": "linear",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "ba",
+   "value": "0.416124316859611"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "P",
+   "probe": "linear",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "lo_2p5",
+   "value": "0.35210350311453253"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "P",
+   "probe": "linear",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "hi_97p5",
+   "value": "0.4810367022683199"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "P",
+   "probe": "linear",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "upper_one_sided_95",
+   "value": "0.47242022683199153"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "P",
+   "probe": "linear",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "n_cases",
+   "value": "158"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "P",
+   "probe": "linear",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "ba",
+   "value": "0.25"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "P",
+   "probe": "linear",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "lo_2p5",
+   "value": "0.25"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "P",
+   "probe": "linear",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "hi_97p5",
+   "value": "0.25"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "P",
+   "probe": "linear",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "upper_one_sided_95",
+   "value": "0.25"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "P",
+   "probe": "mlp",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "n_cases",
+   "value": "158"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "P",
+   "probe": "mlp",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "ba",
+   "value": "0.7019634776987718"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "P",
+   "probe": "mlp",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "lo_2p5",
+   "value": "0.6403769943292003"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "P",
+   "probe": "mlp",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "hi_97p5",
+   "value": "0.7630457777516602"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "P",
+   "probe": "mlp",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "upper_one_sided_95",
+   "value": "0.7547454383851443"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "P",
+   "probe": "mlp",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "n_cases",
+   "value": "158"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "P",
+   "probe": "mlp",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "ba",
+   "value": "0.5765961979197274"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "P",
+   "probe": "mlp",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "lo_2p5",
+   "value": "0.5058921776752658"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "P",
+   "probe": "mlp",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "hi_97p5",
+   "value": "0.6472814868954575"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "P",
+   "probe": "mlp",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "upper_one_sided_95",
+   "value": "0.6367310997825704"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "P",
+   "probe": "",
+   "condition": "step 5, before removal",
+   "source": "checks.json E2_primary",
+   "field": "auc_base",
+   "value": "0.7011597852736465"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "P",
+   "probe": "",
+   "condition": "step 5, before removal",
+   "source": "checks.json E2_primary",
+   "field": "auc_full",
+   "value": "0.751328600059188"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "P",
+   "probe": "",
+   "condition": "step 5, before removal",
+   "source": "checks.json E2_primary",
+   "field": "delta_auc",
+   "value": "0.05016881478554147"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "P",
+   "probe": "",
+   "condition": "step 5, before removal",
+   "source": "checks.json E2_primary",
+   "field": "ci_lo",
+   "value": "0.01941996341851463"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "P",
+   "probe": "",
+   "condition": "step 5, before removal",
+   "source": "checks.json E2_primary",
+   "field": "ci_hi",
+   "value": "0.08049018479525075"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "P",
+   "probe": "",
+   "condition": "step 5, before removal",
+   "source": "checks.json E2_primary",
+   "field": "pass",
+   "value": "true"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "P",
+   "probe": "",
+   "condition": "step 5, after protocol removal",
+   "source": "checks.json E2_primary_after_removal",
+   "field": "auc_base",
+   "value": "0.699490444007669"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "P",
+   "probe": "",
+   "condition": "step 5, after protocol removal",
+   "source": "checks.json E2_primary_after_removal",
+   "field": "auc_full",
+   "value": "0.7430292298405775"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "P",
+   "probe": "",
+   "condition": "step 5, after protocol removal",
+   "source": "checks.json E2_primary_after_removal",
+   "field": "delta_auc",
+   "value": "0.04353878583290849"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "P",
+   "probe": "",
+   "condition": "step 5, after protocol removal",
+   "source": "checks.json E2_primary_after_removal",
+   "field": "ci_lo",
+   "value": "0.011700476748632544"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "P",
+   "probe": "",
+   "condition": "step 5, after protocol removal",
+   "source": "checks.json E2_primary_after_removal",
+   "field": "ci_hi",
+   "value": "0.07394520971741536"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "P",
+   "probe": "",
+   "condition": "step 5, after protocol removal",
+   "source": "checks.json E2_primary_after_removal",
+   "field": "pass",
+   "value": "false"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "P",
+   "probe": "",
+   "condition": "X1, after X1 removal",
+   "source": "x1_e3.json E2_primary_after_removal_X1",
+   "field": "auc_base",
+   "value": "0.699490444007669"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "P",
+   "probe": "",
+   "condition": "X1, after X1 removal",
+   "source": "x1_e3.json E2_primary_after_removal_X1",
+   "field": "auc_full",
+   "value": "0.7506158526198501"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "P",
+   "probe": "",
+   "condition": "X1, after X1 removal",
+   "source": "x1_e3.json E2_primary_after_removal_X1",
+   "field": "delta_auc",
+   "value": "0.05112540861218107"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "P",
+   "probe": "",
+   "condition": "X1, after X1 removal",
+   "source": "x1_e3.json E2_primary_after_removal_X1",
+   "field": "ci_lo",
+   "value": "0.018883112460850737"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "P",
+   "probe": "",
+   "condition": "X1, after X1 removal",
+   "source": "x1_e3.json E2_primary_after_removal_X1",
+   "field": "ci_hi",
+   "value": "0.08287099206579954"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "P",
+   "probe": "",
+   "condition": "X1, after X1 removal",
+   "source": "x1_e3.json E2_primary_after_removal_X1",
+   "field": "pass",
+   "value": "true"
+  },
+  {
+   "block": "E3-state retention (158-case)",
+   "key": "P",
+   "probe": "",
+   "condition": "step 5",
+   "source": "checks.json E3_state_primary",
+   "field": "applicable",
+   "value": "true"
+  },
+  {
+   "block": "E3-state retention (158-case)",
+   "key": "P",
+   "probe": "",
+   "condition": "step 5",
+   "source": "checks.json E3_state_primary",
+   "field": "pass_",
+   "value": "true"
+  },
+  {
+   "block": "E3-state retention (158-case)",
+   "key": "P",
+   "probe": "",
+   "condition": "step 5",
+   "source": "checks.json E3_state_primary",
+   "field": "retained_fraction",
+   "value": "0.8678456132365371"
+  },
+  {
+   "block": "E3-state retention (158-case)",
+   "key": "P",
+   "probe": "",
+   "condition": "X1",
+   "source": "x1_e3.json E3_state_primary_X1",
+   "field": "applicable",
+   "value": "true"
+  },
+  {
+   "block": "E3-state retention (158-case)",
+   "key": "P",
+   "probe": "",
+   "condition": "X1",
+   "source": "x1_e3.json E3_state_primary_X1",
+   "field": "pass_",
+   "value": "true"
+  },
+  {
+   "block": "E3-state retention (158-case)",
+   "key": "P",
+   "probe": "",
+   "condition": "X1",
+   "source": "x1_e3.json E3_state_primary_X1",
+   "field": "retained_fraction",
+   "value": "1.0190674990176425"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "S",
+   "probe": "linear",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "n_cases",
+   "value": "158"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "S",
+   "probe": "linear",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "ba",
+   "value": "0.3932942057942058"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "S",
+   "probe": "linear",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "lo_2p5",
+   "value": "0.3460804820179821"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "S",
+   "probe": "linear",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "hi_97p5",
+   "value": "0.44438374125874114"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "S",
+   "probe": "linear",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "upper_one_sided_95",
+   "value": "0.4354458041958042"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "S",
+   "probe": "linear",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "n_cases",
+   "value": "158"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "S",
+   "probe": "linear",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "ba",
+   "value": "0.25"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "S",
+   "probe": "linear",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "lo_2p5",
+   "value": "0.25"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "S",
+   "probe": "linear",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "hi_97p5",
+   "value": "0.25"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "S",
+   "probe": "linear",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "upper_one_sided_95",
+   "value": "0.25"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "S",
+   "probe": "mlp",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "n_cases",
+   "value": "158"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "S",
+   "probe": "mlp",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "ba",
+   "value": "0.42754671798789445"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "S",
+   "probe": "mlp",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "lo_2p5",
+   "value": "0.36814784480225654"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "S",
+   "probe": "mlp",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "hi_97p5",
+   "value": "0.4891937107010636"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "S",
+   "probe": "mlp",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "upper_one_sided_95",
+   "value": "0.476329552800141"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "S",
+   "probe": "mlp",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "n_cases",
+   "value": "158"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "S",
+   "probe": "mlp",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "ba",
+   "value": "0.30947361462067347"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "S",
+   "probe": "mlp",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "lo_2p5",
+   "value": "0.25465104748192985"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "S",
+   "probe": "mlp",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "hi_97p5",
+   "value": "0.36564657768701875"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "S",
+   "probe": "mlp",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "upper_one_sided_95",
+   "value": "0.3566002012693189"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "S",
+   "probe": "",
+   "condition": "step 5, before removal",
+   "source": "checks.json E2_primary",
+   "field": "auc_base",
+   "value": "0.7014793932259824"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "S",
+   "probe": "",
+   "condition": "step 5, before removal",
+   "source": "checks.json E2_primary",
+   "field": "auc_full",
+   "value": "0.7036293209031242"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "S",
+   "probe": "",
+   "condition": "step 5, before removal",
+   "source": "checks.json E2_primary",
+   "field": "delta_auc",
+   "value": "0.0021499276771418385"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "S",
+   "probe": "",
+   "condition": "step 5, before removal",
+   "source": "checks.json E2_primary",
+   "field": "ci_lo",
+   "value": "-0.017233391304955586"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "S",
+   "probe": "",
+   "condition": "step 5, before removal",
+   "source": "checks.json E2_primary",
+   "field": "ci_hi",
+   "value": "0.023679380945683542"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "S",
+   "probe": "",
+   "condition": "step 5, before removal",
+   "source": "checks.json E2_primary",
+   "field": "pass",
+   "value": "false"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "S",
+   "probe": "",
+   "condition": "step 5, after protocol removal",
+   "source": "checks.json E2_primary_after_removal",
+   "field": "auc_base",
+   "value": "0.7009213206929662"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "S",
+   "probe": "",
+   "condition": "step 5, after protocol removal",
+   "source": "checks.json E2_primary_after_removal",
+   "field": "auc_full",
+   "value": "0.7042451363558015"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "S",
+   "probe": "",
+   "condition": "step 5, after protocol removal",
+   "source": "checks.json E2_primary_after_removal",
+   "field": "delta_auc",
+   "value": "0.00332381566283535"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "S",
+   "probe": "",
+   "condition": "step 5, after protocol removal",
+   "source": "checks.json E2_primary_after_removal",
+   "field": "ci_lo",
+   "value": "-0.018304288438947013"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "S",
+   "probe": "",
+   "condition": "step 5, after protocol removal",
+   "source": "checks.json E2_primary_after_removal",
+   "field": "ci_hi",
+   "value": "0.02518584872326595"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "S",
+   "probe": "",
+   "condition": "step 5, after protocol removal",
+   "source": "checks.json E2_primary_after_removal",
+   "field": "pass",
+   "value": "false"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "S",
+   "probe": "",
+   "condition": "X1, after X1 removal",
+   "source": "x1_e3.json E2_primary_after_removal_X1",
+   "field": "auc_base",
+   "value": "0.7009213206929662"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "S",
+   "probe": "",
+   "condition": "X1, after X1 removal",
+   "source": "x1_e3.json E2_primary_after_removal_X1",
+   "field": "auc_full",
+   "value": "0.7004544415351303"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "S",
+   "probe": "",
+   "condition": "X1, after X1 removal",
+   "source": "x1_e3.json E2_primary_after_removal_X1",
+   "field": "delta_auc",
+   "value": "-0.00046687915783594214"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "S",
+   "probe": "",
+   "condition": "X1, after X1 removal",
+   "source": "x1_e3.json E2_primary_after_removal_X1",
+   "field": "ci_lo",
+   "value": "-0.02206429757286127"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "S",
+   "probe": "",
+   "condition": "X1, after X1 removal",
+   "source": "x1_e3.json E2_primary_after_removal_X1",
+   "field": "ci_hi",
+   "value": "0.02105725998487303"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "S",
+   "probe": "",
+   "condition": "X1, after X1 removal",
+   "source": "x1_e3.json E2_primary_after_removal_X1",
+   "field": "pass",
+   "value": "false"
+  },
+  {
+   "block": "E3-state retention (158-case)",
+   "key": "S",
+   "probe": "",
+   "condition": "step 5",
+   "source": "checks.json E3_state_primary",
+   "field": "applicable",
+   "value": "false"
+  },
+  {
+   "block": "E3-state retention (158-case)",
+   "key": "S",
+   "probe": "",
+   "condition": "step 5",
+   "source": "checks.json E3_state_primary",
+   "field": "note",
+   "value": "\"E2 primary failed: retention of state information could not be assessed\""
+  },
+  {
+   "block": "E3-state retention (158-case)",
+   "key": "S",
+   "probe": "",
+   "condition": "step 5",
+   "source": "checks.json E3_state_primary",
+   "field": "pass_",
+   "value": "null"
+  },
+  {
+   "block": "E3-state retention (158-case)",
+   "key": "S",
+   "probe": "",
+   "condition": "X1",
+   "source": "x1_e3.json E3_state_primary_X1",
+   "field": "applicable",
+   "value": "false"
+  },
+  {
+   "block": "E3-state retention (158-case)",
+   "key": "S",
+   "probe": "",
+   "condition": "X1",
+   "source": "x1_e3.json E3_state_primary_X1",
+   "field": "note",
+   "value": "\"E2 primary failed: retention of state information could not be assessed\""
+  },
+  {
+   "block": "E3-state retention (158-case)",
+   "key": "S",
+   "probe": "",
+   "condition": "X1",
+   "source": "x1_e3.json E3_state_primary_X1",
+   "field": "pass_",
+   "value": "null"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "REF",
+   "probe": "linear",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "n_cases",
+   "value": "158"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "REF",
+   "probe": "linear",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "ba",
+   "value": "0.4482135511547276"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "REF",
+   "probe": "linear",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "lo_2p5",
+   "value": "0.3871048987776929"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "REF",
+   "probe": "linear",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "hi_97p5",
+   "value": "0.5176802976435328"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "REF",
+   "probe": "linear",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "upper_one_sided_95",
+   "value": "0.505065706352471"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "REF",
+   "probe": "linear",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "n_cases",
+   "value": "158"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "REF",
+   "probe": "linear",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "ba",
+   "value": "0.25"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "REF",
+   "probe": "linear",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "lo_2p5",
+   "value": "0.25"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "REF",
+   "probe": "linear",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "hi_97p5",
+   "value": "0.25"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "REF",
+   "probe": "linear",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "upper_one_sided_95",
+   "value": "0.25"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "REF",
+   "probe": "mlp",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "n_cases",
+   "value": "158"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "REF",
+   "probe": "mlp",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "ba",
+   "value": "0.6196303696303695"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "REF",
+   "probe": "mlp",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "lo_2p5",
+   "value": "0.5434357921490275"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "REF",
+   "probe": "mlp",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "hi_97p5",
+   "value": "0.6873256339248986"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "REF",
+   "probe": "mlp",
+   "condition": "step 5 (protocol LEACE)",
+   "source": "checks.json E3_site_primary",
+   "field": "upper_one_sided_95",
+   "value": "0.679523417758712"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "REF",
+   "probe": "mlp",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "n_cases",
+   "value": "158"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "REF",
+   "probe": "mlp",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "ba",
+   "value": "0.4580529764353294"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "REF",
+   "probe": "mlp",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "lo_2p5",
+   "value": "0.39160315787154026"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "REF",
+   "probe": "mlp",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "hi_97p5",
+   "value": "0.5297230343186226"
+  },
+  {
+   "block": "E3-site (158-case analysis region)",
+   "key": "REF",
+   "probe": "mlp",
+   "condition": "X1 (LEACE refitted on the analysis region)",
+   "source": "x1_e3.json E3_site_primary_X1",
+   "field": "upper_one_sided_95",
+   "value": "0.517420447199859"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "REF",
+   "probe": "",
+   "condition": "step 5, before removal",
+   "source": "checks.json E2_primary",
+   "field": "auc_base",
+   "value": "0.6988846785585167"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "REF",
+   "probe": "",
+   "condition": "step 5, before removal",
+   "source": "checks.json E2_primary",
+   "field": "auc_full",
+   "value": "0.7225783944132209"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "REF",
+   "probe": "",
+   "condition": "step 5, before removal",
+   "source": "checks.json E2_primary",
+   "field": "delta_auc",
+   "value": "0.023693715854704256"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "REF",
+   "probe": "",
+   "condition": "step 5, before removal",
+   "source": "checks.json E2_primary",
+   "field": "ci_lo",
+   "value": "-0.0004872832492350014"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "REF",
+   "probe": "",
+   "condition": "step 5, before removal",
+   "source": "checks.json E2_primary",
+   "field": "ci_hi",
+   "value": "0.04863192768195907"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "REF",
+   "probe": "",
+   "condition": "step 5, before removal",
+   "source": "checks.json E2_primary",
+   "field": "pass",
+   "value": "false"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "REF",
+   "probe": "",
+   "condition": "step 5, after protocol removal",
+   "source": "checks.json E2_primary_after_removal",
+   "field": "auc_base",
+   "value": "0.7006732521148344"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "REF",
+   "probe": "",
+   "condition": "step 5, after protocol removal",
+   "source": "checks.json E2_primary_after_removal",
+   "field": "auc_full",
+   "value": "0.724470946852162"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "REF",
+   "probe": "",
+   "condition": "step 5, after protocol removal",
+   "source": "checks.json E2_primary_after_removal",
+   "field": "delta_auc",
+   "value": "0.023797694737327513"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "REF",
+   "probe": "",
+   "condition": "step 5, after protocol removal",
+   "source": "checks.json E2_primary_after_removal",
+   "field": "ci_lo",
+   "value": "-0.0003989757726410605"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "REF",
+   "probe": "",
+   "condition": "step 5, after protocol removal",
+   "source": "checks.json E2_primary_after_removal",
+   "field": "ci_hi",
+   "value": "0.050718333667495445"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "REF",
+   "probe": "",
+   "condition": "step 5, after protocol removal",
+   "source": "checks.json E2_primary_after_removal",
+   "field": "pass",
+   "value": "false"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "REF",
+   "probe": "",
+   "condition": "X1, after X1 removal",
+   "source": "x1_e3.json E2_primary_after_removal_X1",
+   "field": "auc_base",
+   "value": "0.7006732521148344"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "REF",
+   "probe": "",
+   "condition": "X1, after X1 removal",
+   "source": "x1_e3.json E2_primary_after_removal_X1",
+   "field": "auc_full",
+   "value": "0.7245248243858519"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "REF",
+   "probe": "",
+   "condition": "X1, after X1 removal",
+   "source": "x1_e3.json E2_primary_after_removal_X1",
+   "field": "delta_auc",
+   "value": "0.02385157227101742"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "REF",
+   "probe": "",
+   "condition": "X1, after X1 removal",
+   "source": "x1_e3.json E2_primary_after_removal_X1",
+   "field": "ci_lo",
+   "value": "-0.0016572599216725268"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "REF",
+   "probe": "",
+   "condition": "X1, after X1 removal",
+   "source": "x1_e3.json E2_primary_after_removal_X1",
+   "field": "ci_hi",
+   "value": "0.051542892465344284"
+  },
+  {
+   "block": "E2 primary (158-case analysis region)",
+   "key": "REF",
+   "probe": "",
+   "condition": "X1, after X1 removal",
+   "source": "x1_e3.json E2_primary_after_removal_X1",
+   "field": "pass",
+   "value": "false"
+  },
+  {
+   "block": "E3-state retention (158-case)",
+   "key": "REF",
+   "probe": "",
+   "condition": "step 5",
+   "source": "checks.json E3_state_primary",
+   "field": "applicable",
+   "value": "false"
+  },
+  {
+   "block": "E3-state retention (158-case)",
+   "key": "REF",
+   "probe": "",
+   "condition": "step 5",
+   "source": "checks.json E3_state_primary",
+   "field": "note",
+   "value": "\"E2 primary failed: retention of state information could not be assessed\""
+  },
+  {
+   "block": "E3-state retention (158-case)",
+   "key": "REF",
+   "probe": "",
+   "condition": "step 5",
+   "source": "checks.json E3_state_primary",
+   "field": "pass_",
+   "value": "null"
+  },
+  {
+   "block": "E3-state retention (158-case)",
+   "key": "REF",
+   "probe": "",
+   "condition": "X1",
+   "source": "x1_e3.json E3_state_primary_X1",
+   "field": "applicable",
+   "value": "false"
+  },
+  {
+   "block": "E3-state retention (158-case)",
+   "key": "REF",
+   "probe": "",
+   "condition": "X1",
+   "source": "x1_e3.json E3_state_primary_X1",
+   "field": "note",
+   "value": "\"E2 primary failed: retention of state information could not be assessed\""
+  },
+  {
+   "block": "E3-state retention (158-case)",
+   "key": "REF",
+   "probe": "",
+   "condition": "X1",
+   "source": "x1_e3.json E3_state_primary_X1",
+   "field": "pass_",
+   "value": "null"
+  }
+ ]
+}

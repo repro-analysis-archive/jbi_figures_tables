@@ -1,0 +1,24 @@
+(A)
+Representation,Probe,Step 5: BA (95% interval),Step 5: one-sided 95% upper bound,X1: BA (95% interval),X1: one-sided 95% upper bound
+FM-P,linear,0.416 (0.352 to 0.481),0.472,0.250 (0.250 to 0.250),0.250
+FM-P,MLP,0.702 (0.640 to 0.763),0.755,0.577 (0.506 to 0.647),0.637
+FM-S,linear,0.393 (0.346 to 0.444),0.435,0.250 (0.250 to 0.250),0.250
+FM-S,MLP,0.428 (0.368 to 0.489),0.476,0.309 (0.255 to 0.366),0.357
+REF,linear,0.448 (0.387 to 0.518),0.505,0.250 (0.250 to 0.250),0.250
+REF,MLP,0.620 (0.543 to 0.687),0.680,0.458 (0.392 to 0.530),0.517
+(B)
+Representation,Condition,ΔAUC (95% CI),E2 criterion
+FM-P,"step 5, before removal",0.050 (0.019 to 0.080),met
+FM-P,"step 5, after protocol removal",0.044 (0.012 to 0.074),not met
+FM-P,"X1, after X1 removal",0.051 (0.019 to 0.083),met
+FM-S,"step 5, before removal",0.002 (−0.017 to 0.024),not met
+FM-S,"step 5, after protocol removal",0.003 (−0.018 to 0.025),not met
+FM-S,"X1, after X1 removal",−0.000 (−0.022 to 0.021),not met
+REF,"step 5, before removal",0.024 (−0.000 to 0.049),not met
+REF,"step 5, after protocol removal",0.024 (−0.000 to 0.051),not met
+REF,"X1, after X1 removal",0.024 (−0.002 to 0.052),not met
+(C)
+Representation,Step 5,X1
+FM-P,retained fraction 0.868,retained fraction 1.019
+FM-S,not applicable (E2 primary failed),not applicable (E2 primary failed)
+REF,not applicable (E2 primary failed),not applicable (E2 primary failed)

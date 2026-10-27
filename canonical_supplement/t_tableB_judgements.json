@@ -1,0 +1,329 @@
+{
+ "source": "03_results/SUPPLEMENT_20261020/tableB_judgements.csv",
+ "rows": [
+  {
+   "key": "P",
+   "analysis": "a",
+   "probe": "linear",
+   "pair": "S1->S2",
+   "exceeds_x": "False",
+   "exceeds_y": "False",
+   "statement": "the judgement does not change between S1 and S2"
+  },
+  {
+   "key": "P",
+   "analysis": "a",
+   "probe": "linear",
+   "pair": "S2->S3",
+   "exceeds_x": "False",
+   "exceeds_y": "False",
+   "statement": "the judgement does not change between S2 and S3"
+  },
+  {
+   "key": "P",
+   "analysis": "a",
+   "probe": "linear",
+   "pair": "S1->S3",
+   "exceeds_x": "False",
+   "exceeds_y": "False",
+   "statement": "the judgement does not change between S1 and S3"
+  },
+  {
+   "key": "P",
+   "analysis": "a",
+   "probe": "mlp",
+   "pair": "S1->S2",
+   "exceeds_x": "True",
+   "exceeds_y": "True",
+   "statement": "the judgement does not change between S1 and S2"
+  },
+  {
+   "key": "P",
+   "analysis": "a",
+   "probe": "mlp",
+   "pair": "S2->S3",
+   "exceeds_x": "True",
+   "exceeds_y": "True",
+   "statement": "the judgement does not change between S2 and S3"
+  },
+  {
+   "key": "P",
+   "analysis": "a",
+   "probe": "mlp",
+   "pair": "S1->S3",
+   "exceeds_x": "True",
+   "exceeds_y": "True",
+   "statement": "the judgement does not change between S1 and S3"
+  },
+  {
+   "key": "P",
+   "analysis": "b",
+   "probe": "linear",
+   "pair": "S1->S2",
+   "exceeds_x": "False",
+   "exceeds_y": "False",
+   "statement": "the judgement does not change between S1 and S2"
+  },
+  {
+   "key": "P",
+   "analysis": "b",
+   "probe": "linear",
+   "pair": "S2->S3",
+   "exceeds_x": "False",
+   "exceeds_y": "True",
+   "statement": "the judgement changes between S2 and S3"
+  },
+  {
+   "key": "P",
+   "analysis": "b",
+   "probe": "linear",
+   "pair": "S1->S3",
+   "exceeds_x": "False",
+   "exceeds_y": "True",
+   "statement": "the judgement changes between S1 and S3"
+  },
+  {
+   "key": "P",
+   "analysis": "b",
+   "probe": "mlp",
+   "pair": "S1->S2",
+   "exceeds_x": "True",
+   "exceeds_y": "True",
+   "statement": "the judgement does not change between S1 and S2"
+  },
+  {
+   "key": "P",
+   "analysis": "b",
+   "probe": "mlp",
+   "pair": "S2->S3",
+   "exceeds_x": "True",
+   "exceeds_y": "True",
+   "statement": "the judgement does not change between S2 and S3"
+  },
+  {
+   "key": "P",
+   "analysis": "b",
+   "probe": "mlp",
+   "pair": "S1->S3",
+   "exceeds_x": "True",
+   "exceeds_y": "True",
+   "statement": "the judgement does not change between S1 and S3"
+  },
+  {
+   "key": "S",
+   "analysis": "a",
+   "probe": "linear",
+   "pair": "S1->S2",
+   "exceeds_x": "False",
+   "exceeds_y": "False",
+   "statement": "the judgement does not change between S1 and S2"
+  },
+  {
+   "key": "S",
+   "analysis": "a",
+   "probe": "linear",
+   "pair": "S2->S3",
+   "exceeds_x": "False",
+   "exceeds_y": "False",
+   "statement": "the judgement does not change between S2 and S3"
+  },
+  {
+   "key": "S",
+   "analysis": "a",
+   "probe": "linear",
+   "pair": "S1->S3",
+   "exceeds_x": "False",
+   "exceeds_y": "False",
+   "statement": "the judgement does not change between S1 and S3"
+  },
+  {
+   "key": "S",
+   "analysis": "a",
+   "probe": "mlp",
+   "pair": "S1->S2",
+   "exceeds_x": "True",
+   "exceeds_y": "True",
+   "statement": "the judgement does not change between S1 and S2"
+  },
+  {
+   "key": "S",
+   "analysis": "a",
+   "probe": "mlp",
+   "pair": "S2->S3",
+   "exceeds_x": "True",
+   "exceeds_y": "True",
+   "statement": "the judgement does not change between S2 and S3"
+  },
+  {
+   "key": "S",
+   "analysis": "a",
+   "probe": "mlp",
+   "pair": "S1->S3",
+   "exceeds_x": "True",
+   "exceeds_y": "True",
+   "statement": "the judgement does not change between S1 and S3"
+  },
+  {
+   "key": "S",
+   "analysis": "b",
+   "probe": "linear",
+   "pair": "S1->S2",
+   "exceeds_x": "False",
+   "exceeds_y": "False",
+   "statement": "the judgement does not change between S1 and S2"
+  },
+  {
+   "key": "S",
+   "analysis": "b",
+   "probe": "linear",
+   "pair": "S2->S3",
+   "exceeds_x": "False",
+   "exceeds_y": "True",
+   "statement": "the judgement changes between S2 and S3"
+  },
+  {
+   "key": "S",
+   "analysis": "b",
+   "probe": "linear",
+   "pair": "S1->S3",
+   "exceeds_x": "False",
+   "exceeds_y": "True",
+   "statement": "the judgement changes between S1 and S3"
+  },
+  {
+   "key": "S",
+   "analysis": "b",
+   "probe": "mlp",
+   "pair": "S1->S2",
+   "exceeds_x": "True",
+   "exceeds_y": "True",
+   "statement": "the judgement does not change between S1 and S2"
+  },
+  {
+   "key": "S",
+   "analysis": "b",
+   "probe": "mlp",
+   "pair": "S2->S3",
+   "exceeds_x": "True",
+   "exceeds_y": "True",
+   "statement": "the judgement does not change between S2 and S3"
+  },
+  {
+   "key": "S",
+   "analysis": "b",
+   "probe": "mlp",
+   "pair": "S1->S3",
+   "exceeds_x": "True",
+   "exceeds_y": "True",
+   "statement": "the judgement does not change between S1 and S3"
+  },
+  {
+   "key": "REF",
+   "analysis": "a",
+   "probe": "linear",
+   "pair": "S1->S2",
+   "exceeds_x": "False",
+   "exceeds_y": "False",
+   "statement": "the judgement does not change between S1 and S2"
+  },
+  {
+   "key": "REF",
+   "analysis": "a",
+   "probe": "linear",
+   "pair": "S2->S3",
+   "exceeds_x": "False",
+   "exceeds_y": "False",
+   "statement": "the judgement does not change between S2 and S3"
+  },
+  {
+   "key": "REF",
+   "analysis": "a",
+   "probe": "linear",
+   "pair": "S1->S3",
+   "exceeds_x": "False",
+   "exceeds_y": "False",
+   "statement": "the judgement does not change between S1 and S3"
+  },
+  {
+   "key": "REF",
+   "analysis": "a",
+   "probe": "mlp",
+   "pair": "S1->S2",
+   "exceeds_x": "True",
+   "exceeds_y": "True",
+   "statement": "the judgement does not change between S1 and S2"
+  },
+  {
+   "key": "REF",
+   "analysis": "a",
+   "probe": "mlp",
+   "pair": "S2->S3",
+   "exceeds_x": "True",
+   "exceeds_y": "True",
+   "statement": "the judgement does not change between S2 and S3"
+  },
+  {
+   "key": "REF",
+   "analysis": "a",
+   "probe": "mlp",
+   "pair": "S1->S3",
+   "exceeds_x": "True",
+   "exceeds_y": "True",
+   "statement": "the judgement does not change between S1 and S3"
+  },
+  {
+   "key": "REF",
+   "analysis": "b",
+   "probe": "linear",
+   "pair": "S1->S2",
+   "exceeds_x": "False",
+   "exceeds_y": "False",
+   "statement": "the judgement does not change between S1 and S2"
+  },
+  {
+   "key": "REF",
+   "analysis": "b",
+   "probe": "linear",
+   "pair": "S2->S3",
+   "exceeds_x": "False",
+   "exceeds_y": "True",
+   "statement": "the judgement changes between S2 and S3"
+  },
+  {
+   "key": "REF",
+   "analysis": "b",
+   "probe": "linear",
+   "pair": "S1->S3",
+   "exceeds_x": "False",
+   "exceeds_y": "True",
+   "statement": "the judgement changes between S1 and S3"
+  },
+  {
+   "key": "REF",
+   "analysis": "b",
+   "probe": "mlp",
+   "pair": "S1->S2",
+   "exceeds_x": "True",
+   "exceeds_y": "True",
+   "statement": "the judgement does not change between S1 and S2"
+  },
+  {
+   "key": "REF",
+   "analysis": "b",
+   "probe": "mlp",
+   "pair": "S2->S3",
+   "exceeds_x": "True",
+   "exceeds_y": "True",
+   "statement": "the judgement does not change between S2 and S3"
+  },
+  {
+   "key": "REF",
+   "analysis": "b",
+   "probe": "mlp",
+   "pair": "S1->S3",
+   "exceeds_x": "True",
+   "exceeds_y": "True",
+   "statement": "the judgement does not change between S1 and S3"
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+{
+ "anchors": {
+  "SITE vs NV, W = 0, K = 1, P = 30 (alpha 0.5, gamma 1), D": 8.73427182094206,
+  "NV, W = 30, K = 1, P = 0 (alpha 0.5, gamma 1), coverage": 0.85
+ },
+ "cross_checks": {
+  "w_history_D_rows_equal": 72,
+  "fig2B_slice_rows_equal": 24,
+  "fig5_bias_coverage_rows_equal": 144,
+  "report_cells_agree_with_cell_metrics": {
+   "rows": 2880,
+   "max_rel_diff_rel_bias": 8.249572409854163e-13,
+   "coverage": "identical",
+   "display_strings": "identical"
+  },
+  "families_reproduced": {
+   "P1a": {
+    "pair": "ORACLE vs ORACLE−C",
+    "cells": 66,
+    "mean_from_S1": 1.9248570533834413,
+    "D_bar": 1.9248570533834413,
+    "mean_3dp": "1.925",
+    "D_bar_3dp": "1.925",
+    "max_abs_diff_cells": 0.0
+   },
+   "P1b-SITE": {
+    "pair": "SITE vs NV",
+    "cells": 48,
+    "mean_from_S1": 2.197616863578595,
+    "D_bar": 2.197616863578595,
+    "mean_3dp": "2.198",
+    "D_bar_3dp": "2.198",
+    "max_abs_diff_cells": 0.0
+   },
+   "P1b-FM": {
+    "pair": "FM-P vs FM-P−C",
+    "cells": 48,
+    "mean_from_S1": 0.5940332751438011,
+    "D_bar": 0.5940332751438011,
+    "mean_3dp": "0.594",
+    "D_bar_3dp": "0.594",
+    "max_abs_diff_cells": 0.0
+   },
+   "P2-SITE": {
+    "pair": "SITE vs NV",
+    "cells": 18,
+    "mean_from_S1": 0.052105083645894015,
+    "D_bar": 0.052105083645894015,
+    "mean_3dp": "0.052",
+    "D_bar_3dp": "0.052",
+    "max_abs_diff_cells": 0.0
+   },
+   "P2-FM": {
+    "pair": "FM-P vs FM-P−C",
+    "cells": 12,
+    "mean_from_S1": 0.005019739870580006,
+    "D_bar": 0.005019739870580006,
+    "mean_3dp": "0.005",
+    "D_bar_3dp": "0.005",
+    "max_abs_diff_cells": 0.0
+   },
+   "P2-ORACLE": {
+    "pair": "ORACLE vs ORACLE−C",
+    "cells": 12,
+    "mean_from_S1": 0.04245186573827512,
+    "D_bar": 0.04245186573827512,
+    "mean_3dp": "0.042",
+    "D_bar_3dp": "0.042",
+    "max_abs_diff_cells": 0.0
+   }
+  },
+  "S6_equals_main_figure_2_BC_rows": 36
+ },
+ "s1_values": 1200,
+ "s2_values": 2880,
+ "s3_values": 2880,
+ "s5_values": 756,
+ "s6_values": 36,
+ "s1_round_to_zero_3dp": 12,
+ "s2_round_to_zero_1dp": 4,
+ "figure_S4": "SOURCE MISSING: per-centre radial profiles (mask_check.json, step-4 record 8d4c61a) are not in the package; Table S1 uses tableS4_mask_check.csv"
+}

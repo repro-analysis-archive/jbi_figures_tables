@@ -1,0 +1,104 @@
+{
+ "cell_metrics": {
+  "path": "02_records/step7_record_2880d73/results/step7/cell_metrics.csv",
+  "sha256": "588f991bd81a4f71a0b49e12d98521a4df11a286f49722757ba65b254efca0e8",
+  "manifest": "match",
+  "recorded_by_generating_step": "match"
+ },
+ "families": {
+  "path": "02_records/step7_record_2880d73/results/step7/families.json",
+  "sha256": "06ab647e679df65f5b617bceae7e42fff92ef8236fe29d5420f4ffa5ac8f71d5",
+  "manifest": "match",
+  "recorded_by_generating_step": "match"
+ },
+ "report_cells": {
+  "path": "03_results/RESULTS_20261019/report_cells.csv",
+  "sha256": "1fcdd42b57783424c28a986611b2f2df5abfb9a73a7f32a627a3d9b230a06f9c",
+  "manifest": "match",
+  "recorded_by_generating_step": "none recorded"
+ },
+ "x_cells": {
+  "path": "04_exploratory/X1_X2/results_X/x_comparisons_cells.csv",
+  "sha256": "3e6adde59f73aa00fc1fae57aa0851a365479293c203987b24e2fc5361c54637",
+  "manifest": "match",
+  "recorded_by_generating_step": "match"
+ },
+ "x_groups": {
+  "path": "04_exploratory/X1_X2/results_X/x_comparisons_groups.csv",
+  "sha256": "98da2fc2b19176aa0c49c39f5260ef120511748c496fa7a968a3609e38d21fa6",
+  "manifest": "match",
+  "recorded_by_generating_step": "match"
+ },
+ "b_main": {
+  "path": "04_exploratory/B/results_B/b_main.csv",
+  "sha256": "0087268599b408e1f8988b52b4890c81c724815e9af27211949bdbe9dfa5ad81",
+  "manifest": "match",
+  "recorded_by_generating_step": "match"
+ },
+ "b_judgements": {
+  "path": "04_exploratory/B/results_B/b_judgements.csv",
+  "sha256": "09f1c088df6e4eacb324916b1e08a9a8ac4a23303d4d668d35337781e0f8a5ad",
+  "manifest": "match",
+  "recorded_by_generating_step": "match"
+ },
+ "b_sens": {
+  "path": "04_exploratory/B/results_B/b_sensitivity_summary.csv",
+  "sha256": "84b4cf4952669ff52981d4e99d94c7fbe67f9139d4d7e36e784298befbdb0148",
+  "manifest": "match",
+  "recorded_by_generating_step": "match"
+ },
+ "tableS4_mask_check": {
+  "path": "03_results/SUPPLEMENT_20261020/tableS4_mask_check.csv",
+  "sha256": "8d6498c970c13f8f29e3f88cb44bd7674814213d139875996710236102056605",
+  "manifest": "match",
+  "recorded_by_generating_step": "none recorded"
+ },
+ "tableX_group_summaries": {
+  "path": "03_results/SUPPLEMENT_20261020/tableX_group_summaries.csv",
+  "sha256": "98da2fc2b19176aa0c49c39f5260ef120511748c496fa7a968a3609e38d21fa6",
+  "manifest": "match",
+  "recorded_by_generating_step": "none recorded"
+ },
+ "tableX_E3": {
+  "path": "03_results/SUPPLEMENT_20261020/tableX_E3.csv",
+  "sha256": "5b58e7c1f30d7f911d7a63e4d741c5c4cfd9d74a488d0d223eebd8ce186f6746",
+  "manifest": "match",
+  "recorded_by_generating_step": "none recorded"
+ },
+ "tableB_ba": {
+  "path": "03_results/SUPPLEMENT_20261020/tableB_ba.csv",
+  "sha256": "0087268599b408e1f8988b52b4890c81c724815e9af27211949bdbe9dfa5ad81",
+  "manifest": "match",
+  "recorded_by_generating_step": "none recorded"
+ },
+ "tableB_judgements": {
+  "path": "03_results/SUPPLEMENT_20261020/tableB_judgements.csv",
+  "sha256": "09f1c088df6e4eacb324916b1e08a9a8ac4a23303d4d668d35337781e0f8a5ad",
+  "manifest": "match",
+  "recorded_by_generating_step": "none recorded"
+ },
+ "tableB_sens": {
+  "path": "03_results/SUPPLEMENT_20261020/tableB_sens.csv",
+  "sha256": "84b4cf4952669ff52981d4e99d94c7fbe67f9139d4d7e36e784298befbdb0148",
+  "manifest": "match",
+  "recorded_by_generating_step": "none recorded"
+ },
+ "supplement_captions": {
+  "path": "03_results/SUPPLEMENT_20261020/CAPTIONS.md",
+  "sha256": "953920d38d902509630adfba1e31789f1c9df79c3b47e444e1a0425c68b57b51",
+  "manifest": "match",
+  "recorded_by_generating_step": "none recorded"
+ },
+ "supplement_sources": {
+  "path": "03_results/SUPPLEMENT_20261020/SOURCES.md",
+  "sha256": "834823569d6bfc7a178a21bb5e2c1481d2a810cd4db441449de0835be774aab5",
+  "manifest": "match",
+  "recorded_by_generating_step": "none recorded"
+ },
+ "presentation_decisions": {
+  "path": "03_results/PRESENTATION_DECISIONS.md",
+  "sha256": "6b02e8b480a90f923ac4a60feae1e101fc12af281289867995e4bb2d3f2b6637",
+  "manifest": "match",
+  "recorded_by_generating_step": "none recorded"
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "source": "03_results/SUPPLEMENT_20261020/tableS4_mask_check.csv",
+ "rows": [
+  {
+   "scope": "centre 2",
+   "item": "n_frames",
+   "value": "2820"
+  },
+  {
+   "scope": "centre 3",
+   "item": "n_frames",
+   "value": "2797"
+  },
+  {
+   "scope": "centre 4",
+   "item": "n_frames",
+   "value": "4850"
+  },
+  {
+   "scope": "centre 5",
+   "item": "n_frames",
+   "value": "7093"
+  },
+  {
+   "scope": "centre 2",
+   "item": "rho_c (visible_radius)",
+   "value": "0.5625"
+  },
+  {
+   "scope": "centre 3",
+   "item": "rho_c (visible_radius)",
+   "value": "0.703125"
+  },
+  {
+   "scope": "centre 4",
+   "item": "rho_c (visible_radius)",
+   "value": "0.703125"
+  },
+  {
+   "scope": "centre 5",
+   "item": "rho_c (visible_radius)",
+   "value": "0.703125"
+  },
+  {
+   "scope": "all centres",
+   "item": "min_c rho_c (min_visible_radius)",
+   "value": "0.5625"
+  },
+  {
+   "scope": "all centres",
+   "item": "r (final mask radius, x side)",
+   "value": "0.45"
+  },
+  {
+   "scope": "all centres",
+   "item": "mask_check_valid (run_meta.json)",
+   "value": "true"
+  },
+  {
+   "scope": "all centres",
+   "item": "fallback r = 0.98 x min_c rho_c",
+   "value": "not used (recorded r = 0.45; min_c rho_c >= 0.45)"
+  }
+ ]
+}
