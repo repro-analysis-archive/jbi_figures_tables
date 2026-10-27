@@ -69,8 +69,10 @@
     "max_abs_diff_cells": 0.0
    }
   },
-  "S6_equals_main_figure_2_BC_rows": 36
+  "S6_equals_main_figure_2_BC_rows": 36,
+  "S4_equals_tableS4_mask_check": "n_frames, rho_c (4 centres), min rho_c, r"
  },
+ "s4_values": 720,
  "s1_values": 1200,
  "s2_values": 2880,
  "s3_values": 2880,
@@ -78,5 +80,5 @@
  "s6_values": 36,
  "s1_round_to_zero_3dp": 12,
  "s2_round_to_zero_1dp": 4,
- "figure_S4": "SOURCE MISSING: per-centre radial profiles (mask_check.json, step-4 record 8d4c61a) are not in the package; Table S1 uses tableS4_mask_check.csv"
+ "figure_S4": "inputs/mask_check.json (provided by the investigator; SHA-256 equals the blob hash in SUPPLEMENT_20261020/SOURCES.md); 4 x 180 points; consistent with tableS4_mask_check.csv"
 }

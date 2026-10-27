@@ -45,7 +45,7 @@ def main():
         rep["exploratory_first_word"][k] = good
         ok &= good
     rep["panels"] = {}
-    for n in (1, 2, 3, 5, 6):
+    for n in (1, 2, 3, 4, 5, 6):
         k = f"Figure S{n}"
         cap = re.sub(r"main Figure \d \([A-F]\)(?: and \([A-F]\))?", "", caps[k])
         used = set()

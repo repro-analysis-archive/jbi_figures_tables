@@ -53,6 +53,9 @@ INPUTS = {   # name: (package path, SHA-256 recorded by the generating step or N
     "supplement_sources": (SUP + "SOURCES.md", None),
     "presentation_decisions": fz.INPUTS["presentation_decisions"],
 }
+# provided by the investigator (not in the package): the step-4 record's mask_check.json, placed in inputs/; guarded by
+# the blob SHA-256 recorded in the package SUPPLEMENT_20261020/SOURCES.md (repository medical_video_causal_gate, 8d4c61a)
+MASK = ("inputs/mask_check.json", "81c8eb46fa7abba4cb5024e073e30cc838c011d2d62488abbde72d73434d58d5")
 PAIRS = [("SITE", "NV"), ("FM-P", "FM-P-C"), ("FM-S", "FM-S-C"), ("REF", "REF-C"), ("ORACLE", "ORACLE-C")]
 ARMS = fz.BC_ARMS                    # NV, SITE, FM-P, FM-P-C, FM-S, FM-S-C, REF, REF-C, FM-P-nat, ORACLE-C, ORACLE, FULL
 KEYS = ["K", "P", "W", "alpha", "gamma", "phi"]
@@ -176,6 +179,11 @@ def table_rows(csvpath):
 def main():
     OUT.mkdir(exist_ok=True)
     rec = guard()
+    mask_raw = (ROOT / MASK[0]).read_bytes()
+    assert hashlib.sha256(mask_raw).hexdigest() == MASK[1], "mask_check.json hash differs from SOURCES.md"
+    assert MASK[1] in (PKG / INPUTS["supplement_sources"][0]).read_text(), "hash not listed in SOURCES.md"
+    rec["mask_check"] = dict(path=MASK[0], sha256=MASK[1], manifest="not in the package (provided by the investigator)",
+                             recorded_by_generating_step="match (SUPPLEMENT_20261020/SOURCES.md, 8d4c61a)")
     cm = pd.read_csv(PKG / INPUTS["cell_metrics"][0])
     prim = cm[cm.set == "primary"]
     assert len(prim) == 2880 and prim.cell.nunique() == 240 and (prim.M_finite == 200).all()
@@ -263,6 +271,29 @@ def main():
     write("s23_bias_coverage", dict(description="Figures S2, S3: relative bias and coverage of the Wald 95% interval, "
                                                 "primary set, all 240 cells, 12 arms", arms=[fz.lab(a) for a in ARMS],
                                     rows=s23), s23)
+    # ---- S4: per-centre radial profiles; cross-checked with the package table (n_frames, rho_c, min, r)
+    mk = json.loads(mask_raw)
+    t4 = {(r["scope"], r["item"]): r["value"] for r in tabs["tableS4_mask_check"]}
+    s4 = []
+    for c in ("2", "3", "4", "5"):
+        pr = mk["profiles"][c]
+        assert len(pr["rho"]) == len(pr["m"]) == 180
+        assert str(pr["n_frames"]) == t4[(f"centre {c}", "n_frames")]
+        assert float(t4[(f"centre {c}", "rho_c (visible_radius)")]) == mk["visible_radius"][c]
+        for i, (rho, m) in enumerate(zip(pr["rho"], pr["m"])):
+            s4.append(dict(centre=int(c), point=i + 1, rho=float(rho), m=float(m), n_frames=int(pr["n_frames"]),
+                           visible_radius=float(mk["visible_radius"][c]), source=f"mask_check.json profiles.{c}"))
+    for c in ("3", "4", "5"):
+        assert mk["profiles"][c]["rho"][-1] == mk["visible_radius"][c]          # rho_c = last profile point (table note)
+    assert float(t4[("all centres", "min_c rho_c (min_visible_radius)")]) == mk["min_visible_radius"] == \
+        min(mk["visible_radius"].values())
+    assert float(t4[("all centres", "r (final mask radius, x side)")]) == mk["r"] == 0.45
+    write("s4_mask_profiles", dict(description="Figure S4: per-centre radial profiles m_c(rho) of the grayscale mean "
+                                               "standardized frame (180 points per centre), visible radius rho_c per "
+                                               "centre, minimum and mask radius r (step-4 record 8d4c61a)",
+                                   r=mk["r"], min_visible_radius=mk["min_visible_radius"],
+                                   visible_radius={c: mk["visible_radius"][c] for c in ("2", "3", "4", "5")}, rows=s4), s4)
+    val["cross_checks"]["S4_equals_tableS4_mask_check"] = "n_frames, rho_c (4 centres), min rho_c, r"
     write("s5_x_cells", dict(description="Figure S5: exploratory X1/X2 per-cell Δ not shown in main Figure 6 (slice "
                                          "group of X1 k−C vs step-6 k−C, X1 k−C vs step-6 k, X2 k−C vs step-6 k−C; all "
                                          "groups of X1 vs step-6 NV, X2 vs step-6 NV, X2 vs step-6 k)", rows=s5), s5)
@@ -270,11 +301,11 @@ def main():
     for name, rows in tabs.items():
         write("t_" + name, dict(source=INPUTS[name][0], rows=rows), rows)
     write("inputs_sha256", rec)
-    val.update(s1_values=len(s1), s2_values=len(s23), s3_values=len(s23), s5_values=len(s5), s6_values=len(s6),
+    val.update(s4_values=len(s4), s1_values=len(s1), s2_values=len(s23), s3_values=len(s23), s5_values=len(s5), s6_values=len(s6),
                s1_round_to_zero_3dp=sum(r["D_disp"] in ("+0.000", MINUS + "0.000") for r in s1),
                s2_round_to_zero_1dp=sum(r["rel_bias_disp"] in ("+0.0", MINUS + "0.0") for r in s23),
-               figure_S4="SOURCE MISSING: per-centre radial profiles (mask_check.json, step-4 record 8d4c61a) are "
-                         "not in the package; Table S1 uses tableS4_mask_check.csv")
+               figure_S4="inputs/mask_check.json (provided by the investigator; SHA-256 equals the blob hash in "
+                         "SUPPLEMENT_20261020/SOURCES.md); 4 x 180 points; consistent with tableS4_mask_check.csv")
     write("validation", val)
     files = sorted(p for p in OUT.iterdir() if p.suffix in (".json", ".csv"))
     (OUT / "SHA256SUMS.txt").write_text("".join(f"{fz.sha256(p)}  {p.name}\n" for p in files))

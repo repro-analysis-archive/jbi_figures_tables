@@ -3,7 +3,7 @@ function verify_plotted_supp_v6(root)
 %   S1 (5 pairs x 240 cells), S2 and S3 (12 arms x 240 cells): every cell rectangle and text on every page .fig — value
 %   (UserData) equal to the canonical value, text equal to the canonical display string, face colour equal to the class
 %   colour of the value (jbi_ramp_v6), no extra or missing cell; the key shows every class colour in order.
-%   S5 (756 values): markers (value, cell order, x position) and their interval lines. S6 (36 points): marker, interval,
+%   S4 (4 x 180 profile points, rho_c and r lines per centre; key copies the drawn lines). S5 (756 values): markers (value, cell order, x position) and their interval lines. S6 (36 points): marker, interval,
 %   upper-bound tick; key glyphs copy the plotted objects (as verify_plotted_v2 for main Figure 2).
 %   Writes qa/plotted_vs_canonical_supp_v6.json.
 
@@ -46,6 +46,34 @@ for f = 1:3
     out.(['Figure_' which]) = struct('pages', p, 'values', n, 'mismatches', {bad}, 'key_classes', size(R.colours, 1), ...
         'key_complete', keyok, 'result', tern(isempty(bad) && keyok && n == numel(rows)));
 end
+
+% ------------------------------------------------------------------ S4 (720 profile points, rho_c, r, key)
+M4 = jbi_read_supp(root, 's4_mask_profiles'); mr = M4.rows; bad = {}; n = 0;
+h = openfig(fullfile(root, 'figures_supp_v1', 'Figure_S4', 'Figure_S4_v1.fig'), 'invisible'); L = findall(h, 'Type', 'line');
+for c = [2 3 4 5]
+    e = mr([mr.centre] == c); [~, o] = sort([e.point]); e = e(o);
+    rc = M4.visible_radius.(sprintf('x%d', c));
+    pl = findobj(L, 'Tag', sprintf('S4:profile:%d', c));
+    vr = findobj(L, 'Tag', sprintf('S4:rhoc:%d', c));
+    mk = findobj(L, 'Tag', sprintf('S4:mask:%d', c));
+    if numel(pl) ~= 1 || ~isequal(pl.XData, [e.rho]) || ~isequal(pl.YData, [e.m])
+        bad{end + 1} = sprintf('centre %d profile', c); %#ok<AGROW>
+    end
+    if numel(vr) ~= 1 || ~all(vr.XData == rc) || numel(mk) ~= 1 || ~all(mk.XData == M4.r)
+        bad{end + 1} = sprintf('centre %d reference lines', c); %#ok<AGROW>
+    end
+    n = n + numel(e);
+end
+K = findall(h, 'Type', 'line', '-regexp', 'Tag', '^key:'); P = setdiff(L, K);
+same = @(a, b, props) all(cellfun(@(q) isequal(a.(q), b.(q)), props));
+kOK = numel(K) == 3;
+for k = K'
+    c = findobj(P, '-regexp', 'Tag', ['^S4:' k.Tag(5:end) ':']);
+    kOK = kOK && ~isempty(c) && same(k, c(1), {'Color', 'LineWidth', 'LineStyle'});
+end
+close(h);
+out.Figure_S4 = struct('points', n, 'mismatches', {bad}, 'key_glyphs', numel(K), 'key_ok', kOK, ...
+    'result', tern(isempty(bad) && n == 720 && kOK));
 
 % ------------------------------------------------------------------ S5
 X = jbi_read_supp(root, 's5_x_cells'); xr = X.rows; bad = {}; n = 0;

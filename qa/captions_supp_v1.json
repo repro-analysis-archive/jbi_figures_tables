@@ -37,6 +37,21 @@
    "labels_in_pdf": [],
    "missing": []
   },
+  "Figure S4": {
+   "used": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "labels_in_pdf": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "missing": []
+  },
   "Figure S5": {
    "used": [
     "A",

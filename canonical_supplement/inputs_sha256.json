@@ -100,5 +100,11 @@
   "sha256": "6b02e8b480a90f923ac4a60feae1e101fc12af281289867995e4bb2d3f2b6637",
   "manifest": "match",
   "recorded_by_generating_step": "none recorded"
+ },
+ "mask_check": {
+  "path": "inputs/mask_check.json",
+  "sha256": "81c8eb46fa7abba4cb5024e073e30cc838c011d2d62488abbde72d73434d58d5",
+  "manifest": "not in the package (provided by the investigator)",
+  "recorded_by_generating_step": "match (SUPPLEMENT_20261020/SOURCES.md, 8d4c61a)"
  }
 }

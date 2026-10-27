@@ -1,0 +1,6493 @@
+{
+ "description": "Figure S4: per-centre radial profiles m_c(rho) of the grayscale mean standardized frame (180 points per centre), visible radius rho_c per centre, minimum and mask radius r (step-4 record 8d4c61a)",
+ "r": 0.45,
+ "min_visible_radius": 0.5625,
+ "visible_radius": {
+  "2": 0.5625,
+  "3": 0.703125,
+  "4": 0.703125,
+  "5": 0.703125
+ },
+ "rows": [
+  {
+   "centre": 2,
+   "point": 1,
+   "rho": 0.00390625,
+   "m": 121.37922687772529,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 2,
+   "rho": 0.0078125,
+   "m": 121.4725121212313,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 3,
+   "rho": 0.01171875,
+   "m": 121.57920193325808,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 4,
+   "rho": 0.015625,
+   "m": 121.52085364295024,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 5,
+   "rho": 0.01953125,
+   "m": 121.43543045104038,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 6,
+   "rho": 0.0234375,
+   "m": 121.41219903236376,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 7,
+   "rho": 0.02734375,
+   "m": 121.49376213168527,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 8,
+   "rho": 0.03125,
+   "m": 121.42803913842094,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 9,
+   "rho": 0.03515625,
+   "m": 121.39613634578944,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 10,
+   "rho": 0.0390625,
+   "m": 121.31651884439081,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 11,
+   "rho": 0.04296875,
+   "m": 121.25930532137706,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 12,
+   "rho": 0.046875,
+   "m": 121.19122731948269,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 13,
+   "rho": 0.05078125,
+   "m": 121.13216792295577,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 14,
+   "rho": 0.0546875,
+   "m": 121.03428022082095,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 15,
+   "rho": 0.05859375,
+   "m": 120.95251157462084,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 16,
+   "rho": 0.0625,
+   "m": 120.82675126374967,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 17,
+   "rho": 0.06640625,
+   "m": 120.69818332200381,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 18,
+   "rho": 0.0703125,
+   "m": 120.56091944372304,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 19,
+   "rho": 0.07421875,
+   "m": 120.41770529590465,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 20,
+   "rho": 0.078125,
+   "m": 120.3288411708912,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 21,
+   "rho": 0.08203125,
+   "m": 120.25762548904574,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 22,
+   "rho": 0.0859375,
+   "m": 120.12724573526832,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 23,
+   "rho": 0.08984375,
+   "m": 119.9646763935537,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 24,
+   "rho": 0.09375,
+   "m": 119.85608475270696,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 25,
+   "rho": 0.09765625,
+   "m": 119.71472976973494,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 26,
+   "rho": 0.1015625,
+   "m": 119.5832856366408,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 27,
+   "rho": 0.10546875,
+   "m": 119.38302278497147,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 28,
+   "rho": 0.109375,
+   "m": 119.17429761885886,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 29,
+   "rho": 0.11328125,
+   "m": 118.99636421294849,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 30,
+   "rho": 0.1171875,
+   "m": 118.8199290231238,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 31,
+   "rho": 0.12109375,
+   "m": 118.6475926480639,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 32,
+   "rho": 0.125,
+   "m": 118.41026792937743,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 33,
+   "rho": 0.12890625,
+   "m": 118.15555083245032,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 34,
+   "rho": 0.1328125,
+   "m": 117.90519540109969,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 35,
+   "rho": 0.13671875,
+   "m": 117.67818553582951,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 36,
+   "rho": 0.140625,
+   "m": 117.4029355319459,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 37,
+   "rho": 0.14453125,
+   "m": 117.12209072576042,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 38,
+   "rho": 0.1484375,
+   "m": 116.88006828938758,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 39,
+   "rho": 0.15234375,
+   "m": 116.65956785868542,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 40,
+   "rho": 0.15625,
+   "m": 116.44501615571093,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 41,
+   "rho": 0.16015625,
+   "m": 116.13931166058886,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 42,
+   "rho": 0.1640625,
+   "m": 115.85089240769344,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 43,
+   "rho": 0.16796875,
+   "m": 115.52062771786156,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 44,
+   "rho": 0.171875,
+   "m": 115.26228663239222,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 45,
+   "rho": 0.17578125,
+   "m": 114.99541138185914,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 46,
+   "rho": 0.1796875,
+   "m": 114.68546376091146,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 47,
+   "rho": 0.18359375,
+   "m": 114.38721484589915,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 48,
+   "rho": 0.1875,
+   "m": 114.10923800462486,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 49,
+   "rho": 0.19140625,
+   "m": 113.87825205530162,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 50,
+   "rho": 0.1953125,
+   "m": 113.59755777335963,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 51,
+   "rho": 0.19921875,
+   "m": 113.2973081391831,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 52,
+   "rho": 0.203125,
+   "m": 113.03163802435452,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 53,
+   "rho": 0.20703125,
+   "m": 112.7420300021543,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 54,
+   "rho": 0.2109375,
+   "m": 112.43795749773881,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 55,
+   "rho": 0.21484375,
+   "m": 112.14100199062354,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 56,
+   "rho": 0.21875,
+   "m": 111.85388164862051,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 57,
+   "rho": 0.22265625,
+   "m": 111.49740241927387,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 58,
+   "rho": 0.2265625,
+   "m": 111.19767741775776,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 59,
+   "rho": 0.23046875,
+   "m": 110.85632460873691,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 60,
+   "rho": 0.234375,
+   "m": 110.52926729748079,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 61,
+   "rho": 0.23828125,
+   "m": 110.23216210642941,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 62,
+   "rho": 0.2421875,
+   "m": 109.84083634044592,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 63,
+   "rho": 0.24609375,
+   "m": 109.48594176976934,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 64,
+   "rho": 0.25,
+   "m": 109.1342256753309,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 65,
+   "rho": 0.25390625,
+   "m": 108.7960299444894,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 66,
+   "rho": 0.2578125,
+   "m": 108.39279968868514,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 67,
+   "rho": 0.26171875,
+   "m": 107.97267781495083,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 68,
+   "rho": 0.265625,
+   "m": 107.57423447919015,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 69,
+   "rho": 0.26953125,
+   "m": 107.17343440931886,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 70,
+   "rho": 0.2734375,
+   "m": 106.76237021674216,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 71,
+   "rho": 0.27734375,
+   "m": 106.33767662220056,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 72,
+   "rho": 0.28125,
+   "m": 105.9189554342848,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 73,
+   "rho": 0.28515625,
+   "m": 105.48757201318266,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 74,
+   "rho": 0.2890625,
+   "m": 105.03099720198094,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 75,
+   "rho": 0.29296875,
+   "m": 104.59863315206937,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 76,
+   "rho": 0.296875,
+   "m": 104.16397049312877,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 77,
+   "rho": 0.30078125,
+   "m": 103.71129453235879,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 78,
+   "rho": 0.3046875,
+   "m": 103.28274844335817,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 79,
+   "rho": 0.30859375,
+   "m": 102.83356595861052,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 80,
+   "rho": 0.3125,
+   "m": 102.39963425328021,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 81,
+   "rho": 0.31640625,
+   "m": 101.97233569188846,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 82,
+   "rho": 0.3203125,
+   "m": 101.5501950620645,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 83,
+   "rho": 0.32421875,
+   "m": 101.11385089670539,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 84,
+   "rho": 0.328125,
+   "m": 100.65462554143963,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 85,
+   "rho": 0.33203125,
+   "m": 100.20832053145281,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 86,
+   "rho": 0.3359375,
+   "m": 99.77420638642946,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 87,
+   "rho": 0.33984375,
+   "m": 99.31734282716944,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 88,
+   "rho": 0.34375,
+   "m": 98.84877311455713,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 89,
+   "rho": 0.34765625,
+   "m": 98.39437108221472,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 90,
+   "rho": 0.3515625,
+   "m": 97.930197094182,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 91,
+   "rho": 0.35546875,
+   "m": 97.47362833697677,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 92,
+   "rho": 0.359375,
+   "m": 96.99867261601554,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 93,
+   "rho": 0.36328125,
+   "m": 96.49648652687316,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 94,
+   "rho": 0.3671875,
+   "m": 96.02146163893711,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 95,
+   "rho": 0.37109375,
+   "m": 95.53920237902629,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 96,
+   "rho": 0.375,
+   "m": 95.02089702271236,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 97,
+   "rho": 0.37890625,
+   "m": 94.50495075999365,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 98,
+   "rho": 0.3828125,
+   "m": 94.00757758724927,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 99,
+   "rho": 0.38671875,
+   "m": 93.52480012821816,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 100,
+   "rho": 0.390625,
+   "m": 93.02686764868774,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 101,
+   "rho": 0.39453125,
+   "m": 92.54991016361971,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 102,
+   "rho": 0.3984375,
+   "m": 92.05375566065428,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 103,
+   "rho": 0.40234375,
+   "m": 91.54695960688466,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 104,
+   "rho": 0.40625,
+   "m": 91.05444669064183,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 105,
+   "rho": 0.41015625,
+   "m": 90.54210038233383,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 106,
+   "rho": 0.4140625,
+   "m": 90.04791093561464,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 107,
+   "rho": 0.41796875,
+   "m": 89.55771733399483,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 108,
+   "rho": 0.421875,
+   "m": 89.05775697108808,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 109,
+   "rho": 0.42578125,
+   "m": 88.54424826623965,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 110,
+   "rho": 0.4296875,
+   "m": 88.00893943734484,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 111,
+   "rho": 0.43359375,
+   "m": 87.48884390813325,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 112,
+   "rho": 0.4375,
+   "m": 86.94149957175367,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 113,
+   "rho": 0.44140625,
+   "m": 86.40488859968433,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 114,
+   "rho": 0.4453125,
+   "m": 85.8558141646387,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 115,
+   "rho": 0.44921875,
+   "m": 85.2808129039612,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 116,
+   "rho": 0.453125,
+   "m": 84.70410632831691,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 117,
+   "rho": 0.45703125,
+   "m": 84.10746247422834,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 118,
+   "rho": 0.4609375,
+   "m": 83.4955082071686,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 119,
+   "rho": 0.46484375,
+   "m": 82.82776017393783,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 120,
+   "rho": 0.46875,
+   "m": 82.05606598167009,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 121,
+   "rho": 0.47265625,
+   "m": 81.23111563857249,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 122,
+   "rho": 0.4765625,
+   "m": 80.46085023784138,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 123,
+   "rho": 0.48046875,
+   "m": 79.6418076207997,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 124,
+   "rho": 0.484375,
+   "m": 78.83725311901021,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 125,
+   "rho": 0.48828125,
+   "m": 78.02110006451363,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 126,
+   "rho": 0.4921875,
+   "m": 76.99196889863676,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 127,
+   "rho": 0.49609375,
+   "m": 75.43507473087121,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 128,
+   "rho": 0.5,
+   "m": 73.34160555782428,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 129,
+   "rho": 0.50390625,
+   "m": 70.36281293737196,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 130,
+   "rho": 0.5078125,
+   "m": 66.83612229635288,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 131,
+   "rho": 0.51171875,
+   "m": 64.05480218503038,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 132,
+   "rho": 0.515625,
+   "m": 62.291136712549665,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 133,
+   "rho": 0.51953125,
+   "m": 60.604637782215896,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 134,
+   "rho": 0.5234375,
+   "m": 58.845360873545424,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 135,
+   "rho": 0.52734375,
+   "m": 56.56010904745795,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 136,
+   "rho": 0.53125,
+   "m": 54.16370228846308,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 137,
+   "rho": 0.53515625,
+   "m": 51.63025281260331,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 138,
+   "rho": 0.5390625,
+   "m": 48.59281103605239,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 139,
+   "rho": 0.54296875,
+   "m": 45.16030926089284,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 140,
+   "rho": 0.546875,
+   "m": 41.76175341771336,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 141,
+   "rho": 0.55078125,
+   "m": 38.71840786520696,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 142,
+   "rho": 0.5546875,
+   "m": 36.065293949208794,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 143,
+   "rho": 0.55859375,
+   "m": 33.817789038416564,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 144,
+   "rho": 0.5625,
+   "m": 31.729921163004732,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 145,
+   "rho": 0.56640625,
+   "m": 28.591409212242816,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 146,
+   "rho": 0.5703125,
+   "m": 24.440107331802107,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 147,
+   "rho": 0.57421875,
+   "m": 21.24231728519121,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 148,
+   "rho": 0.578125,
+   "m": 18.8654159528026,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 149,
+   "rho": 0.58203125,
+   "m": 16.356752522169025,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 150,
+   "rho": 0.5859375,
+   "m": 14.45301514329559,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 151,
+   "rho": 0.58984375,
+   "m": 13.512873294973238,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 152,
+   "rho": 0.59375,
+   "m": 13.087184208156684,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 153,
+   "rho": 0.59765625,
+   "m": 12.807291589177447,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 154,
+   "rho": 0.6015625,
+   "m": 12.596605946825925,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 155,
+   "rho": 0.60546875,
+   "m": 12.41512274943032,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 156,
+   "rho": 0.609375,
+   "m": 12.239897996542043,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 157,
+   "rho": 0.61328125,
+   "m": 12.067194458503087,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 158,
+   "rho": 0.6171875,
+   "m": 11.875457085302262,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 159,
+   "rho": 0.62109375,
+   "m": 11.68054538396294,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 160,
+   "rho": 0.625,
+   "m": 11.221035344924312,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 161,
+   "rho": 0.62890625,
+   "m": 10.22020412270461,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 162,
+   "rho": 0.6328125,
+   "m": 9.043477426141143,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 163,
+   "rho": 0.63671875,
+   "m": 8.351532349844524,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 164,
+   "rho": 0.640625,
+   "m": 8.05849347012908,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 165,
+   "rho": 0.64453125,
+   "m": 7.831794825480873,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 166,
+   "rho": 0.6484375,
+   "m": 7.59582177783383,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 167,
+   "rho": 0.65234375,
+   "m": 7.417823206223245,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 168,
+   "rho": 0.65625,
+   "m": 7.252310093918934,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 169,
+   "rho": 0.66015625,
+   "m": 7.009698902113398,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 170,
+   "rho": 0.6640625,
+   "m": 6.752614603263172,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 171,
+   "rho": 0.66796875,
+   "m": 6.665647692262031,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 172,
+   "rho": 0.671875,
+   "m": 6.595353229711838,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 173,
+   "rho": 0.67578125,
+   "m": 6.53125840604341,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 174,
+   "rho": 0.6796875,
+   "m": 6.47144747700071,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 175,
+   "rho": 0.68359375,
+   "m": 6.407955592261124,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 176,
+   "rho": 0.6875,
+   "m": 6.317764861648896,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 177,
+   "rho": 0.69140625,
+   "m": 6.181793900592204,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 178,
+   "rho": 0.6953125,
+   "m": 6.0406357089122125,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 179,
+   "rho": 0.69921875,
+   "m": 5.883473922929255,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 2,
+   "point": 180,
+   "rho": 0.703125,
+   "m": 5.741538630043615,
+   "n_frames": 2820,
+   "visible_radius": 0.5625,
+   "source": "mask_check.json profiles.2"
+  },
+  {
+   "centre": 3,
+   "point": 1,
+   "rho": 0.00390625,
+   "m": 92.90558811900628,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 2,
+   "rho": 0.0078125,
+   "m": 92.95499356090959,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 3,
+   "rho": 0.01171875,
+   "m": 92.82029631193832,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 4,
+   "rho": 0.015625,
+   "m": 92.83280085682067,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 5,
+   "rho": 0.01953125,
+   "m": 92.70006922615713,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 6,
+   "rho": 0.0234375,
+   "m": 92.64348456949644,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 7,
+   "rho": 0.02734375,
+   "m": 92.65922613298119,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 8,
+   "rho": 0.03125,
+   "m": 92.58014025027806,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 9,
+   "rho": 0.03515625,
+   "m": 92.53962284423311,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 10,
+   "rho": 0.0390625,
+   "m": 92.6029007671077,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 11,
+   "rho": 0.04296875,
+   "m": 92.64990164373597,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 12,
+   "rho": 0.046875,
+   "m": 92.60705533075266,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 13,
+   "rho": 0.05078125,
+   "m": 92.58307052380351,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 14,
+   "rho": 0.0546875,
+   "m": 92.555838690246,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 15,
+   "rho": 0.05859375,
+   "m": 92.53607079350553,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 16,
+   "rho": 0.0625,
+   "m": 92.43661437635846,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 17,
+   "rho": 0.06640625,
+   "m": 92.4109996145508,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 18,
+   "rho": 0.0703125,
+   "m": 92.34535905016172,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 19,
+   "rho": 0.07421875,
+   "m": 92.28856821146067,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 20,
+   "rho": 0.078125,
+   "m": 92.2664452883122,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 21,
+   "rho": 0.08203125,
+   "m": 92.22454248943193,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 22,
+   "rho": 0.0859375,
+   "m": 92.2188701574607,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 23,
+   "rho": 0.08984375,
+   "m": 92.2121593010333,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 24,
+   "rho": 0.09375,
+   "m": 92.16585951746534,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 25,
+   "rho": 0.09765625,
+   "m": 92.1079408221085,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 26,
+   "rho": 0.1015625,
+   "m": 92.05246281171043,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 27,
+   "rho": 0.10546875,
+   "m": 91.92644025145073,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 28,
+   "rho": 0.109375,
+   "m": 91.88178806986531,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 29,
+   "rho": 0.11328125,
+   "m": 91.77628018096532,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 30,
+   "rho": 0.1171875,
+   "m": 91.71899168318207,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 31,
+   "rho": 0.12109375,
+   "m": 91.66674349600352,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 32,
+   "rho": 0.125,
+   "m": 91.58133624014374,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 33,
+   "rho": 0.12890625,
+   "m": 91.49545089977707,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 34,
+   "rho": 0.1328125,
+   "m": 91.4580721781348,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 35,
+   "rho": 0.13671875,
+   "m": 91.36533646889873,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 36,
+   "rho": 0.140625,
+   "m": 91.26550499014414,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 37,
+   "rho": 0.14453125,
+   "m": 91.16674196167904,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 38,
+   "rho": 0.1484375,
+   "m": 91.06976504930964,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 39,
+   "rho": 0.15234375,
+   "m": 90.97752124689984,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 40,
+   "rho": 0.15625,
+   "m": 90.88999197569727,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 41,
+   "rho": 0.16015625,
+   "m": 90.76868264906965,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 42,
+   "rho": 0.1640625,
+   "m": 90.68098530782272,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 43,
+   "rho": 0.16796875,
+   "m": 90.60210526815717,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 44,
+   "rho": 0.171875,
+   "m": 90.4675771058492,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 45,
+   "rho": 0.17578125,
+   "m": 90.38945665874921,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 46,
+   "rho": 0.1796875,
+   "m": 90.27625954494837,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 47,
+   "rho": 0.18359375,
+   "m": 90.17058110583832,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 48,
+   "rho": 0.1875,
+   "m": 90.08568253644363,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 49,
+   "rho": 0.19140625,
+   "m": 89.99501641141885,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 50,
+   "rho": 0.1953125,
+   "m": 89.91316716742669,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 51,
+   "rho": 0.19921875,
+   "m": 89.78044234890471,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 52,
+   "rho": 0.203125,
+   "m": 89.67906727999464,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 53,
+   "rho": 0.20703125,
+   "m": 89.57623308695598,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 54,
+   "rho": 0.2109375,
+   "m": 89.47751972156411,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 55,
+   "rho": 0.21484375,
+   "m": 89.37608919178602,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 56,
+   "rho": 0.21875,
+   "m": 89.22822214673825,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 57,
+   "rho": 0.22265625,
+   "m": 89.09332407598242,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 58,
+   "rho": 0.2265625,
+   "m": 88.93459923114001,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 59,
+   "rho": 0.23046875,
+   "m": 88.79051491854058,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 60,
+   "rho": 0.234375,
+   "m": 88.62324779551741,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 61,
+   "rho": 0.23828125,
+   "m": 88.4417144174892,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 62,
+   "rho": 0.2421875,
+   "m": 88.31197478705297,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 63,
+   "rho": 0.24609375,
+   "m": 88.16267535866609,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 64,
+   "rho": 0.25,
+   "m": 88.01588310960655,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 65,
+   "rho": 0.25390625,
+   "m": 87.86181880485063,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 66,
+   "rho": 0.2578125,
+   "m": 87.68373679736874,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 67,
+   "rho": 0.26171875,
+   "m": 87.51348148164566,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 68,
+   "rho": 0.265625,
+   "m": 87.35705351817703,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 69,
+   "rho": 0.26953125,
+   "m": 87.14066920815517,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 70,
+   "rho": 0.2734375,
+   "m": 86.95173713857723,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 71,
+   "rho": 0.27734375,
+   "m": 86.75255966631647,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 72,
+   "rho": 0.28125,
+   "m": 86.57322006476247,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 73,
+   "rho": 0.28515625,
+   "m": 86.40250786757544,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 74,
+   "rho": 0.2890625,
+   "m": 86.21418786565764,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 75,
+   "rho": 0.29296875,
+   "m": 86.04327782514437,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 76,
+   "rho": 0.296875,
+   "m": 85.85647161142136,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 77,
+   "rho": 0.30078125,
+   "m": 85.63939976866486,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 78,
+   "rho": 0.3046875,
+   "m": 85.4300264005865,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 79,
+   "rho": 0.30859375,
+   "m": 85.23092961037415,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 80,
+   "rho": 0.3125,
+   "m": 85.04207144638752,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 81,
+   "rho": 0.31640625,
+   "m": 84.81091114354096,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 82,
+   "rho": 0.3203125,
+   "m": 84.60455556825549,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 83,
+   "rho": 0.32421875,
+   "m": 84.34707119466638,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 84,
+   "rho": 0.328125,
+   "m": 84.11480475454664,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 85,
+   "rho": 0.33203125,
+   "m": 83.89275065778148,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 86,
+   "rho": 0.3359375,
+   "m": 83.63759048259882,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 87,
+   "rho": 0.33984375,
+   "m": 83.40510444879098,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 88,
+   "rho": 0.34375,
+   "m": 83.14343580690023,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 89,
+   "rho": 0.34765625,
+   "m": 82.88855213125835,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 90,
+   "rho": 0.3515625,
+   "m": 82.64835372809468,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 91,
+   "rho": 0.35546875,
+   "m": 82.37373605427982,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 92,
+   "rho": 0.359375,
+   "m": 82.1374428572667,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 93,
+   "rho": 0.36328125,
+   "m": 81.86691050504405,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 94,
+   "rho": 0.3671875,
+   "m": 81.62573543608372,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 95,
+   "rho": 0.37109375,
+   "m": 81.36305191723324,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 96,
+   "rho": 0.375,
+   "m": 81.04846378073772,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 97,
+   "rho": 0.37890625,
+   "m": 80.76756488926569,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 98,
+   "rho": 0.3828125,
+   "m": 80.45997426087548,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 99,
+   "rho": 0.38671875,
+   "m": 80.19280731321965,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 100,
+   "rho": 0.390625,
+   "m": 79.87678570136494,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 101,
+   "rho": 0.39453125,
+   "m": 79.55377004687057,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 102,
+   "rho": 0.3984375,
+   "m": 79.24752783541734,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 103,
+   "rho": 0.40234375,
+   "m": 78.91487385621187,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 104,
+   "rho": 0.40625,
+   "m": 78.59150237035423,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 105,
+   "rho": 0.41015625,
+   "m": 78.26275599038198,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 106,
+   "rho": 0.4140625,
+   "m": 77.92744355378703,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 107,
+   "rho": 0.41796875,
+   "m": 77.62041744485818,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 108,
+   "rho": 0.421875,
+   "m": 77.26772176838051,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 109,
+   "rho": 0.42578125,
+   "m": 76.93101586443632,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 110,
+   "rho": 0.4296875,
+   "m": 76.59437038621599,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 111,
+   "rho": 0.43359375,
+   "m": 76.2459862878288,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 112,
+   "rho": 0.4375,
+   "m": 75.92221882783821,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 113,
+   "rho": 0.44140625,
+   "m": 75.57011613081647,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 114,
+   "rho": 0.4453125,
+   "m": 75.22437200018332,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 115,
+   "rho": 0.44921875,
+   "m": 74.84468415653357,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 116,
+   "rho": 0.453125,
+   "m": 74.49841752615382,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 117,
+   "rho": 0.45703125,
+   "m": 74.11254023877964,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 118,
+   "rho": 0.4609375,
+   "m": 73.7460324677521,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 119,
+   "rho": 0.46484375,
+   "m": 73.36020717260796,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 120,
+   "rho": 0.46875,
+   "m": 72.96927530084457,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 121,
+   "rho": 0.47265625,
+   "m": 72.58556901827838,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 122,
+   "rho": 0.4765625,
+   "m": 72.18554889547265,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 123,
+   "rho": 0.48046875,
+   "m": 71.79389676239856,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 124,
+   "rho": 0.484375,
+   "m": 71.39138574584916,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 125,
+   "rho": 0.48828125,
+   "m": 70.99001272284211,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 126,
+   "rho": 0.4921875,
+   "m": 70.58212656492003,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 127,
+   "rho": 0.49609375,
+   "m": 70.16934461890746,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 128,
+   "rho": 0.5,
+   "m": 69.7359756870874,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 129,
+   "rho": 0.50390625,
+   "m": 69.25269422584071,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 130,
+   "rho": 0.5078125,
+   "m": 68.83925060026826,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 131,
+   "rho": 0.51171875,
+   "m": 68.43660240332365,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 132,
+   "rho": 0.515625,
+   "m": 67.98414688689833,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 133,
+   "rho": 0.51953125,
+   "m": 67.59554969749587,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 134,
+   "rho": 0.5234375,
+   "m": 67.13712878221162,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 135,
+   "rho": 0.52734375,
+   "m": 66.70556072117024,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 136,
+   "rho": 0.53125,
+   "m": 66.27550256395402,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 137,
+   "rho": 0.53515625,
+   "m": 65.83008570740499,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 138,
+   "rho": 0.5390625,
+   "m": 65.42550751487407,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 139,
+   "rho": 0.54296875,
+   "m": 64.91355828019863,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 140,
+   "rho": 0.546875,
+   "m": 64.47810407401236,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 141,
+   "rho": 0.55078125,
+   "m": 64.026115711775,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 142,
+   "rho": 0.5546875,
+   "m": 63.572709344874546,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 143,
+   "rho": 0.55859375,
+   "m": 63.13017818657836,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 144,
+   "rho": 0.5625,
+   "m": 62.624041882359386,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 145,
+   "rho": 0.56640625,
+   "m": 62.146614759126194,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 146,
+   "rho": 0.5703125,
+   "m": 61.66390658325514,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 147,
+   "rho": 0.57421875,
+   "m": 61.12598259412339,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 148,
+   "rho": 0.578125,
+   "m": 60.58810493776084,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 149,
+   "rho": 0.58203125,
+   "m": 59.95604904368295,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 150,
+   "rho": 0.5859375,
+   "m": 59.34084848945735,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 151,
+   "rho": 0.58984375,
+   "m": 58.68924951005864,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 152,
+   "rho": 0.59375,
+   "m": 57.98366555784439,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 153,
+   "rho": 0.59765625,
+   "m": 57.27929836510327,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 154,
+   "rho": 0.6015625,
+   "m": 56.61664223163668,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 155,
+   "rho": 0.60546875,
+   "m": 55.89333136721382,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 156,
+   "rho": 0.609375,
+   "m": 55.07873172933714,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 157,
+   "rho": 0.61328125,
+   "m": 54.13479560624077,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 158,
+   "rho": 0.6171875,
+   "m": 53.22658422773015,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 159,
+   "rho": 0.62109375,
+   "m": 52.38726646642636,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 160,
+   "rho": 0.625,
+   "m": 51.63973534347125,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 161,
+   "rho": 0.62890625,
+   "m": 50.92679556449232,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 162,
+   "rho": 0.6328125,
+   "m": 50.187714500788616,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 163,
+   "rho": 0.63671875,
+   "m": 49.474994662422176,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 164,
+   "rho": 0.640625,
+   "m": 48.82500429765702,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 165,
+   "rho": 0.64453125,
+   "m": 48.22061734754609,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 166,
+   "rho": 0.6484375,
+   "m": 47.67723771486787,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 167,
+   "rho": 0.65234375,
+   "m": 47.07475570444043,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 168,
+   "rho": 0.65625,
+   "m": 46.36781584322056,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 169,
+   "rho": 0.66015625,
+   "m": 45.64430641945768,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 170,
+   "rho": 0.6640625,
+   "m": 44.84151421545539,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 171,
+   "rho": 0.66796875,
+   "m": 44.036183506555204,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 172,
+   "rho": 0.671875,
+   "m": 43.29467319691873,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 173,
+   "rho": 0.67578125,
+   "m": 42.50984756036778,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 174,
+   "rho": 0.6796875,
+   "m": 41.711315847508374,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 175,
+   "rho": 0.68359375,
+   "m": 40.99435833851357,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 176,
+   "rho": 0.6875,
+   "m": 40.33685319565901,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 177,
+   "rho": 0.69140625,
+   "m": 39.79963571071207,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 178,
+   "rho": 0.6953125,
+   "m": 39.210362224892236,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 179,
+   "rho": 0.69921875,
+   "m": 38.59421673330085,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 3,
+   "point": 180,
+   "rho": 0.703125,
+   "m": 38.09719610155738,
+   "n_frames": 2797,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.3"
+  },
+  {
+   "centre": 4,
+   "point": 1,
+   "rho": 0.00390625,
+   "m": 104.47394853711744,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 2,
+   "rho": 0.0078125,
+   "m": 104.42024207839108,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 3,
+   "rho": 0.01171875,
+   "m": 104.47917197938011,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 4,
+   "rho": 0.015625,
+   "m": 104.47440033669677,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 5,
+   "rho": 0.01953125,
+   "m": 104.47524555706784,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 6,
+   "rho": 0.0234375,
+   "m": 104.44228803849244,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 7,
+   "rho": 0.02734375,
+   "m": 104.4495421142945,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 8,
+   "rho": 0.03125,
+   "m": 104.41411977183476,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 9,
+   "rho": 0.03515625,
+   "m": 104.4259566094541,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 10,
+   "rho": 0.0390625,
+   "m": 104.38966499935677,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 11,
+   "rho": 0.04296875,
+   "m": 104.41354098605407,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 12,
+   "rho": 0.046875,
+   "m": 104.39916525043452,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 13,
+   "rho": 0.05078125,
+   "m": 104.39332354554286,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 14,
+   "rho": 0.0546875,
+   "m": 104.39310054840999,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 15,
+   "rho": 0.05859375,
+   "m": 104.45679411155282,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 16,
+   "rho": 0.0625,
+   "m": 104.47859773884186,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 17,
+   "rho": 0.06640625,
+   "m": 104.50158231712611,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 18,
+   "rho": 0.0703125,
+   "m": 104.51145860387811,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 19,
+   "rho": 0.07421875,
+   "m": 104.53557944644707,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 20,
+   "rho": 0.078125,
+   "m": 104.55956615920996,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 21,
+   "rho": 0.08203125,
+   "m": 104.57475740857568,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 22,
+   "rho": 0.0859375,
+   "m": 104.58176512802912,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 23,
+   "rho": 0.08984375,
+   "m": 104.5764915813303,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 24,
+   "rho": 0.09375,
+   "m": 104.59353213617212,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 25,
+   "rho": 0.09765625,
+   "m": 104.64181824802392,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 26,
+   "rho": 0.1015625,
+   "m": 104.67227838649885,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 27,
+   "rho": 0.10546875,
+   "m": 104.66633228657838,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 28,
+   "rho": 0.109375,
+   "m": 104.68006542335334,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 29,
+   "rho": 0.11328125,
+   "m": 104.67694020810862,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 30,
+   "rho": 0.1171875,
+   "m": 104.6973335683004,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 31,
+   "rho": 0.12109375,
+   "m": 104.70256129456175,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 32,
+   "rho": 0.125,
+   "m": 104.71112055294479,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 33,
+   "rho": 0.12890625,
+   "m": 104.7541881230728,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 34,
+   "rho": 0.1328125,
+   "m": 104.76096967492778,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 35,
+   "rho": 0.13671875,
+   "m": 104.76849892034873,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 36,
+   "rho": 0.140625,
+   "m": 104.79758460799405,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 37,
+   "rho": 0.14453125,
+   "m": 104.83864960947597,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 38,
+   "rho": 0.1484375,
+   "m": 104.86303152861296,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 39,
+   "rho": 0.15234375,
+   "m": 104.88518029813864,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 40,
+   "rho": 0.15625,
+   "m": 104.93704979544624,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 41,
+   "rho": 0.16015625,
+   "m": 104.95294949100544,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 42,
+   "rho": 0.1640625,
+   "m": 105.00245928544443,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 43,
+   "rho": 0.16796875,
+   "m": 105.00865088963344,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 44,
+   "rho": 0.171875,
+   "m": 105.03348079929667,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 45,
+   "rho": 0.17578125,
+   "m": 105.07905193478554,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 46,
+   "rho": 0.1796875,
+   "m": 105.03744452976031,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 47,
+   "rho": 0.18359375,
+   "m": 105.07501536041768,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 48,
+   "rho": 0.1875,
+   "m": 105.08586545078289,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 49,
+   "rho": 0.19140625,
+   "m": 105.05765132497923,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 50,
+   "rho": 0.1953125,
+   "m": 105.0839328904957,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 51,
+   "rho": 0.19921875,
+   "m": 105.0578137050027,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 52,
+   "rho": 0.203125,
+   "m": 105.04635172871411,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 53,
+   "rho": 0.20703125,
+   "m": 105.03604252506501,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 54,
+   "rho": 0.2109375,
+   "m": 105.04564507203654,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 55,
+   "rho": 0.21484375,
+   "m": 105.03788329639976,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 56,
+   "rho": 0.21875,
+   "m": 105.0125065293459,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 57,
+   "rho": 0.22265625,
+   "m": 104.99574545446136,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 58,
+   "rho": 0.2265625,
+   "m": 104.95181196838979,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 59,
+   "rho": 0.23046875,
+   "m": 104.89249734898485,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 60,
+   "rho": 0.234375,
+   "m": 104.87347129426526,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 61,
+   "rho": 0.23828125,
+   "m": 104.86737260735077,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 62,
+   "rho": 0.2421875,
+   "m": 104.84548831863583,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 63,
+   "rho": 0.24609375,
+   "m": 104.81414777773306,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 64,
+   "rho": 0.25,
+   "m": 104.79166605200604,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 65,
+   "rho": 0.25390625,
+   "m": 104.78705264959711,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 66,
+   "rho": 0.2578125,
+   "m": 104.77659063720873,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 67,
+   "rho": 0.26171875,
+   "m": 104.74060164209862,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 68,
+   "rho": 0.265625,
+   "m": 104.71694585146575,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 69,
+   "rho": 0.26953125,
+   "m": 104.68751720000678,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 70,
+   "rho": 0.2734375,
+   "m": 104.6424898721319,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 71,
+   "rho": 0.27734375,
+   "m": 104.6186423983922,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 72,
+   "rho": 0.28125,
+   "m": 104.59800240626312,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 73,
+   "rho": 0.28515625,
+   "m": 104.57999585258243,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 74,
+   "rho": 0.2890625,
+   "m": 104.56151200958874,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 75,
+   "rho": 0.29296875,
+   "m": 104.5559274274016,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 76,
+   "rho": 0.296875,
+   "m": 104.53003559933781,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 77,
+   "rho": 0.30078125,
+   "m": 104.5063703911541,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 78,
+   "rho": 0.3046875,
+   "m": 104.49248274655668,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 79,
+   "rho": 0.30859375,
+   "m": 104.45318264808682,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 80,
+   "rho": 0.3125,
+   "m": 104.43449976965587,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 81,
+   "rho": 0.31640625,
+   "m": 104.39567791702076,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 82,
+   "rho": 0.3203125,
+   "m": 104.38259611155361,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 83,
+   "rho": 0.32421875,
+   "m": 104.35944093354205,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 84,
+   "rho": 0.328125,
+   "m": 104.3356368957992,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 85,
+   "rho": 0.33203125,
+   "m": 104.30735663574553,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 86,
+   "rho": 0.3359375,
+   "m": 104.27629131857212,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 87,
+   "rho": 0.33984375,
+   "m": 104.22415295838309,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 88,
+   "rho": 0.34375,
+   "m": 104.20230198477701,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 89,
+   "rho": 0.34765625,
+   "m": 104.14896702136431,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 90,
+   "rho": 0.3515625,
+   "m": 104.07823418934089,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 91,
+   "rho": 0.35546875,
+   "m": 104.02696874338692,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 92,
+   "rho": 0.359375,
+   "m": 103.97401942253998,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 93,
+   "rho": 0.36328125,
+   "m": 103.93962961965879,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 94,
+   "rho": 0.3671875,
+   "m": 103.88696300216195,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 95,
+   "rho": 0.37109375,
+   "m": 103.8602598738433,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 96,
+   "rho": 0.375,
+   "m": 103.81895977137212,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 97,
+   "rho": 0.37890625,
+   "m": 103.75719824264198,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 98,
+   "rho": 0.3828125,
+   "m": 103.73484722849531,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 99,
+   "rho": 0.38671875,
+   "m": 103.69208514112313,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 100,
+   "rho": 0.390625,
+   "m": 103.66481371789197,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 101,
+   "rho": 0.39453125,
+   "m": 103.61301646514471,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 102,
+   "rho": 0.3984375,
+   "m": 103.55155164292216,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 103,
+   "rho": 0.40234375,
+   "m": 103.4958681394072,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 104,
+   "rho": 0.40625,
+   "m": 103.43962417137182,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 105,
+   "rho": 0.41015625,
+   "m": 103.36806038042793,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 106,
+   "rho": 0.4140625,
+   "m": 103.30894187389721,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 107,
+   "rho": 0.41796875,
+   "m": 103.24931425294547,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 108,
+   "rho": 0.421875,
+   "m": 103.17167847795996,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 109,
+   "rho": 0.42578125,
+   "m": 103.09233261331065,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 110,
+   "rho": 0.4296875,
+   "m": 103.02298173291136,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 111,
+   "rho": 0.43359375,
+   "m": 102.96624238774261,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 112,
+   "rho": 0.4375,
+   "m": 102.90196040092519,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 113,
+   "rho": 0.44140625,
+   "m": 102.84907977362587,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 114,
+   "rho": 0.4453125,
+   "m": 102.77615293101935,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 115,
+   "rho": 0.44921875,
+   "m": 102.6972245431072,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 116,
+   "rho": 0.453125,
+   "m": 102.62552479644414,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 117,
+   "rho": 0.45703125,
+   "m": 102.54080648666614,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 118,
+   "rho": 0.4609375,
+   "m": 102.46133074334759,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 119,
+   "rho": 0.46484375,
+   "m": 102.38308131271243,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 120,
+   "rho": 0.46875,
+   "m": 102.30412311081669,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 121,
+   "rho": 0.47265625,
+   "m": 102.22221994538329,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 122,
+   "rho": 0.4765625,
+   "m": 102.13648687806439,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 123,
+   "rho": 0.48046875,
+   "m": 102.0608837708672,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 124,
+   "rho": 0.484375,
+   "m": 101.9839792608836,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 125,
+   "rho": 0.48828125,
+   "m": 101.91022543371334,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 126,
+   "rho": 0.4921875,
+   "m": 101.81378098857004,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 127,
+   "rho": 0.49609375,
+   "m": 101.73468680682817,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 128,
+   "rho": 0.5,
+   "m": 101.05409220617263,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 129,
+   "rho": 0.50390625,
+   "m": 101.31213538609447,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 130,
+   "rho": 0.5078125,
+   "m": 101.28688808129763,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 131,
+   "rho": 0.51171875,
+   "m": 101.2423150024446,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 132,
+   "rho": 0.515625,
+   "m": 101.16178889471688,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 133,
+   "rho": 0.51953125,
+   "m": 101.05058731705367,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 134,
+   "rho": 0.5234375,
+   "m": 101.03233721708277,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 135,
+   "rho": 0.52734375,
+   "m": 100.91448576885662,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 136,
+   "rho": 0.53125,
+   "m": 100.81292245159865,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 137,
+   "rho": 0.53515625,
+   "m": 100.7652728209472,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 138,
+   "rho": 0.5390625,
+   "m": 100.58272499589893,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 139,
+   "rho": 0.54296875,
+   "m": 100.45774581593597,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 140,
+   "rho": 0.546875,
+   "m": 100.36990589770596,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 141,
+   "rho": 0.55078125,
+   "m": 100.24579066701641,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 142,
+   "rho": 0.5546875,
+   "m": 100.05821068059726,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 143,
+   "rho": 0.55859375,
+   "m": 99.97941484865243,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 144,
+   "rho": 0.5625,
+   "m": 99.8605199948224,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 145,
+   "rho": 0.56640625,
+   "m": 99.68099724971843,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 146,
+   "rho": 0.5703125,
+   "m": 99.54998671770282,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 147,
+   "rho": 0.57421875,
+   "m": 99.40253922371528,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 148,
+   "rho": 0.578125,
+   "m": 99.25579549695215,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 149,
+   "rho": 0.58203125,
+   "m": 99.11378147954547,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 150,
+   "rho": 0.5859375,
+   "m": 98.95058358735429,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 151,
+   "rho": 0.58984375,
+   "m": 98.79615824573668,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 152,
+   "rho": 0.59375,
+   "m": 98.63412343647524,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 153,
+   "rho": 0.59765625,
+   "m": 98.56185603131686,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 154,
+   "rho": 0.6015625,
+   "m": 98.28831346983604,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 155,
+   "rho": 0.60546875,
+   "m": 98.10322920178442,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 156,
+   "rho": 0.609375,
+   "m": 97.9853475881516,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 157,
+   "rho": 0.61328125,
+   "m": 97.90405258273564,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 158,
+   "rho": 0.6171875,
+   "m": 97.62580315425475,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 159,
+   "rho": 0.62109375,
+   "m": 97.41224132849872,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 160,
+   "rho": 0.625,
+   "m": 97.34948174717533,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 161,
+   "rho": 0.62890625,
+   "m": 97.04610392429952,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 162,
+   "rho": 0.6328125,
+   "m": 96.7567148870099,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 163,
+   "rho": 0.63671875,
+   "m": 96.76890841889542,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 164,
+   "rho": 0.640625,
+   "m": 96.30947801921724,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 165,
+   "rho": 0.64453125,
+   "m": 96.10736584166747,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 166,
+   "rho": 0.6484375,
+   "m": 96.0929318576712,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 167,
+   "rho": 0.65234375,
+   "m": 95.6110953507229,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 168,
+   "rho": 0.65625,
+   "m": 95.73196743536695,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 169,
+   "rho": 0.66015625,
+   "m": 95.18263237526975,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 170,
+   "rho": 0.6640625,
+   "m": 95.2633716970903,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 171,
+   "rho": 0.66796875,
+   "m": 94.70828826982506,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 172,
+   "rho": 0.671875,
+   "m": 94.5812786296202,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 173,
+   "rho": 0.67578125,
+   "m": 94.30478983090046,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 174,
+   "rho": 0.6796875,
+   "m": 93.9756837100978,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 175,
+   "rho": 0.68359375,
+   "m": 93.64029438263113,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 176,
+   "rho": 0.6875,
+   "m": 93.23316250941559,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 177,
+   "rho": 0.69140625,
+   "m": 93.22992174745248,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 178,
+   "rho": 0.6953125,
+   "m": 91.62520637896887,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 179,
+   "rho": 0.69921875,
+   "m": 91.3840527304617,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 4,
+   "point": 180,
+   "rho": 0.703125,
+   "m": 89.08364558455973,
+   "n_frames": 4850,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.4"
+  },
+  {
+   "centre": 5,
+   "point": 1,
+   "rho": 0.00390625,
+   "m": 106.89572371287204,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 2,
+   "rho": 0.0078125,
+   "m": 106.99399449106495,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 3,
+   "rho": 0.01171875,
+   "m": 107.06689194018848,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 4,
+   "rho": 0.015625,
+   "m": 107.21258010454218,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 5,
+   "rho": 0.01953125,
+   "m": 107.16971128152628,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 6,
+   "rho": 0.0234375,
+   "m": 107.13969342828678,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 7,
+   "rho": 0.02734375,
+   "m": 107.13230472388432,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 8,
+   "rho": 0.03125,
+   "m": 107.14576567332784,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 9,
+   "rho": 0.03515625,
+   "m": 107.15854309159816,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 10,
+   "rho": 0.0390625,
+   "m": 107.11777922755797,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 11,
+   "rho": 0.04296875,
+   "m": 107.14238788884472,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 12,
+   "rho": 0.046875,
+   "m": 107.1498362005278,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 13,
+   "rho": 0.05078125,
+   "m": 107.18700706966513,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 14,
+   "rho": 0.0546875,
+   "m": 107.2100057107662,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 15,
+   "rho": 0.05859375,
+   "m": 107.20337982551372,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 16,
+   "rho": 0.0625,
+   "m": 107.21400013960981,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 17,
+   "rho": 0.06640625,
+   "m": 107.15512016162776,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 18,
+   "rho": 0.0703125,
+   "m": 107.12957849420165,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 19,
+   "rho": 0.07421875,
+   "m": 107.14552785110878,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 20,
+   "rho": 0.078125,
+   "m": 107.14793170735324,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 21,
+   "rho": 0.08203125,
+   "m": 107.15557750414446,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 22,
+   "rho": 0.0859375,
+   "m": 107.13813669888313,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 23,
+   "rho": 0.08984375,
+   "m": 107.13608063891535,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 24,
+   "rho": 0.09375,
+   "m": 107.10708621872234,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 25,
+   "rho": 0.09765625,
+   "m": 107.11828412839827,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 26,
+   "rho": 0.1015625,
+   "m": 107.12202903654345,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 27,
+   "rho": 0.10546875,
+   "m": 107.11585352830313,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 28,
+   "rho": 0.109375,
+   "m": 107.10426230980862,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 29,
+   "rho": 0.11328125,
+   "m": 107.0732150508153,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 30,
+   "rho": 0.1171875,
+   "m": 107.07768373148632,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 31,
+   "rho": 0.12109375,
+   "m": 107.04235210536251,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 32,
+   "rho": 0.125,
+   "m": 107.0293611116552,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 33,
+   "rho": 0.12890625,
+   "m": 107.01321198870481,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 34,
+   "rho": 0.1328125,
+   "m": 106.98696100922706,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 35,
+   "rho": 0.13671875,
+   "m": 106.98855443368508,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 36,
+   "rho": 0.140625,
+   "m": 106.98294090888106,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 37,
+   "rho": 0.14453125,
+   "m": 106.95855331050463,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 38,
+   "rho": 0.1484375,
+   "m": 106.96421148904636,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 39,
+   "rho": 0.15234375,
+   "m": 106.94622891382045,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 40,
+   "rho": 0.15625,
+   "m": 106.9240759886907,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 41,
+   "rho": 0.16015625,
+   "m": 106.88411863307799,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 42,
+   "rho": 0.1640625,
+   "m": 106.90199378828699,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 43,
+   "rho": 0.16796875,
+   "m": 106.87506027589498,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 44,
+   "rho": 0.171875,
+   "m": 106.84388815216327,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 45,
+   "rho": 0.17578125,
+   "m": 106.83432466201693,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 46,
+   "rho": 0.1796875,
+   "m": 106.78692314820915,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 47,
+   "rho": 0.18359375,
+   "m": 106.75593028801325,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 48,
+   "rho": 0.1875,
+   "m": 106.72529946212484,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 49,
+   "rho": 0.19140625,
+   "m": 106.71961923145416,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 50,
+   "rho": 0.1953125,
+   "m": 106.734394504409,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 51,
+   "rho": 0.19921875,
+   "m": 106.70697137556012,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 52,
+   "rho": 0.203125,
+   "m": 106.70082568527276,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 53,
+   "rho": 0.20703125,
+   "m": 106.67644998593683,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 54,
+   "rho": 0.2109375,
+   "m": 106.65134684044108,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 55,
+   "rho": 0.21484375,
+   "m": 106.62103207542614,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 56,
+   "rho": 0.21875,
+   "m": 106.58171515778083,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 57,
+   "rho": 0.22265625,
+   "m": 106.56140530924189,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 58,
+   "rho": 0.2265625,
+   "m": 106.52954708465968,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 59,
+   "rho": 0.23046875,
+   "m": 106.48155253687962,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 60,
+   "rho": 0.234375,
+   "m": 106.4337596786321,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 61,
+   "rho": 0.23828125,
+   "m": 106.39879096159726,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 62,
+   "rho": 0.2421875,
+   "m": 106.37259080174549,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 63,
+   "rho": 0.24609375,
+   "m": 106.31468438388706,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 64,
+   "rho": 0.25,
+   "m": 106.28414586101725,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 65,
+   "rho": 0.25390625,
+   "m": 106.25023286151549,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 66,
+   "rho": 0.2578125,
+   "m": 106.19076078165644,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 67,
+   "rho": 0.26171875,
+   "m": 106.13800182015115,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 68,
+   "rho": 0.265625,
+   "m": 106.10901820078789,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 69,
+   "rho": 0.26953125,
+   "m": 106.0816170121257,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 70,
+   "rho": 0.2734375,
+   "m": 106.02806585027737,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 71,
+   "rho": 0.27734375,
+   "m": 105.98133220434708,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 72,
+   "rho": 0.28125,
+   "m": 105.91406175482909,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 73,
+   "rho": 0.28515625,
+   "m": 105.85109197825976,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 74,
+   "rho": 0.2890625,
+   "m": 105.78431497814165,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 75,
+   "rho": 0.29296875,
+   "m": 105.72716671903717,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 76,
+   "rho": 0.296875,
+   "m": 105.68569374355651,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 77,
+   "rho": 0.30078125,
+   "m": 105.62890206443076,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 78,
+   "rho": 0.3046875,
+   "m": 105.58967039624436,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 79,
+   "rho": 0.30859375,
+   "m": 105.53924380112507,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 80,
+   "rho": 0.3125,
+   "m": 105.48821314868458,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 81,
+   "rho": 0.31640625,
+   "m": 105.43526989183648,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 82,
+   "rho": 0.3203125,
+   "m": 105.37924943946255,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 83,
+   "rho": 0.32421875,
+   "m": 105.34545307981959,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 84,
+   "rho": 0.328125,
+   "m": 105.2911672303603,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 85,
+   "rho": 0.33203125,
+   "m": 105.22827585397116,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 86,
+   "rho": 0.3359375,
+   "m": 105.16387624829432,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 87,
+   "rho": 0.33984375,
+   "m": 105.11071963207337,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 88,
+   "rho": 0.34375,
+   "m": 105.03342509977385,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 89,
+   "rho": 0.34765625,
+   "m": 104.95422524142475,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 90,
+   "rho": 0.3515625,
+   "m": 104.88328703163866,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 91,
+   "rho": 0.35546875,
+   "m": 104.82619163712467,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 92,
+   "rho": 0.359375,
+   "m": 104.770654127468,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 93,
+   "rho": 0.36328125,
+   "m": 104.69371754621572,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 94,
+   "rho": 0.3671875,
+   "m": 104.61894626365441,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 95,
+   "rho": 0.37109375,
+   "m": 104.54517444597603,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 96,
+   "rho": 0.375,
+   "m": 104.47186691155869,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 97,
+   "rho": 0.37890625,
+   "m": 104.40440814784411,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 98,
+   "rho": 0.3828125,
+   "m": 104.33326357371006,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 99,
+   "rho": 0.38671875,
+   "m": 104.26998615858743,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 100,
+   "rho": 0.390625,
+   "m": 104.19993242151257,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 101,
+   "rho": 0.39453125,
+   "m": 104.11790829317997,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 102,
+   "rho": 0.3984375,
+   "m": 104.03870215119503,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 103,
+   "rho": 0.40234375,
+   "m": 103.9588139902597,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 104,
+   "rho": 0.40625,
+   "m": 103.87573586606281,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 105,
+   "rho": 0.41015625,
+   "m": 103.7953477963607,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 106,
+   "rho": 0.4140625,
+   "m": 103.7089914787815,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 107,
+   "rho": 0.41796875,
+   "m": 103.62804893754938,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 108,
+   "rho": 0.421875,
+   "m": 103.53831188217848,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 109,
+   "rho": 0.42578125,
+   "m": 103.45217066814115,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 110,
+   "rho": 0.4296875,
+   "m": 103.359579879757,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 111,
+   "rho": 0.43359375,
+   "m": 103.2594807775493,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 112,
+   "rho": 0.4375,
+   "m": 103.16928763692403,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 113,
+   "rho": 0.44140625,
+   "m": 103.0825396133748,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 114,
+   "rho": 0.4453125,
+   "m": 103.00343373300946,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 115,
+   "rho": 0.44921875,
+   "m": 102.91024872234985,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 116,
+   "rho": 0.453125,
+   "m": 102.81985211455263,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 117,
+   "rho": 0.45703125,
+   "m": 102.72923210156982,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 118,
+   "rho": 0.4609375,
+   "m": 102.62873979605821,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 119,
+   "rho": 0.46484375,
+   "m": 102.5278963358982,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 120,
+   "rho": 0.46875,
+   "m": 102.42545388297629,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 121,
+   "rho": 0.47265625,
+   "m": 102.33712307179614,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 122,
+   "rho": 0.4765625,
+   "m": 100.91326796438217,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 123,
+   "rho": 0.48046875,
+   "m": 98.15588792414296,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 124,
+   "rho": 0.484375,
+   "m": 96.83673835342394,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 125,
+   "rho": 0.48828125,
+   "m": 96.0958603459149,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 126,
+   "rho": 0.4921875,
+   "m": 94.95324209010917,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 127,
+   "rho": 0.49609375,
+   "m": 94.40893393621282,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 128,
+   "rho": 0.5,
+   "m": 93.12495534776967,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 129,
+   "rho": 0.50390625,
+   "m": 94.89924784907377,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 130,
+   "rho": 0.5078125,
+   "m": 95.44132169473,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 131,
+   "rho": 0.51171875,
+   "m": 95.3914804862686,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 132,
+   "rho": 0.515625,
+   "m": 95.71415773079757,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 133,
+   "rho": 0.51953125,
+   "m": 94.72529215827942,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 134,
+   "rho": 0.5234375,
+   "m": 96.03407522543606,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 135,
+   "rho": 0.52734375,
+   "m": 96.3012196829578,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 136,
+   "rho": 0.53125,
+   "m": 96.96285545386316,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 137,
+   "rho": 0.53515625,
+   "m": 97.17544383539986,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 138,
+   "rho": 0.5390625,
+   "m": 95.3063532905394,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 139,
+   "rho": 0.54296875,
+   "m": 95.53733270367631,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 140,
+   "rho": 0.546875,
+   "m": 95.40305431128473,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 141,
+   "rho": 0.55078125,
+   "m": 95.57997141458492,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 142,
+   "rho": 0.5546875,
+   "m": 94.63955254974456,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 143,
+   "rho": 0.55859375,
+   "m": 93.90894066324259,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 144,
+   "rho": 0.5625,
+   "m": 94.56989899944314,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 145,
+   "rho": 0.56640625,
+   "m": 93.43822822604072,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 146,
+   "rho": 0.5703125,
+   "m": 94.06487759736439,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 147,
+   "rho": 0.57421875,
+   "m": 93.98795489684137,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 148,
+   "rho": 0.578125,
+   "m": 94.15192800977057,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 149,
+   "rho": 0.58203125,
+   "m": 93.70663527359082,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 150,
+   "rho": 0.5859375,
+   "m": 93.67142092555754,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 151,
+   "rho": 0.58984375,
+   "m": 94.00418955594323,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 152,
+   "rho": 0.59375,
+   "m": 93.20896643560782,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 153,
+   "rho": 0.59765625,
+   "m": 93.28964729832235,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 154,
+   "rho": 0.6015625,
+   "m": 93.72027785205643,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 155,
+   "rho": 0.60546875,
+   "m": 93.708351893945,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 156,
+   "rho": 0.609375,
+   "m": 94.31372333415378,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 157,
+   "rho": 0.61328125,
+   "m": 92.78359642955553,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 158,
+   "rho": 0.6171875,
+   "m": 90.71401952880295,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 159,
+   "rho": 0.62109375,
+   "m": 89.11534873926738,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 160,
+   "rho": 0.625,
+   "m": 87.37626009339061,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 161,
+   "rho": 0.62890625,
+   "m": 89.58744213310723,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 162,
+   "rho": 0.6328125,
+   "m": 87.76673819319224,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 163,
+   "rho": 0.63671875,
+   "m": 90.91901124133209,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 164,
+   "rho": 0.640625,
+   "m": 90.6402721404558,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 165,
+   "rho": 0.64453125,
+   "m": 90.55500792187546,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 166,
+   "rho": 0.6484375,
+   "m": 88.4312560998791,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 167,
+   "rho": 0.65234375,
+   "m": 85.97052635859212,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 168,
+   "rho": 0.65625,
+   "m": 86.71426888868602,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 169,
+   "rho": 0.66015625,
+   "m": 83.88843718455381,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 170,
+   "rho": 0.6640625,
+   "m": 85.06753789859381,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 171,
+   "rho": 0.66796875,
+   "m": 81.74284151249891,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 172,
+   "rho": 0.671875,
+   "m": 81.62882751061797,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 173,
+   "rho": 0.67578125,
+   "m": 79.13985000529716,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 174,
+   "rho": 0.6796875,
+   "m": 79.15914271987967,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 175,
+   "rho": 0.68359375,
+   "m": 75.61652216694878,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 176,
+   "rho": 0.6875,
+   "m": 68.97717190567903,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 177,
+   "rho": 0.69140625,
+   "m": 64.29241462461454,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 178,
+   "rho": 0.6953125,
+   "m": 59.60390796494793,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 179,
+   "rho": 0.69921875,
+   "m": 59.47287155991168,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  },
+  {
+   "centre": 5,
+   "point": 180,
+   "rho": 0.703125,
+   "m": 59.34317505770204,
+   "n_frames": 7093,
+   "visible_radius": 0.703125,
+   "source": "mask_check.json profiles.5"
+  }
+ ]
+}

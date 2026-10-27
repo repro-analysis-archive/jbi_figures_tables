@@ -39,7 +39,7 @@
    14.0
   ],
   "overlaps": 0,
-  "subscript_pairs_phi_A": 10,
+  "subscript_pairs": 10,
   "edge_issues": 0,
   "tif_dpi": [
    600.0
@@ -466,7 +466,7 @@
    14.0
   ],
   "overlaps": 0,
-  "subscript_pairs_phi_A": 24,
+  "subscript_pairs": 24,
   "edge_issues": 0,
   "tif_dpi": [
    600.0
@@ -1383,7 +1383,7 @@
    14.0
   ],
   "overlaps": 0,
-  "subscript_pairs_phi_A": 24,
+  "subscript_pairs": 24,
   "edge_issues": 0,
   "tif_dpi": [
    600.0
@@ -2232,6 +2232,72 @@
    }
   ]
  },
+ "Figure_S4": {
+  "pdf": "figures_supp_v1/Figure_S4/Figure_S4_v1.pdf",
+  "pages": 1,
+  "pdffonts": [
+   "ArialMT                              CID TrueType      Identity-H       yes no  yes      7  0",
+   "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes      8  0"
+  ],
+  "raster_objects": 0,
+  "page_sizes_mm": [
+   [
+    189.79,
+    160.16
+   ]
+  ],
+  "min_text_pt": 11.0,
+  "text_sizes_pt": [
+   11.0,
+   14.0,
+   15.0,
+   16.0
+  ],
+  "overlaps": 0,
+  "subscript_pairs": 3,
+  "edge_issues": 0,
+  "tif_dpi": [
+   1200.0
+  ],
+  "tif_identical_pages": 1,
+  "per_page": [
+   {
+    "page": 1,
+    "page_mm": [
+     189.79,
+     160.16
+    ],
+    "text_sizes_pt": [
+     11.0,
+     14.0,
+     15.0,
+     16.0
+    ],
+    "min_text_pt": 11.0,
+    "fonts": [
+     "Arial-BoldMT",
+     "ArialMT"
+    ],
+    "n_spans": 52,
+    "overlaps": [],
+    "subscript_pairs": 3,
+    "edge_below_0p3mm": [],
+    "tif": {
+     "file": "figures_supp_v1/Figure_S4/Figure_S4_v1.tif",
+     "px": [
+      8967,
+      7567
+     ],
+     "dpi": 1200.0,
+     "mm": [
+      189.8,
+      160.17
+     ],
+     "identical_to_pdf_page": true
+    }
+   }
+  ]
+ },
  "Figure_S5": {
   "pdf": "figures_supp_v1/Figure_S5/Figure_S5_v1.pdf",
   "pages": 4,
@@ -2263,7 +2329,7 @@
    16.0
   ],
   "overlaps": 0,
-  "subscript_pairs_phi_A": 0,
+  "subscript_pairs": 0,
   "edge_issues": 0,
   "tif_dpi": [
    1200.0
@@ -2429,7 +2495,7 @@
    16.0
   ],
   "overlaps": 0,
-  "subscript_pairs_phi_A": 0,
+  "subscript_pairs": 0,
   "edge_issues": 0,
   "tif_dpi": [
    1200.0

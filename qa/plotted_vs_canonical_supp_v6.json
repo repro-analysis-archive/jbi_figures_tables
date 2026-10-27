@@ -23,6 +23,13 @@
     "key_complete": true,
     "result": "PASS"
   },
+  "Figure_S4": {
+    "points": 720,
+    "mismatches": [],
+    "key_glyphs": 3,
+    "key_ok": true,
+    "result": "PASS"
+  },
   "Figure_S5": {
     "pages": 4,
     "values": 756,

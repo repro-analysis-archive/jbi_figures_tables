@@ -612,6 +612,27 @@
    "scanned": "all bytes except pixel strips"
   }
  },
+ "figures_supp_v1/Figure_S4/Figure_S4_v1.pdf": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "creator": "MATLAB, The MathWorks, Inc. Version 25.2.0.2998904 R2025b",
+   "producer": "Qt 5.15.16"
+  }
+ },
+ "figures_supp_v1/Figure_S4/Figure_S4_v1.tif": {
+  "hits": {
+   "ai": 0,
+   "email": 0,
+   "user/path/affiliation": 0
+  },
+  "metadata": {
+   "scanned": "all bytes except pixel strips"
+  }
+ },
  "figures_supp_v1/Figure_S5/Figure_S5_v1.pdf": {
   "hits": {
    "ai": 0,

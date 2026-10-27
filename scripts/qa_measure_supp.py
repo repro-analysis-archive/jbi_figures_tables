@@ -3,7 +3,8 @@
 (pdffonts), text sizes and minimum, text overlaps / near pairs (< 0.5 mm), edge clearance (< 0.3 mm), raster objects;
 per-page TIF: px, dpi, mm, and pixel identity with a fresh poppler rendering of the same PDF page (the TIF is made from
 the vector PDF, so the two must be identical). Text measurement functions from qa_measure.py. The subscript A of
-"φ_A" in the page titles touches its base glyph by design and is not counted as an overlap (listed separately).
+"φ_A" in the page titles and the subscript c of "m_c(ρ)" and "ρ_c" in the Figure S4 key touch their base glyphs by
+design and are not counted as overlaps (counted separately).
 Writes qa/measure_supp_v6.json.
 
     .venv/bin/python -I scripts/qa_measure_supp.py
@@ -29,12 +30,14 @@ spec.loader.exec_module(qm)
 Image.MAX_IMAGE_PIXELS = None
 ROOT = HERE.parent
 MM = 25.4 / 72
-FIGS = {"S1": 10, "S2": 24, "S3": 24, "S5": 4, "S6": 1}
+FIGS = {"S1": 10, "S2": 24, "S3": 24, "S4": 1, "S5": 4, "S6": 1}
+SUBSCRIPT = ((lambda a, b: a.endswith("φ") and b == "A"), (lambda a, b: a.endswith(("m", "ρ")) and b == "c"),
+             (lambda a, b: a == "c" and b.startswith("(ρ)")))           # TeX subscripts touching their base glyph
 
 
 def tif_of(n, p):
     d = ROOT / "figures_supp_v1" / f"Figure_{n}"
-    return d / f"Figure_{n}_v1.tif" if n == "S6" else d / "pages" / f"Figure_{n}_v1_p{p:02d}.tif"
+    return d / f"Figure_{n}_v1.tif" if n in ("S4", "S6") else d / "pages" / f"Figure_{n}_v1_p{p:02d}.tif"
 
 
 def main():
@@ -52,7 +55,7 @@ def main():
             edge = [s["text"] for s in sp if min(s["bbox_mm"][0], s["bbox_mm"][1], W * MM - s["bbox_mm"][2],
                                                   H * MM - s["bbox_mm"][3]) < 0.3]
             allov = qm.overlaps(sp)
-            sub = [o for o in allov if o["a"].endswith("φ") and o["b"] == "A"]      # TeX subscript of φ_A
+            sub = [o for o in allov if any(f(o["a"], o["b"]) for f in SUBSCRIPT)]
             ov = [o for o in allov if o not in sub]
             tif = tif_of(n, i + 1)
             im = Image.open(tif)
@@ -75,7 +78,7 @@ def main():
                                   min_text_pt=min(p["min_text_pt"] for p in pages),
                                   text_sizes_pt=sorted({s for p in pages for s in p["text_sizes_pt"]}),
                                   overlaps=sum(len(p["overlaps"]) for p in pages),
-                                  subscript_pairs_phi_A=sum(p["subscript_pairs"] for p in pages),
+                                  subscript_pairs=sum(p["subscript_pairs"] for p in pages),
                                   edge_issues=sum(len(p["edge_below_0p3mm"]) for p in pages),
                                   tif_dpi=sorted({p["tif"]["dpi"] for p in pages}),
                                   tif_identical_pages=sum(p["tif"]["identical_to_pdf_page"] for p in pages),
