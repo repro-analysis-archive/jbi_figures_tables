@@ -899,26 +899,5 @@
     0.0
    ]
   }
- ],
- "tif": {
-  "path": "figures/Figure_2/Figure_2.tif",
-  "px": [
-   8963,
-   5292
-  ],
-  "dpi": [
-   1200.0,
-   1200.0
-  ],
-  "mm": [
-   189.72,
-   112.01
-  ],
-  "mode": "RGB",
-  "compression": "packbits",
-  "tags": {
-   "270": "MATLAB Handle Graphics"
-  },
-  "bytes": 3305237
- }
+ ]
 }

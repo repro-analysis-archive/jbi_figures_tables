@@ -49,7 +49,8 @@ def text_spans(page):
     return spans
 
 
-def overlaps(spans, tol=0.05):
+def overlaps(spans, tol=-0.5):
+    """Pairs of text spans whose glyph boxes overlap or come closer than 0.5 mm in both directions (tol < 0)."""
     out = []
     for i in range(len(spans)):
         for j in range(i + 1, len(spans)):
