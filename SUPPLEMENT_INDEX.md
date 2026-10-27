@@ -24,6 +24,8 @@ Existing supplementary items in the read-only package (`/Volumes/ADDATA/医療�
 | X heatmaps | Exploratory X heatmaps | `04_exploratory/X1_X2/results_X/X_heatmaps.pdf` | `0dab320eda3407998481598be4036e460187d3bf9da8bd635faffada5b080faf` | 1c8e628 |
 | S5 (table) | Representation diagnostics (former main Table 3; v3 revision) | work folder `tables/Table_S5_v2.docx` (+ .csv, .pdf) | `6ae658ca5fef32401c84ec89b87937530ebc94c98bfa1ef2bdae27d61bf1a9a1` | `build_tables.py` table3 via `build_tables_v2.py` (canonical `table3.json` ← checks.json, x1_e3.json) |
 
-v3 revision: the slice-only role-switch view of v2 Figure 2B is superseded by main Figure 3 (its W = 30 row); Supplementary Figure S1 holds every other α, γ (and W, φ_A) cell of the contrast.
+v3 revision: the slice-only role-switch view of v2 Figure 2B is superseded by main Figure 3 (its W = 30 row; main Figure 4 after the v5 renumbering); Supplementary Figure S1 holds every other α, γ (and W, φ_A) cell of the contrast.
 
-Not reproduced in the JBI main text and therefore candidates for the supplement: the pre-result main-text figures (above), the FM / REF pairs of the role-switch view at the slice, PCA / LEACE variance retained (results report §3), the slice group and the NV comparator of X (Supplementary Figure X / Table X).
+v5 revision: the pre-result main-text Figure 1 (relative bias and coverage against K at the slice, `fig1_bias_coverage_vs_K.pdf`) is reinstated as main Figure 5 (house style, same content); Supplementary Figures S2 and S3 hold relative bias and coverage for every other cell. Main figures in the current numbering: 1 design, 2 erasure, 3 families, 4 prior action history, 5 bias / coverage, 6 exploratory X1/X2.
+
+Not reproduced in the JBI main text and therefore candidates for the supplement: the pre-result main-text Figures 2–4 of the results report (role switch, K × P heatmaps, checks), the FM / REF pairs of the role-switch view at the slice, PCA / LEACE variance retained (results report §3), the slice group and the NV comparator of X (Supplementary Figure X / Table X).

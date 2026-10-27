@@ -36,13 +36,15 @@ Every plotted or tabulated value comes from a canonical file in `canonical/`, wr
 | `canonical/fig3_ba.json` | `c38d780a8e7183c4a6db0a5ec50f534c9c22e0f5cee3407fa90518f3434d1469` |
 | `canonical/fig4_x_cells.csv` | `af4a5eac2ff91f06b9200b37d2cc7b1953a465606556bebd7c47ffdddb969b4c` |
 | `canonical/fig4_x_cells.json` | `0d4ad711caf5cf11e2e94213bcacea52013ae00208f2e5f24bf8e0595f23296b` |
+| `canonical/fig5_bias_coverage.csv` | `6ba3b9f3175ff7efc86b0566de9c3bfd71d8329529960d0a4868734fed66ec8f` |
+| `canonical/fig5_bias_coverage.json` | `3bd234204f0fabbfb97586ed58ff23bf4239802ef1f5789f2f0ba94b9164666f` |
 | `canonical/ga_values.json` | `a1189d04b2f689c63197a0a08a91c5bdfea93669ec553f412d8aba63ba3d4734` |
 | `canonical/gsite.json` | `f53932cfbd7f096c21047153aad24e10ffb7e9b3980502ef8d34e39278c92c5c` |
 | `canonical/inputs_sha256.json` | `51149613f5711412407423d39e7da512ba038ca824afb9dca2db956bd43bd8f8` |
 | `canonical/schematic_values.json` | `f78b6f65669603a33e8cbba2d1f5b6741c09a63bd32247cc1cbeb08c3ea65049` |
 | `canonical/table1.json` | `639eebe004e56d28c9a6cf9fe1d990e55d2d0259c048c70a63dcf79576ac8421` |
 | `canonical/table3.json` | `ac5c372d7acb54441055fbcf0d46ebfeeefa6691cb5a2c79fc72f8f03c7d2399` |
-| `canonical/validation.json` | `30af8eb9d5fbb601c4dcc808a85d9fc2e357f332dade3a8c7db82411d258c075` |
+| `canonical/validation.json` | `21bc0bca8ca81645d36056595ff3e0ce0df8ab16378b8da551fb455bdd5d06ba` |
 | `canonical/w_history_D.csv` | `3e1ff505fdddd66ae1b000d0c607ca2fdd1a71a97a7efb213bf4897961c887b5` |
 | `canonical/w_history_D.json` | `9e2c53ae1d6b486befd390ccffc31fd3ef7434a116d4203f63eb35d15ad8bec2` |
 | `canonical/x_cells_order_v3.csv` | `d2db88517cc09e3eb57d32368bd9d36b885ed9ad0ffb19b11adb233849208c16` |
@@ -109,4 +111,18 @@ Same canonical sources as the v3 revision; the only canonical change is the reco
 | Table 2 | `tables/Table_2_v3.*` | `fam_dbar.json` (18 rows), `gsite.json`; displayed bound primary:P2-FM ci_lo = -0.00028834867676637266 → −0.0003 (`validation.json` → v4_table2_sign_decimals; `families.json['primary:P2-FM']['ci_lo']`) | heading, footnotes a and b, one bound |
 | Supplementary Table S5 | `tables/Table_S5_v2.*` (unchanged) | as v3 | not revised |
 | Graphical abstract | `graphical_abstract/Graphical_abstract_v2.*` (unchanged) | as v3 | not revised |
+
+## v5 revision (2026-10-27): current files in the order of first citation
+
+| element | current file | canonical file → field | package source → field |
+|---|---|---|---|
+| Figure 1 | `figures_v4/Figure_1/Figure_1_v4.*` (byte copy of `Figure_1_v3`) | `schematic_values.json`, `table1.json` | as v3 Figure 1 |
+| Figure 2 | `figures_v4/Figure_2/Figure_2_v4.*` (byte copy of `Figure_4_v3`) | `fig3_ba.json` → ba, lo_2p5, hi_97p5, upper_one_sided_95 | `checks.json`, `b_main.csv` |
+| Figure 3 | `figures_v4/Figure_3/Figure_3_v4.*` (byte copy of `Figure_2_v3`) | `fam_dbar.json` rows with in_fig2A → D_bar, ci_lo, ci_hi | `families.json` |
+| Figure 4 | `figures_v4/Figure_4/Figure_4_v4.*` (byte copy of `Figure_3_v3`) | `w_history_D.json` → D_without_minus_with | `cell_metrics.csv`, `contrast` formula |
+| Figure 5 (new) | `figures_v4/Figure_5/Figure_5_v4.*` | `fig5_bias_coverage.json` → rel_bias_pct (= 100 × rel_bias), coverage (arm, K, P); anchors in `validation.json` → v5_bias_coverage_anchors_exact (NV, K = 1, P = 0, rel_bias = 0.10283144587487024; NV, K = 1, P = 0, coverage = 0.85; FULL, K = 1, P = 30, rel_bias = 0.33023840439297236; ORACLE−C, K = 2, P = 0, coverage = 0.97) | `cell_metrics.csv` (set primary, W 30, alpha 0.5, gamma 1, phi 0; 12 arms) → rel_bias, coverage |
+| Figure 6 | `figures_v4/Figure_6/Figure_6_v4.*` (byte copy of `Figure_5_v2`; TIF from its PDF) | `fig4_x_cells.json`, `x_cells_order_v3.json` | `x_comparisons_cells.csv` |
+| Tables 1, 2, S5; graphical abstract | `tables/Table_1_v2.*`, `tables/Table_2_v3.*`, `tables/Table_S5_v2.*`, `graphical_abstract/Graphical_abstract_v2.*` (unchanged) | as v4 revision | as v4 revision |
+
+Byte identity of the renumbered files with their sources: `qa/renumber_v5.json`.
 

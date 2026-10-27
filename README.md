@@ -30,6 +30,10 @@ Revised outputs carry the suffix `_v2` (figures in `figures_v2/`; `Graphical_abs
 
 Task `CC_TASK_JBI_figures_tables_v4.md`. Revised outputs carry the suffix `_v3`: `figures_v3/Figure_1..4/` (markers 1.5 mm filled in Figures 2–4; Figures 1 and 3 at most 220 mm high, font sizes unchanged) and `tables/Table_2_v3.*` ("Locked rule outcome"; the one bound shown as −0.0003). Current set: Figures 1–4 `_v3`, Figure 5 `_v2`, Table 1 `_v2`, Table 2 `_v3`, Table S5 `_v2`, graphical abstract `_v2`, captions `CAPTIONS_v2.md`. The data-figure TIFs of v4 are the MATLAB vector PDFs rasterised by poppler (`figures/common/jbi_export_v4.m`; MATLAB's raster export clips markers at its 4,000-px render tiles). Rebuild and checks: `scripts/rebuild_check_v4.sh <scratch_dir>`; report `qa/MEASUREMENT_REPORT_v3.md`; decisions `POST_RESULT_PRESENTATION_JBI.md` §7.
 
+## v5 revision (2026-10-27) — current set
+
+Task `CC_TASK_JBI_figures_tables_v5.md`. Complete figure set with the suffix `_v4` in `figures_v4/Figure_1..6/`, numbered in the order of first citation in Results: 1 design (= `Figure_1_v3`), 2 erasure (= `Figure_4_v3`), 3 families (= `Figure_2_v3`), 4 prior action history (= `Figure_3_v3`), 5 relative bias and coverage at the slice (new; `make_Figure_5_v4.m`, canonical `fig5_bias_coverage.json`), 6 exploratory X1/X2 (= `Figure_5_v2`; TIF from its PDF). Renumbered files are byte copies made by `scripts/renumber_v5.py`. Captions `CAPTIONS_v4.md`; tables `Table_1_v2`, `Table_2_v3`, `Table_S5_v2`; graphical abstract `Graphical_abstract_v2`. Rebuild and checks: `scripts/rebuild_check_v5.sh <scratch_dir>`; report `qa/MEASUREMENT_REPORT_v4.md`; decisions `POST_RESULT_PRESENTATION_JBI.md` §8.
+
 ## SHA-256 of the deliverables
 
 | file | bytes | SHA-256 |
@@ -73,6 +77,24 @@ Task `CC_TASK_JBI_figures_tables_v4.md`. Revised outputs carry the suffix `_v3`:
 | `figures_v3/Figure_4/Figure_4_v3.fig` | 65450 | `1494000406aab9bb8a91dfd260c8218499410d9c26c28c38e3df5b8afc8ca3fe` |
 | `figures_v3/Figure_4/Figure_4_v3.pdf` | 22658 | `23ff5d65bf6e2e7740a69267af32305ade10c6a3eeb9e181416351d5785d8229` |
 | `figures_v3/Figure_4/Figure_4_v3.tif` | 3023524 | `4b117272047c30103d37ee66b18e3848d9315b7f196cd0d94ec5fd823931eb7b` |
+| `figures_v4/Figure_1/Figure_1_v4.pdf` | 83898 | `7377206b9fa252f3e9a8e2f3741427bbce81c0c9608b08bb28ea6ae90f98c4d5` |
+| `figures_v4/Figure_1/Figure_1_v4.pptx` | 128076 | `3701733f0531d637b30a3693049b1ea3e70ec007f323fe3defca8467dcc41870` |
+| `figures_v4/Figure_1/Figure_1_v4.tif` | 5478962 | `1fb71a9efd950db437d6cdaae4fe78d852ef5a2e4ee42703bd7d87669843c2fd` |
+| `figures_v4/Figure_2/Figure_2_v4.fig` | 65450 | `1494000406aab9bb8a91dfd260c8218499410d9c26c28c38e3df5b8afc8ca3fe` |
+| `figures_v4/Figure_2/Figure_2_v4.pdf` | 22658 | `23ff5d65bf6e2e7740a69267af32305ade10c6a3eeb9e181416351d5785d8229` |
+| `figures_v4/Figure_2/Figure_2_v4.tif` | 3023524 | `4b117272047c30103d37ee66b18e3848d9315b7f196cd0d94ec5fd823931eb7b` |
+| `figures_v4/Figure_3/Figure_3_v4.fig` | 25296 | `5f071c3281fc789478beb15639e8257bba2aabd5ca3e9733eef905a86ad12311` |
+| `figures_v4/Figure_3/Figure_3_v4.pdf` | 15639 | `09d1b39b625f80e19c27d30fc8fc3f974c4033333a4831608d7c1bb7485f5060` |
+| `figures_v4/Figure_3/Figure_3_v4.tif` | 2628078 | `1b836db4b9b042ac695c3b9dfec435a78d92ee1c6d3c5ad3c86252cc57d0a2be` |
+| `figures_v4/Figure_4/Figure_4_v4.fig` | 36796 | `d8b6816afbb049e917cfe647627774a7fb0e78179042684a87773584610e208c` |
+| `figures_v4/Figure_4/Figure_4_v4.pdf` | 21165 | `fc1047de6ad2bc142589f91787cc2a86f7e0e4c2b7b5c01dd3bb31f9df3881d6` |
+| `figures_v4/Figure_4/Figure_4_v4.tif` | 3911596 | `f9a9ab8c084eccb1eead48b642635fbf4d994ee16165599a99ca905c4915d382` |
+| `figures_v4/Figure_5/Figure_5_v4.fig` | 77701 | `a0a77ba4af3701f2110150e49b7871a91808413ef69a368a36f92f8d8180b157` |
+| `figures_v4/Figure_5/Figure_5_v4.pdf` | 44490 | `566544e695f9ff4cec027fe4c94d5d71466e09c44c606defeec321ed2425e22f` |
+| `figures_v4/Figure_5/Figure_5_v4.tif` | 4073764 | `e528c21b556af43b36a477631e3973fc0e1ef90c0c45aeb03b1b853d767e1ec5` |
+| `figures_v4/Figure_6/Figure_6_v4.fig` | 178010 | `d5d033b33bd7660a05e977bfc629ae5c631adc356846f35f5c97c19cd885919f` |
+| `figures_v4/Figure_6/Figure_6_v4.pdf` | 117420 | `5dcfdb99d10bed55ce97bffc8fa2977b2b269d144e70402e1e362315c1eecc1d` |
+| `figures_v4/Figure_6/Figure_6_v4.tif` | 4776666 | `66b9ac3950723bfe2d10a7b91bf32a37709122ab90e82b2f51a555aafeec6f34` |
 | `graphical_abstract/Graphical_abstract.pdf` | 54044 | `375f3cfda8c39d1d1e8006600e53a29b91abe87a5237862d46d7900f20375373` |
 | `graphical_abstract/Graphical_abstract.pptx` | 67080 | `9227afe3ed00773121f4890d832826be321fc4ff7647510cdee0f621c670bacf` |
 | `graphical_abstract/Graphical_abstract.tif` | 1239924 | `d526822eb4b5c6e0fb23786897e06ab3abe30ebfe4a09eed31fd9c2ee952346e` |
