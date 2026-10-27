@@ -1,0 +1,71 @@
+# Notation registry — JBI manuscript (figures, tables, captions, code)
+
+Source of truth for symbols (figure template §15-4). Definitions follow the frozen protocol
+(`01_protocol/SS_PROTOCOL_DS203.md`, commit 4c86dc5) and the fact base v5. "Figure form" is how the symbol is printed in
+the schematics (Figure 1, graphical abstract), where sub- and superscripts are avoided because LibreOffice renders
+`pptxgenjs` sub/superscript runs at 58% of the run size (9 pt → 5.2 pt, below the 7 pt floor; measured 2026-10-27).
+In MATLAB figures and Word tables, subscripts are real subscripts where used.
+
+## Design and data
+
+| Symbol | Meaning | Values / definition | Source | Figure form |
+|---|---|---|---|---|
+| C | site (centre), 4 levels | centres 2–5 | protocol §2 | C |
+| c(C) | site loading | (−3, −1, 1, 3)/√5, assigned to centres by a permutation drawn per replicate | §6 | c(C) |
+| S_t | content state at step t | 1 if the appendix is visible by the end of step t (switch step s) | §2 | S |
+| A_t | synthetic action at step t | A_t = μ + γ·c(C) + κ·S_t + α·U + φ_A·A_{t−1} + ε | §6 | A |
+| Y | synthetic outcome | after the last post-window step | §6 | Y |
+| U | synthetic unmeasured confounder | U ~ N(0, 1), unseen in the video | §6 | U |
+| H_t | history | past synthetic actions (pre-window and earlier window steps) | §8 | H |
+| R_t | video-derived representation | 64 principal components per 5-s step | §4.2 | R |
+| R_t^(−C) | representation after linear site removal | LEACE fitted on the 278-case training folds | §4.3 | "R, site removed" |
+| K | intervention duration (window steps) | 1, 2, 5, 15 | §10.1 | K |
+| P | post-window steps | 0, 5, 30 | §10.1 | P |
+| W | pre-window steps | 0, 5, 30 | §10.1 | W |
+| α | unmeasured confounding strength (β = α) | 0, 0.5, 1 | §6, §10.1 | α |
+| γ | site loading scale | 0.5, 1 | §6, §10.1 | γ |
+| φ_A | action autoregression | 0 (primary), 0.5 (24 sensitivity cells) | §6, §10.1 | "autoregressive actions" |
+| δ, d(a) | policy multiplier; policy | δ = 1.05; d(a) = δ·a at every window step | §7.1 | δ, d(a) |
+| Ψ(δ) | mean outcome under the policy | estimand Ψ(δ) − Ψ(1) | §7.1 | Ψ(δ) |
+| M | replicates per cell | 200 | §10.2 | "200 replicates" |
+| s, O, w | switch step; window offset; window start | w = s + O, O = −15, …, 15 (site-stratified) | §7.2 | s, O, w |
+| slice | main-text slice | W = 30, α = 0.5, γ = 1, φ_A = 0, primary set | PRESENTATION_DECISIONS.md | — |
+
+## Results
+
+| Symbol | Meaning | Definition | Source | Printed as |
+|---|---|---|---|---|
+| D_j | per-cell oriented difference | P1: (\|b without C\| − \|b with C\|)/Ψ̄_j; P2: (\|b with C\| − \|b without C\|)/Ψ̄_j | §12.3 | D_j (tables), D (figures) |
+| D̄_F | family mean | unweighted mean of D_j over the family's cells | §12.3 | "Mean D" (no combining macron; Word rule template §12) |
+| Δ | exploratory per-cell difference | (\|bias\| X arm − \|bias\| step-6 arm)/mean truth; not oriented by family | fact base §8 | Δ, "Δ (X − step 6)" |
+| BA | balanced accuracy of the case-level site probe | chance 0.25 | §5 | BA |
+| ΔAUC | E2 statistic | held-out AUC(base + R_t) − AUC(base) | §5.2 | ΔAUC |
+| E1, E2, E3-site, E3-state | pre-causal checks | site encoding; state recovery; removal success (site, state retention) | §5 | as is |
+| G-SITE | design check | η² of S at the window start on C, ≤ 0.01 | §5.4 | as is |
+| P1a, P1b-SITE, P1b-FM, P2-SITE, P2-FM, P2-ORACLE, P3 | prediction families | §12.2 | §12.2 | as is |
+
+## Arms and analyses
+
+| Name | Meaning | Note |
+|---|---|---|
+| NV, SITE, ORACLE−C, ORACLE, FULL | reference arms (§8) | |
+| FM-P, FM-S, REF | primary (SurgeNetCholec), secondary (LeanVAE-4ch), reference (Cosmos-1.0-Tokenizer-CV8x8x8) representation arms | records spell the site-removed arms with a hyphen (`FM-P-C`); the manuscript uses the minus sign U+2212 (`FM-P−C`) |
+| FM-P−C, FM-S−C, REF−C | site-removed arms | |
+| FM-P-nat | primary model, native frames (sensitivity) | no −C arm |
+| k | representation index in Figure 4 | k = FM-P, FM-S, REF; "k−C" its site-removed arm |
+| X1, X2 | exploratory analyses (OSF osf.io/5c627) | X1: LEACE refitted on the 158-case analysis region; X2: linear-only nuisance learners |
+| analysis B | exploratory analysis (OSF osf.io/g9ymw) | "transport" and "within-set refit" (the records' (a) and (b)) |
+| S1, S2, S3 | evaluation sets of analysis B | S1 278 cases all steps; S2 158 cases all steps; S3 158 cases analysis region |
+
+## Collisions found and their resolution
+
+| Collision | Resolution (applied in figures, tables, captions) |
+|---|---|
+| Records key the representations as P, S, REF, but P is also the number of post-window steps and S the content state | Representations are always written FM-P, FM-S, REF (Figure 3 group labels, Figure 4 columns, Table 3 columns) |
+| S1–S3 (analysis-B sets) vs Supplementary Figures S1–S4 vs state S vs FM-S | Always "evaluation set S1" / "sets S1–S3"; supplementary items always "Supplementary Figure S1" etc. |
+| "B" = exploratory analysis B vs "B = 2,000" bootstrap resamples (records) vs panel label (B) | Captions write "2,000 bootstrap resamples" and "analysis B"; Figure 3 panel (B) is titled "Exploratory analysis B: transport" |
+| Analysis B's (a)/(b) vs lower-case panel labels | Named "transport" and "within-set refit" |
+| Δ (exploratory difference) vs ΔAUC (E2) | ΔAUC is used only as the compound E2 term; Δ alone always means the X difference |
+| D̄ with a combining macron (Word/PDF risk) | "Mean D" in figures, tables and the graphical abstract; D̄_F named once in the Table 2 footnote |
+| ∈ is not in Arial | Figure 1 writes "K: 1, 2, 5, 15"; tables write "P = 5 or 30" (mechanical rewrite in `build_tables.py`) |
+| Z (theory-map factor) appears in the protocol arm text (Table 1C) | Defined in the Table 1 footnote |

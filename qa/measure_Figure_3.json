@@ -85,7 +85,7 @@
   "format": "PDF 1.4",
   "creator": "MATLAB, The MathWorks, Inc. Version 25.2.0.2998904 R2025b",
   "producer": "Qt 5.15.16",
-  "creationDate": "D:20261027091702+09'00'"
+  "creationDate": "D:20261027094416+09'00'"
  },
  "bytes": 22034,
  "spans": [
@@ -1001,5 +1001,26 @@
     0.0
    ]
   }
- ]
+ ],
+ "tif": {
+  "path": "figures/Figure_3/Figure_3.tif",
+  "px": [
+   8963,
+   4134
+  ],
+  "dpi": [
+   1200.0,
+   1200.0
+  ],
+  "mm": [
+   189.72,
+   87.5
+  ],
+  "mode": "RGB",
+  "compression": "packbits",
+  "tags": {
+   "270": "MATLAB Handle Graphics"
+  },
+  "bytes": 2393093
+ }
 }
