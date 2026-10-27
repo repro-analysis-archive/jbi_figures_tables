@@ -22,5 +22,14 @@
  "fig4_rows": 540,
  "x_group_means_reproduced": 18,
  "c_b0_identity": "PASS (B S1 (a)(b) and S3 (b) equal step-5 E3_site_278 / E3_site_primary)",
- "x1_step5_reference": "PASS (x1_e3.json step5_reference equals checks.json E3_site_primary)"
+ "x1_step5_reference": "PASS (x1_e3.json step5_reference equals checks.json E3_site_primary)",
+ "v3_history_rows": 72,
+ "v3_history_anchors_exact": {
+  "SITE vs NV, W = 0, K = 1, P = 30": 8.73427182094206,
+  "SITE vs NV, W = 30, K = 2, P = 5": -0.04395193729566468,
+  "ORACLE vs ORACLE−C, W = 0, K = 1, P = 30": 10.51195618958996,
+  "ORACLE vs ORACLE−C, W = 30, K = 15, P = 30": 0.07100706670947592
+ },
+ "v3_history_anchor_status": "PASS (3 d.p.)",
+ "v3_history_family_cells_checked": 14
 }

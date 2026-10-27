@@ -1,0 +1,580 @@
+{
+ "pdf": "figures_v2/Figure_2/Figure_2_v2.pdf",
+ "pages": 1,
+ "page_mm": [
+  189.79,
+  148.17
+ ],
+ "page_pt": [
+  538.0,
+  420.0
+ ],
+ "pdffonts": [
+  "name                                 type              encoding         emb sub uni object ID",
+  "------------------------------------ ----------------- ---------------- --- --- --- ---------",
+  "ArialMT                              CID TrueType      Identity-H       yes no  yes      7  0",
+  "Arial-BoldMT                         CID TrueType      Identity-H       yes no  yes      8  0"
+ ],
+ "pdfimages": [
+  "page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio",
+  "--------------------------------------------------------------------------------------------"
+ ],
+ "text_sizes_pt": [
+  14.0,
+  15.0,
+  16.0
+ ],
+ "min_text_pt": 14.0,
+ "text_colours": [
+  "#1A1A1A",
+  "#4D4D4D"
+ ],
+ "fonts": [
+  "Arial-BoldMT",
+  "ArialMT"
+ ],
+ "n_spans": 27,
+ "text_overlaps": [],
+ "edge_clearance_below_0p3mm": [],
+ "markers": [
+  {
+   "part": "edge",
+   "shape": "circle",
+   "colour": "#1A1A1A",
+   "edge_pt": 0.6,
+   "n": 5,
+   "outer_w_mm_median": 1.129,
+   "outer_h_mm_median": 1.129,
+   "outer_w_mm_min": 1.129,
+   "outer_h_mm_min": 1.129
+  },
+  {
+   "part": "edge",
+   "shape": "other",
+   "colour": "#4D4D4D",
+   "edge_pt": 0.75,
+   "n": 7,
+   "outer_w_mm_median": 1.283,
+   "outer_h_mm_median": 1.283,
+   "outer_w_mm_min": 1.182,
+   "outer_h_mm_min": 1.283
+  },
+  {
+   "part": "edge",
+   "shape": "triangle",
+   "colour": "#4D4D4D",
+   "edge_pt": 0.75,
+   "n": 3,
+   "outer_w_mm_median": 1.321,
+   "outer_h_mm_median": 1.18,
+   "outer_w_mm_min": 1.321,
+   "outer_h_mm_min": 1.18
+  },
+  {
+   "part": "face",
+   "shape": "circle",
+   "colour": "#2B3D6B",
+   "edge_pt": 0.0,
+   "n": 5,
+   "outer_w_mm_median": 0.917,
+   "outer_h_mm_median": 0.917,
+   "outer_w_mm_min": 0.917,
+   "outer_h_mm_min": 0.917
+  },
+  {
+   "part": "face",
+   "shape": "diamond",
+   "colour": "#FFFFFF",
+   "edge_pt": 0.0,
+   "n": 3,
+   "outer_w_mm_median": 0.917,
+   "outer_h_mm_median": 1.22,
+   "outer_w_mm_min": 0.917,
+   "outer_h_mm_min": 1.22
+  },
+  {
+   "part": "face",
+   "shape": "square",
+   "colour": "#FFFFFF",
+   "edge_pt": 0.0,
+   "n": 4,
+   "outer_w_mm_median": 1.018,
+   "outer_h_mm_median": 1.018,
+   "outer_w_mm_min": 1.018,
+   "outer_h_mm_min": 1.018
+  },
+  {
+   "part": "face",
+   "shape": "triangle",
+   "colour": "#FFFFFF",
+   "edge_pt": 0.0,
+   "n": 3,
+   "outer_w_mm_median": 1.056,
+   "outer_h_mm_median": 0.915,
+   "outer_w_mm_min": 1.056,
+   "outer_h_mm_min": 0.915
+  }
+ ],
+ "metadata": {
+  "format": "PDF 1.4",
+  "creator": "MATLAB, The MathWorks, Inc. Version 25.2.0.2998904 R2025b",
+  "producer": "Qt 5.15.16",
+  "creationDate": "D:20261027100754+09'00'"
+ },
+ "bytes": 15606,
+ "spans": [
+  {
+   "text": "Mean D (without C − with C)",
+   "font": "ArialMT",
+   "size": 15.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    91.28,
+    72.36,
+    157.55,
+    77.32
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "0",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    66.96,
+    66.52,
+    69.71,
+    70.13
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "0.5",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    89.31,
+    66.52,
+    96.17,
+    70.13
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "1",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    115.72,
+    66.52,
+    118.46,
+    70.07
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "1.5",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    138.07,
+    66.52,
+    144.93,
+    70.13
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "2",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    164.47,
+    66.52,
+    167.22,
+    70.07
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "P1a",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    52.42,
+    27.18,
+    61.2,
+    30.79
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "ORACLE vs ORACLE−C",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#4D4D4D",
+   "bbox_mm": [
+    6.56,
+    33.68,
+    61.29,
+    37.34
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "P1b-SITE",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    39.9,
+    46.62,
+    61.29,
+    50.28
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "SITE vs NV",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#4D4D4D",
+   "bbox_mm": [
+    35.66,
+    53.17,
+    61.17,
+    56.82
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Primary set (n = 158)",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    67.47,
+    6.71,
+    113.68,
+    11.34
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "W = 0 set (n = 204)",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    67.47,
+    12.33,
+    109.71,
+    16.96
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "W = 5 set (n = 201)",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    121.0,
+    6.71,
+    163.24,
+    11.34
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Single-file set (n = 123)",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    121.0,
+    12.33,
+    171.89,
+    16.96
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "Mean D (with C − without C)",
+   "font": "ArialMT",
+   "size": 15.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    91.28,
+    139.91,
+    157.55,
+    144.88
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "0",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    67.89,
+    134.08,
+    70.64,
+    137.69
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "0.02",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    87.76,
+    134.08,
+    97.36,
+    137.69
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "0.04",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    110.97,
+    134.08,
+    120.58,
+    137.69
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "0.06",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    134.19,
+    134.08,
+    143.8,
+    137.69
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "0.08",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    157.41,
+    134.08,
+    167.01,
+    137.69
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "0.1",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    181.95,
+    134.08,
+    188.81,
+    137.69
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "P2-SITE",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    42.54,
+    94.69,
+    61.2,
+    98.35
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "SITE vs NV",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#4D4D4D",
+   "bbox_mm": [
+    35.66,
+    101.24,
+    61.17,
+    104.9
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "P2-ORACLE",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    33.19,
+    114.17,
+    61.18,
+    117.83
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "ORACLE vs ORACLE−C",
+   "font": "ArialMT",
+   "size": 14.0,
+   "color": "#4D4D4D",
+   "bbox_mm": [
+    6.56,
+    120.72,
+    61.29,
+    124.38
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "(A)",
+   "font": "Arial-BoldMT",
+   "size": 16.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    1.2,
+    1.09,
+    9.03,
+    6.39
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "text": "(B)",
+   "font": "Arial-BoldMT",
+   "size": 16.0,
+   "color": "#1A1A1A",
+   "bbox_mm": [
+    1.2,
+    82.79,
+    9.03,
+    88.09
+   ],
+   "dir": [
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "tif": {
+  "path": "figures_v2/Figure_2/Figure_2_v2.tif",
+  "px": [
+   8963,
+   6993
+  ],
+  "dpi": [
+   1200.0,
+   1200.0
+  ],
+  "mm": [
+   189.72,
+   148.02
+  ],
+  "mode": "RGB",
+  "compression": "packbits",
+  "tags": {
+   "270": "MATLAB Handle Graphics"
+  },
+  "bytes": 3414489
+ }
+}

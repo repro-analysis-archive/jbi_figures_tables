@@ -246,6 +246,64 @@ def slice_rows(cm_all):
     return rows
 
 
+# ---------------------------------------------------------------------------------- v3 Figure 3: prior action history
+HISTORY_ANCHORS = {   # task v3 §2 (3 d.p.); exact values are recorded in validation.json
+    ("SITE vs NV", 0, 1, 30): "8.734", ("SITE vs NV", 30, 2, 5): "−0.044",
+    ("ORACLE vs ORACLE−C", 0, 1, 30): "10.512", ("ORACLE vs ORACLE−C", 30, 15, 30): "0.071"}
+
+
+def history_rows(cm_all, fams):
+    """Per-cell D (|bias| without C − with C) / mean truth, primary set, phi_A = 0, alpha = 0.5, gamma = 1, all W, K, P;
+    SITE vs NV and ORACLE vs ORACLE−C (committed `contrast` formula). Cells that belong to a family are checked
+    against families.json D_j (P2 cells with the opposite sign)."""
+    cm = cm_all[(cm_all.set == "primary") & (cm_all.phi == 0.0) & (cm_all.alpha == 0.5) & (cm_all.gamma == 1.0)]
+    rows, exact, n_fam = [], {}, 0
+    for w, wo in (("SITE", "NV"), ("ORACLE", "ORACLE-C")):
+        d = contrast(cm, w, wo).reset_index().sort_values(["W", "P", "K"])
+        assert len(d) == 36 and set(d.W) == {0, 5, 30}
+        pair = f"{lab(w)} vs {lab(wo)}"
+        for r in d.itertuples(index=False):
+            fam = []
+            for key, v in fams.items():
+                if key.startswith("primary:") and v["with_arm"] == w and str(int(r.cell)) in v["D_cells"]:
+                    sign = 1.0 if v["kind"] == "P1" else -1.0
+                    assert close(sign * float(r.D), v["D_cells"][str(int(r.cell))], 1e-9), (key, r.cell)
+                    fam.append(v["family"]); n_fam += 1
+            k = (pair, int(r.W), int(r.K), int(r.P))
+            if k in HISTORY_ANCHORS:
+                assert f3(float(r.D)) == HISTORY_ANCHORS[k], (k, r.D)
+                exact[f"{pair}, W = {k[1]}, K = {k[2]}, P = {k[3]}"] = float(r.D)
+            rows.append(dict(pair=pair, with_arm=lab(w), without_arm=lab(wo), cell=int(r.cell), K=int(r.K),
+                             P=int(r.P), W=int(r.W), alpha=float(r.alpha), gamma=float(r.gamma), phi=float(r.phi),
+                             abs_bias_with=float(r.abs_bias_with), abs_bias_without=float(r.abs_bias_without),
+                             mean_truth=float(r.mean_truth), D_without_minus_with=float(r.D),
+                             families=" ".join(fam) or "P3 (no family)",
+                             source="cell_metrics.csv (set primary; arms with/without); formula make_figures.py "
+                                    "contrast (step7_prep c938a56)"))
+    assert len(exact) == 4
+    return rows, exact, n_fam
+
+
+def x_order_v3(xr):
+    """v3 display order of the X cells (Figure 5): P1b-FM by (P, K, alpha, gamma) = design factors only, so that the
+    P = 5 and P = 30 blocks are contiguous; P2-FM by cell index (W, alpha, gamma)."""
+    cells = {}
+    for r in xr:
+        cells.setdefault((r["group"], r["cell"]), r)
+    out = []
+    for g, key in (("P1b-FM", lambda r: (r["P"], r["K"], r["alpha"], r["gamma"])),
+                   ("P2-FM", lambda r: (r["cell"],))):
+        rs = sorted((r for (gg, _), r in cells.items() if gg == g), key=key)
+        for i, r in enumerate(rs):
+            out.append(dict(group=g, cell=r["cell"], K=r["K"], P=r["P"], W=r["W"], alpha=r["alpha"],
+                            gamma=r["gamma"], order_v3=i + 1,
+                            block=(f"P = {r['P']}" if g == "P1b-FM" else f"W = {r['W']}"),
+                            subblock=(f"K = {r['K']}" if g == "P1b-FM" else "")))
+    assert [o["order_v3"] for o in out if o["group"] == "P1b-FM"] == list(range(1, 49))
+    assert [o["order_v3"] for o in out if o["group"] == "P2-FM"] == list(range(1, 13))
+    return out
+
+
 # ------------------------------------------------------------------------------------------------------ Figure 3
 def ba_rows(checks, bm):
     rows = []
@@ -482,6 +540,13 @@ def main():
                                            "mean truth with 95 % paired percentile bootstrap interval (2,000 "
                                            "resamples of replicates within the cell; cells fixed)", rows=xr), xr)
 
+    hist, hist_exact, hist_fam = history_rows(cm_all, fams)
+    write("w_history_D", dict(description="Per-cell D = (|bias| without C − |bias| with C) / mean truth, primary set, "
+                                          "alpha = 0.5, gamma = 1, phi_A = 0, W = 0, 5, 30; point values (no "
+                                          "per-cell interval exists in the records)", rows=hist), hist)
+    xo = x_order_v3(xr)
+    write("x_cells_order_v3", dict(description="Figure 5 (v3) display order of the 60 X cells; P1b-FM by (P, K, alpha, "
+                                               "gamma), P2-FM by cell index", rows=xo), xo)
     write("table1", table1(t1, t2, proto, cm_all))
     write("table3", dict(rows=table3(checks, x1)))
     sv = schematic_values(t1, proto, run6, fact, decisions, keyc)
@@ -504,7 +569,9 @@ def main():
         family_rows=len(fam), fig2A_points=sum(r["in_fig2A"] for r in fam), fig2B_rows=len(sl),
         fig3_rows=len(ba), fig4_rows=len(xr), x_group_means_reproduced=len(FIG4_COMPARISONS) * 3 * 2,
         c_b0_identity="PASS (B S1 (a)(b) and S3 (b) equal step-5 E3_site_278 / E3_site_primary)",
-        x1_step5_reference="PASS (x1_e3.json step5_reference equals checks.json E3_site_primary)"))
+        x1_step5_reference="PASS (x1_e3.json step5_reference equals checks.json E3_site_primary)",
+        v3_history_rows=len(hist), v3_history_anchors_exact=hist_exact, v3_history_anchor_status="PASS (3 d.p.)",
+        v3_history_family_cells_checked=hist_fam))
 
     files = sorted(p for p in OUT.iterdir() if p.suffix in (".json", ".csv"))
     (OUT / "SHA256SUMS.txt").write_text("".join(f"{sha256(p)}  {p.name}\n" for p in files))
