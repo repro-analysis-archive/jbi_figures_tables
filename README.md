@@ -1,3 +1,75 @@
+# jbi_figures_tables
+
+**SS-DS203 figure and table pipeline.** Figure and table pipeline of the journal submission: canonical values frozen from the deposited records with SHA-256 guards, MATLAB and pptxgenjs figure sources, figures (vector PDF and 1,200-dpi TIFF), tables, the supplement build scripts and QA. The pipeline's own documentation follows below (section *Pipeline README*).
+
+Part of the code and records of the manuscript *Semi-synthetic evaluation of site information and linear erasure in clinical video representations for sequentially doubly robust causal effect estimation* (Nakano H, Shiinoki T; article DOI: [TO FILL]). The six repositories of this release are archived together, as git bundles at tag `v1.0.0-submission`, on Zenodo: https://doi.org/10.5281/zenodo.23934337.
+
+Repositories of this release:
+
+* [`medical_video_causal_gate`](https://github.com/repro-analysis-archive/medical_video_causal_gate)
+* [`ss_exploratory`](https://github.com/repro-analysis-archive/ss_exploratory)
+* [`ss_exploratory_B`](https://github.com/repro-analysis-archive/ss_exploratory_B)
+* [`step7_prep`](https://github.com/repro-analysis-archive/step7_prep)
+* [`jbi_figures_tables`](https://github.com/repro-analysis-archive/jbi_figures_tables)
+* [`ss-ds203-records`](https://github.com/repro-analysis-archive/ss-ds203-records)
+
+Release: tag `v1.0.0-submission` (2026-11-04).
+
+## Contents
+
+`canonical/`, `canonical_supplement/` (frozen values), `inputs/mask_check.json`, `scripts/`, `figures*/`, `graphical_abstract/`, `tables/`, `qa/` and records (`POST_RESULT_PRESENTATION_JBI.md`, `SOURCE_MAP.md`, `NOTATION_REGISTRY.md`, `SUPPLEMENT_INDEX.md`).
+
+## History filtering and commit identifiers
+
+This repository is a filtered copy of the original history (`git filter-repo`): the preparation templates (`templates/`), the manuscript text files (Supplementary Methods draft, assembled Supplementary Material .docx / .pdf, caption files) and `scripts/make_captions_v4.py` (which embeds the caption text) were removed from the whole history (decision D4; 12 entries, 15 files), and the identity of the last commit was corrected (decision D3). Every commit ID differs from the work-folder history; no commit of this repository is cited in the manuscript, but the project's audit records cite the old IDs. The supplement assembly and the caption QA (`build_supplementary_material_v1.py`, `qa_captions_v4.py`, `qa_captions_supp_v1.py`, `qa_supplementary_docx_v1.py`, `compare_supp.py`, `qa_blind.py`, `make_docs.py`, `rebuild_check_v5.sh`, `rebuild_check_supp_v6.sh`) need non-public inputs and cannot be fully re-run here; figure, table and canonical-value generation are unaffected. Commit messages and dates are unchanged, so messages still name original IDs.
+
+* `COMMIT_ID_MAP.md` — original → public ID of every commit;
+* `removed_paths.txt` — the exact paths removed from the whole history;
+* `FILTER_RECORD.md` — tool, command and the checks performed when the copy was built (2026-10-28).
+
+The unfiltered original history is not distributed (it contains the removed third-party material). It is kept by the authors as a git bundle (SHA-256 `2495e59e8c42c2ab42430f15788378d868663208e77da331d44fcef224f0fcc1`) so that the original identifiers can be verified; requests to the corresponding author.
+
+## Not included
+
+* video files and per-frame representations of Appendix300
+* `templates/`, the manuscript text files and `scripts/make_captions_v4.py` (see *History filtering*)
+
+Scripts and records contain absolute paths of the machines on which the analysis ran (for example `/home/user/…`, `/srv/…`, `/media/user/LaCie/…`, `/Volumes/ADDATA/…`). They are recorded as they were; adapt them to re-run.
+
+## Data source and attribution
+
+The video data are Appendix300 (CC BY 4.0), used with attribution (manuscript references 1 and 45):
+
+* Kolbinger FR, Kirchner M, Pfeiffer K, Bodenstedt S, Jenke AC, Barthel J, et al. Appendix300: Surgical video and patient metadata of 330 laparoscopic appendectomy cases from five institutions [dataset]. Technische Universität Dresden, OPARA; 2026-04-29. doi:10.25532/OPARA-1173. License: CC BY 4.0.
+* Kolbinger FR, Kirchner M, Pfeiffer K, Bodenstedt S, Jenke AC, Barthel J, et al. Appendix300: Surgical video and patient metadata of 330 laparoscopic appendectomy cases from five institutions. Sci Data. 2026;13:886. doi:10.1038/s41597-026-07593-6.
+
+No video file, video frame or per-frame representation is redistributed here.
+
+## Licence
+
+* **Original code** (`scripts/`, the `make_*.m` / `make_*.js` figure sources and `figures/common/`): MIT License — see `LICENSE`. Copyright (c) 2026 Hisashi Nakano.
+* **Records, results and figure data** (`canonical*/`, `inputs/mask_check.json`, figures, tables, records and QA outputs): Creative Commons Attribution 4.0 International (CC BY 4.0) — see `LICENSE-CC-BY-4.0`.
+* **Not covered by either licence:** third-party material quoted or embedded in this repository remains under its own terms.
+
+## How to cite
+
+Please cite the article (DOI: [TO FILL]) and the Zenodo archive https://doi.org/10.5281/zenodo.23934337; machine-readable metadata: `CITATION.cff`.
+
+## Use of AI tools
+
+Most commits carry a `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>` line: code and records were produced with Claude Code under the investigator's instructions, as declared in the manuscript. Automated record commits made by the runners carry no such line. The lines are kept unchanged.
+
+## Authors and contact
+
+* Hisashi Nakano (ORCID [0000-0002-9023-880X](https://orcid.org/0000-0002-9023-880X)), Department of Health Data Science, Niigata University of Health and Welfare — hisashi-nakano@nuhw.ac.jp (corresponding)
+* Takehiro Shiinoki (ORCID [0000-0002-0246-8489](https://orcid.org/0000-0002-0246-8489)), Department of Radiation Oncology, Yamaguchi University
+
+---
+
+# Pipeline README
+
+The pipeline's own README follows unchanged (as of the last pipeline commit; it describes the work folder, including files that are not part of this public copy).
+
 # JBI figures, tables and graphical abstract — SS-DS203 manuscript
 
 Built 2026-10-27 from the read-only package `/Volumes/ADDATA/医療動画/SS_DS203_manuscript_20261020` (manifest verified, 248 / 248). Task: `CC_TASK_JBI_figures_tables_v2.md`.

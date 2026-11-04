@@ -1,0 +1,12 @@
+templates/
+JBI_Supplementary_Methods_draft_v2.md
+inputs/JBI_Supplementary_Methods_draft_v2.md
+supplementary/Supplementary_Material_v1.docx
+supplementary/Supplementary_Material_v1.pdf
+CAPTIONS.md
+CAPTIONS_v2.md
+CAPTIONS_v4.md
+CAPTIONS_supplement_v1.md
+CAPTIONS_supplement_v2.md
+CAPTIONS_supplement_v3.md
+scripts/make_captions_v4.py
